@@ -1,0 +1,26 @@
+name: Check published website
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Verify public pages and local assets
+        shell: python
+        run: |
+          import urllib.request
+          base = 'https://xwjdream.github.io/gensokyo-sketchbook-pages/'
+          checks = [('', 'text/html', 'GitHub 浏览版'), ('gallery.js?v=pages01', None, '完整版画廊'), ('assets/reimu.webp', 'image/webp', None), ('assets/atlas-mountain.webp', 'image/webp', None)]
+          for path, content_type, expected in checks:
+              with urllib.request.urlopen(base + path, timeout=40) as response:
+                  body = response.read()
+                  assert response.status == 200, (path, response.status)
+                  if content_type:
+                      assert content_type in response.headers.get('Content-Type', ''), path
+                  if expected:
+                      assert expected in body.decode('utf-8'), path
+                  assert len(body) > 0, path
+                  print(f'HTTP 200: {path or "index.html"} ({len(body)} bytes)')
