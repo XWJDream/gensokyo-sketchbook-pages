@@ -50,3 +50,5 @@ for(const [id,ids,names] of [
   const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);
   p.residents=[...new Set([...p.residents,...ids])];p.people=[...new Set([...p.people,...names])];
 }
+window.GENSOKYO_ATLAS.places.find(p=>p.id==='myouren').residents.push('kyouko');
+window.GENSOKYO_ATLAS.places.find(p=>p.id==='myouren').people.push('幽谷响子');

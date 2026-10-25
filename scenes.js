@@ -4,10 +4,11 @@
   const viewer=document.querySelector('#scene-viewer');
   const name=id=>window.CHARACTERS.find(c=>c.id===id)?.name||id;
   const placeName=id=>window.GENSOKYO_ATLAS.places.find(p=>p.id===id)?.name||id;
+  const mapLink=(s,expanded=false)=>s.place? `<button class="${expanded?'scene-visit':'scene-map-link'}" data-visit-place="${s.place}">${s.id==='palanship'?'去后来建立的命莲寺':s.id==='cemetery-moon'?'回看命莲寺周边线索':(expanded?'在地图中查看':'地图 · ')+placeName(s.place)} →</button>`:'<span class="scene-map-note">独立图页 · 暂未收入地图册</span>';
   const number=i=>String(i+1).padStart(2,'0');
   const people=ids=>ids.map(id=>`<button data-open="${id}">${name(id)} ↗</button>`).join('');
   let current=0,lastOpener=null;
-  document.querySelector('#scene-grid').innerHTML=scenes.map((s,i)=>`<article class="scene-card"><button class="scene-image-button" data-scene-open="${s.id}" aria-label="展开${s.title}场景大图"><img src="assets/${s.image}.webp" alt="${s.alt}" width="1536" height="1024" loading="lazy"><span class="scene-image-label">展开图页 ↗</span></button><div class="scene-card-caption"><div class="scene-card-heading"><span class="scene-number">景 / ${number(i)}</span><span>${s.tag}</span></div><button class="scene-title-button" data-scene-open="${s.id}"><h3>${s.title}</h3></button><p>${s.lead}</p><div class="scene-card-bottom"><div class="scene-people">${people(s.people)}</div><button class="scene-map-link" data-visit-place="${s.place}">地图 · ${placeName(s.place)} →</button></div></div></article>`).join('');
+  document.querySelector('#scene-grid').innerHTML=scenes.map((s,i)=>`<article class="scene-card"><button class="scene-image-button" data-scene-open="${s.id}" aria-label="展开${s.title}场景大图"><img src="assets/${s.image}.webp" alt="${s.alt}" width="1536" height="1024" loading="lazy"><span class="scene-image-label">展开图页 ↗</span></button><div class="scene-card-caption"><div class="scene-card-heading"><span class="scene-number">景 / ${number(i)}</span><span>${s.tag}</span></div><button class="scene-title-button" data-scene-open="${s.id}"><h3>${s.title}</h3></button><p>${s.lead}</p><div class="scene-card-bottom"><div class="scene-people">${people(s.people)}</div>${mapLink(s)}</div></div></article>`).join('');
   function updateUrl(id){
     const url=new URL(location.href);
     if(id){url.searchParams.set('scene',id);url.searchParams.delete('character');url.hash='scenes';}
@@ -19,7 +20,7 @@
     document.querySelector('#scene-share-status').textContent='';
     document.querySelector('#scene-viewer-title').textContent=s.title;
     const img=document.querySelector('#scene-viewer-image');img.src=`assets/${s.image}.png`;img.alt=s.alt;
-    document.querySelector('#scene-viewer-copy').innerHTML=`<div class="eyebrow">SCENE ${number(current)} / ${s.tag}</div><p class="scene-viewer-en">${s.en}</p><h3>${s.lead}</h3><p>${s.text}</p><span class="scene-people-label">沿着人物继续读</span><div class="scene-people">${people(s.people)}</div><button class="scene-visit" data-visit-place="${s.place}">${s.id==='palanship'?'去后来建立的命莲寺':'在地图中查看'+placeName(s.place)} →</button><details class="scene-sources"><summary>原作线索与绘制说明</summary><p>${s.basis}</p>${s.sources.map(([title,url])=>`<a href="${url}" target="_blank" rel="noopener noreferrer">${title} ↗</a>`).join('')}</details>`;
+    document.querySelector('#scene-viewer-copy').innerHTML=`<div class="eyebrow">SCENE ${number(current)} / ${s.tag}</div><p class="scene-viewer-en">${s.en}</p><h3>${s.lead}</h3><p>${s.text}</p><span class="scene-people-label">沿着人物继续读</span><div class="scene-people">${people(s.people)}</div>${mapLink(s,true)}<details class="scene-sources"><summary>原作线索与绘制说明</summary><p>${s.basis}</p>${s.sources.map(([title,url])=>`<a href="${url}" target="_blank" rel="noopener noreferrer">${title} ↗</a>`).join('')}</details>`;
     document.querySelector('#scene-viewer-position').textContent=`${number(current)} / ${String(scenes.length).padStart(2,'0')}`;
     const download=document.querySelector('#scene-viewer-download');download.href=`assets/${s.image}.png`;download.download=`幻想乡场景-${s.title}.png`;
     document.querySelector('#scene-share-url').hidden=true;

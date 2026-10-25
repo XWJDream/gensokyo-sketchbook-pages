@@ -162,3 +162,32 @@ window.GENSOKYO.bonds.push(
   {title:'航程所向，是一次重逢',label:'复活的旅程 / 白莲与水蜜',ids:['byakuren','murasa'],relation:'船长为解除封印而奔走。',description:'星莲船里的飞行航船通向魔界，也通向白莲的归来。航程之后的寺院生活，则让人与妖怪共处的愿望有了新的舞台。',color:'violet',symbol:'舟'},
   {title:'从佐渡越过结界',label:'旧识 / 鵺与猯藏',ids:['nue','mamizou'],relation:'一封邀请，把外界与幻想乡连起来。',description:'神灵庙的故事中，鵺向佐渡旧识寻求助力。猯藏来到幻想乡后留下，也逐渐走入寺院与人里的后续故事。',color:'red',symbol:'狸'}
 );
+// 复苏者与云上的来客：阅读入口不替独立空间虚构地图坐标。
+Object.assign(window.GENSOKYO.characterLinks, {
+  miko:{place:null,related:['futo','tojiko','seiga','byakuren'],work:'th13',line:'沿神灵庙的神灵与复苏线索，读到第六关的圣人，再看心绮楼中的宗教家。'},
+  futo:{place:null,related:['miko','tojiko'],work:'th13',line:'从神灵庙第五关与尸解故事读起，留意风水、舟与皿的战斗意象。'},
+  tojiko:{place:null,related:['miko','futo'],work:'th13',line:'从第五关道中与神子的战斗，认识以亡灵形态同行的旧日伙伴。'},
+  seiga:{place:null,related:['yoshika','miko'],work:'th13',line:'第三关的守卫引出第四关的操纵者，再沿道教传授追溯她与神子的旧缘。'},
+  yoshika:{place:null,related:['seiga'],work:'th13',line:'从墓地入口的第三关读到青娥，区分被操纵的僵尸与寺院修行者的身份。'},
+  kyouko:{place:'myouren',related:['byakuren','mystia'],work:'th13',line:'从第二关山门前的问候认识山彦，再读她与米斯蒂娅的鸟兽伎乐活动。'},
+  tenshi:{place:null,related:['iku','reimu','yukari'],work:'th105',line:'从天气与地震的调查出发，循各角色的故事走向天界与绯想之剑。'},
+  iku:{place:null,related:['tenshi'],work:'th105',line:'留意绯想天中的地震预告与龙神消息，认识云海之间的使者。'}
+});
+window.GENSOKYO.characterLinks.byakuren.related.push('kyouko','miko');
+window.GENSOKYO.characterLinks.mystia.related.push('kyouko');
+window.GENSOKYO.books.push({id:'th105',number:'10.5',year:'2008',name:'东方绯想天',jp:'東方緋想天',en:'Scarlet Weather Rhapsody.',mark:'绯<br>天',theme:'flowers',mood:'天气 / 地震 / 云上的来客',description:'反常天气笼罩幻想乡，地震的预兆又让调查变得急迫。沿不同人物的故事，认识传递消息的衣玖与介入异变的天子，读到天界与地上彼此牵动的关系。',ids:['tenshi','iku','reimu','yukari'],caption:'天气、要石与绯想之剑，把故事带向云上。',url:'https://tasofro.net/touhou105/',reference:'https://thwiki.cc/东方绯想天'});
+Object.assign(window.GENSOKYO.books.find(b=>b.id==='th13'),{
+  mood:'神灵 / 复苏 / 佛与道的相遇',
+  description:'小小神灵在幻想乡各处出现，调查者从命莲寺的山门、墓地走向沉睡者复苏之处。山彦、僵尸、邪仙与古代的圣人逐一登场，带出信仰、欲望与不老之法的故事。',
+  ids:['kyouko','yoshika','seiga','tojiko','futo','miko','mamizou'],
+  caption:'本篇从清晨山门走向神子的复苏，Extra 再迎接佐渡来客。'
+});
+window.GENSOKYO.books.find(b=>b.id==='th135').ids.push('miko','futo');
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+  {title:'复苏之后，仍然同行',label:'旧日的伙伴 / 神子、布都与屠自古',ids:['miko','futo','tojiko'],relation:'相同的等待，不同的存在形态。',description:'布都与屠自古侍奉神子，漫长沉睡之后以不同形态再次行动。尸解仙与亡灵的区别，是阅读这组伙伴时不能略去的部分。',color:'violet',symbol:'道'},
+  {title:'额前的符纸，身后的命令',label:'操纵者与僵尸 / 青娥与芳香',ids:['seiga','yoshika'],relation:'墓地的守卫，把来客引向操纵者。',description:'芳香依青娥的指令行动；神灵庙第三、四关让这段关系逐渐显现。画中的温和气氛为编辑想象，不抹去原作中操纵与被操纵的事实。',color:'green',symbol:'符'},
+  {title:'回声，也可以成为一首歌',label:'鸟兽伎乐 / 响子与米斯蒂娅',ids:['kyouko','mystia'],relation:'山彦与夜雀组成朋克摇滚组合。',description:'寺院扫除与夜间小摊之外，两位妖怪还有共同的舞台。反射声音的能力与夜雀的歌声，在鸟兽伎乐的活动中相遇。',color:'red',symbol:'声'},
+  {title:'云海之间的两种步调',label:'异变中的相遇 / 天子与衣玖',ids:['tenshi','iku'],relation:'天人的行动，与使者传来的预兆。',description:'天子与衣玖在绯想天中各有立场：一位介入地上的异变，一位留意龙神与地震的消息。两人有交集，不宜简化成主人与女仆的关系。',color:'violet',symbol:'云'},
+  {title:'不同的信仰，同一个舞台',label:'宗教家 / 神子与白莲',ids:['miko','byakuren'],relation:'佛与道的立场，在后续故事里交锋。',description:'命莲寺与神子的故事在神灵庙相接，心绮楼又让宗教家为人心与信仰较量。阅读双方的想法，比简单划成善恶阵营更接近原作的趣味。',color:'green',symbol:'信'}
+);

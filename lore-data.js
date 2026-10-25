@@ -26,3 +26,5 @@ window.GENSOKYO_LORE = [
 ];
 
 window.GENSOKYO_LORE.find(p=>p.id==='village').people=['kosuzu','akyuu','keine','mamizou','marisa','alice'];
+window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('miko','futo');
+window.GENSOKYO_LORE.find(p=>p.id==='faith').sources.push(['神子 · 复苏与信仰的另一条线索','https://danmaku.jp/archive/character/c024/']);
