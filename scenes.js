@@ -8,7 +8,17 @@
   const number=i=>String(i+1).padStart(2,'0');
   const people=ids=>ids.map(id=>`<button data-open="${id}">${name(id)} ↗</button>`).join('');
   let current=0,lastOpener=null;
-  document.querySelector('#scene-grid').innerHTML=scenes.map((s,i)=>`<article class="scene-card"><button class="scene-image-button" data-scene-open="${s.id}" aria-label="展开${s.title}场景大图"><img src="assets/${s.image}.webp" alt="${s.alt}" width="1536" height="1024" loading="lazy"><span class="scene-image-label">展开图页 ↗</span></button><div class="scene-card-caption"><div class="scene-card-heading"><span class="scene-number">景 / ${number(i)}</span><span>${s.tag}</span></div><button class="scene-title-button" data-scene-open="${s.id}"><h3>${s.title}</h3></button><p>${s.lead}</p><div class="scene-card-bottom"><div class="scene-people">${people(s.people)}</div>${mapLink(s)}</div></div></article>`).join('');
+  document.querySelector('#scene-grid').innerHTML=scenes.map((s,i)=>`<article class="scene-card" data-scene-id="${s.id}"><button class="scene-image-button" data-scene-open="${s.id}" aria-label="展开${s.title}场景大图"><img src="assets/${s.image}.webp" alt="${s.alt}" width="1536" height="1024" loading="lazy"><span class="scene-image-label">展开图页 ↗</span></button><div class="scene-card-caption"><div class="scene-card-heading"><span class="scene-number">景 / ${number(i)}</span><span>${s.tag}</span></div><button class="scene-title-button" data-scene-open="${s.id}"><h3>${s.title}</h3></button><p>${s.lead}</p><div class="scene-card-bottom"><div class="scene-people">${people(s.people)}</div>${mapLink(s)}</div></div></article>`).join('');
+  const newestBatch=Math.max(...scenes.map(s=>Number(s.batch)||0));
+  const newSceneIds=new Set(scenes.filter(s=>Number(s.batch)===newestBatch).map(s=>s.id));
+  function filterScenes(value){
+    let count=0;
+    document.querySelectorAll('.scene-card').forEach(card=>{card.hidden=value==='new'&&!newSceneIds.has(card.dataset.sceneId);if(!card.hidden)count++;});
+    document.querySelectorAll('[data-scene-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.sceneFilter===value)));
+    document.querySelector('#scene-result-count').textContent='共 '+count+' 幅场景';
+  }
+  document.querySelectorAll('[data-scene-filter]').forEach(button=>button.addEventListener('click',()=>filterScenes(button.dataset.sceneFilter)));
+  filterScenes('all');
   function updateUrl(id){
     const url=new URL(location.href);
     if(id){url.searchParams.set('scene',id);url.searchParams.delete('character');url.hash='scenes';}

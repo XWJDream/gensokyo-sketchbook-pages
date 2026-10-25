@@ -191,3 +191,26 @@ window.GENSOKYO.bonds.push(
   {title:'云海之间的两种步调',label:'异变中的相遇 / 天子与衣玖',ids:['tenshi','iku'],relation:'天人的行动，与使者传来的预兆。',description:'天子与衣玖在绯想天中各有立场：一位介入地上的异变，一位留意龙神与地震的消息。两人有交集，不宜简化成主人与女仆的关系。',color:'violet',symbol:'云'},
   {title:'不同的信仰，同一个舞台',label:'宗教家 / 神子与白莲',ids:['miko','byakuren'],relation:'佛与道的立场，在后续故事里交锋。',description:'命莲寺与神子的故事在神灵庙相接，心绮楼又让宗教家为人心与信仰较量。阅读双方的想法，比简单划成善恶阵营更接近原作的趣味。',color:'green',symbol:'信'}
 );
+Object.assign(window.GENSOKYO.characterLinks,{
+  wakasagihime:{place:'lake',related:['kagerou','sekibanki'],work:'th14',line:'从辉针城第一关的雾之湖读起，认识淡水人鱼与逸散魔力带来的变化。'},
+  sekibanki:{place:'village',related:['wakasagihime','kagerou'],work:'th14',line:'从第二关柳之运河的遭遇，回看她混在人类之间的生活与飞头能力。'},
+  kagerou:{place:'bamboo',related:['wakasagihime','sekibanki'],work:'th14',line:'第三关的满月竹林，适合区分狼化的力量与她始终保留的冷静。'},
+  benben:{place:null,related:['yatsuhashi','raiko'],work:'th14',line:'从第四关与 Extra 道中，读到古乐器觉醒、称作姐妹与寻找新魔力的经过。'},
+  yatsuhashi:{place:null,related:['benben','raiko'],work:'th14',line:'沿第四关的分支与九十九姐妹的设定，留意古琴付丧神对自由的向往。'},
+  seija:{place:null,related:['shinmyoumaru'],work:'th14',line:'先读辉针城第五关的翻转，再沿弹幕天邪鬼认识反则道具与追捕。'},
+  shinmyoumaru:{place:null,related:['seija','reimu'],work:'th14',line:'从第六关的万宝槌与代价读起，分清她的愿望和正邪灌输给她的说法。'},
+  raiko:{place:null,related:['benben','yatsuhashi'],work:'th14',line:'Extra 关卡的节拍之后，是摆脱万宝槌依赖、帮助其他付丧神的故事。'}
+});
+window.GENSOKYO.characterLinks.reimu.related.push('shinmyoumaru');
+window.GENSOKYO.books.push({id:'th14',number:'14',year:'2013',name:'东方辉针城',jp:'東方輝針城',en:'Double Dealing Character.',mark:'逆<br>城',theme:'feast',mood:'道具 / 下克上 / 翻转的城',description:'惯用的道具开始异动，平日安静的妖怪也被卷入骚动。调查从雾之湖与竹林伸向风暴中的逆城，逐渐揭开天邪鬼、小人和万宝槌彼此牵连的经过。',ids:['wakasagihime','sekibanki','kagerou','benben','yatsuhashi','seija','shinmyoumaru','raiko'],caption:'本篇读到小槌的代价，Extra 再听付丧神的新节拍。',url:'https://www16.big.or.jp/~zun/html/th14top.html',reference:'https://thwiki.cc/东方辉针城'});
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+  {title:'湖水与竹影之间的来往',label:'友人 / 若鹭姬与影狼',ids:['wakasagihime','kagerou'],relation:'不同的生活场所，也可以拥有交情。',description:'一位在雾之湖唱歌捡石，一位独居迷途竹林。原作资料中的友人关系让两处场景有了人物上的联系；图页中的湖边相聚是本册创作情境。',color:'green',symbol:'湖'},
+  {title:'同时获得声音的姐妹',label:'同期觉醒 / 弁弁与八桥',ids:['benben','yatsuhashi'],relation:'以姐妹相称，彼此并无血缘。',description:'琵琶与古琴在相近时刻成为付丧神，一位扮演成熟的姐姐，一位扮演活泼的妹妹。她们的关系来自共同的觉醒与行动，并非人的家族传承。',color:'violet',symbol:'弦'},
+  {title:'为下一次演奏留下力量',label:'传授与帮助 / 雷鼓与九十九姐妹',ids:['raiko','benben','yatsuhashi'],relation:'换一个来源，继续以自己的意志发声。',description:'万宝槌魔力回收时，付丧神可能重新变回器物。雷鼓寻找外界新魔力的办法，也成为九十九姐妹继续存在的重要线索。三人图中的合奏是想象排练。',color:'red',symbol:'拍'},
+  {title:'同一场异变，不同的愿望',label:'煽动与利用 / 正邪与针妙丸',ids:['seija','shinmyoumaru'],relation:'万宝槌的力量，连接起动机并不相同的两人。',description:'正邪向针妙丸灌输虚假的历史，让小人的愿望进入自己的颠覆计划。两人后来仍有复杂来往，不能只用永远亲密或永远决裂概括所有作品。',color:'violet',symbol:'逆'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'付丧神',en:'Tsukumogami',text:'器物产生自我意识而成为妖怪，是理解小伞、九十九姐妹与雷鼓的线索。具体的觉醒条件要按角色与作品阅读；辉针城中的万宝槌影响，不能直接当作所有付丧神唯一的诞生方式。',source:'https://thwiki.cc/付丧神'},
+  {term:'万宝槌',en:'The Miracle Mallet',text:'与小人族有关的秘宝。针妙丸使用它引发的魔力变化，是辉针城异变的关键；使用力量伴随代价，也影响到道具与周围妖怪。它不是不受限制、随时许愿的普通道具。',source:'https://thwiki.cc/万宝槌'}
+);

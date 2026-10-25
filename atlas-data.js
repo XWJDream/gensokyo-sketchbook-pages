@@ -52,3 +52,8 @@ for(const [id,ids,names] of [
 }
 window.GENSOKYO_ATLAS.places.find(p=>p.id==='myouren').residents.push('kyouko');
 window.GENSOKYO_ATLAS.places.find(p=>p.id==='myouren').people.push('幽谷响子');
+for(const [id,resident,name] of [['lake','wakasagihime','若鹭姬'],['bamboo','kagerou','今泉影狼'],['village','sekibanki','赤蛮奇']]){
+  const place=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);
+  if(!place.residents.includes(resident))place.residents.push(resident);
+  if(!place.people.includes(name))place.people.push(name);
+}
