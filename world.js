@@ -342,3 +342,42 @@ window.GENSOKYO.glossary.push(
  {term:'后户与背后之门',en:'Back doors & the Land of the Back Door',text:'隐岐奈能在万物背面开启门扉，后户之国则是与她相关的独立空间。门扉可关联生命力、精神力和行动路线；它不等同于博丽大结界，也不能把画页里的任意一扇门当成官方通路。',source:'https://danmaku.jp/archive/character/c059/'},
  {term:'二童子的两种力量',en:'Vitality & mental energy',text:'舞的背后起舞诱导生命力，里乃则诱导精神力。原为人类的两人已被改变，几乎不记得过去；“童子”是角色关系与仪式中的称谓，不能据此外推她们的血缘或普通人类年龄。',source:'https://danmaku.jp/archive/character/c043/'}
 );
+
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ rinnosuke:{place:'kourindou',related:['marisa','sumireko','reimu'],work:'kourindou-book',line:'从香霖堂早期的旧物故事读起，再沿后续连载看店主与外界来客的变化。'},
+ miyoi:{place:'village',related:['suika','reimu','marisa'],work:'lotus-eaters',line:'从醉蝶华第一卷的人里酒馆与传闻入门，留意记忆、酒器与店员的来历。'},
+ ichirin:{place:'myouren',related:['unzan','byakuren','murasa','shou'],work:'th12',line:'从星莲船第三关认识守护者，再沿心绮楼与凭依华看寺院伙伴的后续活动。'},
+ unzan:{place:'myouren',related:['ichirin','byakuren','murasa'],work:'th12',line:'与一轮共同登场的云山，有自己的性格与力量；后续作品也描写他的寺院生活。'},
+ kasen:{place:null,related:['reimu','sumireko','komachi','okina'],work:'th145',line:'茨歌仙的日常之外，可由深秘录的都市传说调查认识她与堇子的联系。'},
+ sumireko:{place:'kourindou',related:['rinnosuke','kasen','reimu','doremy'],work:'th145',line:'从深秘录的外界来客读起；地图入口仅关联后来打工的香霖堂，不表示她住在幻想乡。'},
+ joon:{place:null,related:['shion','byakuren'],work:'th155',line:'从凭依华的完全凭依事件认识姐妹，再按作品区分女苑修行与后续活动。'},
+ shion:{place:null,related:['joon','tenshi'],work:'th155',line:'比较姐妹的两种不幸，也可沿茨歌仙的后续来往阅读她与天子的结伴。'}
+});
+window.GENSOKYO.characterLinks.marisa.related.push('rinnosuke');
+window.GENSOKYO.characterLinks.reimu.related.push('kasen','miyoi','sumireko');
+window.GENSOKYO.characterLinks.byakuren.related.push('ichirin','unzan','joon');
+window.GENSOKYO.characterLinks.suika.related.push('miyoi');
+window.GENSOKYO.characterLinks.tenshi.related.push('shion');
+window.GENSOKYO.characterLinks.doremy.related.push('sumireko');
+window.GENSOKYO.books.find(b=>b.id==='th12').ids.push('ichirin','unzan');
+window.GENSOKYO.books.find(b=>b.id==='th135').ids.push('ichirin','unzan');
+window.GENSOKYO.books.push(
+ {id:'th145',number:'14.5',year:'2015',name:'东方深秘录',jp:'東方深秘録',en:'Urban Legend in Limbo.',mark:'怪<br>谈',theme:'night',mood:'都市传说 / 外界来客 / 灵异珠',description:'都市传说在幻想乡具现，灵异珠的流通又引来外面世界的高中生。沿不同角色的调查，认识堇子的动机与华扇的行动，并把都市传说的说法和实际发生的事件分开阅读。',ids:['sumireko','kasen','reimu','ichirin'],caption:'2015 年的格斗作品；外界、结界与来访方式需结合后续故事继续理解。',url:'https://tasofro.net/touhou145/',reference:'https://thwiki.cc/东方深秘录'},
+ {id:'th155',number:'15.5',year:'2017',name:'东方凭依华',jp:'東方憑依華',en:'Antinomy of Common Flowers.',mark:'凭<br>花',theme:'flowers',mood:'完全凭依 / 搭档 / 梦与现实',description:'完全凭依让不同角色结成搭档，主役与下仆的切换又带来计划、争执和反转。依神姐妹与梦境住民的行动，让这场调查同时牵动现实与梦中的立场。',ids:['joon','shion','doremy','sumireko','tenshi','ichirin'],caption:'原作初发于 2017 年，Steam 版于 2018 年发行；不把两者混为同一日期。',url:'https://tasofro.net/touhou155/',reference:'https://thwiki.cc/东方凭依华'},
+ {id:'kourindou-book',number:'',code:'BOOK / 05',year:'2010 · 单行本',name:'东方香霖堂',jp:'東方香霖堂',en:'Curiosities of Lotus Asia.',mark:'旧<br>物',theme:'green',mood:'小说 / 旧货店 / 对外界的推想',description:'ZUN 撰写的故事，以霖之助经营的旧货店为观察窗口。外界器物、人物来往与店主的推理，让读者从日常理解幻想乡；这里链接早期单行本，不将后来堇子的打工情节归入 2010 年这本书。',ids:['rinnosuke','marisa','reimu'],caption:'本入口为 2010 年单行本；后续在外来韦编等处继续连载。',url:'https://www.kadokawa.co.jp/product/201007000662/',reference:'https://thwiki.cc/东方香霖堂'},
+ {id:'lotus-eaters',number:'',code:'BOOK / 06',year:'2020 · 第一卷',name:'东方醉蝶华',jp:'東方酔蝶華',en:'Lotus Eaters.',mark:'酒<br>话',theme:'feast',mood:'漫画 / 鲵吞亭 / 记忆与传闻',description:'ZUN 原作、水炊绘制的官方漫画，从人里酒馆与客人的传闻走近美宵。料理、闲谈与记忆中的异常，让普通夜晚也成为调查的开端。',ids:['miyoi','suika','reimu','kasen'],caption:'此处为第一卷的出版资料，2020 年发行，不代表漫画开始连载的时间。',url:'https://www.kadokawa.co.jp/product/322005000454',reference:'https://thwiki.cc/东方醉蝶华'}
+);
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'守护，也被另一人理解',label:'寺院伙伴 / 一轮、云山与白莲',ids:['ichirin','unzan','byakuren'],relation:'两位互相帮助的伙伴，同在白莲门下。',description:'一轮与云山的来历、守护和寺院生活各有原作线索。他们情同父女而非确认的血缘父女；云山也不是一轮的无生命法具。白莲是两人敬仰的修行引路人。',color:'violet',symbol:'云'},
+ {title:'知道名字之后，怎样使用',label:'旧物与来客 / 霖之助、魔理沙与堇子',ids:['rinnosuke','marisa','sumireko'],relation:'店主的能力、长期交情与外界常识，在同一间店相遇。',description:'魔理沙与霖之助有旧日交情，堇子后来在店中打工，帮助理解外界器物。这条关系跨越早期香霖堂与后续连载，不把三人的全部故事都归入同一本单行本。',color:'green',symbol:'物'},
+ {title:'又一句劝告，又一次帮忙',label:'指导与往来 / 华扇与灵梦',ids:['kasen','reimu'],relation:'严肃的提醒，也来自对日常的关心。',description:'华扇常到神社帮助或指导灵梦，灵梦也会嫌她唠叨。两人的往来贯穿茨歌仙；不能只因劝告与修行，就推定所有时候都存在正式的师徒职位关系。',color:'red',symbol:'劝'},
+ {title:'酒器之外，还有未讲完的来历',label:'酒馆线索 / 美宵与萃香',ids:['miyoi','suika'],relation:'美宵的座敷童子身份，与萃香的酒器相关。',description:'醉蝶华逐渐展开美宵、酒器和鲵吞亭的联系。她在酒馆工作，不等于普通人类店员；人物的记忆与立场也要沿漫画具体情节理解。',color:'green',symbol:'亭'},
+ {title:'同为不幸，却有两种来路',label:'姐妹 / 女苑与紫苑',ids:['joon','shion'],relation:'妹妹使人耗财，姐姐让自己也陷入不幸。',description:'依神姐妹共同参与凭依华的异变，能力与性格却截然不同。光鲜与寒酸的衣装是辨认线索，不用来直接替代对行为、动机和后续变化的阅读。',color:'violet',symbol:'双'},
+ {title:'强运容得下的同伴',label:'后续结伴 / 天子与紫苑',ids:['tenshi','shion'],relation:'天子的强运，让这段相处有了不同的可能。',description:'凭依华之后，两人曾一起行动，茨歌仙也有后续描写。结伴不意味着紫苑永久居住天界，也不能把天子对不幸的抗性推成所有人都不再受影响。',color:'red',symbol:'运'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'用途与使用方法',en:'Purpose & operation',text:'霖之助可以判别物品的名称与用途，却不能直接知道操作方法。这既适合经营外界旧物，也留下推理与误解的空间；店主的一切解释并不自动成为原作世界的客观定论。',source:'https://thwiki.cc/森近霖之助'},
+ {term:'完全凭依',en:'Perfect possession',text:'凭依华中形成搭档、切换主役与下仆的现象，与梦境世界也有联系。它是作品中有具体机制与情境的异常，不等同于所有附身传说，也不能把每组搭档视作永久的主从身份。',source:'https://thwiki.cc/东方凭依华/故事背景'}
+);

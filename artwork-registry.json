@@ -95,9 +95,17 @@
     "sha256": "8bb77866a75874f81961a8e97214e7712d49276ee1c64d6ad94fe0c141210f1a",
     "size": 2840221
   },
+  "ichirin.png": {
+    "sha256": "4625d954a72e9f803bf1f87050f89d2751b00d64f5a200c2477440b24dd8dd56",
+    "size": 2911720
+  },
   "iku.png": {
     "sha256": "8f3a044041491a1e3b30dfa7e95873a60fd026f66f23853ef2e863c23df7b262",
     "size": 3252443
+  },
+  "joon.png": {
+    "sha256": "39560e9f5b6e60899749b64bb2ea000df153173ff1ef0eea0192069a995329a4",
+    "size": 2872314
   },
   "junko.png": {
     "sha256": "209088744e1fa15b1732285e58c39b6bef94b5525b91777e8010c8a6f1a0b2d1",
@@ -114,6 +122,10 @@
   "kanako.png": {
     "sha256": "367998edde287d5edfc79ece211294f3638bb91fe408c97f67c9eedcdb5b9297",
     "size": 2827880
+  },
+  "kasen.png": {
+    "sha256": "e016198a78defb9ec0437b695e7e3ca36d66b8254812c3e7c8688c59818eea4d",
+    "size": 2879910
   },
   "keine.png": {
     "sha256": "92eb6f59cf879ad92f15d7f67e31dd3fc2dbaf3b1e0ba5f91193b7db5f665b23",
@@ -199,6 +211,10 @@
     "sha256": "85bdcdedf7fbdd00283ede0fdebc757d31b0dbfc275adf75f9a5ee4fcee945e4",
     "size": 2539740
   },
+  "miyoi.png": {
+    "sha256": "124329c391fbf4f62eff368e6609b24d995e529a2dc9c9664f2c3b7a71e003e7",
+    "size": 2689245
+  },
   "mokou.png": {
     "sha256": "0e279b8b5cb2a3f2af569912ecfce14e395e7c95df7b87a7c36f2745cf23c726",
     "size": 2781686
@@ -275,6 +291,10 @@
     "sha256": "5e7c0b73ebf78b757eb7ac65183dee683f190a23abfe6b42e6cf93275890d1c4",
     "size": 2661094
   },
+  "rinnosuke.png": {
+    "sha256": "ad232db15f8d8b32559b157f83a88bd8efab046e0134fda91c9beed5a8dcba59",
+    "size": 2640070
+  },
   "rumia-soft-v3.png": {
     "sha256": "6459aa9f6a1a7db43a4eefc6fff1fd0f1e2b97a4245cb6f19a204131fc4024ea",
     "size": 2431043
@@ -335,6 +355,10 @@
     "sha256": "82defa32b9192ec93fc7b7be90ed7a7ef328caa55ceed4eda99b250cb6d7038f",
     "size": 3734085
   },
+  "scene-geidontei-supper.png": {
+    "sha256": "6329b97b5dcd98512ed44f7de4de0ee49c5131786cf2217b0b40c1005fcd85f3",
+    "size": 3065045
+  },
   "scene-heaven.png": {
     "sha256": "84668f9d463183fce37a29915d5f59e631ee73077cf39d5e94840d6f9f00dcea",
     "size": 3084731
@@ -342,6 +366,10 @@
   "scene-inverted-castle.png": {
     "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
     "size": 2946888
+  },
+  "scene-kourindou-objects.png": {
+    "sha256": "f9cc75e08c52a32cdcbf9c1aac186c65fed845849762f67f6992d11b17870b50",
+    "size": 3035761
   },
   "scene-lily-valley-hill.png": {
     "sha256": "a404949204e1aced5c6d392f0a35f0f5d2a8e03cab9e83aa3b1015abf018ac09",
@@ -383,6 +411,10 @@
     "sha256": "c9a956698e68f1ab81724ce8ad9f3c1f7a35029960df482ed2909b3c10bc741a",
     "size": 3637474
   },
+  "scene-sisters-riverside.png": {
+    "sha256": "88d7f2dff67fd12c6e1e722dbf3eb6e647b97eef1a136e984cfd48560364be71",
+    "size": 3500360
+  },
   "scene-spring-announcement.png": {
     "sha256": "f7af18e9a82aeed5be555a6cb86bc1f52dcadbffe248608da8d9be99203547e8",
     "size": 3555602
@@ -394,6 +426,10 @@
   "scene-suzunaan.png": {
     "sha256": "57837e6927e783a18c3b592ebe1cd8be1321cc1748269687152f0bd748ef8a54",
     "size": 3604374
+  },
+  "scene-temple-cloud.png": {
+    "sha256": "55797c75fe14825c2a8d11e4ccf02415b96047d2a1002312330e4dcbeb04dd20",
+    "size": 3331516
   },
   "scene-temple-morning.png": {
     "sha256": "1b12b2ae97c6a04a157ca7ea4f7ce4169d10be2754c9e26e1016bee405267a55",
@@ -431,6 +467,10 @@
     "sha256": "8483a750f1e27fa5550cb3ee24e7657399038f8dfbf8b26d62593c8b2d5e95d6",
     "size": 3092707
   },
+  "shion.png": {
+    "sha256": "4114f774ba7bcfbdcc9c823068b5b88e75a6f6f1829337c01f62711908cd254b",
+    "size": 2992765
+  },
   "shizuha.png": {
     "sha256": "252a9f45a29c1e4583252154b188e04b27c036fed08884368b71f8e37ffa77c5",
     "size": 2593907
@@ -446,6 +486,10 @@
   "suika.png": {
     "sha256": "00c3e0332026799b234727250dc0bb9d862a0e270006ced04beaeeb7d9a57a4d",
     "size": 2880608
+  },
+  "sumireko.png": {
+    "sha256": "7f985818e75b05396fc3682497652f70d9b894c45fe0b516a0673919bd65473e",
+    "size": 2943510
   },
   "sunny.png": {
     "sha256": "e36f387a0ece11e8ee4042196f42c7b63e1e425e32934596356793b1c25a473b",
@@ -470,6 +514,10 @@
   "toyohime.png": {
     "sha256": "de26b052fbd154579e3198f9a4e22780e011945e55b305dad98cf7df33810e07",
     "size": 2849981
+  },
+  "unzan.png": {
+    "sha256": "7391b1cc857744d4d2d47aef28eece4cdfc6e60c9de944192ae37f56e8bee642",
+    "size": 2725540
   },
   "utsuho.png": {
     "sha256": "7490288925e5472dcd014309c36831bab30847f52424213b92ae34e895aa2ff2",

@@ -48,3 +48,9 @@ window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('aunn','narumi','okina'
 window.GENSOKYO_LORE.find(p=>p.id==='faith').sources.push(['阿吽 · 神佛与信仰场所的守护','https://danmaku.jp/archive/character/c004/']);
 window.GENSOKYO_LORE.find(p=>p.id==='boundary').people.push('okina');
 window.GENSOKYO_LORE.find(p=>p.id==='moon').people.push('toyohime');
+
+window.GENSOKYO_LORE.find(p=>p.id==='village').people.push('rinnosuke','miyoi');
+window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('ichirin','unzan');
+window.GENSOKYO_LORE.find(p=>p.id==='boundary').people.push('sumireko','kasen');
+window.GENSOKYO_LORE.find(p=>p.id==='dreams').people.push('sumireko');
+window.GENSOKYO_LORE.find(p=>p.id==='dreams').sources.push(['堇子 · 来访与超能力','https://danmaku.jp/archive/character/c008/']);

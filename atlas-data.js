@@ -84,3 +84,10 @@ for(const [id,ids,names] of [
  ['mountain',['nemuno'],['坂田合欢（山麓圣域）']],
  ['sunfield',['eternity'],['拉尔瓦（冬季以外活动）']]
 ]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}
+
+// 第十三批：区域导览与工作关联，不等同于所有人物的固定住址。
+for(const [id,ids,names] of [
+ ['kourindou',['rinnosuke','sumireko'],['森近霖之助','宇佐见堇子（后来打工）']],
+ ['myouren',['ichirin','unzan'],['云居一轮','云山']],
+ ['village',['miyoi'],['奥野田美宵（鲵吞亭工作）']]
+]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}
