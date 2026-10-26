@@ -1,0 +1,40 @@
+name: Check full-site original artwork
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  originals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and warm full-resolution artwork
+        shell: python
+        run: |
+          import json,hashlib,urllib.request,concurrent.futures
+          from pathlib import Path
+          registry=json.loads(Path('artwork-registry.json').read_text())
+          base='https://gensokyo-sketchbook.silverjoy8.chatgpt.site/'
+          with urllib.request.urlopen(base+'characters.js?v=cast09',timeout=30) as response:
+              assert "id:'hatate'" in response.read().decode('utf-8')
+          def verify(item):
+              name,entry=item
+              request=urllib.request.Request(base+'assets/'+name,method='HEAD')
+              for attempt in range(2):
+                  try:
+                      with urllib.request.urlopen(request,timeout=40) as response:
+                          assert response.status==200,name
+                          assert response.headers.get('Content-Type')=='image/png',name
+                          assert int(response.headers.get('Content-Length'))==entry['size'],name
+                          assert response.headers.get('ETag')=='"'+entry['sha256']+'"',name
+                      return name
+                  except Exception:
+                      if attempt:raise
+          with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+              verified=list(pool.map(verify,registry.items()))
+          print(f'{len(verified)} original artwork routes verified and cached')
+          for name in ['lunasa.png','scene-tengu-notebook.png','scene-bamboo-lantern-v2.png']:
+              with urllib.request.urlopen(base+'assets/'+name,timeout=40) as response:
+                  assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
+              print('Exact original bytes: '+name)

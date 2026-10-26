@@ -1,0 +1,402 @@
+{
+  "akyuu.png": {
+    "sha256": "6926684c7ee43ea5c0bde20eb5b934b1593b188fbf43b6cd17cbd28d23cd5ab1",
+    "size": 2487733
+  },
+  "alice-soft-v3.png": {
+    "sha256": "c80361e2325ab8446b4734b9aa2120b2207dd1d57badb2bb3d8505d467d16f00",
+    "size": 2509866
+  },
+  "atlas-bamboo.png": {
+    "sha256": "4aad4217adfc6d626f03ceffd57c6744634127dde73868303790701db6f65431",
+    "size": 4393372
+  },
+  "atlas-mountain.png": {
+    "sha256": "3a1ef0bd5a270cc615c810bac1e60a3fdc2793b35834a4e44c37af9203dd7e25",
+    "size": 3916033
+  },
+  "atlas-nether.png": {
+    "sha256": "3d2b1bfdf4d6857724d4addf2fab395869f1217fae3f8cd4bdad24ad50d24344",
+    "size": 2966530
+  },
+  "atlas-scarlet.png": {
+    "sha256": "a21104bb9301f9d2f88e863c12b839b9d19bbc76ae24c80895d23dfc5a6669f0",
+    "size": 3612983
+  },
+  "atlas-underground.png": {
+    "sha256": "bc4c33a07a8ae16f66d589e4719216b9eadeb7d591491289c34ca10c0ee78ceb",
+    "size": 4108389
+  },
+  "atlas-village.png": {
+    "sha256": "14fa84e9f30accb4c8af69057bef8a42de771c756ee25de7864f65160854bb92",
+    "size": 4288153
+  },
+  "aya.png": {
+    "sha256": "d5fec423ef74684b48acfdf0c3b671ae882afdf95ad96a17f735ed05e2c721c2",
+    "size": 2631647
+  },
+  "benben.png": {
+    "sha256": "a91e514384acd3e66f42de2a14ae1f5cdd92891158c0fe5325455e058ed2695d",
+    "size": 2949536
+  },
+  "byakuren.png": {
+    "sha256": "079bcaa231143f7dbbf7b080bed9bf2b9c5ec8cf9f417438d95c1748a6b4dfc9",
+    "size": 2931444
+  },
+  "chen.png": {
+    "sha256": "e49d4c0c25d178c80ed434c3b51ec8c85d787cffecaa3dc445ac2f250379c05e",
+    "size": 2561147
+  },
+  "cirno.png": {
+    "sha256": "fe228c20d7500c116d85659cfb58673e3d49ed01b38a7ca11b75410305bde272",
+    "size": 2558334
+  },
+  "eiki.png": {
+    "sha256": "c8f0aa3ae6b9ff6bd7e0c899f05693bf54a32f7f5c6e8b3acf716a70d038dbe0",
+    "size": 2522783
+  },
+  "eirin.png": {
+    "sha256": "3b91af3b0b58b23cd6361d5fc882d2bc7e0ea7fd458b233634da1e066ec4500b",
+    "size": 2537526
+  },
+  "flandre.png": {
+    "sha256": "1b7041fa8226b4a1cd686052eb6377134d3e6674aad078dcb179e9d98f32154f",
+    "size": 2621244
+  },
+  "futo.png": {
+    "sha256": "2145f7991a7fd8b1b8ff04984af578a0ecf4b3429a4a8fb01582aea15d0d9b53",
+    "size": 3106046
+  },
+  "hatate.png": {
+    "sha256": "18180a456b03506d25dd0f09bd74c0a34fb162c29ca403cdaaf965b1a8abee53",
+    "size": 2678373
+  },
+  "hina.png": {
+    "sha256": "8bb77866a75874f81961a8e97214e7712d49276ee1c64d6ad94fe0c141210f1a",
+    "size": 2840221
+  },
+  "iku.png": {
+    "sha256": "8f3a044041491a1e3b30dfa7e95873a60fd026f66f23853ef2e863c23df7b262",
+    "size": 3252443
+  },
+  "kagerou.png": {
+    "sha256": "254563e22a9f3d647ce60009bac4c843fc5f590294942bcbc0992b017459a5f0",
+    "size": 2920435
+  },
+  "kaguya.png": {
+    "sha256": "a0c8676fda2580b65aff0b525f5d540cf3465ef4f00dbc580a3cf215ff45a208",
+    "size": 2857504
+  },
+  "kanako.png": {
+    "sha256": "367998edde287d5edfc79ece211294f3638bb91fe408c97f67c9eedcdb5b9297",
+    "size": 2827880
+  },
+  "keine.png": {
+    "sha256": "92eb6f59cf879ad92f15d7f67e31dd3fc2dbaf3b1e0ba5f91193b7db5f665b23",
+    "size": 2734350
+  },
+  "kogasa.png": {
+    "sha256": "404615c1f784dd05e0314e949623e2da0ce730da091239f4ae01a79df7aee581",
+    "size": 2539386
+  },
+  "koishi.png": {
+    "sha256": "42ca1c82c51332e57dccca7a75950e170a02dfe82575ad62d1883560c3a4e90c",
+    "size": 2733729
+  },
+  "kokoro.png": {
+    "sha256": "53eaa25bcccb5ecf8930873d8047de72ef7f40a665a8f8ecdd3c908d4b32f052",
+    "size": 2947948
+  },
+  "komachi.png": {
+    "sha256": "8db715138b4ab8cab316e2b5bec97a0353ff38ac34a1fdef5e64f929358b4528",
+    "size": 2676505
+  },
+  "kosuzu.png": {
+    "sha256": "ef7be9e7bb551ab93e33e51884ff893564ea1ed5b94d6b940d1f7fe9b2f0a0bc",
+    "size": 2545770
+  },
+  "kyouko.png": {
+    "sha256": "76320f656ef58739f4e347d3c3f711bcd9e41ab9c9c1e5f976e19dc319abca85",
+    "size": 2884637
+  },
+  "lilywhite.png": {
+    "sha256": "2f152b518543be0ce2cdda5b2e38e139ed6ffd38ae786938d858d916b0552e7c",
+    "size": 2549745
+  },
+  "lunasa.png": {
+    "sha256": "4edd26a9c365efd4b025c39ab94b867df1d27fbf82fea8ad15ebdf41c151609e",
+    "size": 2695076
+  },
+  "lyrica.png": {
+    "sha256": "44ef47b07fe5ca267b776e6d461c06a80347d4eaf3cc518997fba22a878da21b",
+    "size": 2585828
+  },
+  "mamizou.png": {
+    "sha256": "a3b93608d21df40ad5a0a97b7ffe714517ea2b5dac1f1c795985153087d2a5f1",
+    "size": 2952838
+  },
+  "marisa.png": {
+    "sha256": "b65277d2270a1fad6421166cfa4dc633598fd9e59ecf3afe2c655eb1324621cc",
+    "size": 2570972
+  },
+  "meiling.png": {
+    "sha256": "f68835750befc50f0e76b41958404db79a354bbed05f8c89d52e8fd814b41f7f",
+    "size": 2613829
+  },
+  "merlin.png": {
+    "sha256": "fdfdaf4c6a3c6114b73c1ef4a92fffcb5629c9037b5d2f3db114b1a7a5a8201d",
+    "size": 2534621
+  },
+  "miko.png": {
+    "sha256": "da7a3d73b7ee5028a12633bbf4fcb334ab169c6c4eed4f4ec32cf0eb461bf87a",
+    "size": 3066447
+  },
+  "minoriko.png": {
+    "sha256": "85bdcdedf7fbdd00283ede0fdebc757d31b0dbfc275adf75f9a5ee4fcee945e4",
+    "size": 2539740
+  },
+  "mokou.png": {
+    "sha256": "0e279b8b5cb2a3f2af569912ecfce14e395e7c95df7b87a7c36f2745cf23c726",
+    "size": 2781686
+  },
+  "momiji.png": {
+    "sha256": "8c1a365f163881a04017587f9e62937390caec33cb0d86e084bb478a623e6efd",
+    "size": 2693667
+  },
+  "murasa.png": {
+    "sha256": "e608b20fa20ce0b3a424e7da66a5513126183e12ab78157b9e7265229a9009c7",
+    "size": 2817736
+  },
+  "mystia.png": {
+    "sha256": "fb2276c5b7870383a7b89b6cc927b1e87024f4ab789d296b03f7df5f954ed2fa",
+    "size": 2604175
+  },
+  "nazrin.png": {
+    "sha256": "996e875f97a503902779e65c6b1a279966f4d889d5d95e3425c9c24356ba681b",
+    "size": 2554922
+  },
+  "nitori-soft-v3.png": {
+    "sha256": "da1739ecb652abe7f25e6064c0a18ca96983ef17054d1b3a94850f414a743db5",
+    "size": 2558240
+  },
+  "nue.png": {
+    "sha256": "16130cc22548fab84f5205d80a8f762b86069785597ea55046e151aba138365e",
+    "size": 2694408
+  },
+  "patchouli.png": {
+    "sha256": "91b9381e8e08b21a33991fdbd48ba6d23d38691c0e49eb7a4d13e3b724e70397",
+    "size": 2709658
+  },
+  "raiko.png": {
+    "sha256": "71a636ac39ed65c10bf17bd160ae9cc7ef7455d2f94b8ee1b03725d1614f8291",
+    "size": 2877304
+  },
+  "ran.png": {
+    "sha256": "c15281b9b65a9b71ac1e02e9555a0dde047eba56bf0e9efa17b9405ed2143aa6",
+    "size": 2588516
+  },
+  "reimu.png": {
+    "sha256": "90883e7eb8c76709809f36eab9bbeaa42ae37d29de48753437637bc7325c5f2d",
+    "size": 2595469
+  },
+  "reisen.png": {
+    "sha256": "8da0ba727c159cc23f4c3fd4b4be01f8a8d254a2a61d87f405c60ce32ce8dd5c",
+    "size": 2601529
+  },
+  "remilia.png": {
+    "sha256": "97cd2ba4ea95672b316fe827abe9b6d07407af3124f974258a18c34f66d1c9b9",
+    "size": 2638883
+  },
+  "rin.png": {
+    "sha256": "e8aaeac8536475189d955fd928d5207f485f3f31ea3b89daa9715a07b3011af7",
+    "size": 2757809
+  },
+  "rumia-soft-v3.png": {
+    "sha256": "6459aa9f6a1a7db43a4eefc6fff1fd0f1e2b97a4245cb6f19a204131fc4024ea",
+    "size": 2431043
+  },
+  "sakuya.png": {
+    "sha256": "765a66669c127aa58c33287afa16c3bb4b17b491744e96a9544d1543b193297a",
+    "size": 2572289
+  },
+  "sanae.png": {
+    "sha256": "e404f9dc56309c9b2f875ed0ebd9dca53a921bb4b5feba2b97c792b34e706ef1",
+    "size": 2742267
+  },
+  "satori.png": {
+    "sha256": "4276a20bf07b37b5399df720dd66e342ea640892d13cc96286cdafe0288f8599",
+    "size": 2505807
+  },
+  "scene-autumn-foothills.png": {
+    "sha256": "5e22a279e4ad3306da9e072cc4e7e34c8c28c8553f0dbfc548c3a814ebc18497",
+    "size": 3640302
+  },
+  "scene-bamboo-lantern-v2.png": {
+    "sha256": "2196260b3dbd8d4c11bd0d10edd61c24d846bc171d7e26daa8eb3e79caa6619d",
+    "size": 2993363
+  },
+  "scene-cemetery-moon.png": {
+    "sha256": "b4e5e367151d4356d6cf038f25fd9c0171c6b182ff799adb01ba16cb69fc5aa5",
+    "size": 3602423
+  },
+  "scene-festival.png": {
+    "sha256": "0b4b636d7541afb8abf16d1aa06d6c440a6093bec27e90b8d0fa8c639440b89d",
+    "size": 3957749
+  },
+  "scene-heaven.png": {
+    "sha256": "84668f9d463183fce37a29915d5f59e631ee73077cf39d5e94840d6f9f00dcea",
+    "size": 3084731
+  },
+  "scene-inverted-castle.png": {
+    "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
+    "size": 2946888
+  },
+  "scene-mermaid-lake.png": {
+    "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
+    "size": 3383760
+  },
+  "scene-myouren-v2.png": {
+    "sha256": "ce9c4b81db03ae35119cb3a9037f267d61000e6ce3662795234e245f67525aa8",
+    "size": 3843313
+  },
+  "scene-palanship.png": {
+    "sha256": "d5f00b9a0775328420877592cfd3baeac4ca64dccdb589eea401f6daa8f2154e",
+    "size": 3376720
+  },
+  "scene-prismriver-evening.png": {
+    "sha256": "cfe9f395db15b0faa714a47a19914a12f0db2d80bca7831ce807b003dc1d8f28",
+    "size": 3225548
+  },
+  "scene-senkai.png": {
+    "sha256": "c09cc8fb11e72990d17dddf29ca49257163073ad8675bf9432278353a24deb83",
+    "size": 3805836
+  },
+  "scene-spring-announcement.png": {
+    "sha256": "f7af18e9a82aeed5be555a6cb86bc1f52dcadbffe248608da8d9be99203547e8",
+    "size": 3555602
+  },
+  "scene-suzunaan.png": {
+    "sha256": "57837e6927e783a18c3b592ebe1cd8be1321cc1748269687152f0bd748ef8a54",
+    "size": 3604374
+  },
+  "scene-temple-morning.png": {
+    "sha256": "1b12b2ae97c6a04a157ca7ea4f7ce4169d10be2754c9e26e1016bee405267a55",
+    "size": 3711760
+  },
+  "scene-tengu-notebook.png": {
+    "sha256": "546298b407be4de0e1898ff80eee60311ec14683fb95db18b56ca6010edb79de",
+    "size": 3536305
+  },
+  "scene-tsukumo-concert.png": {
+    "sha256": "d8e056892d03e165cad7b377060d36d2d638dbd8fc85340ea145f38b8ff9deae",
+    "size": 3741353
+  },
+  "seiga.png": {
+    "sha256": "2183db53534f9e80d8084c41a6f8cd2d66904d2e1b58aa46ac64641932ee82c2",
+    "size": 3178865
+  },
+  "seija.png": {
+    "sha256": "9d051a747f2b03aad45e39e10ec7b755c723cd04e4ea55b8502ded2f5718febf",
+    "size": 2654023
+  },
+  "sekibanki.png": {
+    "sha256": "6d8b1c5555c9fb84533697820206ab03bd1d3d80290bbd31c734451d0c351841",
+    "size": 3009455
+  },
+  "shinmyoumaru.png": {
+    "sha256": "8483a750f1e27fa5550cb3ee24e7657399038f8dfbf8b26d62593c8b2d5e95d6",
+    "size": 3092707
+  },
+  "shizuha.png": {
+    "sha256": "252a9f45a29c1e4583252154b188e04b27c036fed08884368b71f8e37ffa77c5",
+    "size": 2593907
+  },
+  "shou.png": {
+    "sha256": "a66a8e6a130483ce98d3f7693072284a66c0d57b4c35a1e543bb7704bb087d2a",
+    "size": 2694566
+  },
+  "suika.png": {
+    "sha256": "00c3e0332026799b234727250dc0bb9d862a0e270006ced04beaeeb7d9a57a4d",
+    "size": 2880608
+  },
+  "suwako-soft-v3.png": {
+    "sha256": "a835b005368cedcc29dcfc2f2591036b5fc53141fee3e7328679d5f7509630f1",
+    "size": 2392815
+  },
+  "tenshi.png": {
+    "sha256": "01a7455d71f554e5a4668d2b6eeb65e18d86ea5f07fe8756e4c7c81c393879b3",
+    "size": 3075728
+  },
+  "tewi.png": {
+    "sha256": "956559a90b4bb2356a2d250d2bf839c3bba3ae8a58e155037578d7aa5fe7dd3a",
+    "size": 2269223
+  },
+  "tojiko.png": {
+    "sha256": "d0a54dc8adf4342b19993b45f683d636d6c41492276dcade32b32503f46f2ddf",
+    "size": 3026446
+  },
+  "utsuho.png": {
+    "sha256": "7490288925e5472dcd014309c36831bab30847f52424213b92ae34e895aa2ff2",
+    "size": 2932115
+  },
+  "wakasagihime.png": {
+    "sha256": "c346437e0348be41393e707bade65a2094e9104206ddaadfc70c7b894717dd58",
+    "size": 2983479
+  },
+  "world-boundary.png": {
+    "sha256": "e8b6586dde01d1b2e74e44565a7cf4598e4c7fc44069733f982998ba66305b43",
+    "size": 4079918
+  },
+  "world-faith.png": {
+    "sha256": "0f941e214000f0d9750e5dead0efd4aff552e037ce637a6ee6ba823358a936be",
+    "size": 4094155
+  },
+  "world-moon-v2.png": {
+    "sha256": "1096c7417ff8a9d54ee1ead8629521dc2b56450e73229d02e049678e984614ea",
+    "size": 3587574
+  },
+  "world-realms.png": {
+    "sha256": "1ebcd773947026ff3fd25b92169281019f3276dcd36eaa4e5ee29b9290b1a9ac",
+    "size": 3905491
+  },
+  "world-spellcards.png": {
+    "sha256": "2f3a25ad4a19d4e18ddff5fe14566aa825d765b98ea69d3e9c326a3e21d38b40",
+    "size": 3924127
+  },
+  "world-village.png": {
+    "sha256": "0d3ccb17f5c9d7035faf93a8d41627f54bc668ac9cae471afe638c96c7b69d45",
+    "size": 4054114
+  },
+  "wriggle.png": {
+    "sha256": "e37ea4aa2fb860efc9ebe48a7696c7d3abce7af85f73f1c7f09466802deb7654",
+    "size": 2426289
+  },
+  "yatsuhashi.png": {
+    "sha256": "b7f2ae65f19a4d04e415204c568f23eef134f644bf019d6bec396aed608b2a32",
+    "size": 2834885
+  },
+  "yoshika.png": {
+    "sha256": "2444c6fd70ab659e32c2e5622a3703d8dac2e0127e35b7f4f8fbedd36c18ce8e",
+    "size": 2970691
+  },
+  "youmu-soft-v3.png": {
+    "sha256": "198957ff01b03069ea5dafd7a60e3f899aaecafbd509d445ab437323c926c108",
+    "size": 2444937
+  },
+  "yukari.png": {
+    "sha256": "4fe6aa81627eeb83e7da43ba6e029abe938544c0a2a7003dff03c6f89e057b9b",
+    "size": 2781747
+  },
+  "yuugi.png": {
+    "sha256": "12550a282d6e748a7031220d192235d8bc7c38d7046119c0dcb41ec0ef0d39d7",
+    "size": 2630664
+  },
+  "yuuka.png": {
+    "sha256": "867d458aa72645dab04c34e06fde354022c79c808d069fa118bd03b74bb292e6",
+    "size": 2564918
+  },
+  "yuyuko.png": {
+    "sha256": "1d387c9f42aa907d33fd40b53af9ef46729c78d21edca04323094587653636a8",
+    "size": 2696246
+  }
+}
