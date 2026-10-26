@@ -42,3 +42,9 @@ window.GENSOKYO_LORE.push({id:'dreams',mark:'梦',name:'梦境与月都',en:'A w
  ],facts:[['梦境世界','与生物之梦有关的世界，不是地上地图的一个普通街区。'],['梦中的月都','绀珠传情境中的再现，阅读时要留意谁在梦中、计划为何展开。'],['现实月都','月之民与月兔生活的都市；永远亭则位于地上的迷途竹林。']],correction:'不能从一个梦境场景推定所有现实都是梦，也不能把画中的门廊当作任意出入月都的通道。具体事件应回到原作对话与设定阅读。',perspective:'本章围绕绀珠传的梦境线索作入门概述，不覆盖凭依华中梦境住民与现实住民的全部关系。',caption:'长廊、云海、梦魂与宫殿为同人意象，和场景手札共用一幅插图；非原作路线或建筑复原。',people:['doremy','sagume','seiran','ringo','yorihime'],places:[],related:['moon','boundary'],sources:[['上海爱丽丝幻乐团 · 东方绀珠传','https://www16.big.or.jp/~zun/html/th15top.html'],['哆来咪 · 原作资料摘录','https://thwiki.cc/哆来咪·苏伊特'],['探女 · 月都危机与逆转','https://danmaku.jp/archive/character/c069/'],['梦境世界 · 场景资料','https://thwiki.cc/梦境世界']]});
 window.GENSOKYO_LORE.find(p=>p.id==='moon').people.push('sagume','yorihime');
 window.GENSOKYO_LORE.find(p=>p.id==='moon').related.push('dreams');
+
+// 第十二批：既有章节增加延伸阅读，不将后户等同于大结界。
+window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('aunn','narumi','okina');
+window.GENSOKYO_LORE.find(p=>p.id==='faith').sources.push(['阿吽 · 神佛与信仰场所的守护','https://danmaku.jp/archive/character/c004/']);
+window.GENSOKYO_LORE.find(p=>p.id==='boundary').people.push('okina');
+window.GENSOKYO_LORE.find(p=>p.id==='moon').people.push('toyohime');

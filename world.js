@@ -307,3 +307,38 @@ window.GENSOKYO.glossary.push(
  {term:'梦境世界',en:'The Dream World',text:'与生物的梦有关的世界，哆来咪在其中管理梦境。梦中的月都再现属于绀珠传的特定安排；不等于现实月都被整体搬走，也不是从地上随意步行可达的普通地区。',source:'https://thwiki.cc/梦境世界'},
  {term:'三个身体，一个意识',en:'Three bodies, one consciousness',text:'赫卡提亚分别在月、地球与异界的地狱拥有身体，意识相通。发色、头顶星球随形态变化；三枚星球意象不代表三位互不相干的女神，红发异界形态也不是另一个角色。',source:'https://danmaku.jp/archive/character/c057/'}
 );
+
+
+// 第十二批：把四季异变接回神社、森林与人物各自的生活。
+Object.assign(window.GENSOKYO.characterLinks,{
+ eternity:{place:'sunfield',related:['cirno','clownpiece','sunny','luna','star'],work:'th16',line:'从天空璋第一关的盛夏读起，再沿三月精理解妖精与生命力的变化。'},
+ nemuno:{place:'mountain',related:['marisa'],work:'th16',line:'第二关的红叶山路与山姥的圣域，适合分开理解领地、来客与天狗族群的关系。'},
+ aunn:{place:'shrine',related:['reimu','okina'],work:'th16',line:'从第三关的神社樱花读到自发守护，再追溯她获得身体的来历。'},
+ narumi:{place:'forest',related:['marisa','mai'],work:'th16',line:'第四关的雪中地藏，把森林魔力、生命与背后之门连接起来。'},
+ mai:{place:null,related:['satono','okina','narumi'],work:'th16',line:'四关道中的行动之后，与里乃在第五关相遇，留意生命力与精神力的分工。'},
+ satono:{place:null,related:['mai','okina'],work:'th16',line:'沿第五关与 Extra 道中认识二童子，舞蹈是为主人行动的仪式。'},
+ okina:{place:null,related:['mai','satono','yukari','aunn'],work:'th16',line:'从第六关与 Extra 的门扉和季节线索，认识贤者之一与她的多重神格。'},
+ toyohime:{place:null,related:['yorihime','eirin','reisen'],work:'bougetsusho',line:'沿儚月抄阅读姐姐的山海能力，与妹妹召请神灵的力量分开理解。'}
+});
+window.GENSOKYO.characterLinks.reimu.related.push('aunn');
+window.GENSOKYO.characterLinks.marisa.related.push('narumi','nemuno');
+window.GENSOKYO.characterLinks.yukari.related.push('okina');
+window.GENSOKYO.characterLinks.cirno.related.push('eternity');
+window.GENSOKYO.characterLinks.clownpiece.related.push('eternity');
+window.GENSOKYO.characterLinks.yorihime.related.push('toyohime');
+window.GENSOKYO.characterLinks.eirin.related.push('toyohime');
+window.GENSOKYO.books.find(b=>b.id==='bougetsusho').ids.unshift('toyohime');
+window.GENSOKYO.books.push({id:'th16',number:'16',year:'2017',name:'东方天空璋',jp:'東方天空璋',en:'Hidden Star in Four Seasons.',mark:'四<br>季',theme:'spring',mood:'四季异变 / 生命力 / 背后之门',description:'不同季节在同一时刻出现，调查者沿盛夏、红叶、樱花和飞雪遇见各地住民。背后之门把异常引向二童子与秘神，也让人重新留意妖精、信仰与生命力之间的联系。',ids:['eternity','nemuno','aunn','narumi','mai','satono','okina'],caption:'原作初发于 2017 年；四季并置是异变中的异常，不代表幻想乡永远按此分区。',url:'https://store.steampowered.com/app/745880/',reference:'https://thwiki.cc/东方天空璋'});
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'不必吩咐，也会留下',label:'神社的守护 / 灵梦与阿吽',ids:['reimu','aunn'],relation:'狛犬主动守护，巫女仍有自己的步调。',description:'阿吽对神佛与信仰场所的守护出于自身性质。她与灵梦的日常有原作线索，画中一同站在石阶旁的时刻为本册想象，不将她写成被雇佣的门卫。',color:'red',symbol:'守'},
+ {title:'两种力量，同一场舞',label:'同僚搭档 / 舞与里乃',ids:['mai','satono'],relation:'竹枝引生命力，茗荷引精神力。',description:'二童子分别通过背后起舞诱导不同的力量，配合执行主人的行动。衣色、植物与发型可帮助辨认；“二童子”不意味着血缘姐妹或两种力量完全相同。',color:'green',symbol:'舞'},
+ {title:'门扉之后，谁在发出命令',label:'秘神与部下 / 隐岐奈和二童子',ids:['okina','mai','satono'],relation:'主人计划与执行者所知，并不总是完全重合。',description:'天空璋里，两位二童子为隐岐奈执行行动，关于寻找伙伴与寻找继任者的理解却存在差别。读到亲切的舞台画面时，也保留原作中的主从与控制关系。',color:'violet',symbol:'户'},
+ {title:'月上的姐妹，地上的旧师',label:'姐妹与旧师 / 丰姬、依姬与永琳',ids:['toyohime','yorihime','eirin'],relation:'姐姐连接山海，妹妹召请神灵。',description:'绵月姐妹同为月之公主，永琳曾教导两人。亲缘、师承与如今所处的地月位置各有线索；不能把一人的能力、服饰或性格直接套到另一人身上。',color:'violet',symbol:'月'},
+ {title:'森林里的另一种魔法',label:'相识与调查 / 魔理沙与成美',ids:['marisa','narumi'],relation:'使用魔法的人类，遇见由石像获得生命的魔法使。',description:'两位都生活在魔法森林，却有不同的来历与能力。天空璋的对话让调查继续伸向背后之门；雪径中并肩停留是本册创作，不将魔理沙误写为创造了成美的人。',color:'green',symbol:'森'},
+ {title:'冰与凤蝶，都被夏天唤醒',label:'异变中的结识 / 琪露诺与拉尔瓦',ids:['cirno','eternity'],relation:'四季异变，使妖精感受到不同寻常的力量。',description:'两位在天空璋的盛夏相遇，后来各有活动与来往。拉尔瓦的凤蝶翅膀与琪露诺的冰翼并不相同，能力变化也应放回具体作品情境理解。',color:'red',symbol:'夏'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'后户与背后之门',en:'Back doors & the Land of the Back Door',text:'隐岐奈能在万物背面开启门扉，后户之国则是与她相关的独立空间。门扉可关联生命力、精神力和行动路线；它不等同于博丽大结界，也不能把画页里的任意一扇门当成官方通路。',source:'https://danmaku.jp/archive/character/c059/'},
+ {term:'二童子的两种力量',en:'Vitality & mental energy',text:'舞的背后起舞诱导生命力，里乃则诱导精神力。原为人类的两人已被改变，几乎不记得过去；“童子”是角色关系与仪式中的称谓，不能据此外推她们的血缘或普通人类年龄。',source:'https://danmaku.jp/archive/character/c043/'}
+);

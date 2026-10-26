@@ -76,3 +76,11 @@ for(const [id,ids,names] of [
  ['village',['seiran','ringo'],['清兰','铃瑚']],
  ['shrine',['clownpiece'],['克劳恩皮丝']]
 ]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}
+
+// 第十二批：只补区域相关人物，不设定未核实的精确坐标。
+for(const [id,ids,names] of [
+ ['shrine',['aunn'],['高丽野阿吽']],
+ ['forest',['narumi'],['矢田寺成美']],
+ ['mountain',['nemuno'],['坂田合欢（山麓圣域）']],
+ ['sunfield',['eternity'],['拉尔瓦（冬季以外活动）']]
+]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}

@@ -31,6 +31,10 @@
     "sha256": "14fa84e9f30accb4c8af69057bef8a42de771c756ee25de7864f65160854bb92",
     "size": 4288153
   },
+  "aunn.png": {
+    "sha256": "8e548488b49c27c14ad1e1c7bf5c0d5b72641d5db0dbf241f7213fdbf0082bba",
+    "size": 2838816
+  },
   "aya.png": {
     "sha256": "d5fec423ef74684b48acfdf0c3b671ae882afdf95ad96a17f735ed05e2c721c2",
     "size": 2631647
@@ -66,6 +70,10 @@
   "eirin.png": {
     "sha256": "3b91af3b0b58b23cd6361d5fc882d2bc7e0ea7fd458b233634da1e066ec4500b",
     "size": 2537526
+  },
+  "eternity.png": {
+    "sha256": "9232aef1c9d4335d6f99aba1eb369d27da07ce160492dc4d97002aec4369564a",
+    "size": 2877987
   },
   "flandre.png": {
     "sha256": "1b7041fa8226b4a1cd686052eb6377134d3e6674aad078dcb179e9d98f32154f",
@@ -159,6 +167,10 @@
     "sha256": "44ef47b07fe5ca267b776e6d461c06a80347d4eaf3cc518997fba22a878da21b",
     "size": 2585828
   },
+  "mai.png": {
+    "sha256": "76cd4a4df290e0cb8b4b20340e6669d817effdfd9e8274cdb8495b4127747a1d",
+    "size": 2817437
+  },
   "mamizou.png": {
     "sha256": "a3b93608d21df40ad5a0a97b7ffe714517ea2b5dac1f1c795985153087d2a5f1",
     "size": 2952838
@@ -203,9 +215,17 @@
     "sha256": "fb2276c5b7870383a7b89b6cc927b1e87024f4ab789d296b03f7df5f954ed2fa",
     "size": 2604175
   },
+  "narumi.png": {
+    "sha256": "422d319faefa1fe7219526d00a6b69da8f39db23146d9bf75f742163eddd22b6",
+    "size": 2789026
+  },
   "nazrin.png": {
     "sha256": "996e875f97a503902779e65c6b1a279966f4d889d5d95e3425c9c24356ba681b",
     "size": 2554922
+  },
+  "nemuno.png": {
+    "sha256": "d5fdbcb0815b47e48769a54bad60a7e0a19b4edac8bc490a022d9c7336e96c8d",
+    "size": 2887057
   },
   "nitori-soft-v3.png": {
     "sha256": "da1739ecb652abe7f25e6064c0a18ca96983ef17054d1b3a94850f414a743db5",
@@ -214,6 +234,10 @@
   "nue.png": {
     "sha256": "16130cc22548fab84f5205d80a8f762b86069785597ea55046e151aba138365e",
     "size": 2694408
+  },
+  "okina.png": {
+    "sha256": "a7d20fa8ebf70d9790aee942681515987a2c868164e6ef8f93c5fb24e8223bb6",
+    "size": 2961764
   },
   "parsee.png": {
     "sha256": "12fe1411208361b3c8466b94b479f47f73ca1bebb2a6c34c6427fd8e442e3d1c",
@@ -267,6 +291,10 @@
     "sha256": "e404f9dc56309c9b2f875ed0ebd9dca53a921bb4b5feba2b97c792b34e706ef1",
     "size": 2742267
   },
+  "satono.png": {
+    "sha256": "da5efeebc6f696052983c0281af2892fe8a9c66c2934b780d79b1435d21c8ca0",
+    "size": 2925840
+  },
   "satori.png": {
     "sha256": "4276a20bf07b37b5399df720dd66e342ea640892d13cc96286cdafe0288f8599",
     "size": 2505807
@@ -274,6 +302,10 @@
   "scene-autumn-foothills.png": {
     "sha256": "5e22a279e4ad3306da9e072cc4e7e34c8c28c8553f0dbfc548c3a814ebc18497",
     "size": 3640302
+  },
+  "scene-backdoor-stage.png": {
+    "sha256": "5c35b9aa00d601537fb4487b889b0fd1c23ad22311876754e60456685b63184c",
+    "size": 3406092
   },
   "scene-bamboo-lantern-v2.png": {
     "sha256": "2196260b3dbd8d4c11bd0d10edd61c24d846bc171d7e26daa8eb3e79caa6619d",
@@ -298,6 +330,10 @@
   "scene-festival.png": {
     "sha256": "0b4b636d7541afb8abf16d1aa06d6c440a6093bec27e90b8d0fa8c639440b89d",
     "size": 3957749
+  },
+  "scene-forest-jizo.png": {
+    "sha256": "82defa32b9192ec93fc7b7be90ed7a7ef328caa55ceed4eda99b250cb6d7038f",
+    "size": 3734085
   },
   "scene-heaven.png": {
     "sha256": "84668f9d463183fce37a29915d5f59e631ee73077cf39d5e94840d6f9f00dcea",
@@ -335,9 +371,17 @@
     "sha256": "cfe9f395db15b0faa714a47a19914a12f0db2d80bca7831ce807b003dc1d8f28",
     "size": 3225548
   },
+  "scene-season-mountain.png": {
+    "sha256": "9d647a70fdcd939a3bd47fda7620546c4ba07f8a4d0f0ec9b71321561ea98e6e",
+    "size": 3836515
+  },
   "scene-senkai.png": {
     "sha256": "c09cc8fb11e72990d17dddf29ca49257163073ad8675bf9432278353a24deb83",
     "size": 3805836
+  },
+  "scene-shrine-guardian.png": {
+    "sha256": "c9a956698e68f1ab81724ce8ad9f3c1f7a35029960df482ed2909b3c10bc741a",
+    "size": 3637474
   },
   "scene-spring-announcement.png": {
     "sha256": "f7af18e9a82aeed5be555a6cb86bc1f52dcadbffe248608da8d9be99203547e8",
@@ -422,6 +466,10 @@
   "tojiko.png": {
     "sha256": "d0a54dc8adf4342b19993b45f683d636d6c41492276dcade32b32503f46f2ddf",
     "size": 3026446
+  },
+  "toyohime.png": {
+    "sha256": "de26b052fbd154579e3198f9a4e22780e011945e55b305dad98cf7df33810e07",
+    "size": 2849981
   },
   "utsuho.png": {
     "sha256": "7490288925e5472dcd014309c36831bab30847f52424213b92ae34e895aa2ff2",
