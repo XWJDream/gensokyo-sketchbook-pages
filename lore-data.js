@@ -29,3 +29,6 @@ window.GENSOKYO_LORE.find(p=>p.id==='village').people=['kosuzu','akyuu','keine',
 window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('miko','futo');
 window.GENSOKYO_LORE.find(p=>p.id==='faith').sources.push(['神子 · 复苏与信仰的另一条线索','https://danmaku.jp/archive/character/c024/']);
 window.GENSOKYO_LORE.find(p=>p.id==='village').people.push('sekibanki');
+
+window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('shizuha','minoriko','hina');
+window.GENSOKYO_LORE.find(p=>p.id==='faith').sources.push(['秋姐妹 · 红叶与丰收','https://thwiki.cc/秋姐妹']);

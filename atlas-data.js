@@ -57,3 +57,13 @@ for(const [id,resident,name] of [['lake','wakasagihime','若鹭姬'],['bamboo','
   if(!place.residents.includes(resident))place.residents.push(resident);
   if(!place.people.includes(name))place.people.push(name);
 }
+
+// 地点相关人物是导览，不等同于精确住址。
+for(const [id,ids,names] of [
+ ['mountain',['shizuha','minoriko','hina'],['秋静叶','秋穰子','键山雏']],
+ ['tengu',['hatate'],['姬海棠果']],
+ ['sunfield',['lunasa','merlin','lyrica','raiko'],['普莉兹姆利巴 with H（演出关联）']]
+]){
+ const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);
+ p.residents=[...new Set([...p.residents,...ids])];p.people=[...new Set([...p.people,...names])];
+}

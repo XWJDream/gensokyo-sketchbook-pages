@@ -214,3 +214,33 @@ window.GENSOKYO.glossary.push(
   {term:'付丧神',en:'Tsukumogami',text:'器物产生自我意识而成为妖怪，是理解小伞、九十九姐妹与雷鼓的线索。具体的觉醒条件要按角色与作品阅读；辉针城中的万宝槌影响，不能直接当作所有付丧神唯一的诞生方式。',source:'https://thwiki.cc/付丧神'},
   {term:'万宝槌',en:'The Miracle Mallet',text:'与小人族有关的秘宝。针妙丸使用它引发的魔力变化，是辉针城异变的关键；使用力量伴随代价，也影响到道具与周围妖怪。它不是不受限制、随时许愿的普通道具。',source:'https://thwiki.cc/万宝槌'}
 );
+
+// 第九批：乐音、时令与两位报人的阅读路线。
+Object.assign(window.GENSOKYO.characterLinks,{
+  lunasa:{place:null,related:['merlin','lyrica','raiko'],work:'th07',line:'从妖妖梦第四关听见骚灵乐团，再循凭依华的演奏舞台读到与雷鼓的合作。'},
+  merlin:{place:null,related:['lunasa','lyrica','raiko'],work:'th07',line:'比较小号的躁动之音与小提琴的忧郁之音，认识三姐妹各自的舞台位置。'},
+  lyrica:{place:null,related:['lunasa','merlin','raiko'],work:'th09',line:'妖妖梦中的合奏之外，也可在花映塚跟随她的单人视角，再读乐团后来的变化。'},
+  lilywhite:{place:null,related:[],work:'th07',line:'妖妖梦第四关的春讯，把报春妖精与迟来的春天联系起来；图页小径不是固定住处。'},
+  hina:{place:'mountain',related:[],work:'th10',line:'从风神录第二关认识厄神，再沿求闻口授中的流雏记载，理解善意与周围厄运的区别。'},
+  shizuha:{place:'mountain',related:['minoriko'],work:'th10',line:'从第一关道中的红叶之神，读到姐姐与妹妹分别掌管的秋日意象。'},
+  minoriko:{place:'mountain',related:['shizuha'],work:'th10',line:'风神录第一关的丰收之神之后，可沿丰收祭与信仰继续理解她同人类的联系。'},
+  hatate:{place:'tengu',related:['aya'],work:'th125',line:'文花帖DS的取材与摄影，把文与果各自的报纸、能力和竞争关系串在一起。'}
+});
+window.GENSOKYO.characterLinks.aya.related.push('hatate');
+window.GENSOKYO.characterLinks.raiko.related.push('lunasa','merlin','lyrica');
+window.GENSOKYO.books.find(b=>b.id==='th07').ids.push('lilywhite','lunasa','merlin','lyrica');
+window.GENSOKYO.books.find(b=>b.id==='th07').caption='沿报春妖精与骚灵合奏，走向冥界的春天。';
+window.GENSOKYO.books.find(b=>b.id==='th09').ids.push('lyrica');
+window.GENSOKYO.books.find(b=>b.id==='th10').ids.push('shizuha','minoriko','hina');
+window.GENSOKYO.books.push({id:'th125',number:'12.5',year:'2010',name:'东方文花帖DS',jp:'ダブルスポイラー ～ 東方文花帖',en:'Double Spoiler.',mark:'写<br>真',theme:'green',mood:'摄影 / 报刊 / 天狗的取材',description:'以摄影为核心的弹幕取材游戏。文与果的不同视角，让熟悉的妖怪和人类成为相机中的被摄对象；观察、等待与拍下瞬间，构成另一种认识幻想乡的方式。',ids:['aya','hatate','hina','shizuha','minoriko'],caption:'这是 2010 年的 DS 文花帖；与 2005 年的文花帖分开阅读。',url:'https://store.steampowered.com/app/1100170/',reference:'https://thwiki.cc/DS东方文花帖'});
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+  {title:'三种音色，同一支曲子',label:'三姐妹 / 骚灵乐团',ids:['lunasa','merlin','lyrica'],relation:'沉静、昂扬与幻想的声音，在合奏里相遇。',description:'露娜萨负责小提琴并担任领队，梅露兰负责小号，莉莉卡主要演奏键盘。三位都是骚灵，不是由她们手中的乐器变成的付丧神。',color:'violet',symbol:'奏'},
+  {title:'新节拍，让乐团继续',label:'普莉兹姆利巴 with H / 骚灵与付丧神',ids:['lunasa','merlin','lyrica','raiko'],relation:'雷鼓加入节奏声部，乐团有了新的名字。',description:'雷鼓与三姐妹的合作有原作线索，和上一页九十九姐妹的想象排练需分别理解。凭依华的太阳花田演奏舞台，可作为继续阅读的入口。',color:'red',symbol:'拍'},
+  {title:'秋天的两种颜色',label:'姐妹 / 静叶与穰子',ids:['shizuha','minoriko'],relation:'姐姐掌管红叶，妹妹掌管丰收。',description:'红叶的寂寞与收获的喜悦，是秋姐妹各自鲜明的侧面。她们并非同一位神的两套衣装；季节流转又让两人的故事相互呼应。',color:'green',symbol:'秋'},
+  {title:'同一阵风，两份新闻',label:'同行与竞争 / 文与果',ids:['aya','hatate'],relation:'各自办报，也各自寻找取材的方法。',description:'《文文。新闻》与《花果子念报》属于不同报人。文的奔走取材与果的念写形成对照；两人有竞争关系，不能简化成上司和助手。',color:'violet',symbol:'报'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'骚灵与乐器付丧神',en:'Poltergeists & instrument tsukumogami',text:'三姐妹是骚灵，雷鼓与九十九姐妹则是乐器付丧神。都能成为演奏者，并不代表相同种族；本册把她们放在同一主题筛选中，方便比较身份与乐音。',source:'https://danmaku.jp/archive/character/c031/'},
+  {term:'念写与天狗报刊',en:'Spirit photography & tengu newspapers',text:'姬海棠果的念写是能力，取材与办报是工作。获得图像不等于完成现场调查；文与果各自的报道，也保留着记者的立场与取舍。',source:'https://thwiki.cc/姬海棠果'}
+);
