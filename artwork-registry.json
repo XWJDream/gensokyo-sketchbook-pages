@@ -95,6 +95,10 @@
     "sha256": "92eb6f59cf879ad92f15d7f67e31dd3fc2dbaf3b1e0ba5f91193b7db5f665b23",
     "size": 2734350
   },
+  "kisume.png": {
+    "sha256": "e8118ce35067b2d8d6e915985e3cbd0070484652e23327d0e8c5329f93200d5c",
+    "size": 2753667
+  },
   "kogasa.png": {
     "sha256": "404615c1f784dd05e0314e949623e2da0ce730da091239f4ae01a79df7aee581",
     "size": 2539386
@@ -119,9 +123,17 @@
     "sha256": "76320f656ef58739f4e347d3c3f711bcd9e41ab9c9c1e5f976e19dc319abca85",
     "size": 2884637
   },
+  "letty.png": {
+    "sha256": "3680cb29b985b887a082fdfa04da00e6d8ab925ed89e52dabfadf0469cb0f2af",
+    "size": 2555996
+  },
   "lilywhite.png": {
     "sha256": "2f152b518543be0ce2cdda5b2e38e139ed6ffd38ae786938d858d916b0552e7c",
     "size": 2549745
+  },
+  "luna.png": {
+    "sha256": "58f4943a49606d0829bd9a29247452799693e3919f3160fdc13c71922babe07d",
+    "size": 2697181
   },
   "lunasa.png": {
     "sha256": "4edd26a9c365efd4b025c39ab94b867df1d27fbf82fea8ad15ebdf41c151609e",
@@ -138,6 +150,10 @@
   "marisa.png": {
     "sha256": "b65277d2270a1fad6421166cfa4dc633598fd9e59ecf3afe2c655eb1324621cc",
     "size": 2570972
+  },
+  "medicine.png": {
+    "sha256": "2bc50320644790b4ba1bf85d5f351a4a18ef9dcb56dc4bd585a644484d1a4f17",
+    "size": 2705385
   },
   "meiling.png": {
     "sha256": "f68835750befc50f0e76b41958404db79a354bbed05f8c89d52e8fd814b41f7f",
@@ -182,6 +198,10 @@
   "nue.png": {
     "sha256": "16130cc22548fab84f5205d80a8f762b86069785597ea55046e151aba138365e",
     "size": 2694408
+  },
+  "parsee.png": {
+    "sha256": "12fe1411208361b3c8466b94b479f47f73ca1bebb2a6c34c6427fd8e442e3d1c",
+    "size": 2610376
   },
   "patchouli.png": {
     "sha256": "91b9381e8e08b21a33991fdbd48ba6d23d38691c0e49eb7a4d13e3b724e70397",
@@ -239,6 +259,10 @@
     "sha256": "b4e5e367151d4356d6cf038f25fd9c0171c6b182ff799adb01ba16cb69fc5aa5",
     "size": 3602423
   },
+  "scene-fairy-treehouse.png": {
+    "sha256": "59f790cc4a7296082c962a21a9f0b9d83df77512dabb0df99b04fde290941e8f",
+    "size": 3593725
+  },
   "scene-festival.png": {
     "sha256": "0b4b636d7541afb8abf16d1aa06d6c440a6093bec27e90b8d0fa8c639440b89d",
     "size": 3957749
@@ -250,6 +274,10 @@
   "scene-inverted-castle.png": {
     "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
     "size": 2946888
+  },
+  "scene-lily-valley-hill.png": {
+    "sha256": "a404949204e1aced5c6d392f0a35f0f5d2a8e03cab9e83aa3b1015abf018ac09",
+    "size": 3135963
   },
   "scene-mermaid-lake.png": {
     "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
@@ -275,6 +303,10 @@
     "sha256": "f7af18e9a82aeed5be555a6cb86bc1f52dcadbffe248608da8d9be99203547e8",
     "size": 3555602
   },
+  "scene-subterranean-bridge.png": {
+    "sha256": "e65447a0ca1493f77ebefa31db4d072c5204833bddec6e31ca21403ba024b6c1",
+    "size": 3631637
+  },
   "scene-suzunaan.png": {
     "sha256": "57837e6927e783a18c3b592ebe1cd8be1321cc1748269687152f0bd748ef8a54",
     "size": 3604374
@@ -290,6 +322,10 @@
   "scene-tsukumo-concert.png": {
     "sha256": "d8e056892d03e165cad7b377060d36d2d638dbd8fc85340ea145f38b8ff9deae",
     "size": 3741353
+  },
+  "scene-winter-whisper.png": {
+    "sha256": "1b49608825b0cd6a4564eff698d46306c53ada693fa7baaf830c168b39aa598b",
+    "size": 3367903
   },
   "seiga.png": {
     "sha256": "2183db53534f9e80d8084c41a6f8cd2d66904d2e1b58aa46ac64641932ee82c2",
@@ -315,9 +351,17 @@
     "sha256": "a66a8e6a130483ce98d3f7693072284a66c0d57b4c35a1e543bb7704bb087d2a",
     "size": 2694566
   },
+  "star.png": {
+    "sha256": "723122ed9952791256c10a454e1f4f145f06033e8ca65a315369a6f2cea2c45d",
+    "size": 2934074
+  },
   "suika.png": {
     "sha256": "00c3e0332026799b234727250dc0bb9d862a0e270006ced04beaeeb7d9a57a4d",
     "size": 2880608
+  },
+  "sunny.png": {
+    "sha256": "e36f387a0ece11e8ee4042196f42c7b63e1e425e32934596356793b1c25a473b",
+    "size": 2507595
   },
   "suwako-soft-v3.png": {
     "sha256": "a835b005368cedcc29dcfc2f2591036b5fc53141fee3e7328679d5f7509630f1",
@@ -370,6 +414,10 @@
   "wriggle.png": {
     "sha256": "e37ea4aa2fb860efc9ebe48a7696c7d3abce7af85f73f1c7f09466802deb7654",
     "size": 2426289
+  },
+  "yamame.png": {
+    "sha256": "1609c579a6833bffb6116f1f291a1d692de1fbe883272a4502f1e441a61c9f77",
+    "size": 2528580
   },
   "yatsuhashi.png": {
     "sha256": "b7f2ae65f19a4d04e415204c568f23eef134f644bf019d6bec396aed608b2a32",

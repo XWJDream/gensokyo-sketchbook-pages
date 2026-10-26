@@ -244,3 +244,34 @@ window.GENSOKYO.glossary.push(
   {term:'骚灵与乐器付丧神',en:'Poltergeists & instrument tsukumogami',text:'三姐妹是骚灵，雷鼓与九十九姐妹则是乐器付丧神。都能成为演奏者，并不代表相同种族；本册把她们放在同一主题筛选中，方便比较身份与乐音。',source:'https://danmaku.jp/archive/character/c031/'},
   {term:'念写与天狗报刊',en:'Spirit photography & tengu newspapers',text:'姬海棠果的念写是能力，取材与办报是工作。获得图像不等于完成现场调查；文与果各自的报道，也保留着记者的立场与取舍。',source:'https://thwiki.cc/姬海棠果'}
 );
+
+// 第十批：从妖精的漫画日常，读到冬日与地底。
+Object.assign(window.GENSOKYO.characterLinks,{
+ sunny:{place:'shrine',related:['luna','star','cirno'],work:'sangetsu',line:'从三月精的共同日常认识折光，再在妖精大战争中看一次恶作剧如何演变成冲突。'},
+ luna:{place:'shrine',related:['sunny','star'],work:'sangetsu',line:'沿漫画中的声音与恶作剧，认识月光妖精；她并非月都的居民。'},
+ star:{place:'shrine',related:['sunny','luna'],work:'sangetsu',line:'观察三人行动里负责感知的一位，再比较她与同伴不同的性格和翅膀。'},
+ medicine:{place:null,related:[],work:'th09',line:'沿花映塚中的铃兰与毒素，认识获得自我意识的人偶；无名之丘尚未收入地图册。'},
+ letty:{place:null,related:['cirno'],work:'th07',line:'从妖妖梦第一关的冬之妖怪读起，区分寒冷与冰、妖怪与妖精，也不编造夏季住所。'},
+ kisume:{place:null,related:['yamame'],work:'th11',line:'从地灵殿第一关道中的吊桶与鬼火读起，保留原作尚未展开的身世。'},
+ yamame:{place:null,related:['kisume','parsee'],work:'th11',line:'从幻想风穴第一关读到土蜘蛛，再沿后续作品认识她的吐丝、建筑与地底生活。'},
+ parsee:{place:null,related:['yamame','yuugi'],work:'th11',line:'第二关的地底桥与嫉妒心，把旅程引向旧都；桥尚未收入地图册，不指定为旧都内部。'}
+});
+window.GENSOKYO.characterLinks.cirno.related.push('sunny','luna','star','letty');
+window.GENSOKYO.books.find(b=>b.id==='th07').ids.push('letty');
+window.GENSOKYO.books.find(b=>b.id==='th09').ids.push('medicine');
+window.GENSOKYO.books.find(b=>b.id==='th11').ids.unshift('kisume','yamame','parsee');
+window.GENSOKYO.books.find(b=>b.id==='th11').caption='从风穴、桥与旧都，走向地灵殿的主人和地底伙伴。';
+window.GENSOKYO.books.push(
+ {id:'th128',number:'12.8',year:'2010',name:'妖精大战争',jp:'妖精大戦争 ～ 東方三月精',en:'Fairy Wars.',mark:'冰<br>战',theme:'spring',mood:'妖精 / 恶作剧 / 冰冻弹幕',description:'琪露诺因三妖精破坏自己的冰屋而发起挑战。上海爱丽丝幻乐团制作的弹幕游戏，以冻结弹幕的玩法和妖精之间的争执，延伸漫画三月精的故事。',ids:['cirno','sunny','luna','star'],caption:'游戏初发于 2010 年，区别于之后的 Steam 上架时间。',url:'https://store.steampowered.com/app/1100180/',reference:'https://thwiki.cc/妖精大战争'},
+ {id:'sangetsu',number:'',code:'BOOK / 03',year:'2008 · 第一卷',name:'东方三月精',jp:'東方三月精 Strange and Bright Nature Deity',en:'Strange and Bright Nature Deity.',mark:'三<br>光',theme:'green',mood:'漫画 / 三只妖精 / 恶作剧的日常',description:'ZUN 原作、比良坂真琴绘制的官方漫画系列，以日光、月光、星光三只妖精的生活为入口。这里链接第二系列第一卷；三月精还包括由其他副标题区分的系列，不能用这一卷的出版时间概括全部。',ids:['sunny','luna','star','reimu','marisa'],caption:'此处为第二系列的纸本第一卷，2008 年出版；并非三妖精的初登场年份。',url:'https://www.kadokawa.co.jp/product/200708000492/',reference:'https://thwiki.cc/东方三月精'}
+);
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'把光、声音与气息放在一起',label:'共同生活 / 光之三妖精',ids:['sunny','luna','star'],relation:'不同的能力，配合出同一场恶作剧。',description:'桑尼折射光线，露娜消除声音，斯塔感知周围动静。她们是同住的伙伴，“三妖精”并不意味着血缘姐妹，也不是三位天体的神明。',color:'green',symbol:'光'},
+ {title:'一封战书，几只妖精的春天',label:'游戏中的冲突 / 琪露诺与三妖精',ids:['cirno','sunny','luna','star'],relation:'冰屋被破坏，成为妖精大战争的导火索。',description:'这场冲突连接了三月精漫画与妖精大战争。她们的来往还有其他日常，不适合把一部作品里的争斗写成永远敌对的关系。',color:'violet',symbol:'冰'},
+ {title:'顺着风，走向桥的另一端',label:'关卡阅读 / 风穴与地底通道',ids:['kisume','yamame','parsee'],relation:'先遇见道中的吊桶，再遇见土蜘蛛与桥姬。',description:'地灵殿第一、二关串起三位角色的登场顺序。这是阅读旅程的关联，不声称三人组成固定队伍；场景中的相聚为本册创作。',color:'red',symbol:'桥'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'妖精与自然',en:'Fairies & natural phenomena',text:'妖精与自然现象密切相关。琪露诺、报春的莉莉白和光之三妖精各有能力，不能因为外表年幼、长着翅膀便视为相同角色；蕾蒂则是妖怪，非另一种冰妖精。',source:'https://thwiki.cc/妖精'},
+ {term:'无名之丘与铃兰',en:'Nameless Hill & lily of the valley',text:'无名之丘的铃兰花原与梅蒂欣的诞生、毒素能力相关。它不是幽香的太阳花田；两处都与花有关，不能合并成同一个地点或替两位角色编造主从关系。',source:'https://thwiki.cc/无名之丘'}
+);

@@ -67,3 +67,6 @@ for(const [id,ids,names] of [
  const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);
  p.residents=[...new Set([...p.residents,...ids])];p.people=[...new Set([...p.people,...names])];
 }
+
+// 第十批：神社附近的大树住民，只作为区域相关人物。
+{const p=window.GENSOKYO_ATLAS.places.find(p=>p.id==='shrine');p.residents.push('sunny','luna','star');p.people.push('桑尼米尔克','露娜切露德','斯塔萨菲雅');}
