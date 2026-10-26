@@ -51,6 +51,14 @@
     "sha256": "fe228c20d7500c116d85659cfb58673e3d49ed01b38a7ca11b75410305bde272",
     "size": 2558334
   },
+  "clownpiece.png": {
+    "sha256": "7754a6a49c21b4f9640e54d425df192fb2fb4554529057255b97b56fd865b529",
+    "size": 2717831
+  },
+  "doremy.png": {
+    "sha256": "203c6b02a932a492d74eef252f309a261509857d4f0dac7595088f53c1959080",
+    "size": 2810557
+  },
   "eiki.png": {
     "sha256": "c8f0aa3ae6b9ff6bd7e0c899f05693bf54a32f7f5c6e8b3acf716a70d038dbe0",
     "size": 2522783
@@ -71,6 +79,10 @@
     "sha256": "18180a456b03506d25dd0f09bd74c0a34fb162c29ca403cdaaf965b1a8abee53",
     "size": 2678373
   },
+  "hecatia.png": {
+    "sha256": "adba6234f7c40cf7d8aaf551ebc348838a6d07c0bd49e986e7e149335fa40b74",
+    "size": 2616061
+  },
   "hina.png": {
     "sha256": "8bb77866a75874f81961a8e97214e7712d49276ee1c64d6ad94fe0c141210f1a",
     "size": 2840221
@@ -78,6 +90,10 @@
   "iku.png": {
     "sha256": "8f3a044041491a1e3b30dfa7e95873a60fd026f66f23853ef2e863c23df7b262",
     "size": 3252443
+  },
+  "junko.png": {
+    "sha256": "209088744e1fa15b1732285e58c39b6bef94b5525b91777e8010c8a6f1a0b2d1",
+    "size": 3051428
   },
   "kagerou.png": {
     "sha256": "254563e22a9f3d647ce60009bac4c843fc5f590294942bcbc0992b017459a5f0",
@@ -231,9 +247,17 @@
     "sha256": "e8aaeac8536475189d955fd928d5207f485f3f31ea3b89daa9715a07b3011af7",
     "size": 2757809
   },
+  "ringo.png": {
+    "sha256": "5e7c0b73ebf78b757eb7ac65183dee683f190a23abfe6b42e6cf93275890d1c4",
+    "size": 2661094
+  },
   "rumia-soft-v3.png": {
     "sha256": "6459aa9f6a1a7db43a4eefc6fff1fd0f1e2b97a4245cb6f19a204131fc4024ea",
     "size": 2431043
+  },
+  "sagume.png": {
+    "sha256": "ae38d0d63196241622bf31f2a9f4a5b066174f81f7d31637dbea6d5724abfa7c",
+    "size": 2708292
   },
   "sakuya.png": {
     "sha256": "765a66669c127aa58c33287afa16c3bb4b17b491744e96a9544d1543b193297a",
@@ -259,6 +283,14 @@
     "sha256": "b4e5e367151d4356d6cf038f25fd9c0171c6b182ff799adb01ba16cb69fc5aa5",
     "size": 3602423
   },
+  "scene-dango-stalls.png": {
+    "sha256": "719aeaab068cf95ce1c11df3fe0980a21b9116a906ea5e9e7453a74faab6ffe5",
+    "size": 3629687
+  },
+  "scene-dream-corridor.png": {
+    "sha256": "ee74861b4ae2f9e2e32acb9a26367b2f9be3a952b2a2f134e3ff6fcdfbb0d363",
+    "size": 3035115
+  },
   "scene-fairy-treehouse.png": {
     "sha256": "59f790cc4a7296082c962a21a9f0b9d83df77512dabb0df99b04fde290941e8f",
     "size": 3593725
@@ -279,6 +311,10 @@
     "sha256": "a404949204e1aced5c6d392f0a35f0f5d2a8e03cab9e83aa3b1015abf018ac09",
     "size": 3135963
   },
+  "scene-lunar-courtyard.png": {
+    "sha256": "403960aafa081bdee9c39e9b92b99f9b51f6f8cd14556a4062282a5cc0850a26",
+    "size": 3162335
+  },
   "scene-mermaid-lake.png": {
     "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
     "size": 3383760
@@ -286,6 +322,10 @@
   "scene-myouren-v2.png": {
     "sha256": "ce9c4b81db03ae35119cb3a9037f267d61000e6ce3662795234e245f67525aa8",
     "size": 3843313
+  },
+  "scene-otherworld-rest.png": {
+    "sha256": "485e3d476f36bdd92451633c6239b35acb420039d6ec724cd386fe2277f23385",
+    "size": 3199603
   },
   "scene-palanship.png": {
     "sha256": "d5f00b9a0775328420877592cfd3baeac4ca64dccdb589eea401f6daa8f2154e",
@@ -334,6 +374,10 @@
   "seija.png": {
     "sha256": "9d051a747f2b03aad45e39e10ec7b755c723cd04e4ea55b8502ded2f5718febf",
     "size": 2654023
+  },
+  "seiran.png": {
+    "sha256": "a80a9b38754646d831dad073603bfcf5abce5f3b48e0ddc83bb2bd488386bde5",
+    "size": 2829351
   },
   "sekibanki.png": {
     "sha256": "6d8b1c5555c9fb84533697820206ab03bd1d3d80290bbd31c734451d0c351841",
@@ -422,6 +466,10 @@
   "yatsuhashi.png": {
     "sha256": "b7f2ae65f19a4d04e415204c568f23eef134f644bf019d6bec396aed608b2a32",
     "size": 2834885
+  },
+  "yorihime.png": {
+    "sha256": "fd96119c5d21a19f2be55f7f55627398613753d565232b38bf10f3db12bfcc80",
+    "size": 2824018
   },
   "yoshika.png": {
     "sha256": "2444c6fd70ab659e32c2e5622a3703d8dac2e0127e35b7f4f8fbedd36c18ce8e",

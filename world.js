@@ -275,3 +275,35 @@ window.GENSOKYO.glossary.push(
  {term:'妖精与自然',en:'Fairies & natural phenomena',text:'妖精与自然现象密切相关。琪露诺、报春的莉莉白和光之三妖精各有能力，不能因为外表年幼、长着翅膀便视为相同角色；蕾蒂则是妖怪，非另一种冰妖精。',source:'https://thwiki.cc/妖精'},
  {term:'无名之丘与铃兰',en:'Nameless Hill & lily of the valley',text:'无名之丘的铃兰花原与梅蒂欣的诞生、毒素能力相关。它不是幽香的太阳花田；两处都与花有关，不能合并成同一个地点或替两位角色编造主从关系。',source:'https://thwiki.cc/无名之丘'}
 );
+
+
+// 第十一批：从地上的月兔，读向梦境、月都与异界。
+Object.assign(window.GENSOKYO.characterLinks,{
+ seiran:{place:'village',related:['ringo','reisen'],work:'th15',line:'从绀珠传第一关的潜伏队员读起，再看她留在地上经营团子的日常。'},
+ ringo:{place:'village',related:['seiran','reisen'],work:'th15',line:'第二关的情报队员以团子增强力量，后来也在人里开起自己的小摊。'},
+ doremy:{place:null,related:['sagume'],work:'th15',line:'第三关的梦中旅程与探女的安排相接；梦中的月都需要与现实月都区分。'},
+ sagume:{place:null,related:['doremy','eirin'],work:'th15',line:'第四关的逆转言语之后，回看月都危机与梦中都市的计划。'},
+ clownpiece:{place:'shrine',related:['hecatia','junko','sunny','luna','star'],work:'th15',line:'第五关的地狱妖精之后，可沿三月精继续读她来到博丽神社的日常。'},
+ junko:{place:null,related:['hecatia','clownpiece','reisen'],work:'th15',line:'从第六关的复仇动机读到 Extra 的合作，名字与衣装意象并不等于狐妖种族。'},
+ hecatia:{place:null,related:['junko','clownpiece'],work:'th15',line:'沿 Extra 认识拥有三个身体的女神，区分统一意识、不同形态与她的部下。'},
+ yorihime:{place:null,related:['eirin','reisen'],work:'bougetsusho',line:'沿儚月抄漫画中的月之使者与地上来客，认识永琳曾教导的月之公主。'}
+});
+window.GENSOKYO.characterLinks.reisen.related.push('seiran','ringo','yorihime');
+window.GENSOKYO.characterLinks.eirin.related.push('yorihime','sagume');
+for(const id of ['sunny','luna','star'])window.GENSOKYO.characterLinks[id].related.push('clownpiece');
+window.GENSOKYO.books.push(
+ {id:'th15',number:'15',year:'2015',name:'东方绀珠传',jp:'東方紺珠伝',en:'Legacy of Lunatic Kingdom.',mark:'月<br>梦',theme:'night',mood:'月兔 / 梦境 / 月都的危机',description:'月兔的地上调查，引出梦境与月之都的危机。故事从山麓走向梦中的月都、月面与复仇者，让地上居民、月之民和地狱来客的立场彼此相接。',ids:['seiran','ringo','doremy','sagume','clownpiece','junko','hecatia','reisen'],caption:'游戏初发于 2015 年；月面冲突与梦境中的计划需要分别理解。',url:'https://store.steampowered.com/app/937580/',reference:'https://thwiki.cc/东方绀珠传'},
+ {id:'bougetsusho',number:'',code:'BOOK / 04',year:'2008 · 上卷',name:'东方儚月抄',jp:'東方儚月抄 ～ Silent Sinner in Blue.',en:'Silent Sinner in Blue.',mark:'月<br>抄',theme:'night',mood:'漫画 / 月之公主 / 地上与月都',description:'ZUN 原作、秋★枝绘制的官方漫画，从地上来客的月都计划认识绵月姐妹与永琳的旧缘。这里链接漫画上卷；儚月抄另有小说与四格版本，应按具体版本阅读。',ids:['yorihime','eirin','kaguya','reisen','reimu','remilia'],caption:'漫画上卷于 2008 年出版，不以这一卷的年份概括整个儚月抄企划。',url:'https://data.ichijinsha.co.jp/detail/75806089',reference:'https://thwiki.cc/东方儚月抄'}
+);
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'离开任务，遇见新的日常',label:'前同僚与同行 / 清兰与铃瑚',ids:['seiran','ringo'],relation:'曾在同一部队，如今各有自己的团子摊。',description:'两位都曾属于 Eagle Rabbit，负责的任务不同。后来在人类村落做团子生意，仍各有店名与生活；画中的并排摊位是想象，不把她们写成血缘姐妹或合伙店主。',color:'green',symbol:'团'},
+ {title:'在梦里，再造一座都市',label:'计划与协助 / 探女与哆来咪',ids:['sagume','doremy'],relation:'月都的危机，引出梦中都市的安排。',description:'绀珠传中探女与哆来咪的联系，是理解梦中月都的重要线索。梦境再现与现实月都不是同一个场所，也不能据此把哆来咪写成月之公主。',color:'violet',symbol:'梦'},
+ {title:'不同来历，同一次合作',label:'朋友与合作者 / 纯狐与赫卡提亚',ids:['junko','hecatia'],relation:'复仇者与地狱女神，在月都事件中联手。',description:'纯狐的动机与赫卡提亚的立场需要分别阅读。她们有朋友与合作关系，不能因为常与皮丝同框，便把三位改写成原作确定的血缘家庭。',color:'red',symbol:'界'},
+ {title:'火把，也照见后来的生活',label:'女神与部下 / 赫卡提亚与皮丝',ids:['hecatia','clownpiece'],relation:'地狱的上下属，也有亲近随和的来往。',description:'克劳恩皮丝是赫卡提亚的部下。月面冲突之后，皮丝来到幻想乡；可沿三月精继续读她与神社、光之三妖精的联系。',color:'violet',symbol:'灯'},
+ {title:'月都旧日的教导',label:'曾经的师徒 / 永琳与依姬',ids:['eirin','yorihime'],relation:'如今相隔地月，过去的教导仍是关系线索。',description:'永琳曾教导绵月姐妹，依姬则在月都承担月之使者相关事务。沿儚月抄阅读两人的旧缘，不将如今的居所、职位与旧日关系混为一谈。',color:'green',symbol:'月'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'梦境世界',en:'The Dream World',text:'与生物的梦有关的世界，哆来咪在其中管理梦境。梦中的月都再现属于绀珠传的特定安排；不等于现实月都被整体搬走，也不是从地上随意步行可达的普通地区。',source:'https://thwiki.cc/梦境世界'},
+ {term:'三个身体，一个意识',en:'Three bodies, one consciousness',text:'赫卡提亚分别在月、地球与异界的地狱拥有身体，意识相通。发色、头顶星球随形态变化；三枚星球意象不代表三位互不相干的女神，红发异界形态也不是另一个角色。',source:'https://danmaku.jp/archive/character/c057/'}
+);

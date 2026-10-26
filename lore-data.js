@@ -34,3 +34,11 @@ window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('shizuha','minoriko','h
 window.GENSOKYO_LORE.find(p=>p.id==='faith').sources.push(['秋姐妹 · 红叶与丰收','https://thwiki.cc/秋姐妹']);
 
 window.GENSOKYO_LORE.find(p=>p.id==='realms').people.push('kisume','yamame','parsee');
+
+
+window.GENSOKYO_LORE.push({id:'dreams',mark:'梦',name:'梦境与月都',en:'A world within a dream',title:'梦里看见的，也有自己的来处。',color:'#9d8ba6',image:'scene-dream-corridor',alt:'哆来咪站在淡紫云海的梦境长廊上，远处浮着月都般的宫殿',lead:'从哆来咪开始，分清梦境、梦中的月都与现实月都。',paragraphs:[
+ '梦境世界与生物的梦密切相关。貘妖怪哆来咪在其中管理梦境，具有食梦、造梦的能力；这让梦在东方的故事中，既是体验，也可以成为行动展开的舞台。',
+ '绀珠传里，月都危机牵动探女的计划，哆来咪曾在梦中再现月都。旅行者经过的梦中都市，需要与现实中的月之都分开理解；一座城市的梦境再现，并不等于现实城市整体移到梦里。'
+ ],facts:[['梦境世界','与生物之梦有关的世界，不是地上地图的一个普通街区。'],['梦中的月都','绀珠传情境中的再现，阅读时要留意谁在梦中、计划为何展开。'],['现实月都','月之民与月兔生活的都市；永远亭则位于地上的迷途竹林。']],correction:'不能从一个梦境场景推定所有现实都是梦，也不能把画中的门廊当作任意出入月都的通道。具体事件应回到原作对话与设定阅读。',perspective:'本章围绕绀珠传的梦境线索作入门概述，不覆盖凭依华中梦境住民与现实住民的全部关系。',caption:'长廊、云海、梦魂与宫殿为同人意象，和场景手札共用一幅插图；非原作路线或建筑复原。',people:['doremy','sagume','seiran','ringo','yorihime'],places:[],related:['moon','boundary'],sources:[['上海爱丽丝幻乐团 · 东方绀珠传','https://www16.big.or.jp/~zun/html/th15top.html'],['哆来咪 · 原作资料摘录','https://thwiki.cc/哆来咪·苏伊特'],['探女 · 月都危机与逆转','https://danmaku.jp/archive/character/c069/'],['梦境世界 · 场景资料','https://thwiki.cc/梦境世界']]});
+window.GENSOKYO_LORE.find(p=>p.id==='moon').people.push('sagume','yorihime');
+window.GENSOKYO_LORE.find(p=>p.id==='moon').related.push('dreams');

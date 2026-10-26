@@ -70,3 +70,9 @@ for(const [id,ids,names] of [
 
 // 第十批：神社附近的大树住民，只作为区域相关人物。
 {const p=window.GENSOKYO_ATLAS.places.find(p=>p.id==='shrine');p.residents.push('sunny','luna','star');p.people.push('桑尼米尔克','露娜切露德','斯塔萨菲雅');}
+
+// 第十一批：月兔的地上生意与神社地板下的新住民。
+for(const [id,ids,names] of [
+ ['village',['seiran','ringo'],['清兰','铃瑚']],
+ ['shrine',['clownpiece'],['克劳恩皮丝']]
+]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}
