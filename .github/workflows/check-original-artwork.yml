@@ -1,4 +1,4 @@
-name: Check full-site original artwork
+name: Check original artwork
 on:
   workflow_dispatch:
 permissions:
@@ -9,15 +9,17 @@ jobs:
     timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-      - name: Verify and warm full-resolution artwork
+      - name: Verify original artwork and check full-site availability
         shell: python
         run: |
-          import json,hashlib,urllib.request,concurrent.futures
+          import json,hashlib,urllib.request,urllib.error,concurrent.futures
           from pathlib import Path
           registry=json.loads(Path('artwork-registry.json').read_text())
-          base='https://gensokyo-sketchbook.silverjoy8.chatgpt.site/'
-          with urllib.request.urlopen(base+'characters.js?v=cast09',timeout=30) as response:
+          mirror='https://xwjdream.github.io/gensokyo-sketchbook-pages/'
+          full='https://gensokyo-sketchbook.silverjoy8.chatgpt.site/'
+          with urllib.request.urlopen(mirror+'characters.js?v=cast09',timeout=30) as response:
               assert "id:'hatate'" in response.read().decode('utf-8')
+          base=mirror
           def verify(item):
               name,entry=item
               request=urllib.request.Request(base+'assets/'+name,method='HEAD')
@@ -27,14 +29,25 @@ jobs:
                           assert response.status==200,name
                           assert response.headers.get('Content-Type')=='image/png',name
                           assert int(response.headers.get('Content-Length'))==entry['size'],name
-                          assert response.headers.get('ETag')=='"'+entry['sha256']+'"',name
+                          if base==full:assert response.headers.get('ETag')=='"'+entry['sha256']+'"',name
                       return name
                   except Exception:
                       if attempt:raise
           with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
               verified=list(pool.map(verify,registry.items()))
-          print(f'{len(verified)} original artwork routes verified and cached')
+          print(f'{len(verified)} GitHub original artwork routes verified')
           for name in ['lunasa.png','scene-tengu-notebook.png','scene-bamboo-lantern-v2.png']:
               with urllib.request.urlopen(base+'assets/'+name,timeout=40) as response:
                   assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
               print('Exact original bytes: '+name)
+          try:
+              with urllib.request.urlopen(full+'characters.js?v=cast09',timeout=30) as response:
+                  assert "id:'hatate'" in response.read().decode('utf-8')
+          except urllib.error.HTTPError as error:
+              if error.code!=403:raise
+              print('::warning::Sites returned HTTP 403 to this automated runner. Full-site image checks are unverified; GitHub checks above passed.')
+          else:
+              base=full
+              with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+                  checked=list(pool.map(verify,registry.items()))
+              print(f'{len(checked)} Sites PNG routes verified and cached')
