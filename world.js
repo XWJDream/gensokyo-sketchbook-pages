@@ -381,3 +381,34 @@ window.GENSOKYO.glossary.push(
  {term:'用途与使用方法',en:'Purpose & operation',text:'霖之助可以判别物品的名称与用途，却不能直接知道操作方法。这既适合经营外界旧物，也留下推理与误解的空间；店主的一切解释并不自动成为原作世界的客观定论。',source:'https://thwiki.cc/森近霖之助'},
  {term:'完全凭依',en:'Perfect possession',text:'凭依华中形成搭档、切换主役与下仆的现象，与梦境世界也有联系。它是作品中有具体机制与情境的异常，不等同于所有附身传说，也不能把每组搭档视作永久的主从身份。',source:'https://thwiki.cc/东方凭依华/故事背景'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ eika:{place:'sanzu',related:['urumi','komachi'],work:'th17',line:'从第一关的垒石与水子伙伴读起；地图仅提供三途河相关区域入口，不标定赛之河原坐标。'},
+ urumi:{place:'sanzu',related:['eika','komachi'],work:'th17',line:'沿第二关认识牛鬼过去的袭击方式与如今的养鱼生活，分清石婴和真实婴儿。'},
+ kutaka:{place:null,related:['eiki','saki'],work:'th17',line:'第三关的彼岸关口是工作地，妖怪之山瀑布上方才是居住线索；本册未标定她的住宅。'},
+ yachie:{place:null,related:['saki','yuuma','keiki'],work:'th17',line:'从第四关的引导继续读组织竞争，留意动物灵叙述与人间灵处境的差别。'},
+ mayumi:{place:null,related:['keiki','yachie'],work:'th17',line:'第五关的埴轮兵长把创造、忠心与实体的力量接起来，不把灵长园标在旧地狱。'},
+ keiki:{place:null,related:['mayumi','yachie','saki'],work:'th17',line:'沿第六关比较保护与统治的两面，结合人间灵的祈求理解造形神。'},
+ saki:{place:null,related:['yachie','yuuma','kutaka'],work:'th17',line:'Extra 的黑天马首领属于劲牙组，部下以狼灵为代表；与鬼杰组分别阅读。'},
+ yuuma:{place:null,related:['yachie','saki','okina'],work:'th175',line:'鬼形兽中先有提及，刚欲异闻才正式登场；沿黑水线索阅读吸收能力与各方计划。'}
+});
+window.GENSOKYO.characterLinks.eiki.related.push('kutaka');
+window.GENSOKYO.characterLinks.komachi.related.push('eika','urumi');
+window.GENSOKYO.characterLinks.okina.related.push('yuuma');
+window.GENSOKYO.books.push(
+ {id:'th17',number:'17',year:'2019',name:'东方鬼形兽',jp:'東方鬼形獣',en:'Wily Beast and Weakest Creature.',mark:'灵<br>像',theme:'green',mood:'动物灵 / 人间灵 / 偶像与组织',description:'动物灵来到地上，调查者从赛之河原、三途河与关口进入更深的冲突。畜生界的组织竞争、受压迫的人间灵与造形神的偶像，让同一场战斗呈现不同阵营的说法。',ids:['eika','urumi','kutaka','yachie','mayumi','keiki','saki'],caption:'2019 年发行；尤魔在本作中被提及，本人正式登场于刚欲异闻。',url:'https://store.steampowered.com/app/1079160/',reference:'https://thwiki.cc/东方鬼形兽'},
+ {id:'th175',number:'17.5',year:'2021',name:'东方刚欲异闻',jp:'東方剛欲異聞 ～ 水没した沈愁地獄',en:'Sunken Fossil World.',mark:'黑<br>水',theme:'night',mood:'黑水 / 地底调查 / 贪欲与吸收',description:'黑色液体从地上各处喷涌而出，不同人物沿线索深入地底。黄昏边境与上海爱丽丝幻乐团合作的横向卷轴弹幕动作作品，将尤魔、旧血池地狱与各方的计划连在一起。',ids:['yuuma','reimu','marisa','kanako','murasa','flandre','okina','joon','shion'],caption:'2021 年发行；本入口以本作故事为范围，不概括后来每次组织关系变化。',url:'https://tasofro.net/touhou175/',reference:'https://thwiki.cc/东方刚欲异闻'}
+);
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'被创造的忠心，也有自己的力量',label:'创造者与兵长 / 袿姬与磨弓',ids:['keiki','mayumi'],relation:'造形神创造埴轮，兵长守护灵长园。',description:'磨弓由袿姬创造，忠心能转化为实力。两人的关系连接祈愿、造物与守护，也要放回灵长园新的统治结构理解；不是普通血缘母女。',color:'green',symbol:'埴'},
+ {title:'三个组织，三种行动方式',label:'竞争首领 / 八千慧、早鬼与尤魔',ids:['yachie','saki','yuuma'],relation:'鬼杰组、劲牙组与刚欲同盟彼此竞争。',description:'水獭灵、狼灵与鹫灵分别提供辨认部下的线索。具体合作或对抗随事件变化，不能把同框插图当成永久联盟，也不能把三位首领归进同一组织。',color:'violet',symbol:'争'},
+ {title:'守关的考验，来自另一份责任',label:'工作关系 / 久侘歌与阎魔',ids:['kutaka','eiki'],relation:'久侘歌依阎魔安排在彼岸异界关口工作。',description:'通行许可与守门者的考验各有情境。工作地点不是住宅，鸡之神的居住线索在妖怪之山瀑布上方；本册不以画中木门确定官方关口建筑。',color:'red',symbol:'关'},
+ {title:'河岸并排，各自的故事',label:'主题并读 / 璎花与润美',ids:['eika','urumi'],relation:'垒石的水子之灵，与养鱼的牛鬼。',description:'两位分别在鬼形兽第一、二关登场，种族、活动与能力不同。这是按河岸主题安排的并读关系，不声称原作中已经确立固定搭档或亲缘。',color:'green',symbol:'岸'},
+ {title:'祈愿改变了谁的秩序',label:'势力冲突 / 袿姬、八千慧与早鬼',ids:['keiki','yachie','saki'],relation:'埴轮的出现，动摇动物灵压迫人间灵的力量格局。',description:'袿姬回应人间灵祈求，动物灵首领则有自身利益。保护、依赖与新的控制需要比较双方叙述；不把温柔造物者或爽快首领直接等同于无条件正义。',color:'violet',symbol:'像'},
+ {title:'黑水之下，仍有未说完的安排',label:'事件中的交锋 / 尤魔与隐岐奈',ids:['yuuma','okina','flandre'],relation:'刚欲异闻的黑水调查，牵动不止一方的计划。',description:'尤魔的吸收能力与隐岐奈的行动，要沿刚欲异闻不同路线和后续情节理解。参与同一事件不代表三人始终是同伴，也不将旧血池地狱直接等同于旧都。',color:'red',symbol:'欲'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'动物灵、人间灵与埴轮',en:'Animal spirits, human spirits & haniwa',text:'鬼形兽中的动物灵组织压迫人间灵，袿姬回应人间灵祈求创造偶像与埴轮。埴轮拥有实体，不能与作为灵的居民混为一类；它们对灵体战斗的优势，也不等于能够抵挡所有活人的攻击。',source:'https://danmaku.jp/archive/character/c045/'},
+ {term:'灵长园与偶像',en:'The Primate Spirit Garden & idols',text:'灵长园是畜生界中与人间灵、袿姬及埴轮相关的场所。这里的偶像包含造形与信仰的力量，不只指舞台艺人；畜生界、旧地狱和如今的地狱各有设定，不是一张地底地图上的同义名称。',source:'https://danmaku.jp/archive/character/c074/'}
+);

@@ -54,3 +54,12 @@ window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('ichirin','unzan');
 window.GENSOKYO_LORE.find(p=>p.id==='boundary').people.push('sumireko','kasen');
 window.GENSOKYO_LORE.find(p=>p.id==='dreams').people.push('sumireko');
 window.GENSOKYO_LORE.find(p=>p.id==='dreams').sources.push(['堇子 · 来访与超能力','https://danmaku.jp/archive/character/c008/']);
+
+window.GENSOKYO_LORE.push({id:'beasts',mark:'埴',name:'畜生界与偶像',en:'Spirits, idols & a changing order',title:'同一团泥土，回应不同的愿望。',color:'#9b9478',image:'scene-haniwa-garden',alt:'袿姬在陶土庭园雕塑，埴轮兵长磨弓站在小埴轮与工具台旁',lead:'从人间灵的祈求开始，理解保护、造物与组织的竞争。',paragraphs:[
+ '鬼形兽中的畜生界，由不同动物灵组织争夺力量。人间灵受到动物灵的压迫，向神明求助；回应祈愿的袿姬创造偶像与埴轮，使灵长园的力量格局发生变化。动物灵、人间灵和拥有实体的埴轮，是需要区分的三类存在。',
+ '磨弓是袿姬创造的埴轮兵长，忠心能够转化为实力。保护人间灵的造物，也带来新的依赖和统治；原作中不同阵营各有立场，不能只听一方的说法。八千慧、早鬼和尤魔分别领导鬼杰组、劲牙组与刚欲同盟，合作与冲突须结合具体事件阅读。'
+ ],facts:[['动物灵组织','水獭灵、狼灵与鹫灵分别联系三方首领，不把她们归为同一组织。'],['人间灵的祈愿','理解袿姬为何来到灵长园的重要线索。'],['埴轮的实体','不同于灵体的战斗优势，不能外推成面对一切攻击都无敌。']],correction:'畜生界不等于旧地狱，也不等于所有死后世界。当前地图册没有标定畜生界或灵长园；插图里的道路、塔楼和庭院不提供官方坐标。',perspective:'本章围绕鬼形兽的冲突与刚欲异闻的入门线索，不概括后续作品里全部组织变化。造形神的保护与控制，需比较人间灵和动物灵的不同处境。',caption:'与场景手札共用一幅新绘图。陶土塔、工作台、绿地与雕塑时刻均为同人编排，不还原原作建筑或事件。',people:['yachie','mayumi','keiki','saki','yuuma'],places:[],related:['realms','faith'],sources:[['上海爱丽丝幻乐团 · 鬼形兽','https://store.steampowered.com/app/1079160/'],['袿姬 · 造形神与偶像','https://danmaku.jp/archive/character/c074/'],['磨弓 · 埴轮的实体与忠心','https://danmaku.jp/archive/character/c045/'],['黄昏边境 · 刚欲异闻','https://tasofro.net/touhou175/']]});
+window.GENSOKYO_LORE.find(p=>p.id==='realms').people.push('eika','urumi','kutaka');
+window.GENSOKYO_LORE.find(p=>p.id==='realms').related.push('beasts');
+window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('keiki','mayumi');
+window.GENSOKYO_LORE.find(p=>p.id==='faith').related.push('beasts');

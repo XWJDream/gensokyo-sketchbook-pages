@@ -91,3 +91,6 @@ for(const [id,ids,names] of [
  ['myouren',['ichirin','unzan'],['云居一轮','云山']],
  ['village',['miyoi'],['奥野田美宵（鲵吞亭工作）']]
 ]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}
+
+// 第十四批：润美的三途河岸居住线索；不为赛之河原、关口或畜生界编坐标。
+{const p=window.GENSOKYO_ATLAS.places.find(p=>p.id==='sanzu');p.residents.push('urumi');p.people.push('牛崎润美（河岸养鱼）');}
