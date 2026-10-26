@@ -94,3 +94,6 @@ for(const [id,ids,names] of [
 
 // 第十四批：润美的三途河岸居住线索；不为赛之河原、关口或畜生界编坐标。
 {const p=window.GENSOKYO_ATLAS.places.find(p=>p.id==='sanzu');p.residents.push('urumi');p.people.push('牛崎润美（河岸养鱼）');}
+
+// 第十五批：区域阅读线索，不编造新地点坐标或矿洞路线。
+{const p=window.GENSOKYO_ATLAS.places.find(p=>p.id==='mountain');p.residents.push('mike','takane','sannyo','tsukasa','megumu');p.people.push('豪德寺三花（山中活动）','山城高岭（秘天崖）','驹草山如（高地）','菅牧典（交涉）','饭纲丸龙（山顶附近）');}

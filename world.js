@@ -412,3 +412,31 @@ window.GENSOKYO.glossary.push(
  {term:'动物灵、人间灵与埴轮',en:'Animal spirits, human spirits & haniwa',text:'鬼形兽中的动物灵组织压迫人间灵，袿姬回应人间灵祈求创造偶像与埴轮。埴轮拥有实体，不能与作为灵的居民混为一类；它们对灵体战斗的优势，也不等于能够抵挡所有活人的攻击。',source:'https://danmaku.jp/archive/character/c045/'},
  {term:'灵长园与偶像',en:'The Primate Spirit Garden & idols',text:'灵长园是畜生界中与人间灵、袿姬及埴轮相关的场所。这里的偶像包含造形与信仰的力量，不只指舞台艺人；畜生界、旧地狱和如今的地狱各有设定，不是一张地底地图上的同义名称。',source:'https://danmaku.jp/archive/character/c074/'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ mike:{place:'mountain',related:['takane','chimata'],work:'th18',line:'第一关的三花猫与卡牌交易，适合先分清“招财或揽客”的限制；地图仅为山中区域入口。'},
+ takane:{place:'mountain',related:['nitori','mike'],work:'th18',line:'从第二关的山童读起，再与河童比较森林、技术和经商；秘天崖尚未单独标点。'},
+ sannyo:{place:'mountain',related:['misumaru','mamizou','miyoi'],work:'th18',line:'第三关先认识高地的山女郎，后续与醉蝶华的酒馆活动分开按作品阅读。'},
+ misumaru:{place:null,related:['momoyo','megumu','reimu'],work:'th18',line:'第四关的勾玉、龙珠与矿洞调查，既有关矿物之力，也关乎对开采的担忧。'},
+ tsukasa:{place:'mountain',related:['megumu','chimata','momoyo'],work:'th18',line:'从第五、六关到 Extra 比较不同对象听到的建议，管狐的传话并非中立旁白。'},
+ megumu:{place:'mountain',related:['tsukasa','chimata','momoyo','aya','hatate'],work:'th18',line:'第五关认识大天狗与交易计划；地图只提供妖怪之山导览，不指定其宅邸。'},
+ chimata:{place:null,related:['megumu','tsukasa','mike'],work:'th18',line:'沿第六关理解集市与所有权的设定，月虹市场尚未收入地图册。'},
+ momoyo:{place:null,related:['megumu','tsukasa','misumaru'],work:'th18',line:'Extra 的矿道、采矿合作与噬龙传闻，应与原作保留的未知一起阅读。'}
+});
+window.GENSOKYO.characterLinks.nitori.related.push('takane');
+window.GENSOKYO.characterLinks.aya.related.push('megumu');
+window.GENSOKYO.characterLinks.hatate.related.push('megumu');
+window.GENSOKYO.books.push({id:'th18',number:'18',year:'2021',name:'东方虹龙洞',jp:'東方虹龍洞',en:'Unconnected Marketeers.',mark:'虹<br>市',theme:'spring',mood:'卡牌 / 矿物 / 集市与所有权',description:'不可思议的能力卡牌在各处流通。四位人类沿山路调查，从山麓的贩售者走向矿洞与月虹市场，渐渐看见矿物、制造与交易背后各不相同的目的。',ids:['mike','takane','sannyo','misumaru','tsukasa','megumu','chimata','momoyo'],caption:'2021 年发行；本入口以虹龙洞为范围，不将后续黑市与兽王园中的变化混成同一事件。',url:'https://store.steampowered.com/app/1566410/',reference:'https://thwiki.cc/附带文档:东方虹龙洞/Omake'});
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'森林与河流，各有拿手之处',label:'竞争与依存 / 高岭与荷取',ids:['takane','nitori'],relation:'以两位为入口，比较山童与河童的群体关系。',description:'山童与河童相互竞争，技术、制造与经商又互相依赖。此处按族群设定并读两位，不将每一项群体往来都写成她们个人已经发生的合作事件。',color:'green',symbol:'技'},
+ {title:'同一张卡牌，两种利益',label:'合作与牵制 / 龙与千亦',ids:['megumu','chimata'],relation:'流通带来利益，也使市场之神重新积蓄力量。',description:'龙参与制造与通货体系，千亦的神力则与交易相连。她们利用合作达成各自目的，后来又互相牵制；温和的谈判插图不能抹去这种分歧。',color:'violet',symbol:'市'},
+ {title:'耳边的话，传向不同的人',label:'助手与交涉 / 典和龙、千亦、百百世',ids:['tsukasa','megumu','chimata','momoyo'],relation:'典传递指示，也抓住听者的心灵弱点。',description:'几位都信任过管狐的建议。阅读虹龙洞时，可比较同一位使者如何向不同对象表达，不把她当作可靠无偏的事件解说员。',color:'red',symbol:'言'},
+ {title:'亲友的委托，矿石的报酬',label:'亲友与交易 / 龙和百百世',ids:['megumu','momoyo'],relation:'大天狗提出生意，大蜈蚣负责开采。',description:'龙不厌恶与百百世相会，两人有亲友关系。开采龙珠又形成明确的职责和报酬；“亲友”不等于确认的血缘家族，也不代表两人的种族相同。',color:'green',symbol:'矿'},
+ {title:'这块矿石，应当如何被使用',label:'开采争议 / 魅须丸与百百世',ids:['misumaru','momoyo','megumu'],relation:'调查者与开采者，对龙珠去向有不同主张。',description:'魅须丸关心矿物力量与山体环境，百百世则接受了开采职责。这段冲突连接着矿物归属、资源使用与各方利益；画中并立不意味着两位是共同采矿的伙伴。',color:'violet',symbol:'玉'},
+ {title:'招来的客人，也要完成交易',label:'主题并读 / 三花与千亦',ids:['mike','chimata'],relation:'从一面贩售者，读到集市神明的交易规则。',description:'三花的招财与揽客有自身限制，千亦的力量则与物品售出、所有权变化有关。这是一条作品内主题路线，不据此推定两位已经确立主从或雇佣关系。',color:'red',symbol:'客'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'能力卡牌与交易',en:'Ability cards & exchange',text:'虹龙洞里的卡牌蕴含人类、妖怪的部分魔力，制造、流通与交易分别牵动不同人物。卡牌在集市神明力量下成交才能补充魔力，不等于原角色被整个封入卡中；游戏机制与现实收藏品也应区分。',source:'https://thwiki.cc/附带文档:东方虹龙洞/Omake'},
+ {term:'龙珠、勾玉与矿洞',en:'Dragon gems, magatama & the mine',text:'龙珠是适合制玉的古代矿物，勾玉则是加工出的魔法器具，二者不是同一词。虹龙洞是作品中氧气稀薄的复杂矿洞；画页不提供游览路线，也不能以发光矿脉推定真实地质结构。',source:'https://thwiki.cc/玉造魅须丸'}
+);

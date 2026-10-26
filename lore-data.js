@@ -63,3 +63,12 @@ window.GENSOKYO_LORE.find(p=>p.id==='realms').people.push('eika','urumi','kutaka
 window.GENSOKYO_LORE.find(p=>p.id==='realms').related.push('beasts');
 window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('keiki','mayumi');
 window.GENSOKYO_LORE.find(p=>p.id==='faith').related.push('beasts');
+
+window.GENSOKYO_LORE.push({id:'markets',mark:'市',name:'集市与能力卡牌',en:'Cards, exchange & different purposes',title:'卡牌换了手，故事也改变方向。',color:'#9b8cac',image:'scene-moonrainbow-market',alt:'月虹映着山顶灯摊，龙、典与千亦围着能力卡牌交涉',lead:'沿着一张卡牌，分清矿物、制造、交易与神明的力量。',paragraphs:[
+ '虹龙洞的调查从能力卡牌流通开始。这些卡牌承载人类、妖怪的部分魔力，背后又涉及适合收纳灵魂特质的龙珠。矿物原料、制玉的勾玉与最终流通的卡牌不是三个可以互换的称谓，也不意味着人物本体被关在卡中。',
+ '饭纲丸龙参与制造和通货体系，千亦的神力与集市交易相连，典则在不同人物之间传话。同一项合作可以同时服务于不同目的；把这些立场分开，便更容易读懂后来的分歧。三花和高岭作为贩售者，也各有自己的生活与能力。'
+ ],facts:[['龙珠与勾玉','古代矿物适合制玉，原料与加工出的器具要分开理解。'],['交易之神','千亦的能力联系物品售出后所有权的丧失，是原作世界的特殊设定。'],['流通中的卡牌','制造、贩售与补充魔力各有条件，不把游戏系统直接套作现实规则。']],correction:'月虹市场不是人类村落的一条固定商店街。画中摊位、道路、灯串和会面为同人想象；能力卡牌的交易条件应结合具体作品理解。',perspective:'本章以虹龙洞附带设定与游戏剧情为范围，区分人物的计划和实际结果；后续黑市事件应按另一部作品继续阅读。',caption:'与新场景共用一幅图；围桌交涉、市场建筑与月虹光线为创作，不还原某一段原作演出。',people:['mike','takane','tsukasa','megumu','chimata'],places:[],related:['faith','village'],sources:[['虹龙洞 · 原作附带设定','https://thwiki.cc/附带文档:东方虹龙洞/Omake'],['上海爱丽丝幻乐团 · 官方发行页','https://store.steampowered.com/app/1566410/'],['千亦 · 交易与所有权','https://thwiki.cc/天弓千亦'],['魅须丸 · 矿物与勾玉','https://thwiki.cc/玉造魅须丸']]});
+window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('misumaru','chimata');
+window.GENSOKYO_LORE.find(p=>p.id==='faith').related.push('markets');
+window.GENSOKYO_LORE.find(p=>p.id==='village').related.push('markets');
+
