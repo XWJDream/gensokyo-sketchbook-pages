@@ -72,3 +72,11 @@ window.GENSOKYO_LORE.find(p=>p.id==='faith').people.push('misumaru','chimata');
 window.GENSOKYO_LORE.find(p=>p.id==='faith').related.push('markets');
 window.GENSOKYO_LORE.find(p=>p.id==='village').related.push('markets');
 
+
+// 兽王园延伸既有畜生界章节，按作品区分组织与行动动机。
+{const p=window.GENSOKYO_LORE.find(p=>p.id==='beasts');
+ p.paragraphs.push('兽王园进一步描写动物灵组织对地上的行动。美天、慧之子与血枪分别成为三方的新成员，又与残无的计划相连。日狭美则在通往地狱的故事中引导来客，对残无怀有单方面的景仰。组织归属、某次行动的指示和个人的信任，需要分开理解。');
+ p.facts.push(['后续的兽王园','三位新成员有不同来历；加入组织，不等于所有动机都与首领一致。']);
+ p.people.push('biten','enoko','chiyari','hisami','zanmu');
+ p.perspective='本章比较鬼形兽中的灵长园冲突、刚欲异闻的入门线索和兽王园的组织行动。它们是不同作品的事件，不把三位新成员的故事提前归入鬼形兽，也不以一方说法代替全部立场。';
+ p.sources.push(['上海爱丽丝幻乐团 · 兽王园','https://store.steampowered.com/app/2400340/'],['残无 · 计划与人物线索','https://thwiki.cc/日白残无']);}

@@ -97,3 +97,6 @@ for(const [id,ids,names] of [
 
 // 第十五批：区域阅读线索，不编造新地点坐标或矿洞路线。
 {const p=window.GENSOKYO_ATLAS.places.find(p=>p.id==='mountain');p.residents.push('mike','takane','sannyo','tsukasa','megumu');p.people.push('豪德寺三花（山中活动）','山城高岭（秘天崖）','驹草山如（高地）','菅牧典（交涉）','饭纲丸龙（山顶附近）');}
+
+// 第十六批：已有区域中的活动线索；地狱与旧血池不强塞进旧都地图。
+for(const [id,ids,names] of [['mountain',['biten'],['孙美天（圣域活动）']],['forest',['enoko'],['三头慧之子（隐居线索）']]]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}

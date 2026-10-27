@@ -440,3 +440,30 @@ window.GENSOKYO.glossary.push(
  {term:'能力卡牌与交易',en:'Ability cards & exchange',text:'虹龙洞里的卡牌蕴含人类、妖怪的部分魔力，制造、流通与交易分别牵动不同人物。卡牌在集市神明力量下成交才能补充魔力，不等于原角色被整个封入卡中；游戏机制与现实收藏品也应区分。',source:'https://thwiki.cc/附带文档:东方虹龙洞/Omake'},
  {term:'龙珠、勾玉与矿洞',en:'Dragon gems, magatama & the mine',text:'龙珠是适合制玉的古代矿物，勾玉则是加工出的魔法器具，二者不是同一词。虹龙洞是作品中氧气稀薄的复杂矿洞；画页不提供游览路线，也不能以发光矿脉推定真实地质结构。',source:'https://thwiki.cc/玉造魅须丸'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ biten:{place:'mountain',related:['yachie','zanmu','enoko'],work:'th19',line:'沿兽王园认识猿神与鬼杰组，再分清自称的转世和原作确认的身份；地图只关联山中区域。'},
+ enoko:{place:'forest',related:['saki','zanmu','marisa'],work:'th19',line:'从森林山犬与宝珠陷阱读起，留意不死的来历、妖怪觉醒与组织归属各不相同。'},
+ chiyari:{place:null,related:['yuuma','zanmu','rin'],work:'th19',line:'旧血池地狱不是当前地图的旧都；继续读刚欲同盟身份之外，她与残无的安排。'},
+ hisami:{place:null,related:['zanmu','suika','chiyari'],work:'th19',line:'从通往地狱的诱导认识黄泉丑女，区分她单方面的景仰与残无的回应。'},
+ zanmu:{place:null,related:['hisami','biten','enoko','chiyari','suika'],work:'th19',line:'沿不同人物路线比较她的计划与实际行动；地狱与阎魔的职责不宜混为一谈。'}
+});
+window.GENSOKYO.characterLinks.yachie.related.push('biten');
+window.GENSOKYO.characterLinks.saki.related.push('enoko');
+window.GENSOKYO.characterLinks.yuuma.related.push('chiyari');
+window.GENSOKYO.characterLinks.marisa.related.push('enoko');
+window.GENSOKYO.characterLinks.rin.related.push('chiyari');
+window.GENSOKYO.books.push({id:'th19',number:'19',year:'2023',name:'东方兽王园',jp:'東方獣王園',en:'Unfinished Dream of All Living Ghost.',mark:'兽<br>梦',theme:'green',mood:'动物灵 / 地上争夺 / 地狱的计划',description:'土地与灵的变化引来各方行动，动物灵组织伸向地上，新的部下又各有来历。通过多位角色的对战故事，比较首领的打算、残无的安排与调查者自己的判断。',ids:['biten','enoko','chiyari','hisami','zanmu','yachie','saki','yuuma','reimu','marisa'],caption:'2023 年的对战弹幕作品。本入口以兽王园为范围，后续经历应按具体作品分别阅读。',url:'https://store.steampowered.com/app/2400340/',reference:'https://thwiki.cc/东方兽王园'});
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'山中的大圣，组织的新成员',label:'首领与部下 / 八千慧与美天',ids:['yachie','biten'],relation:'残无引荐的猿神，成为鬼杰组的一员。',description:'美天在组织中受八千慧指挥，又带着残无安排的线索。山中汇报是本册想象，不将她们写成血缘亲属，也不以轻快画面抹去组织中的利用关系。',color:'green',symbol:'猿'},
+ {title:'三条尾巴，也有自己的步调',label:'招募与欣赏 / 早鬼与慧之子',ids:['saki','enoko'],relation:'山犬加入劲牙组，成为地上行动的新成员。',description:'早鬼欣赏慧之子的本领，双方在兽王园形成上下属关系。慧之子的寿命、刚觉醒的心境与陷阱能力要分别读，不按三条尾巴推定三个头或三位人格。',color:'violet',symbol:'犬'},
+ {title:'意气相投之后，仍有另一层安排',label:'同盟与隐情 / 尤魔与血枪',ids:['yuuma','chiyari'],relation:'旧血池地狱的相遇，连接起刚欲同盟。',description:'血枪加入尤魔的组织，也与残无保持联系。共同话题不等于互相毫无保留地信任；试管、传送与告知的情节须结合不同路线阅读。',color:'red',symbol:'焰'},
+ {title:'伸出的手，等待怎样的回应',label:'单方面景仰 / 日狭美与残无',ids:['hisami','zanmu'],relation:'日狭美为残无行动，也希望被她留意。',description:'热情与回应并不对等。日狭美常把事情做过头，残无对她也有自己的处置；这段关系不直接改写成恋爱、亲缘或无条件互信。',color:'violet',symbol:'路'},
+ {title:'三个组织之外的一条线',label:'计划与来历 / 残无和三位新部下',ids:['zanmu','biten','enoko','chiyari'],relation:'组织归属不同，却都与残无的行动相关。',description:'美天、慧之子和血枪各自加入鬼杰组、劲牙组与刚欲同盟，同时带着与残无有关的动机或约定。读到并列名单时，仍要保留三人的不同来历与选择。',color:'green',symbol:'影'},
+ {title:'森林里，早就见过的身影',label:'旧日知晓 / 魔理沙与慧之子',ids:['marisa','enoko'],relation:'魔理沙早知森林中的白色山犬，慧之子也记得她。',description:'兽王园对话把两位的过去与如今联系起来。彼此知晓不等于慧之子由魔理沙创造，也不代表山犬是被她收养的普通宠物。',color:'red',symbol:'森'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'自称、外号与种族',en:'Claims, nicknames & species',text:'美天自认孙悟空转世，血枪被叫作卓柏卡布拉，饭纲丸龙名字中有“龙”。这些说法不应直接替代原作给出的猿神、天火人和大天狗种族。阅读时先确认说话者与出处。',source:'https://thwiki.cc/天火人血枪'},
+ {term:'组织归属与行动动机',en:'Affiliation & personal motives',text:'兽王园里的三位新成员分别加入不同动物灵组织，又与残无的安排相关。属于某组织、听从某次指示、信任某个人，是三种需要分开理解的关系；会随具体事件发生变化。',source:'https://thwiki.cc/日白残无'}
+);

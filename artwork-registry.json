@@ -43,6 +43,10 @@
     "sha256": "a91e514384acd3e66f42de2a14ae1f5cdd92891158c0fe5325455e058ed2695d",
     "size": 2949536
   },
+  "biten.png": {
+    "sha256": "7e35d9e69fed6162df36a2d835e51744d70d942605e62db55b7c0b507edb3e17",
+    "size": 2512112
+  },
   "byakuren.png": {
     "sha256": "079bcaa231143f7dbbf7b080bed9bf2b9c5ec8cf9f417438d95c1748a6b4dfc9",
     "size": 2931444
@@ -54,6 +58,10 @@
   "chimata.png": {
     "sha256": "02f97dbeda473d3b367922a9f537cf33ab9e2ea53871745a6b1f375587e8d626",
     "size": 2868138
+  },
+  "chiyari.png": {
+    "sha256": "e806bfdf75f8649dfdbe071c12de030810b9cfe1e7565e034f306a76ed87432f",
+    "size": 2517955
   },
   "cirno.png": {
     "sha256": "fe228c20d7500c116d85659cfb58673e3d49ed01b38a7ca11b75410305bde272",
@@ -79,6 +87,10 @@
     "sha256": "3b91af3b0b58b23cd6361d5fc882d2bc7e0ea7fd458b233634da1e066ec4500b",
     "size": 2537526
   },
+  "enoko.png": {
+    "sha256": "fb750a30cc31ded98583483a5e5a6aac6640a8fb84957a3a7b34bbebd9236c5f",
+    "size": 2443672
+  },
   "eternity.png": {
     "sha256": "9232aef1c9d4335d6f99aba1eb369d27da07ce160492dc4d97002aec4369564a",
     "size": 2877987
@@ -102,6 +114,10 @@
   "hina.png": {
     "sha256": "8bb77866a75874f81961a8e97214e7712d49276ee1c64d6ad94fe0c141210f1a",
     "size": 2840221
+  },
+  "hisami.png": {
+    "sha256": "4bb5002f7f481d3de87412ae399ba31c4061dabd9bd00212985ab573fdcdfbd0",
+    "size": 2725469
   },
   "ichirin.png": {
     "sha256": "4625d954a72e9f803bf1f87050f89d2751b00d64f5a200c2477440b24dd8dd56",
@@ -407,6 +423,10 @@
     "sha256": "82defa32b9192ec93fc7b7be90ed7a7ef328caa55ceed4eda99b250cb6d7038f",
     "size": 3734085
   },
+  "scene-forest-watch.png": {
+    "sha256": "81f80415028cd2be3475fe128bb58e331de092a75be37059128328d1c5dbf9d7",
+    "size": 4297190
+  },
   "scene-geidontei-supper.png": {
     "sha256": "6329b97b5dcd98512ed44f7de4de0ee49c5131786cf2217b0b40c1005fcd85f3",
     "size": 3065045
@@ -418,6 +438,10 @@
   "scene-heaven.png": {
     "sha256": "84668f9d463183fce37a29915d5f59e631ee73077cf39d5e94840d6f9f00dcea",
     "size": 3084731
+  },
+  "scene-hell-pine.png": {
+    "sha256": "7c541b0661492c32ae4bcfd0b69da657d58f804a606b08728f7c4664b882cc7c",
+    "size": 3764230
   },
   "scene-highland-veranda.png": {
     "sha256": "d67cb866829913ce3b7e1b42361a0cb632502605b038c0e1aa085b5b1f142625",
@@ -443,6 +467,10 @@
     "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
     "size": 3383760
   },
+  "scene-monkey-sanctuary.png": {
+    "sha256": "085e71c3c7f19ba2f9415fc330cc24b2838262cd6567c69ca8d07d5f5b5858e0",
+    "size": 3952897
+  },
   "scene-moonrainbow-market.png": {
     "sha256": "aebb9babe606e2b0844e3382ca2c07245fd3211b6bf87c19fdb778a7911712c7",
     "size": 3263751
@@ -454,6 +482,10 @@
   "scene-myouren-v2.png": {
     "sha256": "ce9c4b81db03ae35119cb3a9037f267d61000e6ce3662795234e245f67525aa8",
     "size": 3843313
+  },
+  "scene-old-bloodpool.png": {
+    "sha256": "5597cbfd15fefa46a2de7950c8e56cb0569542e5b4cbde139a146f5b911e0982",
+    "size": 3425473
   },
   "scene-otherworld-rest.png": {
     "sha256": "485e3d476f36bdd92451633c6239b35acb420039d6ec724cd386fe2277f23385",
@@ -686,5 +718,9 @@
   "yuyuko.png": {
     "sha256": "1d387c9f42aa907d33fd40b53af9ef46729c78d21edca04323094587653636a8",
     "size": 2696246
+  },
+  "zanmu.png": {
+    "sha256": "87231e5a971eea42bb6201e51402b1fe9e4235515b4cdee04744d31d94133d88",
+    "size": 2730276
   }
 }

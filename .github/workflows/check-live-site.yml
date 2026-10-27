@@ -13,7 +13,7 @@ jobs:
         run: |
           import urllib.request
           base = 'https://xwjdream.github.io/gensokyo-sketchbook-pages/'
-          checks = [('', 'text/html', 'GitHub 浏览版'), ('gallery.js?v=cast15', None, '完整版画廊'), ('characters.js?v=cast15', None, "id:'mike'"), ('scenes-data.js?v=cast15', None, "id:'moonrainbow-market'"), ('assets/scene-moonrainbow-market.webp', 'image/webp', None), ('assets/mike.png', 'image/png', None), ('assets/reimu.webp', 'image/webp', None), ('assets/atlas-mountain.webp', 'image/webp', None)]
+          checks = [('', 'text/html', 'GitHub 浏览版'), ('gallery.js?v=cast16', None, '完整版画廊'), ('characters.js?v=cast16', None, "id:'biten'"), ('scenes-data.js?v=cast16', None, "id:'forest-watch'"), ('assets/scene-forest-watch.webp', 'image/webp', None), ('assets/biten.png', 'image/png', None), ('assets/reimu.webp', 'image/webp', None), ('assets/atlas-mountain.webp', 'image/webp', None)]
           for path, content_type, expected in checks:
               with urllib.request.urlopen(base + path, timeout=40) as response:
                   body = response.read()
