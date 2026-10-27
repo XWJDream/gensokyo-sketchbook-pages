@@ -467,3 +467,28 @@ window.GENSOKYO.glossary.push(
  {term:'自称、外号与种族',en:'Claims, nicknames & species',text:'美天自认孙悟空转世，血枪被叫作卓柏卡布拉，饭纲丸龙名字中有“龙”。这些说法不应直接替代原作给出的猿神、天火人和大天狗种族。阅读时先确认说话者与出处。',source:'https://thwiki.cc/天火人血枪'},
  {term:'组织归属与行动动机',en:'Affiliation & personal motives',text:'兽王园里的三位新成员分别加入不同动物灵组织，又与残无的安排相关。属于某组织、听从某次指示、信任某个人，是三种需要分开理解的关系；会随具体事件发生变化。',source:'https://thwiki.cc/日白残无'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ mima:{place:null,related:['reimu','marisa','yumemi','chiyuri'],work:'th03',line:'先读梦时空 Manual 的轻松恶灵，再比较历作外观。这里保留旧作语境，不把同人常见关系直接写入现行人物经历。'},
+ shinki:{place:null,related:['yumeko','mima'],work:'th05',line:'从怪绮谈第五、六关对话理解创造者与迎战者，魔界没有强行对应当前分区地图坐标。'},
+ yumeko:{place:null,related:['shinki'],work:'th05',line:'第五关中主动替主人迎战的魔界女仆；剑形弹幕、主人评价和未明确的能力称号应分别阅读。'},
+ yumemi:{place:null,related:['chiyuri','mima'],work:'th03',line:'先读原作附记的比较物理学与魔力问题，再读不同角色的对话和结局，不用一张研究室插图代替全故事。'},
+ chiyuri:{place:null,related:['yumemi','mima'],work:'th03',line:'从数据整理与随意口吻认识助手；平行世界的教育制度是作品设定，非现实常识。'}
+});
+window.GENSOKYO.books.push(
+ {id:'th02',number:'02',year:'1997',name:'东方封魔录',jp:'東方封魔録',en:'The Story of Eastern Wonderland.',mark:'封<br>魔',theme:'night',mood:'PC-98旧作 / 神社与恶灵',description:'回到早期弹幕的故事：灵梦调查神社周边异状，途中遇见不同对手，最后面对魅魔。比较后来可用角色的轻松日常，会读到同一个人物不同时期的侧面。',ids:['mima'],caption:'1997 年 PC-98 作品；本册人物图选择梦时空形态，不据此还原封魔录全部外观与场景。',url:'https://thbwiki.cc/东方封魔录',reference:'https://thbwiki.cc/魅魔'},
+ {id:'th03',number:'03',year:'1997',name:'东方梦时空',jp:'東方夢時空',en:'Phantasmagoria of Dim.Dream.',mark:'梦<br>时',theme:'spring',mood:'PC-98旧作 / 梦幻遗迹 / 科学与魔力',description:'不可思议的遗迹引来竞争，教授梦美与助手千百合又带来另一个世界的科学。对战故事与原作附记并读，可以分清各角色的期待、研究目的及不同结局。',ids:['mima','yumemi','chiyuri'],caption:'1997 年对战弹幕作品；本入口以旧作为范围，不把平行世界直接认定为秘封俱乐部所在时代。',url:'https://thbwiki.cc/东方梦时空',reference:'https://thwiki.cc/附带文档:东方梦时空/Omake'},
+ {id:'th05',number:'05',year:'1998',name:'东方怪绮谈',jp:'東方怪綺談',en:'Mystic Square.',mark:'魔<br>界',theme:'violet',mood:'PC-98旧作 / 魔界之旅 / 创造者',description:'魔界来客引发调查，主角穿过不同场所，走向万魔殿中的梦子与神绮。用游戏对话和音乐说明补全这段旅程，不把缺少独立设定文档的地方填成已确认事实。',ids:['shinki','yumeko','mima'],caption:'1998 年 PC-98 作品；现有爱丽丝图卡依据后来的作品绘制，本入口不直接套用其全部后续经历。',url:'https://thbwiki.cc/东方怪绮谈',reference:'https://thbwiki.cc/游戏对话:东方怪绮谈/博丽灵梦'}
+);
+window.GENSOKYO.books.sort((a,b)=>(a.code?100:Number(a.number))-(b.code?100:Number(b.number)));
+window.GENSOKYO.bonds.push(
+ {title:'一句玩笑，停在神社的旧日',label:'旧作来往 / 魅魔与灵梦',ids:['mima','reimu'],relation:'梦时空文档把戏弄灵梦写成魅魔的日常。',description:'关系依据为旧作原文，现有灵梦插图仅作为索引。不能把同人想象的每次夜访当作官方事件，也不据此为今日神社指定新的供奉体系。',color:'green',symbol:'月'},
+ {title:'同样的名字，按作品慢慢读',label:'旧作阅读 / 魅魔与魔理沙',ids:['mima','marisa'],relation:'早期作品中的交集，是继续查阅对话的入口。',description:'魔理沙对魅魔的态度可由具体作品观察；二创里的师徒、母女等解释需与原作区别。这里提供并读入口，不以关联卡片确认血缘或统一的师承经历。',color:'violet',symbol:'旧'},
+ {title:'守在创造者的身前',label:'创造者与侍从 / 神绮与梦子',ids:['shinki','yumeko'],relation:'梦子主动替神绮迎战，神绮认可她的力量。',description:'依据怪绮谈对话，梦子属于神绮创造的强大魔物。画页中的端茶与休息是同人日常，不把能力、剑与服装移植成另一位女仆的设定。',color:'red',symbol:'翼'},
+ {title:'大胆的假设，仔细的记录',label:'教授与助手 / 梦美与千百合',ids:['yumemi','chiyuri'],relation:'一位收集证据，一位处理数据，两人说话并不拘束。',description:'梦时空附记明确了比较物理学背景和研究分工。相处随意不等于确认恋爱或亲缘；温和研究室场景也保留了梦美在原作中有过激行为的背景。',color:'green',symbol:'理'},
+ {title:'遗迹里的相遇，各有自己的期待',label:'作品并读 / 魅魔与梦时空搭档',ids:['mima','yumemi','chiyuri'],relation:'同一场奇异事件，连接顽皮恶灵和另一世界的研究者。',description:'这是一条梦时空阅读路线。各自路线与结局应单独看待，不把所有结局拼成一条确定时间线，也不把作品主题比较改写成三人的长期共同生活。',color:'violet',symbol:'梦'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'PC-98旧作与作品语境',en:'PC-98 works & context',text:'红魔乡之前的五部早期游戏常被称作旧作。人物、外观和用语应先放回其登场作品理解；有相同姓名或相似意象，不表示旧作与后来所有细节都能无条件拼接。',source:'https://thbwiki.cc/官方游戏#旧作'},
+ {term:'可能性空间移动船',en:'Probability-space moving ship',text:'梦时空里与梦美、千百合跨越世界有关的舞台。比较物理学、魔力与另一世界构成故事线索；画中的透镜仪器和窗外遗迹是想象，不是官方构造图，也非现实科学装置说明。',source:'https://thwiki.cc/附带文档:东方梦时空/Omake'}
+);

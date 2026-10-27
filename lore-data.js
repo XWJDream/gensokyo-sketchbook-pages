@@ -80,3 +80,8 @@ window.GENSOKYO_LORE.find(p=>p.id==='village').related.push('markets');
  p.people.push('biten','enoko','chiyari','hisami','zanmu');
  p.perspective='本章比较鬼形兽中的灵长园冲突、刚欲异闻的入门线索和兽王园的组织行动。它们是不同作品的事件，不把三位新成员的故事提前归入鬼形兽，也不以一方说法代替全部立场。';
  p.sources.push(['上海爱丽丝幻乐团 · 兽王园','https://store.steampowered.com/app/2400340/'],['残无 · 计划与人物线索','https://thwiki.cc/日白残无']);}
+
+window.GENSOKYO_LORE.push({id:'oldworks',mark:'旧',name:'旧作与异世界',en:'Earlier worlds, carefully read',title:'翻回旧页，也保留当时的语境。',color:'#907f9b',image:'scene-dimdream-lab',alt:'旧作意象研究室，梦美和千百合在透镜仪器旁观测微光',lead:'从一条灵尾、三对羽翼和两位研究者，翻开另一组故事。',paragraphs:[
+ '本册将 PC-98 人物单列成一组。魅魔在不同游戏中有灵尾和双腿等不同外观；神绮与梦子的魔界故事，首先属于怪绮谈。阅读时先认清出处，再比较后来作品，不急着为每个细节补出一条连续年表。',
+ '梦时空的原作附记介绍了梦美与千百合的比较物理学背景。两位来自另一个世界，围绕魔力寻找证据；这一设定也带有喜剧与夸张，不等于现实科学结论。研究室画页只将主题化作一个安静的想象时刻。'
+ ],facts:[['按作品选形态','本批魅魔采用梦时空灵尾造型，不把怪绮谈有腿形象视为错误。'],['从对话认识人物','神绮创造魔界、梦子主动迎战，可从怪绮谈对话读起。'],['搭档与研究','梦美收集数据，千百合负责整理；职务不能直接推出亲缘关系。']],correction:'同人常见的神绮母亲形象，不等于已确认她是现有爱丽丝的血缘母亲。相似的魔界、科学与平行世界意象，也不能自动证明旧作与后续所有设定完全一致。',perspective:'本章采用旧作 Manual、Omake 与游戏对话作入门，维基仅作为原文摘录及造型索引。没有独立能力称号的角色保留未知；不同路线和结局不强拼成唯一事件顺序。',caption:'研究船室内、透镜仪器、星图与窗外遗迹是同人想象，人物比例沿用首批插图。',people:['mima','shinki','yumeko','yumemi','chiyuri'],places:[],related:['boundary','spellcards'],sources:[['梦时空 · Omake 原作附记','https://thwiki.cc/附带文档:东方梦时空/Omake'],['怪绮谈 · 灵梦线原作对话','https://thbwiki.cc/游戏对话:东方怪绮谈/博丽灵梦'],['魅魔 · Manual 与历作形态','https://thbwiki.cc/魅魔']]});

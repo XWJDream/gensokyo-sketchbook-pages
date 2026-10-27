@@ -63,6 +63,10 @@
     "sha256": "e806bfdf75f8649dfdbe071c12de030810b9cfe1e7565e034f306a76ed87432f",
     "size": 2517955
   },
+  "chiyuri.png": {
+    "sha256": "05ec8e309d05f879cee1b7b7f3fa2fee4f06ee152c7cd9c56d52787c44b56d5a",
+    "size": 2309463
+  },
   "cirno.png": {
     "sha256": "fe228c20d7500c116d85659cfb58673e3d49ed01b38a7ca11b75410305bde272",
     "size": 2558334
@@ -251,6 +255,10 @@
     "sha256": "da7a3d73b7ee5028a12633bbf4fcb334ab169c6c4eed4f4ec32cf0eb461bf87a",
     "size": 3066447
   },
+  "mima.png": {
+    "sha256": "05c4755757cc7e27fdea87db09f4fa422d53aafc7b7bd2f7759deba8f6f6c144",
+    "size": 2667091
+  },
   "minoriko.png": {
     "sha256": "85bdcdedf7fbdd00283ede0fdebc757d31b0dbfc275adf75f9a5ee4fcee945e4",
     "size": 2539740
@@ -403,6 +411,10 @@
     "sha256": "719aeaab068cf95ce1c11df3fe0980a21b9116a906ea5e9e7453a74faab6ffe5",
     "size": 3629687
   },
+  "scene-dimdream-lab.png": {
+    "sha256": "806a9877506e862a1648a4d7977c49231efcacaf238ee0f10a2695dfad683b0f",
+    "size": 3714421
+  },
   "scene-dragon-mine.png": {
     "sha256": "cb978dfc8d3b878a7bc1b3f7ddfd4bbc1cec03df6a29a9dea502bfe421d0cb83",
     "size": 3768936
@@ -463,9 +475,17 @@
     "sha256": "403960aafa081bdee9c39e9b92b99f9b51f6f8cd14556a4062282a5cc0850a26",
     "size": 3162335
   },
+  "scene-makai-hall.png": {
+    "sha256": "72ba8fcf9d38f04ac5c04e06cf8d7a6fdb52bf6dec7eb78b28aa92d80c246f61",
+    "size": 3588297
+  },
   "scene-mermaid-lake.png": {
     "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
     "size": 3383760
+  },
+  "scene-mima-crescent.png": {
+    "sha256": "4d779062518ace2ed61283370c8522942eefbda66b7edd63f81d1412af457d1f",
+    "size": 3525397
   },
   "scene-monkey-sanctuary.png": {
     "sha256": "085e71c3c7f19ba2f9415fc330cc24b2838262cd6567c69ca8d07d5f5b5858e0",
@@ -570,6 +590,10 @@
   "sekibanki.png": {
     "sha256": "6d8b1c5555c9fb84533697820206ab03bd1d3d80290bbd31c734451d0c351841",
     "size": 3009455
+  },
+  "shinki.png": {
+    "sha256": "32fb51b3532c3fefab412c77b8de41151c869ebb7848d3cd6eeaf755ad61c37b",
+    "size": 2556860
   },
   "shinmyoumaru.png": {
     "sha256": "8483a750f1e27fa5550cb3ee24e7657399038f8dfbf8b26d62593c8b2d5e95d6",
@@ -702,6 +726,14 @@
   "yukari.png": {
     "sha256": "4fe6aa81627eeb83e7da43ba6e029abe938544c0a2a7003dff03c6f89e057b9b",
     "size": 2781747
+  },
+  "yumeko.png": {
+    "sha256": "e5893d2033ba5f98543b747ebc09634577e751b896599b0c6420de403f4906c4",
+    "size": 2414062
+  },
+  "yumemi.png": {
+    "sha256": "a174e83126bafc952aa08999a6955d8920b2c6b60afa95cf86a7dada9fbb910f",
+    "size": 2503414
   },
   "yuugi.png": {
     "sha256": "12550a282d6e748a7031220d192235d8bc7c38d7046119c0dcb41ec0ef0d39d7",
