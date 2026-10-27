@@ -75,6 +75,10 @@
     "sha256": "7754a6a49c21b4f9640e54d425df192fb2fb4554529057255b97b56fd865b529",
     "size": 2717831
   },
+  "daiyousei.png": {
+    "sha256": "e3b24bfa68665c36f6bfec9bf12597f6d6804025e8074096e3525d7f0d365c32",
+    "size": 2379510
+  },
   "doremy.png": {
     "sha256": "203c6b02a932a492d74eef252f309a261509857d4f0dac7595088f53c1959080",
     "size": 2810557
@@ -167,6 +171,10 @@
     "sha256": "e8118ce35067b2d8d6e915985e3cbd0070484652e23327d0e8c5329f93200d5c",
     "size": 2753667
   },
+  "koakuma.png": {
+    "sha256": "a9d511756731f7c900e3bf81c82ee697716bd2881ea4b157ce42635d51870c5d",
+    "size": 2420941
+  },
   "kogasa.png": {
     "sha256": "404615c1f784dd05e0314e949623e2da0ce730da091239f4ae01a79df7aee581",
     "size": 2539386
@@ -246,6 +254,10 @@
   "merlin.png": {
     "sha256": "fdfdaf4c6a3c6114b73c1ef4a92fffcb5629c9037b5d2f3db114b1a7a5a8201d",
     "size": 2534621
+  },
+  "merry.png": {
+    "sha256": "e1eef6b1e6aa19653d4999a068e34b9f76c0e142006d3efbf902693939d5fab0",
+    "size": 2409139
   },
   "mike.png": {
     "sha256": "95ac4b1544d054e4e611e8f47cc557065c2dd0c7bc0dcc4340a497b08218f62b",
@@ -343,6 +355,10 @@
     "sha256": "97cd2ba4ea95672b316fe827abe9b6d07407af3124f974258a18c34f66d1c9b9",
     "size": 2638883
   },
+  "renko.png": {
+    "sha256": "bc3d3d7c52bbc0f05d0840a259004b975853adb1529568f08153f485e8bafc58",
+    "size": 2491214
+  },
   "rin.png": {
     "sha256": "e8aaeac8536475189d955fd928d5207f485f3f31ea3b89daa9715a07b3011af7",
     "size": 2757809
@@ -423,6 +439,10 @@
     "sha256": "ee74861b4ae2f9e2e32acb9a26367b2f9be3a952b2a2f134e3ff6fcdfbb0d363",
     "size": 3035115
   },
+  "scene-fairy-lakeside.png": {
+    "sha256": "a70a4f900cf7d3ed420a585ec40435ee8dcf16c4c6e78547788f4de963ab122f",
+    "size": 3708370
+  },
   "scene-fairy-treehouse.png": {
     "sha256": "59f790cc4a7296082c962a21a9f0b9d83df77512dabb0df99b04fde290941e8f",
     "size": 3593725
@@ -455,6 +475,10 @@
     "sha256": "7c541b0661492c32ae4bcfd0b69da657d58f804a606b08728f7c4664b882cc7c",
     "size": 3764230
   },
+  "scene-hifuu-starlight.png": {
+    "sha256": "43b6c238d9fbd3e5e07636b8a8d37538db8d02f7a0a202e16f27c070ce7e34c0",
+    "size": 3711953
+  },
   "scene-highland-veranda.png": {
     "sha256": "d67cb866829913ce3b7e1b42361a0cb632502605b038c0e1aa085b5b1f142625",
     "size": 3691078
@@ -466,6 +490,10 @@
   "scene-kourindou-objects.png": {
     "sha256": "f9cc75e08c52a32cdcbf9c1aac186c65fed845849762f67f6992d11b17870b50",
     "size": 3035761
+  },
+  "scene-library-booklight.png": {
+    "sha256": "77951739b1dc3e731c3bb63351a824104c9d7acfd43740a45503ece7f07bd5f0",
+    "size": 3655466
   },
   "scene-lily-valley-hill.png": {
     "sha256": "a404949204e1aced5c6d392f0a35f0f5d2a8e03cab9e83aa3b1015abf018ac09",

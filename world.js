@@ -492,3 +492,29 @@ window.GENSOKYO.glossary.push(
  {term:'PC-98旧作与作品语境',en:'PC-98 works & context',text:'红魔乡之前的五部早期游戏常被称作旧作。人物、外观和用语应先放回其登场作品理解；有相同姓名或相似意象，不表示旧作与后来所有细节都能无条件拼接。',source:'https://thbwiki.cc/官方游戏#旧作'},
  {term:'可能性空间移动船',en:'Probability-space moving ship',text:'梦时空里与梦美、千百合跨越世界有关的舞台。比较物理学、魔力与另一世界构成故事线索；画中的透镜仪器和窗外遗迹是想象，不是官方构造图，也非现实科学装置说明。',source:'https://thwiki.cc/附带文档:东方梦时空/Omake'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ daiyousei:{place:'lake',related:['cirno','sunny','luna','star'],work:'th06',line:'从红魔乡道中与三月精的玩耍读起，再看幻存神签的后续记述；通称不等于另一个私人姓名。'},
+ koakuma:{place:'library',related:['patchouli','remilia'],work:'th06',line:'红魔乡第四关的身影，连接到后续资料中的图书馆工作与找书记述。'},
+ renko:{place:null,related:['merry','sumireko'],work:'gfc',line:'配合音乐读莲台野夜行的附带故事，从两人的叙述认识星月和寻访，外界不标进幻想乡地图。'},
+ merry:{place:null,related:['renko','yukari'],work:'gfc',line:'先读她对结界界线的叙述，再沿不同音乐故事比较经历；与紫的相似之处保留为线索。'}
+});
+window.GENSOKYO.characterLinks.cirno.related.push('daiyousei');
+window.GENSOKYO.characterLinks.patchouli.related.push('koakuma');
+window.GENSOKYO.books.find(b=>b.id==='th06').ids.push('daiyousei','koakuma');
+window.GENSOKYO.books.find(b=>b.id==='th128').ids.push('daiyousei');
+window.GENSOKYO.books.push(
+ {id:'gfc',code:'MUSIC / 02',kind:'music',year:'2003',name:'莲台野夜行',jp:'蓮台野夜行',en:'Ghostly Field Club.',mark:'秘<br>封',theme:'night',mood:'音乐与故事 / 两人的寻访 / 结界线索',description:'秋夜的照片、星月与结界，把莲子和梅莉引向新的寻访。沿曲目阅读附带短篇，听到同一件事在提议、怀疑与发现之间逐渐展开。',ids:['renko','merry'],caption:'2003 年音乐作品。本入口提供官方介绍与 Booklet 阅读，不将专辑误列为弹幕游戏，也不转载录音。',url:'https://www16.big.or.jp/~zun/html/mcdtop.html',reference:'https://thbwiki.cc/莲台野夜行/附带故事'},
+ {id:'magical-astronomy',code:'MUSIC / 05',kind:'music',year:'2006',name:'大空魔术',jp:'大空魔術',en:'Magical Astronomy.',mark:'星<br>月',theme:'spring',mood:'音乐与故事 / 科学世纪 / 宇宙与日常',description:'大学露天咖啡座里，秘封双人从月面旅行的消息聊向物理学与宇宙。原作将音乐、封套和短篇结合，日常谈话也能通向遥远的想象。',ids:['renko','merry'],caption:'2006 年音乐作品。星夜画页参考其衣装，场景与观星时刻为另行创作，不声称复原原作咖啡座。',url:'https://www16.big.or.jp/~zun/html/mcdtop.html',reference:'https://thbwiki.cc/大空魔术/附带故事'}
+);
+window.GENSOKYO.bonds.push(
+ {title:'花朵与冰晶，都想分享给你',label:'妖精来往 / 大妖精与琪露诺',ids:['daiyousei','cirno'],relation:'两位在原作中会一起玩耍，也曾作为对手相遇。',description:'三月精中的游戏和妖精大战争的对战，可以一起认识她们的日常。递花是画册想象，不将温柔照料的同人形象当作大妖精唯一的性格。',color:'green',symbol:'花'},
+ {title:'找来一本书，再翻过一页',label:'图书馆 / 小恶魔与帕秋莉',ids:['koakuma','patchouli'],relation:'后续原作说明中，小恶魔的性质更接近帕秋莉的使魔。',description:'幻存神签补充了她的雇佣身份及找书记述。共同读书的画面是同人编排，角色关联有据，具体工作情境仍是创作。',color:'violet',symbol:'书'},
+ {title:'两个人，也能开始一场寻访',label:'同学与朋友 / 莲子与梅莉',ids:['renko','merry'],relation:'秘封俱乐部的两位成员，带着不同的观察与判断。',description:'音乐故事里的提议、犹疑和谈话，让寻访有了两种声音。这里按朋友与社团伙伴介绍，不把同人常见的感情解释替代原作关系描述。',color:'green',symbol:'星'},
+ {title:'同一个姓氏，先保留问题',label:'线索并读 / 莲子与堇子',ids:['renko','sumireko'],relation:'两位都与秘封俱乐部这个名字有关，但活动语境不同。',description:'同姓与社团名字可以引出阅读兴趣，却不足以直接指定祖孙、母女或其他具体血缘。沿各自登场作品分开阅读，比先补一条家谱更稳妥。',color:'red',symbol:'名'},
+ {title:'相似的颜色，尚未写定的答案',label:'线索与推测 / 梅莉和紫',ids:['merry','yukari'],relation:'外貌与境界主题常引发联想，原作仍保留空间。',description:'画册提供主题并读入口，不将梅莉直接认定为过去或未来的紫，也不将某一种同人解释当成官方定论。两位人物图保留各自的发型、衣装和身份。',color:'violet',symbol:'界'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'秘封俱乐部与科学世纪',en:'Hifuu Club & the scientific century',text:'莲子与梅莉的音乐故事以外面世界的大学生日常、科学与异界寻访为入口。它们属于东方的叙事范围，但不因此把外界街道直接画进幻想乡地图，也不把旧作梦美的世界无条件视为同一时代。',source:'https://thbwiki.cc/莲台野夜行/附带故事'},
+ {term:'通称与后续资料',en:'Descriptive names & later sources',text:'大妖精、小恶魔是描述性通称。后来的原作书籍又补充了造型、能力或生活说明；整理时应注明作品与叙述者，不把早期未写出的内容永远当作未知，也不将二创补充混作原作。',source:'https://thbwiki.cc/小恶魔'}
+);

@@ -100,3 +100,6 @@ for(const [id,ids,names] of [
 
 // 第十六批：已有区域中的活动线索；地狱与旧血池不强塞进旧都地图。
 for(const [id,ids,names] of [['mountain',['biten'],['孙美天（圣域活动）']],['forest',['enoko'],['三头慧之子（隐居线索）']]]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(...ids);p.people.push(...names);}
+
+// 已有区域的活动入口，不为外界秘封场景虚构坐标。
+for(const [id,resident,person] of [['lake','daiyousei','大妖精'],['library','koakuma','小恶魔']]){const p=window.GENSOKYO_ATLAS.places.find(p=>p.id===id);p.residents.push(resident);p.people.push(person);}
