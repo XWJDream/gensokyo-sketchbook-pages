@@ -93,7 +93,7 @@ window.GENSOKYO_LORE.push({id:'hifuu',mark:'星',name:'秘封与科学世纪',en
 
 {const p=window.GENSOKYO_LORE.find(p=>p.id==='oldworks');p.paragraphs.push('梦时空里，爱莲的健忘、小兔姬的收藏、卡娜对热闹的追寻和理香子的科学倾向，让同一处遗迹有了不同的入口。主题路线提供并读顺序，角色的不同来历与个人结局仍各自保留。');p.people.push('ellen','kotohime','kana','rikako');p.sources.push(['梦时空 · Manual 人物故事','https://thbwiki.cc/附带文档:东方梦时空/Manual']);}
 
-window.GENSOKYO_LORE.push({id:'makai',mark:'界',name:'魔界行记',en:'Through the gates of Mystic Square',title:'跨过一扇门，仍要听见各自的声音。',color:'#8d82aa',image:'scene-ice-magic',alt:'雪与舞在冰封世界的雪径上停步，背后是晨光里的冰宫与湖面',lead:'入口、过客、黑白双人战，连成一段旧作旅程。',paragraphs:[
+window.GENSOKYO_LORE.push({id:'makai',mark:'界',name:'魔界行记',en:'Through the gates of Mystic Square',title:'跨过一扇门，仍要听见各自的声音。',color:'#8d82aa',image:'scene-ice-magic-v2',alt:'雪与舞在冰封世界的雪径上停步，背后是晨光里的冰宫与湖面',lead:'入口、过客、黑白双人战，连成一段旧作旅程。',paragraphs:[
  '怪绮谈的说明书从魔界一侧来访者增多写起。沿着游戏的脚步，可以遇见守门的萨拉和魔空间里的露易兹；一位拦下进入者，另一位却对人间界怀有兴趣。同一段旅途里，人们并不朝着同一个方向出发。',
  '冰封舞台中，雪与舞共同迎战；击破顺序又使后半战走向不同人物。她们的两首个人曲也随分支出现。阅读对话时，先问这一段由哪个条件触发，再看语气与行动，能保留人物各自的层次。',
  '更深处还有梦子与神绮。神绮在自己的话中说明创造魔界，梦子则主动要求迎战。先从原句与上下文理解关系，再看画册里的日常想象，能让未知继续作为未知存在。'

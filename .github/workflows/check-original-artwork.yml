@@ -17,7 +17,7 @@ jobs:
           registry=json.loads(Path('artwork-registry.json').read_text())
           mirror='https://xwjdream.github.io/gensokyo-sketchbook-pages/'
           full='https://gensokyo-sketchbook.silverjoy8.chatgpt.site/'
-          with urllib.request.urlopen(mirror+'characters.js?v=cast20',timeout=30) as response:
+          with urllib.request.urlopen(mirror+'characters.js?v=cast20hatfix',timeout=30) as response:
               assert "id:'mai-pc98'" in response.read().decode('utf-8')
           base=mirror
           def verify(item):
@@ -36,12 +36,12 @@ jobs:
           with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
               verified=list(pool.map(verify,registry.items()))
           print(f'{len(verified)} GitHub original artwork routes verified')
-          for name in ['mai-pc98.png','scene-ice-magic.png','scene-bamboo-lantern-v2.png']:
+          for name in ['yuki-v2.png','scene-ice-magic-v2.png','scene-bamboo-lantern-v2.png']:
               with urllib.request.urlopen(base+'assets/'+name,timeout=40) as response:
                   assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
               print('Exact original bytes: '+name)
           try:
-              with urllib.request.urlopen(full+'characters.js?v=cast20',timeout=30) as response:
+              with urllib.request.urlopen(full+'characters.js?v=cast20hatfix',timeout=30) as response:
                   assert "id:'mai-pc98'" in response.read().decode('utf-8')
           except urllib.error.HTTPError as error:
               if error.code!=403:raise

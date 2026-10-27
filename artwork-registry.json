@@ -515,9 +515,9 @@
     "sha256": "d67cb866829913ce3b7e1b42361a0cb632502605b038c0e1aa085b5b1f142625",
     "size": 3691078
   },
-  "scene-ice-magic.png": {
-    "sha256": "c8d9ebda772158083efb485110479c81c8b4901c1d22c8f4bfa54206dd8d63e4",
-    "size": 3379941
+  "scene-ice-magic-v2.png": {
+    "sha256": "213780479d1abedbb28ac08d73c11ae6c8b7628ff977c78debbabab94993d8ee",
+    "size": 3183597
   },
   "scene-inverted-castle.png": {
     "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
@@ -807,9 +807,9 @@
     "sha256": "4fe6aa81627eeb83e7da43ba6e029abe938544c0a2a7003dff03c6f89e057b9b",
     "size": 2781747
   },
-  "yuki.png": {
-    "sha256": "0d24ca64d0f83f932f66dfd7aa1181417002111c5e1b390331ae27f7d3e03fc8",
-    "size": 2521680
+  "yuki-v2.png": {
+    "sha256": "203d9d0133cb2553d4114e2de53ab96db0f09a0428c69d566c0b1dd5b927291e",
+    "size": 2351143
   },
   "yumeko.png": {
     "sha256": "e5893d2033ba5f98543b747ebc09634577e751b896599b0c6420de403f4906c4",
