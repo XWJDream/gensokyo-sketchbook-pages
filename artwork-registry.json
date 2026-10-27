@@ -95,6 +95,10 @@
     "sha256": "3b91af3b0b58b23cd6361d5fc882d2bc7e0ea7fd458b233634da1e066ec4500b",
     "size": 2537526
   },
+  "ellen.png": {
+    "sha256": "6c75bbe6676ab718cc46c9633e7578cbbd1db88d9bd00d1c3b797cf27f088587",
+    "size": 2433626
+  },
   "enoko.png": {
     "sha256": "fb750a30cc31ded98583483a5e5a6aac6640a8fb84957a3a7b34bbebd9236c5f",
     "size": 2443672
@@ -151,6 +155,10 @@
     "sha256": "a0c8676fda2580b65aff0b525f5d540cf3465ef4f00dbc580a3cf215ff45a208",
     "size": 2857504
   },
+  "kana.png": {
+    "sha256": "8a870e17eedb988ad36dd52483de1fe48c58aaf402c773f551f4b71895d8b801",
+    "size": 2393864
+  },
   "kanako.png": {
     "sha256": "367998edde287d5edfc79ece211294f3638bb91fe408c97f67c9eedcdb5b9297",
     "size": 2827880
@@ -194,6 +202,10 @@
   "kosuzu.png": {
     "sha256": "ef7be9e7bb551ab93e33e51884ff893564ea1ed5b94d6b940d1f7fe9b2f0a0bc",
     "size": 2545770
+  },
+  "kotohime.png": {
+    "sha256": "db6fbd22dd45e3588ec399c164d1a8275a9fa707b20c9748e702dbba6eb1600b",
+    "size": 2526034
   },
   "kutaka.png": {
     "sha256": "bd18587aabc8aa4a28e94f1438d071d242903d78f5d0f7b4d3445275d8e4a0ef",
@@ -359,6 +371,10 @@
     "sha256": "bc3d3d7c52bbc0f05d0840a259004b975853adb1529568f08153f485e8bafc58",
     "size": 2491214
   },
+  "rikako.png": {
+    "sha256": "20336003ad485d319d97aa3548d8858d8b61234fa904d09a142abc6234e09788",
+    "size": 2567028
+  },
   "rin.png": {
     "sha256": "e8aaeac8536475189d955fd928d5207f485f3f31ea3b89daa9715a07b3011af7",
     "size": 2757809
@@ -439,6 +455,10 @@
     "sha256": "ee74861b4ae2f9e2e32acb9a26367b2f9be3a952b2a2f134e3ff6fcdfbb0d363",
     "size": 3035115
   },
+  "scene-ellen-courtyard.png": {
+    "sha256": "28ced56bddcd77014fab2665d413bc3a414cc89b95d2a808714991b54854bee3",
+    "size": 3485913
+  },
   "scene-fairy-lakeside.png": {
     "sha256": "a70a4f900cf7d3ed420a585ec40435ee8dcf16c4c6e78547788f4de963ab122f",
     "size": 3708370
@@ -486,6 +506,10 @@
   "scene-inverted-castle.png": {
     "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
     "size": 2946888
+  },
+  "scene-kana-window.png": {
+    "sha256": "1b5fdc9aefd20784c05d6d9708e8dcc61aa2a51ce119409101c37ec2b5b8d34b",
+    "size": 3609202
   },
   "scene-kourindou-objects.png": {
     "sha256": "f9cc75e08c52a32cdcbf9c1aac186c65fed845849762f67f6992d11b17870b50",
@@ -546,6 +570,10 @@
   "scene-prismriver-evening.png": {
     "sha256": "cfe9f395db15b0faa714a47a19914a12f0db2d80bca7831ce807b003dc1d8f28",
     "size": 3225548
+  },
+  "scene-rikako-workbench.png": {
+    "sha256": "7b3d964d14e09d2d216ba016260d45dbfee60831e002ed1f15a6624d2f580d4c",
+    "size": 3455824
   },
   "scene-sanzu-stones.png": {
     "sha256": "43a91cbe99497bf7d19165c5982056a8428bb9800dff93c3882dad20b443dc15",

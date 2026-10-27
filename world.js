@@ -518,3 +518,27 @@ window.GENSOKYO.glossary.push(
  {term:'秘封俱乐部与科学世纪',en:'Hifuu Club & the scientific century',text:'莲子与梅莉的音乐故事以外面世界的大学生日常、科学与异界寻访为入口。它们属于东方的叙事范围，但不因此把外界街道直接画进幻想乡地图，也不把旧作梦美的世界无条件视为同一时代。',source:'https://thbwiki.cc/莲台野夜行/附带故事'},
  {term:'通称与后续资料',en:'Descriptive names & later sources',text:'大妖精、小恶魔是描述性通称。后来的原作书籍又补充了造型、能力或生活说明；整理时应注明作品与叙述者，不把早期未写出的内容永远当作未知，也不将二创补充混作原作。',source:'https://thbwiki.cc/小恶魔'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ ellen:{place:null,related:['marisa','kotohime'],work:'th03',line:'先读健忘魔女的 Manual，再看 Omake 中的原型与猫的说明；画中的庭院没有固定地图坐标。'},
+ kotohime:{place:null,related:['rikako','reimu','ellen'],work:'th03',line:'从收藏趣味认识她，再沿自己的线路阅读警察结局，留意公主称谓与作品语境。'},
+ kana:{place:null,related:['yumemi','chiyuri','lunasa'],work:'th03',line:'从洋馆住民的反应读骚灵，再与后来的骚灵主题比较；不同人物的来历仍各自保留。'},
+ rikako:{place:null,related:['yumemi','chiyuri','kotohime','marisa'],work:'th03',line:'拥有魔力而偏好科学，是阅读的起点；不要把同一主题自动拼成同一研究团队。'}
+});
+{const b=window.GENSOKYO.books.find(b=>b.id==='th03');b.ids=['reimu','mima','marisa','ellen','kotohime','kana','rikako','chiyuri','yumemi'];b.description='不可思议的遗迹引来九位可用人物的竞争。健忘魔女、收藏家、骚灵与科学信者，各自带着不同期待；梦美与千百合又带来另一个世界的问题。';b.caption='1997 年对战弹幕作品。本册已为九位可用人物提供索引，灵梦与魔理沙的现有图卡采用后来作品形象。不同人物路线与结局分别阅读。';}
+window.GENSOKYO.bonds.push(
+ {title:'围裙与扫帚，各有自己的魔法',label:'主题并读 / 爱莲与魔理沙',ids:['ellen','marisa'],relation:'同样与魔女形象相关，来历与魔法道路各不相同。',description:'爱莲的原型、健忘与不成长来自旧作文档；魔理沙则是钻研魔法的人类。此卡用于比较，不据此确立师徒、姐妹或同一种族。',color:'red',symbol:'魔'},
+ {title:'一只齿轮，两种兴趣',label:'想象同框 / 理香子与小兔姬',ids:['rikako','kotohime'],relation:'科学信者与收藏家，用不同目光看同一件物品。',description:'兴趣有原作线索，工房来访却是画册创作。主题并置不等于官方确认的长期搭档，也不代表两人共同拥有一间实验室。',color:'green',symbol:'齿'},
+ {title:'热闹的来处并不相同',label:'骚灵主题 / 卡娜与三姐妹',ids:['kana','lunasa','merlin','lyrica'],relation:'同为骚灵主题入口，各自的诞生与活动应分开读。',description:'卡娜的旧洋馆与三姐妹的演奏故事属于不同人物设定。这里比较声音、骚灵与生活，不给她们补成同一家族，也不把洋馆合为一处。',color:'violet',symbol:'声'},
+ {title:'相信科学，却不在同一个起点',label:'主题比较 / 理香子与梦美',ids:['rikako','yumemi','chiyuri'],relation:'一方身有魔力却偏好科学，另一方前来寻找魔力证据。',description:'梦时空的 Manual 与 Omake 提供了不同背景。相似的衣装和研究主题不表示同一组织、同一故乡或相同理论体系。',color:'green',symbol:'理'},
+ {title:'听见一点声音，就想走近看看',label:'旧作线路 / 卡娜与梦时空搭档',ids:['kana','yumemi','chiyuri'],relation:'卡娜的个人线路连接起研究与搬家愿望。',description:'按她的游戏对话理解相遇与结局，不将这条线路的一切直接当成其他人物路线已发生的前置事件。',color:'red',symbol:'梦'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'共同主题不等于共同经历',en:'A shared theme is not a shared event',text:'魔女、科学或骚灵可以把不同人物串成阅读路线。主题比较、实际相识、确定的主从或亲缘是不同层次；本册的路线卡与同框画面会注明编排依据。',source:'https://thbwiki.cc/附带文档:东方梦时空/Manual'},
+ {term:'旧作的原型与出典',en:'Earlier inspirations & attribution',text:'梦时空附记明确提到爱莲参考竹本泉漫画人物。阅读原作时，角色名字、设定原型与东方中的再创作应一起保留出处，不把借鉴来源抹去。',source:'https://thwiki.cc/附带文档:东方梦时空/Omake'}
+);
+window.GENSOKYO.trails=[
+ {id:'dimdream',number:'01',name:'梦时空初访',tag:'旧作 / 从期待读起',image:'scene-ellen-courtyard',intro:'从一位魔女走近遗迹，看看每个人为什么出发。',steps:[['ellen','先认识健忘又勤奋的魔女'],['kotohime','换一个收藏家的目光'],['kana','听一听洋馆里的热闹'],['rikako','读科学与魔法的矛盾'],['yumemi','再看另一个世界的研究者']],scenes:['ellen-courtyard','kana-window','rikako-workbench','dimdream-lab'],lore:'oldworks',work:'th03',note:'编辑阅读顺序，不表示人物在原作里按此先后相遇。'},
+ {id:'science',number:'02',name:'科学与魔法',tag:'跨作品 / 不同的问题',image:'scene-rikako-workbench',intro:'同样望向未知，却有不同的世界、方法与愿望。',steps:[['rikako','拥有魔力，却偏爱科学'],['yumemi','寻找理论以外的力量'],['chiyuri','从研究记录看助手的工作'],['renko','抬头看看时间与星月'],['merry','再读结界与梦的叙述']],scenes:['rikako-workbench','dimdream-lab','hifuu-starlight'],lore:'hifuu',work:'magical-astronomy',note:'主题并读保留作品差异，不将几位人物设成同一研究团队。'},
+ {id:'poltergeist',number:'03',name:'骚灵与声音',tag:'种族主题 / 各自的来历',image:'scene-kana-window',intro:'从一扇窗走到黄昏的演奏，分别认识声音背后的身影。',steps:[['kana','从旧洋馆的动静开始'],['lunasa','听沉稳的小提琴声'],['merlin','让小号带来明亮气氛'],['lyrica','再辨键盘与三姐妹的合奏']],scenes:['kana-window','prismriver-evening'],lore:'realms',work:'th07',note:'这是种族与声音的比较路线，不确认卡娜与三姐妹有亲缘。'}
+];
