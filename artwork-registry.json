@@ -99,6 +99,10 @@
     "sha256": "6c75bbe6676ab718cc46c9633e7578cbbd1db88d9bd00d1c3b797cf27f088587",
     "size": 2433626
   },
+  "elly.png": {
+    "sha256": "e0685f9856db604ff3d1559f7a3d388997e3eea26189ba22f747ee383a51d167",
+    "size": 2304198
+  },
   "enoko.png": {
     "sha256": "fb750a30cc31ded98583483a5e5a6aac6640a8fb84957a3a7b34bbebd9236c5f",
     "size": 2443672
@@ -114,6 +118,10 @@
   "futo.png": {
     "sha256": "2145f7991a7fd8b1b8ff04984af578a0ecf4b3429a4a8fb01582aea15d0d9b53",
     "size": 3106046
+  },
+  "gengetsu.png": {
+    "sha256": "2a41c766805019527afc2b3f67dc52e68c81f6327e7e7559230b5e8875731abd",
+    "size": 2470690
   },
   "hatate.png": {
     "sha256": "18180a456b03506d25dd0f09bd74c0a34fb162c29ca403cdaaf965b1a8abee53",
@@ -206,6 +214,10 @@
   "kotohime.png": {
     "sha256": "db6fbd22dd45e3588ec399c164d1a8275a9fa707b20c9748e702dbba6eb1600b",
     "size": 2526034
+  },
+  "kurumi.png": {
+    "sha256": "a77de70bbfd35e7e2bba42ee3249369ac43834a5dd167cedf2ac87c93dc9ff2e",
+    "size": 2621843
   },
   "kutaka.png": {
     "sha256": "bd18587aabc8aa4a28e94f1438d071d242903d78f5d0f7b4d3445275d8e4a0ef",
@@ -314,6 +326,10 @@
   "momoyo.png": {
     "sha256": "bef79831f9165c83eabefb740128eb537595e0b451fcffbba7a99b84c47974e7",
     "size": 3058304
+  },
+  "mugetsu.png": {
+    "sha256": "10810e19475102fb57e442c9d85d4dfac9ac3e5a76d231de48e6a36ef3f2dc20",
+    "size": 2354011
   },
   "murasa.png": {
     "sha256": "e608b20fa20ce0b3a424e7da66a5513126183e12ab78157b9e7265229a9009c7",
@@ -467,9 +483,17 @@
     "sha256": "ee74861b4ae2f9e2e32acb9a26367b2f9be3a952b2a2f134e3ff6fcdfbb0d363",
     "size": 3035115
   },
+  "scene-dream-twins.png": {
+    "sha256": "8f9c8789829e7087daa2aa1c7e280af98460b8dd8e2bf9b9e7bd3e41db3336b2",
+    "size": 3325159
+  },
   "scene-ellen-courtyard.png": {
     "sha256": "28ced56bddcd77014fab2665d413bc3a414cc89b95d2a808714991b54854bee3",
     "size": 3485913
+  },
+  "scene-elly-threshold.png": {
+    "sha256": "89ebb455003920b2ab9fb1b0c428bdeac21a0b82d078d5f1c8ced483c9d172a2",
+    "size": 3723939
   },
   "scene-fairy-lakeside.png": {
     "sha256": "a70a4f900cf7d3ed420a585ec40435ee8dcf16c4c6e78547788f4de963ab122f",
@@ -530,6 +554,10 @@
   "scene-kourindou-objects.png": {
     "sha256": "f9cc75e08c52a32cdcbf9c1aac186c65fed845849762f67f6992d11b17870b50",
     "size": 3035761
+  },
+  "scene-kurumi-lakeshore.png": {
+    "sha256": "740a11ae4c0a7398d278beeee74047da82b4ba403e39680738b0fb43409ffa5c",
+    "size": 3794468
   },
   "scene-library-booklight.png": {
     "sha256": "77951739b1dc3e731c3bb63351a824104c9d7acfd43740a45503ece7f07bd5f0",

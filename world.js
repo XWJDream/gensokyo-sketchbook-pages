@@ -563,3 +563,24 @@ window.GENSOKYO.glossary.push(
  {term:'名字与元素意象',en:'Names are not ability labels',text:'名字叫雪，不自动表示操纵冰雪；画中红蓝微光也不等于原作给出的火与冰能力。人物的衣装、名字、舞台和已记载能力，需要分别核对。',source:'https://thbwiki.cc/附带文档:东方怪绮谈/Omake'}
 );
 window.GENSOKYO.trails.push({id:'makai',number:'04',name:'沿路走进魔界',tag:'怪绮谈 / 人物、分支与曲目',image:'scene-ice-magic-v2',intro:'从门边的招呼出发，走过魔空间，再辨认冰雪世界中的两位身影。',steps:[['sara','先认识魔界入口的看守'],['louise','听一位魔界人的旅行愿望'],['alice','经过爱丽丝的关卡，留意后来的图卡造型'],['yuki','认出黑衣魔女与她的个人分支'],['mai-pc98','再看白衣魔女的另一种反应'],['shinki','最后读创造者自己的话']],scenes:['makai-gate','luize-passage','ice-magic','makai-hall'],lore:'makai',work:'th05',listening:[['魔法阵 ～ Magic Square','萨拉的主题曲','https://thbwiki.cc/萨拉'],['灵天 ～ Spiritual Heaven','露易兹的主题曲','https://thbwiki.cc/露易兹'],['禁忌的魔法 ～ Forbidden Magic','雪与舞共同登场','https://thbwiki.cc/雪'],['绯红的少女 ～ Crimson Dead!!','舞先被击破后的雪分支','https://thbwiki.cc/雪'],['背叛的少女 ～ Judas Kiss','雪先被击破后的舞分支','https://thbwiki.cc/舞']],note:'路线是选取部分人物的入门顺序，完整关卡还包括梦子等；曲目链接通往原作音乐室资料，不转载录音。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ kurumi:{place:null,related:['elly','remilia','flandre'],work:'th04',line:'先读她在湖畔的守门自述，再看原作立绘的长发与蝠翼；不要把湖泊直接认作雾之湖。'},
+ elly:{place:null,related:['yuuka','kurumi','sara'],work:'th04',line:'由公馆入口走进旧作，区分第三关道中曲 Bad Apple!! 与她自己的主题曲灵战。'},
+ mugetsu:{place:null,related:['gengetsu','sakuya','yumeko'],work:'th04',line:'从 Extra 对话确认妹妹身份；女仆式衣装可比较，雇主、种族与能力仍保留未知。'},
+ gengetsu:{place:null,related:['mugetsu','mai-pc98','shinki'],work:'th04',line:'先读姐姐自己的介绍，再核对红头结、蓝腰结和白羽翼；外观不能替代种族资料。'}
+});
+window.GENSOKYO.books.push({id:'th04',number:'04',year:'1998',name:'东方幻想乡',jp:'東方幻想郷',en:'Lotus Land Story.',mark:'梦<br>馆',theme:'spring',mood:'湖畔 / 梦幻馆 / 双生姐妹',description:'沿着第二关的湖泊、第三关的公馆入口，走向幽香与 Extra 的两位姐妹。人物、关卡音乐与造型资料一起，提供一条旧作阅读线索。',ids:['reimu','marisa','kurumi','elly','yuuka','mugetsu','gengetsu'],caption:'PC-98 平台的第四作，名称也与系列舞台同名。本册尚未收录奥莲姬；现有灵梦、魔理沙与幽香图卡采用后来作品形象。',url:'https://thbwiki.cc/东方幻想乡',reference:'https://thbwiki.cc/游戏对话:东方幻想乡/博丽灵梦'});
+window.GENSOKYO.bonds.push(
+ {title:'妹妹说完，姐姐接着出场',label:'原作双胞胎 / 梦月与幻月',ids:['mugetsu','gengetsu'],relation:'姐妹身份由 Extra 对话直接说明。',description:'梦月先登场，并提到自己还有双胞胎姐姐；幻月随后接续迎战。茶台闲谈是本册的创作，姐妹关系本身则有原作依据。',color:'violet',symbol:'双'},
+ {title:'湖边停步，门前再问一句',label:'作品旅程 / 胡桃与艾丽',ids:['kurumi','elly'],relation:'相邻关卡的两处入口，各有一位看守。',description:'湖畔守门与公馆入口来自不同段落。阅读路线将她们串联，不因此确认两位共事或归属同一组织。',color:'red',symbol:'路'},
+ {title:'谁在公馆的门里与门外',label:'原作场所 / 艾丽与幽香',ids:['elly','yuuka'],relation:'艾丽守入口，幽香在对话中介绍自己为公馆主人。',description:'这段关系首先放在东方幻想乡的旧作语境中理解。现有幽香图卡采用后来的造型，不能反过来作为旧作睡衣形态的复原。',color:'green',symbol:'馆'},
+ {title:'同为吸血鬼，各自走近',label:'种族并读 / 胡桃与斯卡蕾特姐妹',ids:['kurumi','remilia','flandre'],relation:'相同种族主题，人物与舞台分别辨认。',description:'胡桃的旧作资料与红魔馆姐妹的设定各有出处。金发或蝠翼不证明亲属、居所或能力相同。',color:'violet',symbol:'翼'},
+ {title:'小发帽不等于相同的职务',label:'衣装比较 / 梦月、咲夜与梦子',ids:['mugetsu','sakuya','yumeko'],relation:'女仆式衣装相近，原作明确的工作关系并不相同。',description:'咲夜与梦子的侍奉对象有相应资料，梦月的衣装和 Maid 标签则不能补写为侍奉幽香。比较衣装时也保留设定边界。',color:'green',symbol:'衣'},
+ {title:'羽翼的颜色，种族的名字',label:'造型与资料 / 幻月与舞',ids:['gengetsu','mai-pc98'],relation:'白羽翼是视觉线索，不能单靠外观判断种族。',description:'幻月在 All Cast 中被记作恶魔，旧作舞则以白色魔女形象登场。相同翼形提供比较入口，不表示两位同族、同乡或相识。',color:'red',symbol:'羽'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'同名的作品与舞台',en:'A title and a setting',text:'东方幻想乡既可指第四部旧作 Lotus Land Story，也常被用于说系列中的幻想乡舞台。阅读人物出处时，要看作品编号、平台和对话，不把所有提到幻想乡的资料归进同一个游戏。',source:'https://thbwiki.cc/东方幻想乡'},
+ {term:'道中曲与角色主题曲',en:'Stage themes & boss themes',text:'Bad Apple!! 是东方幻想乡第三关道中曲，艾丽的个人主题则是灵战 ～ Perdition crisis。关卡、角色与后来同人作品之间可以有关联，但曲目在原游戏中的用途仍应分别注明。',source:'https://thbwiki.cc/艾丽'}
+);
+window.GENSOKYO.trails.push({id:'lotusland',number:'05',name:'从湖畔走向梦幻馆',tag:'东方幻想乡 / 原图、人物与音乐',image:'scene-elly-threshold',intro:'辨认一对蝠翼、一顶低冠帽，再听见姐妹各自的介绍。',steps:[['kurumi','在血之湖畔认识吸血少女'],['elly','核对低冠帽与镰刀，区分关卡曲目'],['yuuka','走近公馆主人，留意旧作造型差异'],['mugetsu','先读妹妹的 Extra 自我介绍'],['gengetsu','再由姐姐接续这段对话']],scenes:['kurumi-lakeshore','elly-threshold','dream-twins'],lore:'lotusland',work:'th04',listening:[['红响曲 ～ Scarlet Phoneme','胡桃的个人主题曲','https://thbwiki.cc/胡桃'],['Bad Apple!!','第三关道中曲；不是艾丽的个人主题','https://thbwiki.cc/东方幻想乡'],['灵战 ～ Perdition crisis','艾丽的个人主题曲','https://thbwiki.cc/艾丽'],['女仆幻想 ～ Icemilk Magic','梦月的主题曲','https://thbwiki.cc/梦月'],['可爱的恶魔 ～ Innocence','幻月的主题曲','https://thbwiki.cc/幻月']],note:'主线与 Extra 分开阅读；本路线选取已入册人物，不表示游戏里的完整关卡顺序。'});
