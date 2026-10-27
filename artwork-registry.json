@@ -223,6 +223,10 @@
     "sha256": "2f152b518543be0ce2cdda5b2e38e139ed6ffd38ae786938d858d916b0552e7c",
     "size": 2549745
   },
+  "louise.png": {
+    "sha256": "517266dca35643348a400c0ccff3b5a22a90d38ad1529e4100bcba3d194e7010",
+    "size": 2412496
+  },
   "luna.png": {
     "sha256": "58f4943a49606d0829bd9a29247452799693e3919f3160fdc13c71922babe07d",
     "size": 2697181
@@ -234,6 +238,10 @@
   "lyrica.png": {
     "sha256": "44ef47b07fe5ca267b776e6d461c06a80347d4eaf3cc518997fba22a878da21b",
     "size": 2585828
+  },
+  "mai-pc98.png": {
+    "sha256": "61499588d02413ff9d935617920251c13d3d5322bc0e47ed6fe5d15b3fc11c8a",
+    "size": 2327308
   },
   "mai.png": {
     "sha256": "76cd4a4df290e0cb8b4b20340e6669d817effdfd9e8274cdb8495b4127747a1d",
@@ -411,6 +419,10 @@
     "sha256": "e61e01be54b72107e0f46afad47fa1263df007aab31c46c8b61ee418f574b1b1",
     "size": 2951131
   },
+  "sara.png": {
+    "sha256": "136c8b73701f7e8d3d374ca5ce3d881506d145e0c333e5dc40b0d904dc5276ea",
+    "size": 2359215
+  },
   "satono.png": {
     "sha256": "da5efeebc6f696052983c0281af2892fe8a9c66c2934b780d79b1435d21c8ca0",
     "size": 2925840
@@ -503,6 +515,10 @@
     "sha256": "d67cb866829913ce3b7e1b42361a0cb632502605b038c0e1aa085b5b1f142625",
     "size": 3691078
   },
+  "scene-ice-magic.png": {
+    "sha256": "c8d9ebda772158083efb485110479c81c8b4901c1d22c8f4bfa54206dd8d63e4",
+    "size": 3379941
+  },
   "scene-inverted-castle.png": {
     "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
     "size": 2946888
@@ -523,9 +539,17 @@
     "sha256": "a404949204e1aced5c6d392f0a35f0f5d2a8e03cab9e83aa3b1015abf018ac09",
     "size": 3135963
   },
+  "scene-luize-passage.png": {
+    "sha256": "a3602443e5477e1918fc2c188907527cb6260a8cba759ffa1afbf150d7828df4",
+    "size": 3985651
+  },
   "scene-lunar-courtyard.png": {
     "sha256": "403960aafa081bdee9c39e9b92b99f9b51f6f8cd14556a4062282a5cc0850a26",
     "size": 3162335
+  },
+  "scene-makai-gate.png": {
+    "sha256": "e7fda89151fdfb7ba437c61d89eaeb88de7e1d9a122324e75f6c0b45b647a1fb",
+    "size": 3890884
   },
   "scene-makai-hall.png": {
     "sha256": "72ba8fcf9d38f04ac5c04e06cf8d7a6fdb52bf6dec7eb78b28aa92d80c246f61",
@@ -782,6 +806,10 @@
   "yukari.png": {
     "sha256": "4fe6aa81627eeb83e7da43ba6e029abe938544c0a2a7003dff03c6f89e057b9b",
     "size": 2781747
+  },
+  "yuki.png": {
+    "sha256": "0d24ca64d0f83f932f66dfd7aa1181417002111c5e1b390331ae27f7d3e03fc8",
+    "size": 2521680
   },
   "yumeko.png": {
     "sha256": "e5893d2033ba5f98543b747ebc09634577e751b896599b0c6420de403f4906c4",

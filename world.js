@@ -542,3 +542,24 @@ window.GENSOKYO.trails=[
  {id:'science',number:'02',name:'科学与魔法',tag:'跨作品 / 不同的问题',image:'scene-rikako-workbench',intro:'同样望向未知，却有不同的世界、方法与愿望。',steps:[['rikako','拥有魔力，却偏爱科学'],['yumemi','寻找理论以外的力量'],['chiyuri','从研究记录看助手的工作'],['renko','抬头看看时间与星月'],['merry','再读结界与梦的叙述']],scenes:['rikako-workbench','dimdream-lab','hifuu-starlight'],lore:'hifuu',work:'magical-astronomy',note:'主题并读保留作品差异，不将几位人物设成同一研究团队。'},
  {id:'poltergeist',number:'03',name:'骚灵与声音',tag:'种族主题 / 各自的来历',image:'scene-kana-window',intro:'从一扇窗走到黄昏的演奏，分别认识声音背后的身影。',steps:[['kana','从旧洋馆的动静开始'],['lunasa','听沉稳的小提琴声'],['merlin','让小号带来明亮气氛'],['lyrica','再辨键盘与三姐妹的合奏']],scenes:['kana-window','prismriver-evening'],lore:'realms',work:'th07',note:'这是种族与声音的比较路线，不确认卡娜与三姐妹有亲缘。'}
 ];
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ sara:{place:null,related:['louise','meiling','aunn'],work:'th05',line:'从第一关入口认识她，守门身份有据，种族与身世仍保留未知。'},
+ louise:{place:null,related:['sara','shinki'],work:'th05',line:'从前往人间界的愿望出发，再比较不同主角线路里短短的相遇。'},
+ yuki:{place:null,related:['mai-pc98','marisa','shinki'],work:'th05',line:'先看黑白双人战，再阅读舞先被击破后的雪个人分支与曲目。'},
+ 'mai-pc98':{place:null,related:['yuki','mai','shinki'],work:'th05',line:'读雪先被击破的个人分支，并用作品与日文名区分旧作的舞与丁礼田舞。'}
+});
+{const b=window.GENSOKYO.books.find(b=>b.id==='th05');b.ids=['reimu','marisa','mima','yuuka','sara','louise','alice','yuki','mai-pc98','yumeko','shinki'];b.description='从入口的萨拉、魔空间的露易兹，到冰雪世界的雪与舞，再走向梦子与神绮。人物、场景与曲目一起，补全这段魔界旅程。';b.caption='1998 年 PC-98 作品，本册收录四位可用人物及七位具名关底人物的阅读索引。灵梦、魔理沙、幽香和爱丽丝的现有图卡采用后来作品形象；魅魔图卡采用梦时空形态。';}
+window.GENSOKYO.bonds.push(
+ {title:'一黑一白，共同迎战',label:'原作共同登场 / 雪与舞',ids:['yuki','mai-pc98'],relation:'同关的合作与各自的后半战，呈现不同神情。',description:'怪绮谈第四关先是双人战，之后随击破顺序进入一位人物的个人分支。合作有原作依据，姐妹、双生或共同住址则未明确。',color:'violet',symbol:'双'},
+ {title:'门边与路上的相遇',label:'作品旅程 / 萨拉与露易兹',ids:['sara','louise'],relation:'先在入口停步，再在魔空间遇见新的面孔。',description:'这张卡串联第一关与第二关的阅读顺序，不表示她们在原作里一起值班或已有固定交情。',color:'red',symbol:'旅'},
+ {title:'三扇门，三种守候',label:'守门主题 / 跨作品比较',ids:['sara','meiling','aunn'],relation:'入口的看守、洋馆的门番与神社的守护，各有语境。',description:'守门主题提供比较入口。三位的作品、种族、守护对象与行动方式不同，不按职务相似推断从属或亲缘。',color:'green',symbol:'门'},
+ {title:'黑帽下面，是不同的魔法',label:'造型并读 / 雪与魔理沙',ids:['yuki','marisa'],relation:'金发与黑帽相似，姓名、衣装细节和作品各不相同。',description:'雪的黑衣粉结与魔理沙现有图卡的黑白围裙装分别辨认。相近的魔女外观不等于另一个名字或同一个身份。',color:'red',symbol:'帽'},
+ {title:'同一个汉字，不同的人物',label:'名字辨析 / 两位舞',ids:['mai-pc98','mai'],relation:'旧作的マイ，与天空璋的丁礼田舞各自有故事。',description:'前者是怪绮谈的白色魔女，后者是隐岐奈的二童子之一。相近名字不能替代作品归属与人物设定。',color:'green',symbol:'名'},
+ {title:'循着关卡，走进魔界',label:'旅程索引 / 怪绮谈',ids:['sara','louise','yuki','mai-pc98','yumeko','shinki'],relation:'六个名字，连接入口、冰封舞台与万魔殿。',description:'这是选取部分关卡人物的阅读线索，途中还会遇见爱丽丝。共同出现在一部作品，不意味着所有人构成同一家庭或直属组织。',color:'violet',symbol:'界'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'击破顺序与剧情分支',en:'Defeat order & alternate branches',text:'怪绮谈第四关的后半战由先击破谁决定。舞先败下时继续面对雪，雪先败下时继续面对舞；两段对话与个人曲目不能按同一次战斗先后拼接。',source:'https://thbwiki.cc/附带文档:东方怪绮谈/Omake'},
+ {term:'名字与元素意象',en:'Names are not ability labels',text:'名字叫雪，不自动表示操纵冰雪；画中红蓝微光也不等于原作给出的火与冰能力。人物的衣装、名字、舞台和已记载能力，需要分别核对。',source:'https://thbwiki.cc/附带文档:东方怪绮谈/Omake'}
+);
+window.GENSOKYO.trails.push({id:'makai',number:'04',name:'沿路走进魔界',tag:'怪绮谈 / 人物、分支与曲目',image:'scene-ice-magic',intro:'从门边的招呼出发，走过魔空间，再辨认冰雪世界中的两位身影。',steps:[['sara','先认识魔界入口的看守'],['louise','听一位魔界人的旅行愿望'],['alice','经过爱丽丝的关卡，留意后来的图卡造型'],['yuki','认出黑衣魔女与她的个人分支'],['mai-pc98','再看白衣魔女的另一种反应'],['shinki','最后读创造者自己的话']],scenes:['makai-gate','luize-passage','ice-magic','makai-hall'],lore:'makai',work:'th05',listening:[['魔法阵 ～ Magic Square','萨拉的主题曲','https://thbwiki.cc/萨拉'],['灵天 ～ Spiritual Heaven','露易兹的主题曲','https://thbwiki.cc/露易兹'],['禁忌的魔法 ～ Forbidden Magic','雪与舞共同登场','https://thbwiki.cc/雪'],['绯红的少女 ～ Crimson Dead!!','舞先被击破后的雪分支','https://thbwiki.cc/雪'],['背叛的少女 ～ Judas Kiss','雪先被击破后的舞分支','https://thbwiki.cc/舞']],note:'路线是选取部分人物的入门顺序，完整关卡还包括梦子等；曲目链接通往原作音乐室资料，不转载录音。'});
