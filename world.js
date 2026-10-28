@@ -584,3 +584,24 @@ window.GENSOKYO.glossary.push(
  {term:'道中曲与角色主题曲',en:'Stage themes & boss themes',text:'Bad Apple!! 是东方幻想乡第三关道中曲，艾丽的个人主题则是灵战 ～ Perdition crisis。关卡、角色与后来同人作品之间可以有关联，但曲目在原游戏中的用途仍应分别注明。',source:'https://thbwiki.cc/艾丽'}
 );
 window.GENSOKYO.trails.push({id:'lotusland',number:'05',name:'从湖畔走向梦幻馆',tag:'东方幻想乡 / 原图、人物与音乐',image:'scene-elly-threshold',intro:'辨认一对蝠翼、一顶低冠帽，再听见姐妹各自的介绍。',steps:[['kurumi','在血之湖畔认识吸血少女'],['elly','核对低冠帽与镰刀，区分关卡曲目'],['yuuka','走近公馆主人，留意旧作造型差异'],['mugetsu','先读妹妹的 Extra 自我介绍'],['gengetsu','再由姐姐接续这段对话']],scenes:['kurumi-lakeshore','elly-threshold','dream-twins'],lore:'lotusland',work:'th04',listening:[['红响曲 ～ Scarlet Phoneme','胡桃的个人主题曲','https://thbwiki.cc/胡桃'],['Bad Apple!!','第三关道中曲；不是艾丽的个人主题','https://thbwiki.cc/东方幻想乡'],['灵战 ～ Perdition crisis','艾丽的个人主题曲','https://thbwiki.cc/艾丽'],['女仆幻想 ～ Icemilk Magic','梦月的主题曲','https://thbwiki.cc/梦月'],['可爱的恶魔 ～ Innocence','幻月的主题曲','https://thbwiki.cc/幻月']],note:'主线与 Extra 分开阅读；本路线选取已入册人物，不表示游戏里的完整关卡顺序。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ rika:{place:null,related:['meira','nitori','rikako'],work:'th02',line:'从第一关读到 Extra，分清里香的两次登场、两套衣装与对应机械。'},
+ meira:{place:null,related:['reimu','rika','youmu'],work:'th02',line:'先读她对博丽之力的说明，再核对原作头像；不把台词里的误解当作已确认的恋爱关系。'},
+ orange:{place:null,related:['kurumi','elly','chen'],work:'th04',line:'先从第四作第一关出发，再走向湖畔；Orange 与猫又橙是不同人物。'}
+});
+Object.assign(window.GENSOKYO.books.find(b=>b.id==='th02'),{id:'th02',number:'02',year:'1997',name:'东方封魔录',jp:'東方封魔録',en:'the Story of Eastern Wonderland.',mark:'封<br>魔',theme:'night',mood:'神社异变 / 工程师 / 博丽之力',description:'从里香的机械与明罗的挑战，读向魅魔和魔理沙的早期故事。主线与 Extra 分别阅读，也分别辨认头像中的形态。',ids:['reimu','rika','meira','marisa','mima'],caption:'PC-98 平台第二作。现有灵梦与魔理沙图卡采用后来作品形象，魅魔图卡采用梦时空形态；此索引不是本作完整角色清单。',url:'https://thbwiki.cc/东方封魔录',reference:'https://thbwiki.cc/游戏对话:东方封魔录/博丽灵梦'});
+{const b=window.GENSOKYO.books.find(b=>b.id==='th04');b.ids.splice(2,0,'orange');b.caption='PC-98 平台第四作，本册现有两位可用人物及六位具名关底人物的阅读索引；灵梦、魔理沙与幽香图卡采用后来作品形象。';}
+window.GENSOKYO.bonds.push(
+ {title:'先有机器，再有新的问题',label:'工程主题 / 里香与荷取',ids:['rika','nitori','rikako'],relation:'制造机械、研究技术与偏爱科学，是不同的出发点。',description:'三位可按主题并读，作品背景和组织各自保留。工房里的模型与工具是本册想象，不确认共同研究或师徒关系。',color:'green',symbol:'械'},
+ {title:'第一关之后，另一位对手',label:'作品旅程 / 里香与明罗',ids:['rika','meira'],relation:'分别出现在封魔录第一关和第二关。',description:'机械制造者与追求博丽之力的武士，让同一段主线有不同动机。这张卡只串联阅读顺序，不确认两位同伙。',color:'red',symbol:'录'},
+ {title:'她所追求的，是怎样的力量',label:'原作交锋 / 明罗与灵梦',ids:['meira','reimu'],relation:'明罗在对话中围绕博丽之力提出挑战。',description:'灵梦的误解构成喜剧情节，但不能把一段误会直接写成人物已有恋爱或伴侣关系。',color:'violet',symbol:'力'},
+ {title:'剑在身侧，各有道路',label:'剑术主题 / 明罗与妖梦',ids:['meira','youmu'],relation:'相近武器提供比较入口，人物来历分别阅读。',description:'明罗的武士标签与妖梦的庭师、护卫身份并不相同。没有依据把两位补成同门或一条共同剑术传承。',color:'green',symbol:'剑'},
+ {title:'相近的名字，不同的身影',label:'名字辨析 / 奥莲姬与橙',ids:['orange','chen'],relation:'Orange 与 Chen 在作品、造型和身份上各有区分。',description:'奥莲姬是旧作第一关的妖怪，橙则是妖妖梦登场的猫又。黄帽绿衣的形象不能自动带入猫耳、尾巴或八云家的关系。',color:'red',symbol:'名'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'同一人物的不同登场形态',en:'Different appearances, one character',text:'里香在封魔录第一关与 Extra 都会出现，头像衣装与所用机械有所区别。绘制时先说明采用哪次登场，不把不同阶段的细节无意混在一起。',source:'https://thbwiki.cc/里香'},
+ {term:'低分辨率头像与全身补全',en:'From a small portrait to a full figure',text:'封魔录的头像只保留少量像素。发色、发结和可见领口可以对照；被画面裁掉的裙摆、鞋袜与动作则属于 Q 版补全，不应标为精确的官方全身复原。',source:'https://thbwiki.cc/东方封魔录/角色立绘'}
+);
+window.GENSOKYO.trails.push({id:'early-roads',number:'06',name:'从工房走向旧作山路',tag:'跨作品 / 相遇与造型',image:'scene-rika-workshop',intro:'从机械的小点子走到一柄剑，再认出山路上黄色小帽的身影。',steps:[['rika','分开读第一关与 Extra 的工程师'],['meira','听清她追求的博丽之力'],['mima','继续读封魔录主线的对手'],['marisa','留意早期故事与现有图卡差异'],['orange','换到第四作，补上山野的第一声招呼']],scenes:['rika-workshop','meira-rainpath','orange-hillpath'],lore:'eastern-wonderland',work:'th02',listening:[["She's in a temper!!",'里香第一关的主题曲','https://thbwiki.cc/里香'],['战车娘所做的梦','里香 Extra 的主题曲','https://thbwiki.cc/里香'],['黑暗的力量','明罗的主题曲','https://thbwiki.cc/明罗'],['装饰战 ～ Decoration Battle','换到第四作，奥莲姬的主题曲','https://thbwiki.cc/奥莲姬']],note:'跨作品的编辑阅读路线；最后一步已切换到第四作，不表示这些人物共享一段旅程。'});
+{const t=window.GENSOKYO.trails.find(t=>t.id==='lotusland');t.steps.unshift(['orange','从山野第一关补上最早的相遇']);t.scenes.unshift('orange-hillpath');}

@@ -283,6 +283,10 @@
     "sha256": "f68835750befc50f0e76b41958404db79a354bbed05f8c89d52e8fd814b41f7f",
     "size": 2613829
   },
+  "meira.png": {
+    "sha256": "5d6eee2f67f8a2c849d5e8c11bddb89ffb8ce1b9e32fcc14193eeeca50f42068",
+    "size": 2700077
+  },
   "merlin.png": {
     "sha256": "fdfdaf4c6a3c6114b73c1ef4a92fffcb5629c9037b5d2f3db114b1a7a5a8201d",
     "size": 2534621
@@ -363,6 +367,10 @@
     "sha256": "a7d20fa8ebf70d9790aee942681515987a2c868164e6ef8f93c5fb24e8223bb6",
     "size": 2961764
   },
+  "orange.png": {
+    "sha256": "9a6b9acb74e5b535374b3beeb399a03c56850e9123e41029415c48314d9fb6f1",
+    "size": 2446447
+  },
   "parsee.png": {
     "sha256": "12fe1411208361b3c8466b94b479f47f73ca1bebb2a6c34c6427fd8e442e3d1c",
     "size": 2610376
@@ -394,6 +402,10 @@
   "renko.png": {
     "sha256": "bc3d3d7c52bbc0f05d0840a259004b975853adb1529568f08153f485e8bafc58",
     "size": 2491214
+  },
+  "rika.png": {
+    "sha256": "b49bcbd0e79758299552deac9ff84e5401e7dde7dd923de44d46a64423b7dc1d",
+    "size": 2361659
   },
   "rikako.png": {
     "sha256": "20336003ad485d319d97aa3548d8858d8b61234fa904d09a142abc6234e09788",
@@ -583,6 +595,10 @@
     "sha256": "72ba8fcf9d38f04ac5c04e06cf8d7a6fdb52bf6dec7eb78b28aa92d80c246f61",
     "size": 3588297
   },
+  "scene-meira-rainpath.png": {
+    "sha256": "bdc8405c104cfa7ee9e16f23d93ac25c91ffe648418f5b3177acd9c0fd24e0db",
+    "size": 3957870
+  },
   "scene-mermaid-lake.png": {
     "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
     "size": 3383760
@@ -611,6 +627,10 @@
     "sha256": "5597cbfd15fefa46a2de7950c8e56cb0569542e5b4cbde139a146f5b911e0982",
     "size": 3425473
   },
+  "scene-orange-hillpath.png": {
+    "sha256": "593c4447172bb0248dbd7f62c9da1e3518b7029ff68c1989fc6dd08f8f336b0f",
+    "size": 3762038
+  },
   "scene-otherworld-rest.png": {
     "sha256": "485e3d476f36bdd92451633c6239b35acb420039d6ec724cd386fe2277f23385",
     "size": 3199603
@@ -622,6 +642,10 @@
   "scene-prismriver-evening.png": {
     "sha256": "cfe9f395db15b0faa714a47a19914a12f0db2d80bca7831ce807b003dc1d8f28",
     "size": 3225548
+  },
+  "scene-rika-workshop.png": {
+    "sha256": "68ae7757aeb1c1e3e49ac38bcd4923e65d7e5acf34e1ce1517a5808f8711b2eb",
+    "size": 3486764
   },
   "scene-rikako-workbench.png": {
     "sha256": "7b3d964d14e09d2d216ba016260d45dbfee60831e002ed1f15a6624d2f580d4c",
