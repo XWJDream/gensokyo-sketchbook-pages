@@ -605,3 +605,22 @@ window.GENSOKYO.glossary.push(
 );
 window.GENSOKYO.trails.push({id:'early-roads',number:'06',name:'从工房走向旧作山路',tag:'跨作品 / 相遇与造型',image:'scene-rika-workshop',intro:'从机械的小点子走到一柄剑，再认出山路上黄色小帽的身影。',steps:[['rika','分开读第一关与 Extra 的工程师'],['meira','听清她追求的博丽之力'],['mima','继续读封魔录主线的对手'],['marisa','留意早期故事与现有图卡差异'],['orange','换到第四作，补上山野的第一声招呼']],scenes:['rika-workshop','meira-rainpath','orange-hillpath'],lore:'eastern-wonderland',work:'th02',listening:[["She's in a temper!!",'里香第一关的主题曲','https://thbwiki.cc/里香'],['战车娘所做的梦','里香 Extra 的主题曲','https://thbwiki.cc/里香'],['黑暗的力量','明罗的主题曲','https://thbwiki.cc/明罗'],['装饰战 ～ Decoration Battle','换到第四作，奥莲姬的主题曲','https://thbwiki.cc/奥莲姬']],note:'跨作品的编辑阅读路线；最后一步已切换到第四作，不表示这些人物共享一段旅程。'});
 {const t=window.GENSOKYO.trails.find(t=>t.id==='lotusland');t.steps.unshift(['orange','从山野第一关补上最早的相遇']);t.scenes.unshift('orange-hillpath');}
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ elis:{place:null,related:['sariel','kurumi','remilia'],work:'th01',line:'从魔界线第十五关的原作图像认出红发带、紫膜翼与星形配件，再比较蝙蝠形态。'},
+ sariel:{place:null,related:['elis','gengetsu','shinki'],work:'th01',line:'先看魔界线终点的第一形态，再分开理解第二形态；羽翼外观不自动确定其他关系。'},
+ konngara:{place:null,related:['sariel','meira','mima'],work:'th01',line:'转到地狱线终点，核对高束黑发、红衣、剑与雾状下身，不把角的形状当作种族定论。'}
+});
+window.GENSOKYO.books.push({id:'th01',number:'01',year:'1996 / 1997',name:'东方灵异传',jp:'東方靈異伝',en:'Highly Responsive to Prayers.',mark:'灵<br>异',theme:'night',mood:'阴阳玉 / 双路线 / 像素形象',description:'从阴阳玉翻动图板的早期作品出发，分开读魔界与地狱两条路线。游戏内图像提供鲜明轮廓，简略文字留下许多没有定论的部分。',ids:['reimu','mima','elis','sariel','konngara'],caption:'早期公开展示与正式贩售分属 1996、1997 年。本册仅提供现有五位人物的索引，灵梦与魅魔图卡采用其他时期形象；两条分支不是一条连续行程。',url:'https://thbwiki.cc/东方灵异传',reference:'https://thbwiki.cc/附带文档:东方灵异传/Manual'});
+window.GENSOKYO.bonds.push(
+ {title:'同一路线，先后两次相遇',label:'作品旅程 / 依莉斯与萨丽爱尔',ids:['elis','sariel'],relation:'分别在魔界路线第十五关与第二十关出现。',description:'这是关卡顺序，不是职位关系。原作没有详细人物对话，不把两位补成上司与下属或已确认的亲属。',color:'violet',symbol:'途'},
+ {title:'分岔之后，各有终点',label:'路线辨析 / 两位最终对手',ids:['sariel','konngara'],relation:'萨丽爱尔在魔界线，矜羯罗在地狱线。',description:'可在同一本图鉴中并读，但游戏分支并不要求先战胜一位再去见另一位，画页也不确认两位相识。',color:'red',symbol:'岔'},
+ {title:'膜翼相近，身份各自',label:'造型比较 / 紫翼与深红翼',ids:['elis','kurumi','remilia'],relation:'膜状羽翼提供视觉比较的起点。',description:'依莉斯的恶魔称号与胡桃、蕾米莉亚的吸血鬼身份分别理解；不能用翅膀相似来认定相同种族或家族。',color:'violet',symbol:'翼'},
+ {title:'白羽背后，不只一种名字',label:'造型比较 / 萨丽爱尔与幻月',ids:['sariel','gengetsu','shinki'],relation:'六翼、白翼和魔界意象分属不同人物。',description:'先数清翼的层次，再读各自原作称号。萨丽爱尔与神绮的作品背景不同，没有资料确认创生或隶属关系。',color:'green',symbol:'羽'},
+ {title:'剑影之下，来历仍待分别读',label:'剑术主题 / 矜羯罗与明罗',ids:['konngara','meira'],relation:'剑的外观相近，不意味着同一剑术传承。',description:'两位分别来自不同作品与关卡。矜羯罗的雾状下身与单角状轮廓继续按图像说明，不补成鬼族武士的家族故事。',color:'red',symbol:'剑'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'一作中的两条路线',en:'Two branches of one game',text:'灵异传在共同段落后分出魔界和地狱两条路线。同一关卡编号可以遇见不同对手；依莉斯与萨丽爱尔在魔界线，矜羯罗在地狱线。图鉴中的并排阅读不等同于原作行程相连。',source:'https://thbwiki.cc/东方灵异传'},
+ {term:'称号、外观与人物设定',en:'A title is one clue',text:'Cast 的天使、恶魔或星幽剑士称号，可与原作图像一起阅读。尚无文字说明的身世、性别、种族细分与人际关系，不因角、羽翼或道具的外观自动获得定论。',source:'https://thbwiki.cc/东方灵异传'}
+);
+window.GENSOKYO.trails.push({id:'first-gates',number:'07',name:'门后分出两条路',tag:'灵异传 / 分支与原图',image:'scene-sariel-sanctuary',intro:'同一扇门后，紫色远山与蓝黑回廊，各自留着早期作品的影子。',steps:[['reimu','从阴阳玉与简略附带文档出发'],['elis','魔界线第十五关：认出红发带与星尖'],['sariel','魔界线第二十关：数清三对白羽'],['konngara','另转地狱线第二十关：看雾中的剑'],['mima','回读地狱线另一位早期对手']],scenes:['elis-ruins','sariel-sanctuary','konngara-stillhall'],lore:'first-gates',work:'th01',listening:[['魔镜','第十五关曲目；魔界线依莉斯与地狱线菊理分别对应','https://thbwiki.cc/依莉斯'],['来吧，直到倒地死去的那一刻','魔界路线最终面第一首曲目','https://thbwiki.cc/萨丽爱尔'],['同归于尽','魔界路线最终面另一首曲目','https://thbwiki.cc/萨丽爱尔'],['星幽剑士','地狱路线最终面曲目；与魔界路线分别阅读','https://thbwiki.cc/矜羯罗']],note:'编辑阅读路线，包含两条游戏分支的切换；编号不是原作完整关卡顺序，也不表示这些人物彼此相识。'});

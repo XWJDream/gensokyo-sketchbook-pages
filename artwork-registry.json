@@ -95,6 +95,10 @@
     "sha256": "3b91af3b0b58b23cd6361d5fc882d2bc7e0ea7fd458b233634da1e066ec4500b",
     "size": 2537526
   },
+  "elis.png": {
+    "sha256": "c84676fed0b758ed5bacdb8495f2fcd489454f44e26fea8d0d099ea7a75fcaec",
+    "size": 2707468
+  },
   "ellen.png": {
     "sha256": "6c75bbe6676ab718cc46c9633e7578cbbd1db88d9bd00d1c3b797cf27f088587",
     "size": 2433626
@@ -206,6 +210,10 @@
   "komachi.png": {
     "sha256": "8db715138b4ab8cab316e2b5bec97a0353ff38ac34a1fdef5e64f929358b4528",
     "size": 2676505
+  },
+  "konngara.png": {
+    "sha256": "d231850ccb4d7e2e9a2b7e1ab7fe7c6718ffddb4154f739e9152cfdc07a9617a",
+    "size": 2735975
   },
   "kosuzu.png": {
     "sha256": "ef7be9e7bb551ab93e33e51884ff893564ea1ed5b94d6b940d1f7fe9b2f0a0bc",
@@ -451,6 +459,10 @@
     "sha256": "136c8b73701f7e8d3d374ca5ce3d881506d145e0c333e5dc40b0d904dc5276ea",
     "size": 2359215
   },
+  "sariel.png": {
+    "sha256": "c11800ca2f7cf9fc0f5283e6e69feff5f4736c0891fabe174a13a43efaa48b59",
+    "size": 2644363
+  },
   "satono.png": {
     "sha256": "da5efeebc6f696052983c0281af2892fe8a9c66c2934b780d79b1435d21c8ca0",
     "size": 2925840
@@ -498,6 +510,10 @@
   "scene-dream-twins.png": {
     "sha256": "8f9c8789829e7087daa2aa1c7e280af98460b8dd8e2bf9b9e7bd3e41db3336b2",
     "size": 3325159
+  },
+  "scene-elis-ruins.png": {
+    "sha256": "939a9ae2e12310d80376e97da0de81962ab2b5513219e24bebe5060064160369",
+    "size": 3578752
   },
   "scene-ellen-courtyard.png": {
     "sha256": "28ced56bddcd77014fab2665d413bc3a414cc89b95d2a808714991b54854bee3",
@@ -562,6 +578,10 @@
   "scene-kana-window.png": {
     "sha256": "1b5fdc9aefd20784c05d6d9708e8dcc61aa2a51ce119409101c37ec2b5b8d34b",
     "size": 3609202
+  },
+  "scene-konngara-stillhall.png": {
+    "sha256": "ca11e181803b5a1c4226f620ff6aff36b095ecef86e4947942ae0263a1a07995",
+    "size": 3784899
   },
   "scene-kourindou-objects.png": {
     "sha256": "f9cc75e08c52a32cdcbf9c1aac186c65fed845849762f67f6992d11b17870b50",
@@ -654,6 +674,10 @@
   "scene-sanzu-stones.png": {
     "sha256": "43a91cbe99497bf7d19165c5982056a8428bb9800dff93c3882dad20b443dc15",
     "size": 3512613
+  },
+  "scene-sariel-sanctuary.png": {
+    "sha256": "58f0d6c16bc0744d64af441720e5a13a4395e33694bd9cd105237397963d2eff",
+    "size": 3556001
   },
   "scene-season-mountain.png": {
     "sha256": "9d647a70fdcd939a3bd47fda7620546c4ba07f8a4d0f0ec9b71321561ea98e6e",
