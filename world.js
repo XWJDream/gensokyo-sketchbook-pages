@@ -624,3 +624,22 @@ window.GENSOKYO.glossary.push(
  {term:'称号、外观与人物设定',en:'A title is one clue',text:'Cast 的天使、恶魔或星幽剑士称号，可与原作图像一起阅读。尚无文字说明的身世、性别、种族细分与人际关系，不因角、羽翼或道具的外观自动获得定论。',source:'https://thbwiki.cc/东方灵异传'}
 );
 window.GENSOKYO.trails.push({id:'first-gates',number:'07',name:'门后分出两条路',tag:'灵异传 / 分支与原图',image:'scene-sariel-sanctuary',intro:'同一扇门后，紫色远山与蓝黑回廊，各自留着早期作品的影子。',steps:[['reimu','从阴阳玉与简略附带文档出发'],['elis','魔界线第十五关：认出红发带与星尖'],['sariel','魔界线第二十关：数清三对白羽'],['konngara','另转地狱线第二十关：看雾中的剑'],['mima','回读地狱线另一位早期对手']],scenes:['elis-ruins','sariel-sanctuary','konngara-stillhall'],lore:'first-gates',work:'th01',listening:[['魔镜','第十五关曲目；魔界线依莉斯与地狱线菊理分别对应','https://thbwiki.cc/依莉斯'],['来吧，直到倒地死去的那一刻','魔界路线最终面第一首曲目','https://thbwiki.cc/萨丽爱尔'],['同归于尽','魔界路线最终面另一首曲目','https://thbwiki.cc/萨丽爱尔'],['星幽剑士','地狱路线最终面曲目；与魔界路线分别阅读','https://thbwiki.cc/矜羯罗']],note:'编辑阅读路线，包含两条游戏分支的切换；编号不是原作完整关卡顺序，也不表示这些人物彼此相识。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ ubame:{place:null,related:['chimi','nemuno','biten'],work:'th20',line:'从第一关看回不了森林的山姥之长，再比较她与合欢的不同能力表述。'},
+ chimi:{place:null,related:['nareko','ubame','nue'],work:'th20',line:'先看古老物怪的自然栖居与六耳轮廓，再读她与驯子的已知关系。'},
+ nareko:{place:null,related:['chimi','aunn','narumi'],work:'th20',line:'从原作任务的“阻止离开”读起，再分辨道祖神、谜题意象与两根金杖。'}
+});
+window.GENSOKYO.books.push({id:'th20',number:'20',year:'2025',name:'东方锦上京',jp:'東方錦上京',en:'Fossilized Wonders.',mark:'锦<br>京',theme:'green',mood:'圣域 / 异变石 / 森林与地下',description:'从圣域的异常结界开始，跟随携带异变石的灵梦与魔理沙，认识森林上空、林内和地底的三位对手。不同石头的力量与路线线索，适合分别阅读。',ids:['reimu','marisa','ubame','chimi','nareko'],caption:'2025 年第二十作。本册先收录前三关的新人物与两位主角作为入门索引，并非完整阵容；主角图卡沿用本册通行形象。',url:'https://thbwiki.cc/东方锦上京',reference:'https://thbwiki.cc/附带文档:东方锦上京/Omake'});
+window.GENSOKYO.bonds.push(
+ {title:'同为山姥，能力各有方向',label:'族群比较 / 姥芽与合欢',ids:['ubame','nemuno'],relation:'制作圣域与破坏圣域，是两位不同的能力表述。',description:'可以从共同族群理解生活方式，也要保留各自原作的具体描述；不会因为同为山姥就互换能力或确认两位的私人关系。',color:'green',symbol:'域'},
+ {title:'同一片森林，久远的不同住民',label:'共同环境 / 姥芽与魑魅',ids:['ubame','chimi'],relation:'两位都与圣域相关，魑魅的存在还要早于山姥。',description:'姥芽守护和管理族群，魑魅则是古老物怪。共同栖居提供阅读线索，不能把山姥之长的身份直接扩展成对所有住民的统治。',color:'green',symbol:'林'},
+ {title:'被放置的神像，后来有了自己的想法',label:'原作关系 / 魑魅与驯子',ids:['chimi','nareko'],relation:'魑魅制作并放置了驯子，后来才得知其自主意志已经觉醒。',description:'这一关系来自游戏对话，不能只凭猜谜道具便将驯子当作普通人类探险者，也不将她的独立行动写成魑魅一直直接指挥。',color:'violet',symbol:'神'},
+ {title:'同一个姓氏，先不要急着连成家谱',label:'名字辨析 / 魑魅与鵺',ids:['chimi','nue'],relation:'两位都姓封兽，原形不明的主题也相近。',description:'名字与主题适合对照，原作却没有据此确立亲属关系。白发六耳与鵺的黑发及异形翼状构造，也需要分别辨认。',color:'violet',symbol:'名'},
+ {title:'守护之名，任务仍要分别理解',label:'信仰主题 / 驯子与阿吽、成美',ids:['nareko','aunn','narumi'],relation:'道祖神、狛犬与地藏意象，各有不同来历与行动。',description:'可从神像与守护主题继续读，但不是同一神职、同一驻地或同一套能力。驯子的具体任务仍以原作的方向为准。',color:'red',symbol:'守'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'异变石',en:'Incident stones',text:'锦上京中承载异变力量的石头，是人物进入异常圣域与推进故事的重要线索。不同颜色有不同力量和路线文本；它与虹龙洞的能力卡牌、一般矿石不是可直接互换的概念。',source:'https://thbwiki.cc/东方锦上京'},
+ {term:'圣域与异常的结界',en:'A sanctuary and its altered boundary',text:'圣域是山姥与古老物怪栖居的森林，异常结界则是本作中需要进一步辨明的现象。栖居方式、内外视野和通行条件分别阅读，不把“圣域”简单等同于地图上的一堵透明墙。',source:'https://thbwiki.cc/圣域'}
+);
+window.GENSOKYO.trails.push({id:'sacred-forest',number:'08',name:'从林梢走到地下石门',tag:'锦上京 / 圣域初访',image:'scene-chimi-rill',intro:'先在林外相遇，再听见山涧的气息，最后停在一句谜题前。',steps:[['ubame','第一关：留意山姥之长与异常结界'],['chimi','第二关：认识自然环境中的古老物怪'],['nareko','第三关：分清阻止离开的使命'],['nemuno','旁读天空璋：另一位山姥的圣域'],['biten','旁读兽王园：圣域生活的另一条线索']],scenes:['ubame-canopy','chimi-rill','nareko-stonegate'],lore:'sanctuary-stones',work:'th20',listening:[['即便为世间所遗忘','姥芽的主题曲；先从第一关认识山姥之长','https://thbwiki.cc/尘塚姥芽'],['森林里面有鬼怪哦','魑魅的主题曲；配合她的原作资料继续读','https://thbwiki.cc/封兽魑魅'],['事已至此就赌上性命来猜谜吧','驯子的主题曲；结合地下祭坛的对话理解','https://thbwiki.cc/道神驯子']],note:'前三步是本册的锦上京初访线索，后两步切换到其他作品旁读，不是同一段游戏流程。场景仅为意象，无地理比例尺。'});

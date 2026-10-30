@@ -59,6 +59,10 @@
     "sha256": "02f97dbeda473d3b367922a9f537cf33ab9e2ea53871745a6b1f375587e8d626",
     "size": 2868138
   },
+  "chimi.png": {
+    "sha256": "3edfc6f4827e436938e151ac20f35fe884ee22868cdfcf12f040d007b6d257cd",
+    "size": 2255648
+  },
   "chiyari.png": {
     "sha256": "e806bfdf75f8649dfdbe071c12de030810b9cfe1e7565e034f306a76ed87432f",
     "size": 2517955
@@ -351,6 +355,10 @@
     "sha256": "fb2276c5b7870383a7b89b6cc927b1e87024f4ab789d296b03f7df5f954ed2fa",
     "size": 2604175
   },
+  "nareko.png": {
+    "sha256": "579ad1155b5089258edd9ef6242912323386246ef65331e650c0c092ce69dca1",
+    "size": 2266085
+  },
   "narumi.png": {
     "sha256": "422d319faefa1fe7219526d00a6b69da8f39db23146d9bf75f742163eddd22b6",
     "size": 2789026
@@ -490,6 +498,10 @@
   "scene-cemetery-moon.png": {
     "sha256": "b4e5e367151d4356d6cf038f25fd9c0171c6b182ff799adb01ba16cb69fc5aa5",
     "size": 3602423
+  },
+  "scene-chimi-rill.png": {
+    "sha256": "9814a70812b2849319f23903c1f91914e665b9470ec9e175ff144cd983c16ecf",
+    "size": 3611861
   },
   "scene-dango-stalls.png": {
     "sha256": "719aeaab068cf95ce1c11df3fe0980a21b9116a906ea5e9e7453a74faab6ffe5",
@@ -643,6 +655,10 @@
     "sha256": "ce9c4b81db03ae35119cb3a9037f267d61000e6ce3662795234e245f67525aa8",
     "size": 3843313
   },
+  "scene-nareko-stonegate.png": {
+    "sha256": "395c517229686e28255be15a492529f11e38472b8acd724f48324fecbb6ef354",
+    "size": 3489580
+  },
   "scene-old-bloodpool.png": {
     "sha256": "5597cbfd15fefa46a2de7950c8e56cb0569542e5b4cbde139a146f5b911e0982",
     "size": 3425473
@@ -727,6 +743,10 @@
     "sha256": "d8e056892d03e165cad7b377060d36d2d638dbd8fc85340ea145f38b8ff9deae",
     "size": 3741353
   },
+  "scene-ubame-canopy.png": {
+    "sha256": "28707d55aff7c7b595a5c345d5ee21e43d3f6a69cba5ac7744f7e18ddc3a73f4",
+    "size": 3483406
+  },
   "scene-winter-whisper.png": {
     "sha256": "1b49608825b0cd6a4564eff698d46306c53ada693fa7baaf830c168b39aa598b",
     "size": 3367903
@@ -810,6 +830,10 @@
   "tsukasa.png": {
     "sha256": "29db12f877fee8ebe5b96fa229bfe1b429ffea85397932bb5dc89caeb1adad6d",
     "size": 2779394
+  },
+  "ubame.png": {
+    "sha256": "ca452d70f96dd67da4546752169c533d1b0ec948f87cb21aed5bed22537bea6c",
+    "size": 2377185
   },
   "unzan.png": {
     "sha256": "7391b1cc857744d4d2d47aef28eece4cdfc6e60c9de944192ae37f56e8bee642",
