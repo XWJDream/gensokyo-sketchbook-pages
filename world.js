@@ -643,3 +643,34 @@ window.GENSOKYO.glossary.push(
  {term:'圣域与异常的结界',en:'A sanctuary and its altered boundary',text:'圣域是山姥与古老物怪栖居的森林，异常结界则是本作中需要进一步辨明的现象。栖居方式、内外视野和通行条件分别阅读，不把“圣域”简单等同于地图上的一堵透明墙。',source:'https://thbwiki.cc/圣域'}
 );
 window.GENSOKYO.trails.push({id:'sacred-forest',number:'08',name:'从林梢走到地下石门',tag:'锦上京 / 圣域初访',image:'scene-chimi-rill',intro:'先在林外相遇，再听见山涧的气息，最后停在一句谜题前。',steps:[['ubame','第一关：留意山姥之长与异常结界'],['chimi','第二关：认识自然环境中的古老物怪'],['nareko','第三关：分清阻止离开的使命'],['nemuno','旁读天空璋：另一位山姥的圣域'],['biten','旁读兽王园：圣域生活的另一条线索']],scenes:['ubame-canopy','chimi-rill','nareko-stonegate'],lore:'sanctuary-stones',work:'th20',listening:[['即便为世间所遗忘','姥芽的主题曲；先从第一关认识山姥之长','https://thbwiki.cc/尘塚姥芽'],['森林里面有鬼怪哦','魑魅的主题曲；配合她的原作资料继续读','https://thbwiki.cc/封兽魑魅'],['事已至此就赌上性命来猜谜吧','驯子的主题曲；结合地下祭坛的对话理解','https://thbwiki.cc/道神驯子']],note:'前三步是本册的锦上京初访线索，后两步切换到其他作品旁读，不是同一段游戏流程。场景仅为意象，无地理比例尺。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ yuiman:{place:null,related:['ariya','toyohime','kanako'],work:'th20',line:'从第四关的记忆与四季景色读起，再分别认识祭神、旧友和设施管理人。'},
+ ariya:{place:null,related:['yuiman','toyohime','nareko'],work:'th20',line:'留意她自己的神社叙述，再读不变之力与为维缦出手的动机。'},
+ nina:{place:null,related:['marisa','yuiman','sumireko'],work:'th20',line:'先看 Extra 的新生妖怪，再分开阅读角色相信的说法与故事确认的事实。'}
+});
+{
+ const p=window.CHARACTERS.find(c=>c.id==='toyohime');
+ p.story+=' 在锦上京中，她又以浅间净秽山管理人的身份登场；这一设施中的危机，需要连同维缦与阿梨夜的不同处境阅读。';
+ p.relation+=' 锦上京中与维缦、阿梨夜的联系另有设施与异变背景。';
+ const r=window.GENSOKYO.characterLinks.toyohime;
+ r.related=[...new Set([...r.related,'yuiman','ariya'])];
+}
+{
+ const b=window.GENSOKYO.books.find(b=>b.id==='th20');
+ b.ids=['reimu','marisa','ubame','chimi','nareko','yuiman','toyohime','ariya','nina'];
+ b.description='由林外、林内与地下石门，继续读向四季竖穴、设施管理人与石之女神。Extra 另从化石森林与新生的蜃开始，人物的叙述保留各自视角。';
+ b.caption='2025 年第二十作。本册收录两位主角与七位 Boss 的人物入口；主线与 Extra 分开理解。丰姬与主角图卡沿用本册通行形象，不表示本作每种立绘。';
+}
+window.GENSOKYO.bonds.push(
+ {title:'两位祭神，仍有彼此的牵挂',label:'原作关系 / 维缦与阿梨夜',ids:['yuiman','ariya'],relation:'两位同为古老神社的祭神，阿梨夜为帮助维缦而采取行动。',description:'共祀与援助提供了已知关系，不因此推定亲缘；古神人与石之女神的来历、能力也各自保留。',color:'violet',symbol:'祀'},
+ {title:'管理设施，与承担工作的人',label:'原作关系 / 丰姬与维缦',ids:['toyohime','yuiman'],relation:'丰姬是浅间净秽山的管理人，维缦被束缚在其中处理污秽。',description:'同一设施里，管理者与古神人的处境不同。阅读时保留被囚禁与记忆改写的背景，不把这段关系只画成轻松的同事生活。',color:'blue',symbol:'山'},
+ {title:'一座金字塔，两种叙述的起点',label:'叙述视角 / 丰姬与阿梨夜',ids:['toyohime','ariya'],relation:'月之都的设施与曾经的神社，指向同一地点的不同历史层次。',description:'人物从自己的身份出发说话，资料应结合起来读。不同表述不宜删去一方，也不能直接认定她们有同一目标。',color:'violet',symbol:'层'},
+ {title:'从信息里的城市，走向眼前的世界',label:'原作关系 / 贝子与魔理沙',ids:['nina','marisa'],relation:'新生的蜃需要认识眼前生活，魔理沙成为她接触幻想乡的线索。',description:'人物说法仍需对照事实。贝子具现的楼影是海市蜃楼主题，不代表幻想乡已经建成现代都市。',color:'green',symbol:'蜃'},
+ {title:'同乡旧友，各自走过漫长时间',label:'原作关系 / 维缦与神奈子',ids:['yuiman','kanako'],relation:'维缦与神奈子有同乡旧友的原作线索。',description:'这一联系适合向神明与信仰继续阅读，不把维缦误认为守矢神社现任祭神，也不将两位的能力互换。',color:'green',symbol:'旧'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'浅间净秽山的两层身份',en:'A facility with an older shrine history',text:'丰姬的叙述着眼于月之都的设施，阿梨夜的叙述则追溯古老神社。这里涉及同一地点的历史与立场；本册将两层线索并读，不用单一标签抹去另一层。',source:'https://thbwiki.cc/附带文档:东方锦上京/Omake'},
+ {term:'蜃与信息中的幻景',en:'Mirages and believed information',text:'贝子的能力是展现海市蜃楼，她曾把吸收的信息一概当真。角色相信的内容与故事确认的事实需要区分；虚构都市是作品意象，不是对现实世界的断言。',source:'https://thbwiki.cc/渡里贝子'}
+);
+window.GENSOKYO.trails.push({id:'pyramid-depths',number:'09',name:'四季之后，去看石与蜃',tag:'锦上京 / 主线后段与 Extra',image:'scene-nina-mirage',intro:'从一段被遮住的记忆，读到石的心意，再走进一座淡淡的幻景。',steps:[['yuiman','第四关：四季风景与古神人的处境'],['toyohime','第五关：管理人看见的设施危机'],['ariya','第六关：追溯神社与不变之力'],['nina','另读 Extra：新生的蜃与信息判断']],scenes:['yuiman-seasons','ariya-stillshrine','nina-mirage'],lore:'pyramid-memory',work:'th20',listening:[['猎鹿旧忆回潮','维缦的主题曲；从记忆线索继续读','https://thbwiki.cc/维缦·浅间'],['早已习惯最终孑然一身 ～ Stone Goddess','阿梨夜的主题曲；配合她的行动动机阅读','https://thbwiki.cc/磐永阿梨夜'],['双壳贝上的幻觉','贝子的主题曲；对应 Extra 的海市蜃楼主题','https://thbwiki.cc/渡里贝子']],note:'包含主线后半段设定。最后一步切换到 Extra，不是第四至第七关的连续流程；没有把不同结局整合成唯一事件顺序。'});

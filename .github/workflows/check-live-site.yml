@@ -13,7 +13,7 @@ jobs:
         run: |
           import urllib.request
           base = 'https://xwjdream.github.io/gensokyo-sketchbook-pages/'
-          checks = [('', 'text/html', 'GitHub 浏览版'), ('gallery.js?v=cast24', None, '完整版画廊'), ('characters.js?v=cast24', None, "artwork:'yuki-v2'"), ('assets/yuki-v2.png', 'image/png', None), ('scenes-data.js?v=cast24', None, "id:'nareko-stonegate'"), ('assets/scene-nareko-stonegate.webp', 'image/webp', None), ('assets/sara.png', 'image/png', None), ('world.js?v=cast24', None, "id:'sacred-forest'"), ('explore.js?v=cast24', None, 'trail-listening'), ('lore-data.js?v=cast24', None, "id:'sanctuary-stones'"), ('assets/mai-pc98.png', 'image/png', None), ('app.js?v=cast24', None, '原作造型对照'), ('assets/nareko.png', 'image/png', None), ('assets/reimu.webp', 'image/webp', None), ('assets/atlas-mountain.webp', 'image/webp', None)]
+          checks = [('', 'text/html', 'GitHub 浏览版'), ('gallery.js?v=cast25', None, '完整版画廊'), ('characters.js?v=cast25', None, "artwork:'yuki-v2'"), ('assets/yuki-v2.png', 'image/png', None), ('scenes-data.js?v=cast25', None, "id:'nina-mirage'"), ('assets/scene-nina-mirage.webp', 'image/webp', None), ('assets/sara.png', 'image/png', None), ('world.js?v=cast25', None, "id:'pyramid-depths'"), ('explore.js?v=cast25', None, 'trail-listening'), ('lore-data.js?v=cast25', None, "id:'pyramid-memory'"), ('assets/mai-pc98.png', 'image/png', None), ('app.js?v=cast25', None, '原作造型对照'), ('assets/nina.png', 'image/png', None), ('assets/reimu.webp', 'image/webp', None), ('assets/atlas-mountain.webp', 'image/webp', None)]
           for path, content_type, expected in checks:
               with urllib.request.urlopen(base + path, timeout=40) as response:
                   body = response.read()

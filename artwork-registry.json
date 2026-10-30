@@ -7,6 +7,10 @@
     "sha256": "c80361e2325ab8446b4734b9aa2120b2207dd1d57badb2bb3d8505d467d16f00",
     "size": 2509866
   },
+  "ariya.png": {
+    "sha256": "48f54c48ec544ede69052e8de98bb33a8822bc2fd77d861538a08e78c3330617",
+    "size": 2786985
+  },
   "atlas-bamboo.png": {
     "sha256": "4aad4217adfc6d626f03ceffd57c6744634127dde73868303790701db6f65431",
     "size": 4393372
@@ -371,6 +375,10 @@
     "sha256": "d5fdbcb0815b47e48769a54bad60a7e0a19b4edac8bc490a022d9c7336e96c8d",
     "size": 2887057
   },
+  "nina.png": {
+    "sha256": "d35b88da9ea3fbfe0bc70b7f3ae7c9d7c0d3ae162af7a647c00dd439eef72a07",
+    "size": 2530736
+  },
   "nitori-soft-v3.png": {
     "sha256": "da1739ecb652abe7f25e6064c0a18ca96983ef17054d1b3a94850f414a743db5",
     "size": 2558240
@@ -478,6 +486,10 @@
   "satori.png": {
     "sha256": "4276a20bf07b37b5399df720dd66e342ea640892d13cc96286cdafe0288f8599",
     "size": 2505807
+  },
+  "scene-ariya-stillshrine.png": {
+    "sha256": "5939de343cdb0ca88c57b30b86d4847927c80fca9dc14830d90885347daa39c9",
+    "size": 4019507
   },
   "scene-autumn-foothills.png": {
     "sha256": "5e22a279e4ad3306da9e072cc4e7e34c8c28c8553f0dbfc548c3a814ebc18497",
@@ -659,6 +671,10 @@
     "sha256": "395c517229686e28255be15a492529f11e38472b8acd724f48324fecbb6ef354",
     "size": 3489580
   },
+  "scene-nina-mirage.png": {
+    "sha256": "e38acbacf2acd218423b3749fb0c691fcbd1496846c67d6c56624bfa2d239038",
+    "size": 3499239
+  },
   "scene-old-bloodpool.png": {
     "sha256": "5597cbfd15fefa46a2de7950c8e56cb0569542e5b4cbde139a146f5b911e0982",
     "size": 3425473
@@ -750,6 +766,10 @@
   "scene-winter-whisper.png": {
     "sha256": "1b49608825b0cd6a4564eff698d46306c53ada693fa7baaf830c168b39aa598b",
     "size": 3367903
+  },
+  "scene-yuiman-seasons.png": {
+    "sha256": "dd3c235096391e6695a7f4316f60e6be02ba788167e0278ada7c5004ddd6fe91",
+    "size": 3585191
   },
   "seiga.png": {
     "sha256": "2183db53534f9e80d8084c41a6f8cd2d66904d2e1b58aa46ac64641932ee82c2",
@@ -902,6 +922,10 @@
   "youmu-soft-v3.png": {
     "sha256": "198957ff01b03069ea5dafd7a60e3f899aaecafbd509d445ab437323c926c108",
     "size": 2444937
+  },
+  "yuiman.png": {
+    "sha256": "834c6cfbe97e390aca6efbd4e1243740b1d5e17535d58d69cd925d4a31cfeda9",
+    "size": 2530586
   },
   "yukari.png": {
     "sha256": "4fe6aa81627eeb83e7da43ba6e029abe938544c0a2a7003dff03c6f89e057b9b",
