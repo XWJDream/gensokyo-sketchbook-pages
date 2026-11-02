@@ -291,6 +291,10 @@
     "sha256": "a3b93608d21df40ad5a0a97b7ffe714517ea2b5dac1f1c795985153087d2a5f1",
     "size": 2952838
   },
+  "manzairaku.png": {
+    "sha256": "816bd72d19d833849120a96ec029064ef3e6ff43d15ba775bfaf49a7931167e5",
+    "size": 2256266
+  },
   "marisa.png": {
     "sha256": "b65277d2270a1fad6421166cfa4dc633598fd9e59ecf3afe2c655eb1324621cc",
     "size": 2570972
@@ -407,6 +411,10 @@
     "sha256": "a7d20fa8ebf70d9790aee942681515987a2c868164e6ef8f93c5fb24e8223bb6",
     "size": 2961764
   },
+  "oonamazu.png": {
+    "sha256": "6e35714e30b635fa1ba314f8624041e243c4a69d04a895ec73149a2488e144d5",
+    "size": 2447618
+  },
   "orange.png": {
     "sha256": "9a6b9acb74e5b535374b3beeb399a03c56850e9123e41029415c48314d9fb6f1",
     "size": 2446447
@@ -430,6 +438,10 @@
   "reimu.png": {
     "sha256": "90883e7eb8c76709809f36eab9bbeaa42ae37d29de48753437637bc7325c5f2d",
     "size": 2595469
+  },
+  "reisen-moon.png": {
+    "sha256": "2cf128bc54e5e2551c569f291147144ccabab60279747ee9e57ea63cdd7c1ccf",
+    "size": 2177213
   },
   "reisen.png": {
     "sha256": "8da0ba727c159cc23f4c3fd4b4be01f8a8d254a2a61d87f405c60ce32ce8dd5c",
@@ -667,6 +679,10 @@
     "sha256": "72ba8fcf9d38f04ac5c04e06cf8d7a6fdb52bf6dec7eb78b28aa92d80c246f61",
     "size": 3588297
   },
+  "scene-manzairaku-ravine.png": {
+    "sha256": "ef7d6c138259e04cfc7adb9ffcc1cf0e2013d319810ad146bdd35f9ccba56756",
+    "size": 3868716
+  },
   "scene-meira-rainpath.png": {
     "sha256": "bdc8405c104cfa7ee9e16f23d93ac25c91ffe648418f5b3177acd9c0fd24e0db",
     "size": 3957870
@@ -711,6 +727,10 @@
     "sha256": "5597cbfd15fefa46a2de7950c8e56cb0569542e5b4cbde139a146f5b911e0982",
     "size": 3425473
   },
+  "scene-oonamazu-dreamwater.png": {
+    "sha256": "87847c8f8d189d03abbd92efcdb3480b8f0f2aae12a0cf60b705704e0735091a",
+    "size": 3202314
+  },
   "scene-orange-hillpath.png": {
     "sha256": "593c4447172bb0248dbd7f62c9da1e3518b7029ff68c1989fc6dd08f8f336b0f",
     "size": 3762038
@@ -726,6 +746,10 @@
   "scene-prismriver-evening.png": {
     "sha256": "cfe9f395db15b0faa714a47a19914a12f0db2d80bca7831ce807b003dc1d8f28",
     "size": 3225548
+  },
+  "scene-reisen-moonletter.png": {
+    "sha256": "cc7854325b9f615bbcb16784ebb0ef24b82cc6ed24d9c65adb46197e54cefc9b",
+    "size": 3561549
   },
   "scene-rika-workshop.png": {
     "sha256": "68ae7757aeb1c1e3e49ac38bcd4923e65d7e5acf34e1ce1517a5808f8711b2eb",

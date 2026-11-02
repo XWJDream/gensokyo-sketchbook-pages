@@ -739,3 +739,23 @@ window.GENSOKYO.glossary.push(
  {term:'黑白原图与同人配色',en:'Reading a monochrome design',text:'漫画能确认帽形、胡须、衣领与明暗轮廓，却未必提供彩色设定。本册为易者、运松翁采用克制灰褐淡彩，明确作为同人配色，不把生成的色值反过来当成原作证据。',source:'https://thbwiki.cc/东方茨歌仙/第十一话'}
 );
 window.GENSOKYO.trails.push({id:'book-visitors',number:'10',name:'书页与人里的来客',tag:'书籍 / 通称与日常',image:'scene-tokiko-reading',intro:'从一位珍视书本的妖怪，读向卦书的秘密与老渔夫带来的帮助。',steps:[['tokiko','先分清读书妖怪与朱鹭子这一通称'],['rinnosuke','回到香霖堂的开篇故事'],['fortune-teller','转到铃奈庵，辨别卦书事件'],['kosuzu','跟着读者重新看书的来历'],['akyuu','把调查中的判断与消息分开'],['unshou','再翻茨歌仙，认识运松庵的老渔夫'],['marisa','从她收到的帮助读懂秘药线索'],['kasen','继续看华扇如何了解日常里的异状']],scenes:['tokiko-reading','fortune-teller-study','unshou-riverside'],lore:'book-visitors',work:'kourindou-book',listening:[],note:'跨书籍的编辑路线，不表示人物在同一事件中共同登场。未给无主题曲的角色另行指定“官方角色曲”。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ 'reisen-moon':{place:null,related:['reisen','eirin','yorihime','toyohime'],work:'bougetsusho',line:'从送信与命名的故事认识这一位月兔，与永远亭的铃仙分别阅读。'},
+ manzairaku:{place:'genbu',related:['nitori','kasen','marisa'],work:'hermit-book',line:'回到茨歌仙第二十二话，从怪鱼传闻走近实际来客。'},
+ oonamazu:{place:null,related:['meiling','tenshi','doremy'],work:'th123',line:'先读美铃路线的梦境，再区分绯想天的地底鲶鱼线索。'}
+});
+window.GENSOKYO.books.find(b=>b.id==='bougetsusho').ids.push('reisen-moon');
+window.GENSOKYO.books.find(b=>b.id==='hermit-book').ids.push('manzairaku');
+window.GENSOKYO.books.push({id:'th123',number:'12.3',year:'2009',name:'东方非想天则',jp:'東方非想天則',en:'Hisoutensoku.',mark:'巨<br>影',theme:'mountain',mood:'格斗 / 巨影 / 各自的想象',description:'一阵湿热的雾与巨大的身影，引出早苗、琪露诺、美铃各自的追寻。不同人物带着不同的理解行动，美铃的路线还进入梦境；看到巨影时的猜想，不必然就是它的真实身份。',ids:['sanae','cirno','meiling','utsuho','suwako','oonamazu'],caption:'2009 年作品，与黄昏边境共同制作；非想天则这一巨大人偶与梦中大鲶鱼不是同一个角色。',url:'https://tasofro.net/touhou123/',reference:'https://thbwiki.cc/东方非想天则'});
+window.GENSOKYO.bonds.push(
+ {title:'同一个读音，两位月兔',label:'名字线索 / Reisen 与永远亭铃仙',ids:['reisen-moon','reisen'],relation:'Reisen 承接了原月兔的名字，人物本身不同。',description:'短蓝发垂耳与长紫发竖耳分别核对；铃仙二号是社群区分用的别称，不替代原作姓名。',color:'violet',symbol:'名'},
+ {title:'一封信，把来客送回月都',label:'原作关系 / Reisen、永琳与绵月姐妹',ids:['reisen-moon','eirin','yorihime','toyohime'],relation:'永琳托付送信，绵月姐妹后来为这位月兔安排新的名字与职责。',description:'从儚月抄的具体篇章认识四位，不把绵月姐妹的能力和月兔自身的能力混为一谈。',color:'violet',symbol:'信'},
+ {title:'从怪鱼到海豹的认识过程',label:'原作相遇 / 万岁乐与河童、华扇',ids:['manzairaku','nitori','kasen','marisa'],relation:'茨歌仙以玄武涧的传闻和发现引出这位来客。',description:'人物对怪鱼的猜想是阅读过程的一部分，看到鳍与长须也不必然说明它是一条鱼。',color:'green',symbol:'见'},
+ {title:'巨大的对手，来自一场梦',label:'作品线索 / 大鲶鱼与美铃',ids:['oonamazu','meiling','tenshi'],relation:'非想天则的梦境对手与绯想天的地底鲶鱼说法，应按作品分辨。',description:'相似名字与地震意象可以并读，不因此合并个体，也不把美铃的梦写成已经发生的毁坏。',color:'violet',symbol:'梦'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'同名与承名',en:'A shared name, different individuals',text:'儚月抄的 Reisen 与永远亭的铃仙是不同月兔。原作命名关系、社群别称与中文译名需要分别标明，不能只凭读音或相似制服合并人物。',source:'https://thbwiki.cc/Reisen'},
+ {term:'见闻、推测与梦境',en:'What is seen, guessed and dreamed',text:'人物口中的巨影、怪鱼与梦中对手，不一定都对应同一层现实。读茨歌仙与非想天则时，先辨说话者和场景，再看后文是否补充说明。本册的奇异身影只是主题目录，不是种族名。',source:'https://thbwiki.cc/游戏对话:东方非想天则/红美铃'}
+);
+window.GENSOKYO.trails.push({id:'names-and-tales',number:'11',name:'名字、见闻与梦中的身影',tag:'跨作品 / 来客与叙述',image:'scene-reisen-moonletter',intro:'先认一封信与一个名字，再跟着涧边传闻，走进一场巨大的梦。',steps:[['reisen-moon','认识承接名字的新月兔'],['reisen','与永远亭的铃仙分开辨认'],['yorihime','沿信件读到月都的职责'],['manzairaku','从怪鱼传闻回看海豹形象'],['nitori','分辨河童的发现与后续安排'],['kasen','沿茨歌仙继续读来客'],['oonamazu','转到非想天则，明确梦境形态'],['meiling','把梦中对决放回她的路线'],['tenshi','最后比较地底鲶鱼与要石的说法']],scenes:['reisen-moonletter','manzairaku-ravine','oonamazu-dreamwater'],lore:'names-and-tales',work:'bougetsusho',listening:[['未知物Ｘ ～ Unfound Adventure','非想天则美铃路线的梦中最终对决曲目，不用于另两位人物','https://thbwiki.cc/游戏对话:东方非想天则/红美铃']],note:'跨作品的编辑路线，三位未在同一事件中共同登场。目录中的相邻顺序、画页比例均不确认角色关系或原作大小。'});
