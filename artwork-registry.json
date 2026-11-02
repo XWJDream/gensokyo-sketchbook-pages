@@ -143,6 +143,10 @@
     "sha256": "ed3226c0ab2655405741f3aa903d4618ad1231af3d616b418b210a799951ba26",
     "size": 2573206
   },
+  "goliath.png": {
+    "sha256": "6632809b70ea88f52b62db44c7733365139c8d6f515a13c62ca47cdf9b780dc2",
+    "size": 2469822
+  },
   "hatate.png": {
     "sha256": "18180a456b03506d25dd0f09bd74c0a34fb162c29ca403cdaaf965b1a8abee53",
     "size": 2678373
@@ -615,6 +619,10 @@
     "sha256": "38a361312ac00346eed17a29b7baa745cfa8885fb37e10d9bac465c703693463",
     "size": 3873522
   },
+  "scene-goliath-workshop.png": {
+    "sha256": "0891ce12f45b60e14773ee4ebdfd1ef53f8a70c88cd44f103475f4e18a8d143e",
+    "size": 3444653
+  },
   "scene-haniwa-garden.png": {
     "sha256": "73b9baf4f85555833527c48cfdcb93d81da32caf01c9541c2267c64018cac79c",
     "size": 3297332
@@ -791,6 +799,10 @@
     "sha256": "c09cc8fb11e72990d17dddf29ca49257163073ad8675bf9432278353a24deb83",
     "size": 3805836
   },
+  "scene-shanghai-threadlight.png": {
+    "sha256": "01c3f217d47370518afe3c3a2c99545d18670e236846fe62fc97c1d056842b39",
+    "size": 3241917
+  },
   "scene-shrine-guardian.png": {
     "sha256": "c9a956698e68f1ab81724ce8ad9f3c1f7a35029960df482ed2909b3c10bc741a",
     "size": 3637474
@@ -802,6 +814,10 @@
   "scene-sisters-riverside.png": {
     "sha256": "88d7f2dff67fd12c6e1e722dbf3eb6e647b97eef1a136e984cfd48560364be71",
     "size": 3500360
+  },
+  "scene-sokrates-window.png": {
+    "sha256": "011dda8c485d7d96b2438423e5ca46356ee5037daa82255490e67e8b619b5904",
+    "size": 3381803
   },
   "scene-spirit-checkpoint.png": {
     "sha256": "2a45a2721fd409a768035a60e68c6dc2446213d5fd6d168e721b885ca9ffca87",
@@ -875,6 +891,10 @@
     "sha256": "6d8b1c5555c9fb84533697820206ab03bd1d3d80290bbd31c734451d0c351841",
     "size": 3009455
   },
+  "shanghai.png": {
+    "sha256": "c52c37fdda7d4ffd72fd33fde4f0187758f2a96f3948c8dfdedfd5bec4f664cb",
+    "size": 2472190
+  },
   "shinki.png": {
     "sha256": "32fb51b3532c3fefab412c77b8de41151c869ebb7848d3cd6eeaf755ad61c37b",
     "size": 2556860
@@ -898,6 +918,10 @@
   "singyoku.png": {
     "sha256": "69396a5a5fe61c2781be5cca970db5683696888764d978850ae2bbdf2b708325",
     "size": 2596598
+  },
+  "sokrates.png": {
+    "sha256": "3016819cd4193115cc5ef4e99ab4dec710e451ab32a2d59f2415c8f185895cce",
+    "size": 2185577
   },
   "star.png": {
     "sha256": "723122ed9952791256c10a454e1f4f145f06033e8ca65a315369a6f2cea2c45d",

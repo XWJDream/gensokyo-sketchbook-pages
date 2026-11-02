@@ -779,3 +779,27 @@ window.GENSOKYO.glossary.push(
  {term:'不同路线，分别阅读',en:'Reading different endings separately',text:'灵梦得到家务机器人，魔理沙得到不依靠魔法的武器，分别属于梦时空不同结局。作品索引把人物放在一起，仍不代表这些情节在同一条路线里连续发生。',source:'https://thbwiki.cc/游戏对话:东方梦时空/博丽灵梦'}
 );
 window.GENSOKYO.trails.push({id:'ending-visitors',number:'12',name:'结局里，还有谁在等你',tag:'梦时空 / 愿望与来客',image:'scene-ruukoto-sweeping',intro:'从教授与助手，走向两条结局里的小小惊喜。',steps:[['yumemi','先认识回应愿望的教授'],['chiyuri','再看助手与那艘不寻常的船'],['reimu','选择灵梦路线，听听她的家务烦恼'],['ruukoto','认识开心却不擅长扫除的女仆'],['marisa','换到魔理沙路线，读另一种愿望'],['mimi-chan','辨认白色弹体上的红鼻与笑脸'],['ellen','回到立绘与附记，别忘记身边的猫']],scenes:['ruukoto-sweeping','mimi-cloudrest'],lore:'ending-visitors',work:'th03',listening:[['东方的蓝色天空','灵梦结局中出现的曲目；不作为两位来客的专属主题曲','https://thbwiki.cc/游戏对话:东方梦时空/博丽灵梦']],note:'路线包含结局内容。这里把不同人物路线作为并读入口，不确认它们同时发生；爱莲身旁的苏格拉底尚未独立入册。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ shanghai:{place:'forest',related:['alice','goliath','marisa'],work:'th08',line:'从永夜抄红裙使魔形象读起，再比较符卡名与个体名称的不同。'},
+ goliath:{place:null,related:['alice','shanghai','cirno','oonamazu'],work:'th123',line:'先看试验中歌利亚人偶，再把巨大化试验与其他巨大身影分别辨认。'},
+ sokrates:{place:null,related:['ellen','ruukoto','mimi-chan'],work:'th03',line:'对照爱莲立绘与 Omake，认识那只半眯眼睛的猫。'}
+});
+{
+ const b=window.GENSOKYO.books.find(b=>b.id==='th08');for(const id of ['alice','shanghai'])if(!b.ids.includes(id))b.ids.push(id);
+ const g=window.GENSOKYO.books.find(b=>b.id==='th123');for(const id of ['alice','goliath'])if(!g.ids.includes(id))g.ids.push(id);
+ const d=window.GENSOKYO.books.find(b=>b.id==='th03');d.ids.push('sokrates');d.caption='本册索引含九位可用人物、留琴与咪咪号两位结局来客，以及爱莲身旁的猫苏格拉底，并非全部登场者清单。不同路线分别阅读，现有灵梦与魔理沙图卡沿用后来作品形象。';
+ window.GENSOKYO.characterLinks.alice.related.push('shanghai','goliath');window.GENSOKYO.characterLinks.ellen.related.push('sokrates');
+ const t=window.GENSOKYO.trails.find(t=>t.id==='ending-visitors');t.steps.push(['sokrates','独立翻开猫的原图与名字']);t.scenes.push('sokrates-window');t.note='路线包含结局内容。不同人物路线作为并读入口，不确认它们同时发生；苏格拉底的名字另见 Omake。';
+}
+window.GENSOKYO.bonds.push(
+ {title:'小小使魔，沿着丝线登场',label:'原作关系 / 爱丽丝与上海人偶',ids:['alice','shanghai'],relation:'上海人偶在永夜抄中作为爱丽丝的使魔出现。',description:'本册采用红裙原作形象。受操纵的动作不被写成已经确认的独立性格，四片翼也不据此认定妖精种族。',color:'red',symbol:'丝'},
+ {title:'同一双手，试验不同的体量',label:'原作关系 / 爱丽丝与歌利亚',ids:['alice','goliath','cirno'],relation:'爱丽丝的巨大化人偶试验在非想天则琪露诺路线中成为对决线索。',description:'体量与试验来历按原作阅读，不把歌利亚等同于名为非想天则的巨大身影。',color:'violet',symbol:'偶'},
+ {title:'半眯的眼睛，也有自己的名字',label:'原作关系 / 爱莲与苏格拉底',ids:['ellen','sokrates'],relation:'原作附记写明，苏格拉底是爱莲的猫。',description:'人物与猫的联系有文字依据；窗边歇息与完整坐姿属于本册另绘的日常意象。',color:'green',symbol:'猫'},
+ {title:'同样在身旁，关系各不相同',label:'主题并读 / 人偶与猫',ids:['shanghai','goliath','sokrates'],relation:'人偶、巨大试验造物与有名字的猫，都能从主要人物身边认识。',description:'这是画册的编辑线索，不表示共同生活、同一物种、同样体量或原作中彼此相识。',color:'green',symbol:'伴'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'人偶名称与个体',en:'Doll names and individuals',text:'上海人偶可作使魔名、符卡或能力卡牌中的名称使用；这些记录并不足以确认它必然是唯一独立人偶的私名。按具体作品与登场形式理解，比把不同造型拆成固定姐妹更稳妥。',source:'https://thbwiki.cc/爱丽丝·玛格特洛依德#上海人偶'},
+ {term:'画面比例与角色体量',en:'Picture size and size in the story',text:'图鉴卡片为了阅读统一画幅，不能据此判断人物等高。歌利亚在原作中是巨大人偶，上海是小型使魔；画册沿用同样的大头短身绘法，也不提供未经确认的身高数值。',source:'https://thbwiki.cc/东方外来韦编/2018_Autumn!/非想天则特辑'}
+);
+window.GENSOKYO.trails.push({id:'dolls-and-companions',number:'13',name:'丝线与身旁的小伙伴',tag:'跨作品 / 人偶与猫',image:'scene-shanghai-threadlight',intro:'先看一张红裙使魔图，再认巨大试验人偶，最后和半眯眼睛的猫打个照面。',steps:[['alice','从制作与操纵人偶的魔法使开始'],['shanghai','选定永夜抄红裙版本，辨认小型使魔'],['goliath','转到非想天则，看巨大化试验'],['cirno','把巨影的猜想放回具体路线'],['marisa','沿搭档与来访线索继续读'],['ellen','换到梦时空，认识猫身旁的人'],['sokrates','读附记，确认名字和猫的身份'],['ruukoto','再比较另一种被制作出来的来客']],scenes:['shanghai-threadlight','goliath-workshop','sokrates-window'],lore:'dolls-and-companions',work:'th08',listening:[],note:'跨作品的编辑路线，不表示三位共同出场；没有为无独立主题曲的伙伴指定官方角色曲。'});
