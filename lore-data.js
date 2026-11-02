@@ -138,3 +138,12 @@ window.GENSOKYO_LORE.push({id:'spirits-detective',mark:'寻',name:'怨灵与调�
  ],facts:[['先认形象','瑞灵裙下是两缕灵体，原图没有人类腿脚；形象整理保留这一特征。'],['再辨作品','漫画中的调查按篇章展开，不以某一页的怀疑代替后续确认。'],['留一点未知','菊理的像素轮廓可以核对，未记载的种族与能力保持未明。']],correction:'新画的地下灯廊只是同人停留场景，不是已确认的牢房或结局画面。入门概述避免列出完整事件谜底，继续阅读时以具体篇章为准。',perspective:'资料参考漫画出版信息、原作角色图及公开设定摘录。人物的说法、编辑说明与画册抒情语句分别理解，后续篇章可能补充已知内容。',sources:[['智灵奇传 · 出版社第一卷资料','https://www.kadokawa.co.jp/product/322004000451/'],['瑞灵 · 原作图与设定摘录','https://thbwiki.cc/宫出口瑞灵'],['菊理 · 原作有限资料','https://thbwiki.cc/菊理']],caption:'实际输入首批两图与最终瑞灵人物图，保留双缕灵体；灯廊、石壁与积水另行绘制。',people:['mizuchi','satori','rin','reimu','tojiko'],places:[],related:['realms','village','first-gates']});
 window.GENSOKYO_LORE.find(c=>c.id==='realms').related.push('spirits-detective');
 window.GENSOKYO_LORE.find(c=>c.id==='first-gates').people.push('kikuri');
+
+window.GENSOKYO_LORE.push({id:'old-flight',mark:'伴',name:'旧日飞行与变形',en:'An old companion, a changing silhouette',title:'旧作的陌生轮廓，也各有自己的起点。',color:'#8b8f63',image:'scene-genjii-cloudpath',alt:'长白须与圆龟甲的玄爷悬在山间溪路旁，纸面淡彩延续首批画页',lead:'先从原图与附带文档分辨人物，再走进画册新绘的日常。',paragraphs:[
+ '早期游戏里的同伴与对手，不一定拥有今天熟悉的少女轮廓。玄爷是一只能够飞行的老龟，神玉在同一场对决中有不同形态，幽幻魔眼则以五个相连的眼盘出现。画册把这些差异留下，让可爱来自笔触与神情，而不是把每一位都改成相同的身体。',
+ '读旧作时也要留意作品的时间与叙述范围。封魔录里灵梦的飞行由玄爷相助，并不意味着后来她仍不能飞；灵异传的关卡图能确认颜色与轮廓，却未必说明种族、身世或人物之间的交情。先分清看见了什么，再给未知留一点余地。'
+ ],facts:[['同一位，多种形态','神玉只有一个人物条目；本册插图采用红发双角的第二形态。'],['同样淡彩，不强改人形','五眼阵保留五个眼盘，老龟保留龟甲与短足，统一纸色和铅笔质感。'],['把能力放回作品','玄爷陪灵梦飞行的背景来自封魔录，其他时期另行理解。']],correction:'人物原图与原作文字是对照依据；新画的门廊、溪桥、山路和休息动作属于同人构图，不作为地图坐标或确证住址。',perspective:'旧作资料有些十分简略。形态、关卡和共用曲目可以核对，未说明的种族与私人关系保持未明，形象考据中的推测不写作已确认设定。',sources:[['神玉 · 游戏内三个形态','https://thbwiki.cc/神玉'],['幽幻魔眼 · 游戏原图','https://thbwiki.cc/幽幻魔眼'],['封魔录 · Manual 原文与译文','https://thbwiki.cc/附带文档:东方封魔录/Manual'],['玄爷 · 原作头像与文档','https://thbwiki.cc/玄爷']],caption:'输入首批两张风格参考与最终玄爷图，山路与歇息时刻为同人延展；未将原作截图直接用作网站插图。',people:['genjii','reimu','singyoku','yuugenmagan'],places:[],related:['oldworks','first-gates','eastern-wonderland']});
+window.GENSOKYO_LORE.find(c=>c.id==='first-gates').people.push('singyoku','yuugenmagan');
+window.GENSOKYO_LORE.find(c=>c.id==='first-gates').related.push('old-flight');
+window.GENSOKYO_LORE.find(c=>c.id==='eastern-wonderland').people.push('genjii');
+window.GENSOKYO_LORE.find(c=>c.id==='eastern-wonderland').related.push('old-flight');

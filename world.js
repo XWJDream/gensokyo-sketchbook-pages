@@ -695,3 +695,27 @@ window.GENSOKYO.glossary.push(
  {term:'附身事件与完全凭依',en:'Different forms of possession',text:'智灵奇传的怨灵附身与凭依华中的完全凭依出自不同作品，涉及的条件、表现和调查线索应分别阅读，不能仅因中文都出现“凭依”便视为同一套规则。',source:'https://thbwiki.cc/东方智灵奇传'},
  {term:'像素轮廓与未知部分',en:'What a sprite does and does not show',text:'旧作图像能确认明显轮廓与画面配色，未展示的全身、身份或生活方式仍可能没有文字依据。菊理的圆盘与盘内人形可以辨认，具体种族和能力则不宜由名字或同人印象补齐。',source:'https://thbwiki.cc/菊理'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ singyoku:{place:null,related:['reimu','yuugenmagan','kikuri'],work:'th01',line:'从第五关的三个形态开始，再看两条路线如何分开。'},
+ yuugenmagan:{place:null,related:['singyoku','mima','elis'],work:'th01',line:'先数清五个眼盘，再沿天使传说比较两条路线的第十关。'},
+ genjii:{place:null,related:['reimu','rika','meira'],work:'th02',line:'翻开封魔录附带文档，读懂那一次为何由老龟陪灵梦飞行。'}
+});
+{
+ const b=window.GENSOKYO.books.find(b=>b.id==='th01');b.ids=['reimu','singyoku','yuugenmagan','elis','sariel','mima','kikuri','konngara'];b.caption='早期公开展示与正式贩售分属 1996、1997 年。本册已收录灵梦与七位有名对手；灵梦和魅魔图卡沿用其他时期形象。两条分支分别阅读，神玉只占一个人物条目。';
+ window.GENSOKYO.books.find(b=>b.id==='th02').ids.push('genjii');
+ const t=window.GENSOKYO.trails.find(t=>t.id==='first-gates');
+ t.steps=[['reimu','从阴阳玉与简略附带文档出发'],['singyoku','第五关：同一位守门人的三个形态'],['yuugenmagan','魔界线第十关：认出五个眼盘'],['elis','魔界线第十五关：红发带与星尖'],['sariel','魔界线第二十关：三对白羽'],['mima','转读地狱线第十关：共用的天使传说'],['kikuri','地狱线第十五关：盘内浮雕'],['konngara','地狱线第二十关：雾中的剑']];
+ t.scenes.push('singyoku-threshold','yuugenmagan-gate');t.listening.unshift(['Positive and Negative','神玉第五关主题曲','https://thbwiki.cc/神玉'],['天使传说','两条分支第十关分别使用；不代表共同出场','https://thbwiki.cc/幽幻魔眼']);
+ const e=window.GENSOKYO.trails.find(t=>t.id==='early-roads');e.steps.unshift(['genjii','先翻附带文档，认识灵梦旧日的飞行伙伴']);e.scenes.unshift('genjii-cloudpath');e.intro='从老龟陪伴的旧日飞行，走向工房、武士与山路上的一次招呼。';
+}
+window.GENSOKYO.bonds.push(
+ {title:'老伙伴，陪她飞过旧日天空',label:'原作关系 / 玄爷与灵梦',ids:['genjii','reimu'],relation:'封魔录中，玄爷陪同当时尚不能自行飞行的灵梦调查异状。',description:'把关系放回该作背景理解；后来的灵梦已经能够飞行，不能把旧作一句话套在所有时期。',color:'green',symbol:'伴'},
+ {title:'同一首曲子，分岔后的两场相遇',label:'作品并读 / 幽幻魔眼与魅魔',ids:['yuugenmagan','mima'],relation:'灵异传两条分支第十关的对手共用天使传说。',description:'按分支比较关卡与音乐，不因此确认相识、亲缘，或把曲名直接当作种族。',color:'violet',symbol:'曲'},
+ {title:'门前的第五关',label:'原作相遇 / 神玉与灵梦',ids:['singyoku','reimu'],relation:'灵梦在路线分岔前遇上第五关的守门人。',description:'神玉的三种形态仍属于同一个条目；本册采用其中红发双角的第二形态，不额外编写三者之间的关系。',color:'red',symbol:'门'},
+ {title:'圆盘可以承载不同的神秘',label:'形象并读 / 五眼与铜盘',ids:['yuugenmagan','kikuri'],relation:'两位都以圆形非人形轮廓在旧作图像中留下印象。',description:'五个眼盘与单一铜盘浮雕分别核对。这里只比较画面结构，不确认两者同族或拥有相同能力。',color:'violet',symbol:'形'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'神玉与阴阳玉',en:'A gatekeeper and a sacred orb',text:'神玉是灵异传第五关的守门人，有多个游戏形态；阴阳玉则是灵梦使用的重要道具。神玉的一种形态近似圆球，仍不应仅凭轮廓把两者合并。',source:'https://thbwiki.cc/神玉'},
+ {term:'旧作里的飞行伙伴',en:'Flight in an early work',text:'封魔录背景中，玄爷陪同尚不能自行飞行的灵梦出发。阅读角色能力时应保留作品和时期；这段背景不等于后来灵梦仍需依靠坐骑。',source:'https://thbwiki.cc/附带文档:东方封魔录/Manual'}
+);

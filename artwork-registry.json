@@ -135,6 +135,10 @@
     "sha256": "2a41c766805019527afc2b3f67dc52e68c81f6327e7e7559230b5e8875731abd",
     "size": 2470690
   },
+  "genjii.png": {
+    "sha256": "ed3226c0ab2655405741f3aa903d4618ad1231af3d616b418b210a799951ba26",
+    "size": 2573206
+  },
   "hatate.png": {
     "sha256": "18180a456b03506d25dd0f09bd74c0a34fb162c29ca403cdaaf965b1a8abee53",
     "size": 2678373
@@ -579,6 +583,10 @@
     "sha256": "6329b97b5dcd98512ed44f7de4de0ee49c5131786cf2217b0b40c1005fcd85f3",
     "size": 3065045
   },
+  "scene-genjii-cloudpath.png": {
+    "sha256": "38a361312ac00346eed17a29b7baa745cfa8885fb37e10d9bac465c703693463",
+    "size": 3873522
+  },
   "scene-haniwa-garden.png": {
     "sha256": "73b9baf4f85555833527c48cfdcb93d81da32caf01c9541c2267c64018cac79c",
     "size": 3297332
@@ -739,6 +747,10 @@
     "sha256": "c9a956698e68f1ab81724ce8ad9f3c1f7a35029960df482ed2909b3c10bc741a",
     "size": 3637474
   },
+  "scene-singyoku-threshold.png": {
+    "sha256": "fbde0afa01f4a5b8f2ed195386a08e0634e2a8cf6cee86386c27a98d6db847ef",
+    "size": 3648095
+  },
   "scene-sisters-riverside.png": {
     "sha256": "88d7f2dff67fd12c6e1e722dbf3eb6e647b97eef1a136e984cfd48560364be71",
     "size": 3500360
@@ -787,6 +799,10 @@
     "sha256": "dd3c235096391e6695a7f4316f60e6be02ba788167e0278ada7c5004ddd6fe91",
     "size": 3585191
   },
+  "scene-yuugenmagan-gate.png": {
+    "sha256": "382bb6aa443758d55bf823127aced4a2d293e5c0d6c1bd62cc7eec2bd8c6a73e",
+    "size": 3542107
+  },
   "seiga.png": {
     "sha256": "2183db53534f9e80d8084c41a6f8cd2d66904d2e1b58aa46ac64641932ee82c2",
     "size": 3178865
@@ -822,6 +838,10 @@
   "shou.png": {
     "sha256": "a66a8e6a130483ce98d3f7693072284a66c0d57b4c35a1e543bb7704bb087d2a",
     "size": 2694566
+  },
+  "singyoku.png": {
+    "sha256": "69396a5a5fe61c2781be5cca970db5683696888764d978850ae2bbdf2b708325",
+    "size": 2596598
   },
   "star.png": {
     "sha256": "723122ed9952791256c10a454e1f4f145f06033e8ca65a315369a6f2cea2c45d",
@@ -958,6 +978,10 @@
   "yumemi.png": {
     "sha256": "a174e83126bafc952aa08999a6955d8920b2c6b60afa95cf86a7dada9fbb910f",
     "size": 2503414
+  },
+  "yuugenmagan.png": {
+    "sha256": "2acfe13e43f871338c130ed275e0b4aabef1b48a22d53223cb99a29db0e69d44",
+    "size": 2355922
   },
   "yuugi.png": {
     "sha256": "12550a282d6e748a7031220d192235d8bc7c38d7046119c0dcb41ec0ef0d39d7",
