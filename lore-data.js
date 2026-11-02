@@ -147,3 +147,9 @@ window.GENSOKYO_LORE.find(c=>c.id==='first-gates').people.push('singyoku','yuuge
 window.GENSOKYO_LORE.find(c=>c.id==='first-gates').related.push('old-flight');
 window.GENSOKYO_LORE.find(c=>c.id==='eastern-wonderland').people.push('genjii');
 window.GENSOKYO_LORE.find(c=>c.id==='eastern-wonderland').related.push('old-flight');
+
+window.GENSOKYO_LORE.push({id:'book-visitors',mark:'页',name:'书页与人里的来客',en:'Visitors between books and everyday life',title:'小小来客，也能把世界打开一角。',color:'#8b91a7',image:'scene-tokiko-reading',alt:'读书妖怪停在林边木台旁，浅发蓝灰束与黑衣在纸面淡彩中保持首批短身比例',lead:'从通称、书本与日常帮助入门，认识书籍中的更多人物。',paragraphs:[
+ '幻想乡的日常，不只属于游戏关底的熟悉面孔。读书妖怪珍视被拿走的书，易者的经历藏在卦书事件里，运松翁则让一场关于秘药的消息走进村落。把这些来客放回各自篇章，书店、旧物店与人里的生活便多了一层细节。',
+ '也有些线索必须分开看。朱鹭子是通称，不能代替未公布的正式姓名；黑白漫画中的衣装可供核对，后来补上的色彩仍是同人选择；物品带来的效用，也不应变成人物无所不能的天生能力。画册为他们绘出安静的一刻，原作的冲突与叙事立场仍留在原作中理解。'
+ ],facts:[['名字怎么用','以读书妖怪为显示名，朱鹭子、Tokiko 等通称仍可搜索。'],['形态怎么选','易者采用漫画中的妖怪形态，尖耳与帽形不混入另一人物。'],['帮助从哪里来','运松翁使用的秘药有故事来源，不能写作他本人的无限治愈术。']],correction:'本章场景为同人意象；持书、林边休息与河畔闲竿不代表人物已经和解、事件重新发生或获得新的结局。运松翁的灰米衣色与易者的灰褐色是对黑白原图的配色演绎。',perspective:'以香霖堂原文、铃奈庵第二十五话、茨歌仙第十一话及对应原作图像为线索，通称说明与叙述者判断分别阅读。对未展示的袜鞋、场景布局与配色明确标出同人延展。',caption:'实际输入首批两张风格参考与最终读书妖怪图；木台、枝叶和书本摆放另行设计。',people:['tokiko','rinnosuke','fortune-teller','kosuzu','akyuu','unshou','kasen'],places:['kourindou','village','suzunaan'],related:['village','oldworks','spirits-detective'],sources:[['读书妖怪 · 原文摘录与原图','https://thbwiki.cc/无名的读书妖怪'],['香霖堂 · 第二话','https://thbwiki.cc/东方香霖堂/第2话'],['铃奈庵 · 第二十五话','https://thbwiki.cc/东方铃奈庵/第二十五话'],['茨歌仙 · 第十一话','https://thbwiki.cc/东方茨歌仙/第十一话']]});
+window.GENSOKYO_LORE.find(p=>p.id==='village').related.push('book-visitors');

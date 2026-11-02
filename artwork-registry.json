@@ -127,6 +127,10 @@
     "sha256": "1b7041fa8226b4a1cd686052eb6377134d3e6674aad078dcb179e9d98f32154f",
     "size": 2621244
   },
+  "fortune-teller.png": {
+    "sha256": "534f70f2f6b63604865fa7e913e0b28a4a3eb06669ef2f225f10034f8207f738",
+    "size": 2585795
+  },
   "futo.png": {
     "sha256": "2145f7991a7fd8b1b8ff04984af578a0ecf4b3429a4a8fb01582aea15d0d9b53",
     "size": 3106046
@@ -579,6 +583,10 @@
     "sha256": "81f80415028cd2be3475fe128bb58e331de092a75be37059128328d1c5dbf9d7",
     "size": 4297190
   },
+  "scene-fortune-teller-study.png": {
+    "sha256": "0fde9a94d98ce280ca1799137d411cab353b2e330a13dcea684af16fa8dc9ab3",
+    "size": 3510520
+  },
   "scene-geidontei-supper.png": {
     "sha256": "6329b97b5dcd98512ed44f7de4de0ee49c5131786cf2217b0b40c1005fcd85f3",
     "size": 3065045
@@ -783,6 +791,10 @@
     "sha256": "546298b407be4de0e1898ff80eee60311ec14683fb95db18b56ca6010edb79de",
     "size": 3536305
   },
+  "scene-tokiko-reading.png": {
+    "sha256": "9e9e03fd7fc1b95f664207601d0d7a78ded1e5d04e0b5918aba7b8147d691c9e",
+    "size": 3818387
+  },
   "scene-tsukumo-concert.png": {
     "sha256": "d8e056892d03e165cad7b377060d36d2d638dbd8fc85340ea145f38b8ff9deae",
     "size": 3741353
@@ -790,6 +802,10 @@
   "scene-ubame-canopy.png": {
     "sha256": "28707d55aff7c7b595a5c345d5ee21e43d3f6a69cba5ac7744f7e18ddc3a73f4",
     "size": 3483406
+  },
+  "scene-unshou-riverside.png": {
+    "sha256": "6cd2463130f8fbe7f4a11d11135e21a0204fb2dc721745749f9f10f730c92a7a",
+    "size": 3683937
   },
   "scene-winter-whisper.png": {
     "sha256": "1b49608825b0cd6a4564eff698d46306c53ada693fa7baaf830c168b39aa598b",
@@ -879,6 +895,10 @@
     "sha256": "d0a54dc8adf4342b19993b45f683d636d6c41492276dcade32b32503f46f2ddf",
     "size": 3026446
   },
+  "tokiko.png": {
+    "sha256": "c9ac621beb3f88856130c17e962b95127c821df1d5efb341ea17aa723d326a29",
+    "size": 2563592
+  },
   "toyohime.png": {
     "sha256": "de26b052fbd154579e3198f9a4e22780e011945e55b305dad98cf7df33810e07",
     "size": 2849981
@@ -890,6 +910,10 @@
   "ubame.png": {
     "sha256": "ca452d70f96dd67da4546752169c533d1b0ec948f87cb21aed5bed22537bea6c",
     "size": 2377185
+  },
+  "unshou.png": {
+    "sha256": "666e0c087a1eb845a8fa2ae55e11b745e6d15426484d9e9255032a396b731596",
+    "size": 2370359
   },
   "unzan.png": {
     "sha256": "7391b1cc857744d4d2d47aef28eece4cdfc6e60c9de944192ae37f56e8bee642",

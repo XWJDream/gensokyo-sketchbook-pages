@@ -719,3 +719,23 @@ window.GENSOKYO.glossary.push(
  {term:'神玉与阴阳玉',en:'A gatekeeper and a sacred orb',text:'神玉是灵异传第五关的守门人，有多个游戏形态；阴阳玉则是灵梦使用的重要道具。神玉的一种形态近似圆球，仍不应仅凭轮廓把两者合并。',source:'https://thbwiki.cc/神玉'},
  {term:'旧作里的飞行伙伴',en:'Flight in an early work',text:'封魔录背景中，玄爷陪同尚不能自行飞行的灵梦出发。阅读角色能力时应保留作品和时期；这段背景不等于后来灵梦仍需依靠坐骑。',source:'https://thbwiki.cc/附带文档:东方封魔录/Manual'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ tokiko:{place:'kourindou',related:['rinnosuke','reimu','marisa','kosuzu'],work:'kourindou-book',line:'从香霖堂开篇的索书故事读起；店铺只是相遇之处，不是确认住址。'},
+ 'fortune-teller':{place:null,related:['kosuzu','akyuu','reimu','marisa'],work:'scrollery',line:'回到铃奈庵第二十四、二十五话，分清卦书事件与普通借阅。'},
+ unshou:{place:'village',related:['marisa','kasen','nitori'],work:'hermit-book',line:'从茨歌仙第十一话的老渔夫入门；地图只关联人里，不标出民居坐标。'}
+});
+window.GENSOKYO.books.find(b=>b.id==='kourindou-book').ids.push('tokiko');
+window.GENSOKYO.books.find(b=>b.id==='scrollery').ids.push('fortune-teller');
+window.GENSOKYO.books.push({id:'hermit-book',code:'BOOK / 08',number:'',year:'2010–2019 · 连载',name:'东方茨歌仙',jp:'東方茨歌仙 ～ Wild and Horned Hermit.',en:'Wild and Horned Hermit.',mark:'仙<br>访',theme:'green',mood:'漫画 / 神社来访 / 人里的日常',description:'ZUN 原作、あずまあや绘制的官方漫画。华扇频频造访神社，故事在宴席、信仰、修行与村落传闻之间展开。运松翁的秘药故事是其中一处小小入口，后续篇章还会带来人物身份的变化。',ids:['kasen','reimu','marisa','unshou','nitori'],caption:'连载为 2010–2019 年；第一卷单行本于 2011 年出版。运松翁相关内容在第十一话，不属于第一卷全部篇目。',url:'https://thbwiki.cc/东方茨歌仙',reference:'https://thbwiki.cc/东方茨歌仙/第十一话'});
+window.GENSOKYO.bonds.push(
+ {title:'一本书，也有来索回它的人',label:'原作相遇 / 读书妖怪与香霖堂来客',ids:['tokiko','rinnosuke','reimu','marisa'],relation:'读书妖怪到香霖堂追索被灵梦拿走的书。',description:'霖之助、灵梦与魔理沙各有自己的行动。画册的安静持书图是另一种同人时刻，不把原作冲突改写成已经和解。',color:'violet',symbol:'书'},
+ {title:'读书的兴趣，有不同的处境',label:'主题并读 / 读书妖怪与小铃',ids:['tokiko','kosuzu'],relation:'两位都能从书本这一主题认识。',description:'相同兴趣提供阅读线索，不等于原作已经写明两位是好友、同事或常客。',color:'green',symbol:'读'},
+ {title:'卦书牵出的事件',label:'原作事件 / 易者、小铃与阿求',ids:['fortune-teller','kosuzu','akyuu','reimu'],relation:'卦书的来历，把利用者、读者与调查者联系起来。',description:'回到铃奈庵第二十四、二十五话比较人物当时掌握的消息；不要把一幅平静的同人场景当作原作结局。',color:'violet',symbol:'卦'},
+ {title:'老渔夫带来的帮助',label:'原作关系 / 运松翁与魔理沙',ids:['unshou','marisa','kasen'],relation:'魔理沙得到运松翁的秘药帮助，华扇由此继续了解消息。',description:'原作药效来自与河童交换得到的物品，不是老渔夫已确认的天生法术。',color:'green',symbol:'助'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'通称与正式姓名',en:'A familiar name, an unnamed character',text:'朱鹭子是读书妖怪在爱好者间常用的称呼。原作未给她正式姓名，名称里的鸟类联想也不能确认其种族。本册以读书妖怪显示人物，同时让通称能够被搜索。',source:'https://thbwiki.cc/无名的读书妖怪'},
+ {term:'黑白原图与同人配色',en:'Reading a monochrome design',text:'漫画能确认帽形、胡须、衣领与明暗轮廓，却未必提供彩色设定。本册为易者、运松翁采用克制灰褐淡彩，明确作为同人配色，不把生成的色值反过来当成原作证据。',source:'https://thbwiki.cc/东方茨歌仙/第十一话'}
+);
+window.GENSOKYO.trails.push({id:'book-visitors',number:'10',name:'书页与人里的来客',tag:'书籍 / 通称与日常',image:'scene-tokiko-reading',intro:'从一位珍视书本的妖怪，读向卦书的秘密与老渔夫带来的帮助。',steps:[['tokiko','先分清读书妖怪与朱鹭子这一通称'],['rinnosuke','回到香霖堂的开篇故事'],['fortune-teller','转到铃奈庵，辨别卦书事件'],['kosuzu','跟着读者重新看书的来历'],['akyuu','把调查中的判断与消息分开'],['unshou','再翻茨歌仙，认识运松庵的老渔夫'],['marisa','从她收到的帮助读懂秘药线索'],['kasen','继续看华扇如何了解日常里的异状']],scenes:['tokiko-reading','fortune-teller-study','unshou-riverside'],lore:'book-visitors',work:'kourindou-book',listening:[],note:'跨书籍的编辑路线，不表示人物在同一事件中共同登场。未给无主题曲的角色另行指定“官方角色曲”。'});
