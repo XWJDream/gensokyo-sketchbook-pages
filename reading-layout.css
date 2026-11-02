@@ -1,0 +1,58 @@
+/* The original paper-and-pencil book, unfolded in shorter reading sections. */
+.is-shelved{display:none!important}
+.reading-shelf{border-top:1px solid var(--line);padding:20px 0 12px;margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px}
+.reading-shelf>div{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.reading-shelf button{padding:8px 12px;font-size:12px;min-height:40px;color:var(--red);border:1px solid var(--line);background:var(--paper)}
+.reading-shelf button:hover{border-color:var(--red)}
+.filters{display:flex;align-items:center;gap:22px;overflow:visible;flex-wrap:wrap}
+.catalog-regions{position:static;min-width:0}
+.catalog-regions summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:13px 0;font-size:12px;color:var(--muted)}
+.catalog-regions summary::-webkit-details-marker{display:none}
+.catalog-regions summary span:last-child{font-size:16px;color:var(--red)}
+.catalog-regions[open] summary{color:var(--red)}
+.catalog-regions.has-selection summary{color:var(--red)}
+.catalog-regions[open] summary span:last-child{transform:rotate(45deg)}
+.region-filter-grid{position:absolute;top:100%;left:0;width:min(720px,100%);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 18px;padding:16px 22px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 30px #393a3215;z-index:12}
+.region-filter-grid .filter{text-align:left;white-space:normal;font-size:12px;padding:10px 0;min-height:42px}
+.region-filter-grid .filter.active::after{height:1px;bottom:2px}
+.filter-bar{align-items:center;position:relative}
+.catalog-tools{margin-top:12px;margin-bottom:0}
+.card-picture img{object-fit:contain}
+.card-meta{flex-wrap:wrap;align-items:flex-start}
+.place-tag{max-width:100%;overflow-wrap:anywhere}
+.character-card{scroll-margin-top:80px}
+.character-card h3{line-height:1.5}
+.character-en{overflow-wrap:anywhere}
+.character-intro{font-size:12px;line-height:1.95}
+.card-foot{line-height:1.8;flex-wrap:wrap}
+.chapter-index nav{overflow-x:auto;scrollbar-width:thin;white-space:nowrap}
+.chapter-index a{flex:none}
+.scene-card,.bond-card,.book-card,.character-route{scroll-margin-top:80px}
+.detail-facts{flex-wrap:wrap;gap:6px 16px}
+@media(min-width:761px) and (max-width:1100px){.character-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){
+ .site-header{height:auto;min-height:88px;padding-block:18px 0;gap:12px;flex-wrap:wrap}
+ .site-header nav{width:100%;order:3;overflow-x:auto;white-space:nowrap;gap:24px;scrollbar-width:thin;font-size:12px}
+ .site-header nav a,.site-header nav a:last-child{display:block;flex:none;padding:12px 0}
+ .filter-bar{display:block;margin-top:18px}
+ .filters{gap:0 20px;overflow:visible;flex-wrap:wrap}
+ .filter{font-size:12px;min-height:44px}
+ .catalog-regions{flex:1}
+ .catalog-regions summary{font-size:12px;min-height:44px;justify-content:space-between}
+ .region-filter-grid{position:static;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));padding:10px 16px;box-shadow:none;gap:0 12px}
+ .catalog-regions[open]{flex-basis:100%;order:4}
+ .catalog-tools{font-size:12px;gap:12px}
+ .catalog-tools p{line-height:1.9}
+ .catalog-sort{font-size:12px}
+ .character-grid{gap:30px 16px}
+ .character-card h3{font-size:21px}
+ .character-intro{font-size:12px;line-height:1.9}
+ .card-meta>span:first-child,.place-tag,.card-foot{font-size:10px}
+ .character-en{font-size:9px;line-height:1.8}
+ .reading-shelf{align-items:flex-start;flex-direction:column;gap:12px;font-size:12px}
+ .reading-shelf>div{gap:10px}
+ .reading-shelf button{font-size:12px}
+ .section-heading p,.scene-editorial,.lore-editorial{font-size:12px;line-height:1.9}
+ .lore-tab small{display:none}
+}
+@media(max-width:400px){.filters{gap:0 13px}.filter,.catalog-regions summary{font-size:11px}.character-card h3{font-size:20px}.chapter-index nav{gap:20px}}

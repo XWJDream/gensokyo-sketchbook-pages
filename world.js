@@ -674,3 +674,24 @@ window.GENSOKYO.glossary.push(
  {term:'蜃与信息中的幻景',en:'Mirages and believed information',text:'贝子的能力是展现海市蜃楼，她曾把吸收的信息一概当真。角色相信的内容与故事确认的事实需要区分；虚构都市是作品意象，不是对现实世界的断言。',source:'https://thbwiki.cc/渡里贝子'}
 );
 window.GENSOKYO.trails.push({id:'pyramid-depths',number:'09',name:'四季之后，去看石与蜃',tag:'锦上京 / 主线后段与 Extra',image:'scene-nina-mirage',intro:'从一段被遮住的记忆，读到石的心意，再走进一座淡淡的幻景。',steps:[['yuiman','第四关：四季风景与古神人的处境'],['toyohime','第五关：管理人看见的设施危机'],['ariya','第六关：追溯神社与不变之力'],['nina','另读 Extra：新生的蜃与信息判断']],scenes:['yuiman-seasons','ariya-stillshrine','nina-mirage'],lore:'pyramid-memory',work:'th20',listening:[['猎鹿旧忆回潮','维缦的主题曲；从记忆线索继续读','https://thbwiki.cc/维缦·浅间'],['早已习惯最终孑然一身 ～ Stone Goddess','阿梨夜的主题曲；配合她的行动动机阅读','https://thbwiki.cc/磐永阿梨夜'],['双壳贝上的幻觉','贝子的主题曲；对应 Extra 的海市蜃楼主题','https://thbwiki.cc/渡里贝子']],note:'包含主线后半段设定。最后一步切换到 Extra，不是第四至第七关的连续流程；没有把不同结局整合成唯一事件顺序。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ mizuchi:{place:null,related:['satori','rin','reimu','tojiko'],work:'cheating-detective',line:'从附身事件与调查者入门，按漫画篇章区分当时的立场和后续变化。'},
+ kikuri:{place:null,related:['elis','konngara','mima'],work:'th01',line:'回到地狱路线的第十五关，先辨圆盘原图，再听两条分支共用的魔镜。'}
+});
+window.GENSOKYO.books.push({id:'cheating-detective',code:'BOOK / 07',number:'BOOK 07',year:'2020 · 第一卷',name:'东方智灵奇传',jp:'東方智霊奇伝 反則探偵さとり',en:'Cheating Detective Satori',mark:'智<br>灵',theme:'night',mood:'漫画 / 附身事件 / 调查与叙述',description:'以觉的调查为入口，沿阿燐带来的线索、各处的昏迷事件与瑞灵的行动，走近幻想乡的另一面。人物的怀疑与当时的证据需要分开阅读，后续篇章也会改变已经认识的关系。',ids:['mizuchi','satori','rin','reimu','marisa'],caption:'出版社入口为 2020 年首卷；后续分篇与作画者会变化，不把第一卷概括为整个系列的全部内容。',url:'https://www.kadokawa.co.jp/product/322004000451/',reference:'https://thbwiki.cc/东方智灵奇传'});
+{
+ const b=window.GENSOKYO.books.find(b=>b.id==='th01');b.ids.push('kikuri');b.caption='早期公开展示与正式贩售分属 1996、1997 年。本册提供现有六位人物的索引，灵梦与魅魔图卡采用其他时期形象；两条分支不是一条连续行程。';
+ const t=window.GENSOKYO.trails.find(t=>t.id==='first-gates');
+ t.steps.splice(t.steps.findIndex(s=>s[0]==='konngara'),0,['kikuri','地狱线第十五关：辨认铜盘中的浮雕轮廓']);t.scenes.push('kikuri-bronze');
+}
+window.GENSOKYO.bonds.push(
+ {title:'调查者与被追查的怨灵',label:'原作关系 / 瑞灵与觉、阿燐',ids:['mizuchi','satori','rin'],relation:'觉与阿燐循附身事件的线索展开调查。',description:'瑞灵的行动和调查者掌握的证据不总在同一时刻揭晓；把事件中的怀疑当作线索，不直接当成最终定论。',color:'violet',symbol:'查'},
+ {title:'博丽神社之外，还有未说完的往事',label:'原作关系 / 瑞灵与灵梦',ids:['mizuchi','reimu'],relation:'瑞灵与博丽神社的恩怨，是智灵奇传的重要线索。',description:'这段关系会在后续篇章里变化。本册保留阅读入口，避免只用早期敌对关系为人物定型。',color:'red',symbol:'缘'},
+ {title:'灵体的形状，各有自己的故事',label:'形象并读 / 瑞灵与屠自古',ids:['mizuchi','tojiko'],relation:'两位都有与怨灵和非人类下半身相关的造型线索。',description:'同类意象方便辨认，却不能据此确认相识、亲缘或同一段经历。瑞灵的双缕灵体和屠自古的形象分别对照原作。',color:'green',symbol:'灵'},
+ {title:'同一曲魔镜，两条不同的分支',label:'作品并读 / 菊理与依莉斯',ids:['kikuri','elis'],relation:'两位对应灵异传不同路线的第十五关，使用同一主题曲。',description:'曲目与关卡位置提供了并读线索，不表示两位曾共同登场，也不为有限文字设定补写亲属关系。',color:'violet',symbol:'镜'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'附身事件与完全凭依',en:'Different forms of possession',text:'智灵奇传的怨灵附身与凭依华中的完全凭依出自不同作品，涉及的条件、表现和调查线索应分别阅读，不能仅因中文都出现“凭依”便视为同一套规则。',source:'https://thbwiki.cc/东方智灵奇传'},
+ {term:'像素轮廓与未知部分',en:'What a sprite does and does not show',text:'旧作图像能确认明显轮廓与画面配色，未展示的全身、身份或生活方式仍可能没有文字依据。菊理的圆盘与盘内人形可以辨认，具体种族和能力则不宜由名字或同人印象补齐。',source:'https://thbwiki.cc/菊理'}
+);

@@ -195,6 +195,10 @@
     "sha256": "92eb6f59cf879ad92f15d7f67e31dd3fc2dbaf3b1e0ba5f91193b7db5f665b23",
     "size": 2734350
   },
+  "kikuri.png": {
+    "sha256": "e12230fc719017aabee9d35a104362c6748859b7c64e21ed1a384b3a070482b3",
+    "size": 2607742
+  },
   "kisume.png": {
     "sha256": "e8118ce35067b2d8d6e915985e3cbd0070484652e23327d0e8c5329f93200d5c",
     "size": 2753667
@@ -334,6 +338,10 @@
   "miyoi.png": {
     "sha256": "124329c391fbf4f62eff368e6609b24d995e529a2dc9c9664f2c3b7a71e003e7",
     "size": 2689245
+  },
+  "mizuchi.png": {
+    "sha256": "726eecbf2b48a98413f9757f78150993fc2ef62bc8d9a1a2a2b01d1cc6d6d400",
+    "size": 2478510
   },
   "mokou.png": {
     "sha256": "0e279b8b5cb2a3f2af569912ecfce14e395e7c95df7b87a7c36f2745cf23c726",
@@ -603,6 +611,10 @@
     "sha256": "1b5fdc9aefd20784c05d6d9708e8dcc61aa2a51ce119409101c37ec2b5b8d34b",
     "size": 3609202
   },
+  "scene-kikuri-bronze.png": {
+    "sha256": "f394e62c6e808484917dd16c2e3a6a163656632e7ad98eced288a99508b1c85a",
+    "size": 3821057
+  },
   "scene-konngara-stillhall.png": {
     "sha256": "ca11e181803b5a1c4226f620ff6aff36b095ecef86e4947942ae0263a1a07995",
     "size": 3784899
@@ -650,6 +662,10 @@
   "scene-mima-crescent.png": {
     "sha256": "4d779062518ace2ed61283370c8522942eefbda66b7edd63f81d1412af457d1f",
     "size": 3525397
+  },
+  "scene-mizuchi-lanterns.png": {
+    "sha256": "1a0def9711036e2ea22219d0401f534b3f933d803713638e8cf0e047b43268c1",
+    "size": 3660824
   },
   "scene-monkey-sanctuary.png": {
     "sha256": "085e71c3c7f19ba2f9415fc330cc24b2838262cd6567c69ca8d07d5f5b5858e0",
