@@ -339,6 +339,10 @@
     "sha256": "05c4755757cc7e27fdea87db09f4fa422d53aafc7b7bd2f7759deba8f6f6c144",
     "size": 2667091
   },
+  "mimi-chan.png": {
+    "sha256": "b62702f03d3ea3d85f3df03e97d62850ff49ed62971e27f6a0303c30b1f29a79",
+    "size": 2260935
+  },
   "minoriko.png": {
     "sha256": "85bdcdedf7fbdd00283ede0fdebc757d31b0dbfc275adf75f9a5ee4fcee945e4",
     "size": 2539740
@@ -478,6 +482,10 @@
   "rumia-soft-v3.png": {
     "sha256": "6459aa9f6a1a7db43a4eefc6fff1fd0f1e2b97a4245cb6f19a204131fc4024ea",
     "size": 2431043
+  },
+  "ruukoto.png": {
+    "sha256": "954e9dc9daba94ec8222979196b148b223fd702426f0887464494030532eeeb1",
+    "size": 2420223
   },
   "sagume.png": {
     "sha256": "ae38d0d63196241622bf31f2a9f4a5b066174f81f7d31637dbea6d5724abfa7c",
@@ -695,6 +703,10 @@
     "sha256": "4d779062518ace2ed61283370c8522942eefbda66b7edd63f81d1412af457d1f",
     "size": 3525397
   },
+  "scene-mimi-cloudrest.png": {
+    "sha256": "2c0cbe29df5b65c9c33632f7878e61e2137cb3cc0dfa7c2009119bbb9fd7c9ee",
+    "size": 3458273
+  },
   "scene-mizuchi-lanterns.png": {
     "sha256": "1a0def9711036e2ea22219d0401f534b3f933d803713638e8cf0e047b43268c1",
     "size": 3660824
@@ -758,6 +770,10 @@
   "scene-rikako-workbench.png": {
     "sha256": "7b3d964d14e09d2d216ba016260d45dbfee60831e002ed1f15a6624d2f580d4c",
     "size": 3455824
+  },
+  "scene-ruukoto-sweeping.png": {
+    "sha256": "edcc7791e16e59d346493712e29d157ead75f76a4aeea740c9432d6bd109eaa0",
+    "size": 3795734
   },
   "scene-sanzu-stones.png": {
     "sha256": "43a91cbe99497bf7d19165c5982056a8428bb9800dff93c3882dad20b443dc15",

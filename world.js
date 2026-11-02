@@ -759,3 +759,23 @@ window.GENSOKYO.glossary.push(
  {term:'见闻、推测与梦境',en:'What is seen, guessed and dreamed',text:'人物口中的巨影、怪鱼与梦中对手，不一定都对应同一层现实。读茨歌仙与非想天则时，先辨说话者和场景，再看后文是否补充说明。本册的奇异身影只是主题目录，不是种族名。',source:'https://thbwiki.cc/游戏对话:东方非想天则/红美铃'}
 );
 window.GENSOKYO.trails.push({id:'names-and-tales',number:'11',name:'名字、见闻与梦中的身影',tag:'跨作品 / 来客与叙述',image:'scene-reisen-moonletter',intro:'先认一封信与一个名字，再跟着涧边传闻，走进一场巨大的梦。',steps:[['reisen-moon','认识承接名字的新月兔'],['reisen','与永远亭的铃仙分开辨认'],['yorihime','沿信件读到月都的职责'],['manzairaku','从怪鱼传闻回看海豹形象'],['nitori','分辨河童的发现与后续安排'],['kasen','沿茨歌仙继续读来客'],['oonamazu','转到非想天则，明确梦境形态'],['meiling','把梦中对决放回她的路线'],['tenshi','最后比较地底鲶鱼与要石的说法']],scenes:['reisen-moonletter','manzairaku-ravine','oonamazu-dreamwater'],lore:'names-and-tales',work:'bougetsusho',listening:[['未知物Ｘ ～ Unfound Adventure','非想天则美铃路线的梦中最终对决曲目，不用于另两位人物','https://thbwiki.cc/游戏对话:东方非想天则/红美铃']],note:'跨作品的编辑路线，三位未在同一事件中共同登场。目录中的相邻顺序、画页比例均不确认角色关系或原作大小。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+ ruukoto:{place:'shrine',related:['reimu','yumemi','chiyuri','mimi-chan'],work:'th03',line:'从灵梦结局认识机器人，把扫除表现与人物对动力的猜想分别阅读。'},
+ 'mimi-chan':{place:null,related:['marisa','yumemi','reimu','ruukoto'],work:'th03',line:'回到魔理沙结局与 Omake，先认出这位有表情的导弹。'}
+});
+{
+ const b=window.GENSOKYO.books.find(b=>b.id==='th03');b.ids.push('ruukoto','mimi-chan');
+ b.description='不可思议的遗迹引来九位可用人物的竞争。梦美与千百合带来科学的问题，不同人物的愿望又通向各自的结局。读过对战，再认识结局中的机械女仆与有表情的导弹。';
+ b.caption='本册索引含九位可用人物与留琴、咪咪号两位结局来客，并非全部登场者清单。不同路线分别阅读，现有灵梦与魔理沙图卡沿用后来作品形象。';
+}
+window.GENSOKYO.bonds.push(
+ {title:'开心地扫，却还要一起帮忙',label:'原作关系 / 灵梦与留琴',ids:['ruukoto','reimu','marisa'],relation:'灵梦结局中，留琴来到神社帮忙；魔理沙来访时见到了这番扫除。',description:'认真与熟练不是同一件事。动力来源在人物对话里仍有疑问，不把猜想写成已证实的机械设定。',color:'green',symbol:'扫'},
+ {title:'同一位赠予者，不同路线的愿望',label:'结局并读 / 梦美与两位来客',ids:['yumemi','ruukoto','mimi-chan'],relation:'梦美在灵梦、魔理沙的不同结局里，分别交出留琴和咪咪号。',description:'按选择的路线阅读，不将两段结局当作同一场赠礼或确认三位一起行动。',color:'violet',symbol:'愿'},
+ {title:'先认识她，再问怎么使用',label:'原作相遇 / 魔理沙与咪咪号',ids:['marisa','mimi-chan','reimu'],relation:'魔理沙乘着咪咪号来到神社，向灵梦介绍这位有表情的来客。',description:'原作对话保留了她不懂使用方法的笑点；本册只画静止的主体，不另行编写功能与用途。',color:'red',symbol:'遇'}
+);
+window.GENSOKYO.glossary.push(
+ {term:'可用人物与结局来客',en:'Playable characters and ending visitors',text:'作品里有名有形的存在，不一定是可用人物或关底对手。梦时空的留琴与咪咪号在结局登场；目录新增两位，不会改变原作九位可用人物的数量。',source:'https://thbwiki.cc/东方梦时空'},
+ {term:'不同路线，分别阅读',en:'Reading different endings separately',text:'灵梦得到家务机器人，魔理沙得到不依靠魔法的武器，分别属于梦时空不同结局。作品索引把人物放在一起，仍不代表这些情节在同一条路线里连续发生。',source:'https://thbwiki.cc/游戏对话:东方梦时空/博丽灵梦'}
+);
+window.GENSOKYO.trails.push({id:'ending-visitors',number:'12',name:'结局里，还有谁在等你',tag:'梦时空 / 愿望与来客',image:'scene-ruukoto-sweeping',intro:'从教授与助手，走向两条结局里的小小惊喜。',steps:[['yumemi','先认识回应愿望的教授'],['chiyuri','再看助手与那艘不寻常的船'],['reimu','选择灵梦路线，听听她的家务烦恼'],['ruukoto','认识开心却不擅长扫除的女仆'],['marisa','换到魔理沙路线，读另一种愿望'],['mimi-chan','辨认白色弹体上的红鼻与笑脸'],['ellen','回到立绘与附记，别忘记身边的猫']],scenes:['ruukoto-sweeping','mimi-cloudrest'],lore:'ending-visitors',work:'th03',listening:[['东方的蓝色天空','灵梦结局中出现的曲目；不作为两位来客的专属主题曲','https://thbwiki.cc/游戏对话:东方梦时空/博丽灵梦']],note:'路线包含结局内容。这里把不同人物路线作为并读入口，不确认它们同时发生；爱莲身旁的苏格拉底尚未独立入册。'});
