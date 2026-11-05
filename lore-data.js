@@ -172,3 +172,22 @@ window.GENSOKYO_LORE.push({id:'dolls-and-companions',mark:'伴',name:'人偶与�
  '形象也需要带着作品名称来辨认。本批上海选择永夜抄红裙版本，歌利亚保留非想天则的双剑、深裙与白围裙，苏格拉底留下原图半眯的眼神。统一的大头短身与纸面笔触不代表等高；不在原图里的完整姿态、猫尾与室内风景，则明确留给同人补绘。'
  ],facts:[['先看版本','红裙上海来自本批选定的永夜抄原图，不以裙色划定固定姐妹身份。'],['再看操纵关系','爱丽丝的人偶活动不自动证明已经具有自我意识。'],['另看实际体量','歌利亚在原作是巨大人偶，统一画幅不充当比例尺。']],correction:'四片翼不确认上海的妖精种族；猫不是人偶，巨大人偶也不是名为非想天则的另一巨大身影。所有新场景均为同人意象。',perspective:'查看永夜抄使魔原图、非想天则像素图与试验截图、梦时空猫图及 Omake，并参照爱丽丝资料和外来韦编对巨大人偶的介绍。名字、作品版本和图片尺寸分别理解。',caption:'输入首批灵梦、魔理沙与本批上海人物最终图。缝纫台、线轴和光线另行设计，不照搬原作或其他作者场景。',people:['alice','shanghai','goliath','cirno','ellen','sokrates','ruukoto'],places:['forest'],related:['spellcards','oldworks','ending-visitors'],sources:[['爱丽丝 · 人偶与上海资料','https://thbwiki.cc/爱丽丝·玛格特洛依德#上海人偶'],['外来韦编 · 非想天则特辑','https://thbwiki.cc/东方外来韦编/2018_Autumn!/非想天则特辑'],['梦时空 · Omake','https://thbwiki.cc/附带文档:东方梦时空/Omake']]});
 window.GENSOKYO_LORE.find(p=>p.id==='ending-visitors').related.push('dolls-and-companions');
+
+window.GENSOKYO_LORE.push({
+  id:'kasen-weather',mark:'雨',name:'华扇的仙界与两场雨',en:'Kasen’s hermit world and two storms',
+  title:'同样一场急雨，谁从雨中来？',color:'#788c79',image:'scene-koutei-cloudpool',
+  alt:'花木山庭的浅池边，华扇看一条绿身幼龙盘旋',
+  lead:'从神社的天气转折，走近华扇身旁两位不同的动物伙伴。',
+  paragraphs:[
+    '第五话的骤雨随着华扇邀请灵梦去修行而来。幼龙黄帝从雨中现身，把灵梦带走。到了第六话，雷雨后的灵梦和魔理沙提不起精神，故事转而追查雷兽务光与雷电之毒。',
+    '华扇开辟的仙界有山中的入口，茨华仙邸位于其中。凭依华画出水墨意象的山川，漫画也能看到邸宅里的圆窗等细节。画册由这些线索安排一处花木池庭，另一页则回到博丽神社的雨檐。'
+  ],
+  facts:[['第五话','从修行的提议读到幼龙现身。'],['第六话','从反常雷雨、毒与玉米读懂雷兽。'],['三个空间','妖怪之山的入口、仙界和仙邸分别辨认。']],
+  correction:'两场雨分属相邻两话，阅读时可分别追踪各自的出场与原因。',
+  perspective:'漫画对话用于核对事件。黄帝取深秘录彩色图像为参照，务光取黑白原画为参照。',
+  caption:'仙界花木、云池和圆门为本册场景构图。',
+  people:['kasen','koutei','mukou','reimu','marisa','sanae'],places:['mountain','shrine'],
+  related:['dolls-and-companions','book-visitors'],
+  sources:[['茨歌仙第五话','https://thbwiki.cc/东方茨歌仙/第五话'],['茨歌仙第六话','https://thbwiki.cc/东方茨歌仙/第六话'],['华扇的仙界','https://thbwiki.cc/华扇的仙界']]
+});
+window.GENSOKYO_LORE.find(page=>page.id==='dolls-and-companions').related.push('kasen-weather');

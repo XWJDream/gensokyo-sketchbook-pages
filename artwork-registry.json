@@ -247,6 +247,10 @@
     "sha256": "db6fbd22dd45e3588ec399c164d1a8275a9fa707b20c9748e702dbba6eb1600b",
     "size": 2526034
   },
+  "koutei.png": {
+    "sha256": "8d628bd2eac025ec75ca5d8d68f57a2f1c827b9d6e0d24e1f60990faefde20d2",
+    "size": 2583839
+  },
   "kurumi.png": {
     "sha256": "a77de70bbfd35e7e2bba42ee3249369ac43834a5dd167cedf2ac87c93dc9ff2e",
     "size": 2621843
@@ -378,6 +382,10 @@
   "mugetsu.png": {
     "sha256": "10810e19475102fb57e442c9d85d4dfac9ac3e5a76d231de48e6a36ef3f2dc20",
     "size": 2354011
+  },
+  "mukou.png": {
+    "sha256": "5597a37873090a9085ca53456eb6a8684a2b46040cb42996c177b08ed429b3d2",
+    "size": 2666668
   },
   "murasa.png": {
     "sha256": "e608b20fa20ce0b3a424e7da66a5513126183e12ab78157b9e7265229a9009c7",
@@ -667,6 +675,10 @@
     "sha256": "f9cc75e08c52a32cdcbf9c1aac186c65fed845849762f67f6992d11b17870b50",
     "size": 3035761
   },
+  "scene-koutei-cloudpool.png": {
+    "sha256": "8f8eb725507d3481c19d33bc59ffc080f5c2233f902c483ac2b0c92649a18418",
+    "size": 3764480
+  },
   "scene-kurumi-lakeshore.png": {
     "sha256": "740a11ae4c0a7398d278beeee74047da82b4ba403e39680738b0fb43409ffa5c",
     "size": 3794468
@@ -730,6 +742,10 @@
   "scene-mountain-stalls.png": {
     "sha256": "258dd4fd6ef3a78494f4efdb2c44b00772683214bfb7d9ee93012cc5491a0ebb",
     "size": 3777856
+  },
+  "scene-mukou-rain-eaves.png": {
+    "sha256": "8cd3b7a76505e6b727ddd1c56737ff5c30fef6468ea996ca70542224f63dcb6c",
+    "size": 3782900
   },
   "scene-myouren-v2.png": {
     "sha256": "ce9c4b81db03ae35119cb3a9037f267d61000e6ce3662795234e245f67525aa8",

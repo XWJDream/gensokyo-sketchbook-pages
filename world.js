@@ -803,3 +803,29 @@ window.GENSOKYO.glossary.push(
  {term:'画面比例与角色体量',en:'Picture size and size in the story',text:'图鉴卡片为了阅读统一画幅，不能据此判断人物等高。歌利亚在原作中是巨大人偶，上海是小型使魔；画册沿用同样的大头短身绘法，也不提供未经确认的身高数值。',source:'https://thbwiki.cc/东方外来韦编/2018_Autumn!/非想天则特辑'}
 );
 window.GENSOKYO.trails.push({id:'dolls-and-companions',number:'13',name:'丝线与身旁的小伙伴',tag:'跨作品 / 人偶与猫',image:'scene-shanghai-threadlight',intro:'先看一张红裙使魔图，再认巨大试验人偶，最后和半眯眼睛的猫打个照面。',steps:[['alice','从制作与操纵人偶的魔法使开始'],['shanghai','选定永夜抄红裙版本，辨认小型使魔'],['goliath','转到非想天则，看巨大化试验'],['cirno','把巨影的猜想放回具体路线'],['marisa','沿搭档与来访线索继续读'],['ellen','换到梦时空，认识猫身旁的人'],['sokrates','读附记，确认名字和猫的身份'],['ruukoto','再比较另一种被制作出来的来客']],scenes:['shanghai-threadlight','goliath-workshop','sokrates-window'],lore:'dolls-and-companions',work:'th08',listening:[],note:'跨作品的编辑路线，不表示三位共同出场；没有为无独立主题曲的伙伴指定官方角色曲。'});
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  koutei:{place:null,related:['kasen','reimu','mukou'],work:'hermit-book',line:'从第五话的骤雨认识幼龙，再对照深秘录中的彩色图像。'},
+  mukou:{place:'shrine',related:['kasen','reimu','marisa','sanae','koutei'],work:'hermit-book',line:'第六话从雷雨后的异状追到雷兽。地图入口指向故事发生地。'}
+});
+{
+  const book=window.GENSOKYO.books.find(book=>book.id==='hermit-book');
+  book.ids.push('koutei','mukou');
+  book.caption='连载为 2010–2019 年。第五话可读幼龙登场，第六话可读务光与雷雨，第十一话可接着看运松翁的秘药故事。';
+  window.GENSOKYO.characterLinks.kasen.related.push('koutei','mukou');
+}
+window.GENSOKYO.bonds.push(
+  {title:'从骤雨中现身的幼龙',label:'原作关系 / 华扇、黄帝与灵梦',ids:['kasen','koutei','reimu'],relation:'华扇让灵梦去修行时，黄帝随骤雨出现并把灵梦带走。',description:'从第五话阅读华扇与幼龙的关系，并对照后续游戏里的彩色造型。',color:'green',symbol:'龙'},
+  {title:'雷雨过后，谁还有干劲',label:'原作相遇 / 务光与神社众人',ids:['mukou','kasen','reimu','marisa','sanae'],relation:'务光是华扇照料的雷兽。第六话从一场反季雷雨开始，逐步查到它身上。',description:'雷电的毒、玉米和众人关于发电的议论，是这话三条相互牵引的线索。',color:'violet',symbol:'雷'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'华扇的仙界与茨华仙邸',en:'Kasen’s realm and residence',text:'华扇开辟的仙界有一个位于妖怪之山的入口。茨华仙邸是仙界里的居所。画册把山中入口、异界和其中的建筑分作三层来读。',source:'https://thbwiki.cc/华扇的仙界'},
+  {term:'雷兽的毒',en:'The raijuu’s venom',text:'《茨歌仙》第六话把雷雨后的懒散与雷兽的毒连在一起，并写到玉米。由雷兽发电的想法出现在人物的讨论里。',source:'https://thbwiki.cc/东方茨歌仙/第六话'}
+);
+window.GENSOKYO.trails.push({
+  id:'kasen-weather',number:'14',name:'随华扇走过两场雨',tag:'茨歌仙 / 幼龙与雷兽',
+  image:'scene-koutei-cloudpool',intro:'从第五话骤雨中的幼龙，到第六话神社檐下的雷兽，读两场雨怎样引出不同的故事。',
+  steps:[['kasen','先认识照料动物的华扇'],['reimu','从神社与修行的提议进入第五话'],['koutei','看骤雨里出现的幼龙'],['marisa','跟着雷雨后的异状读第六话'],['mukou','寻找雷兽与毒的线索'],['sanae','留意故事末尾的玉米']],
+  scenes:['koutei-cloudpool','mukou-rain-eaves'],lore:'kasen-weather',work:'hermit-book',listening:[],
+  note:'按漫画相邻两话并读。场景插图由各自的原作线索重新构图。'
+});

@@ -167,3 +167,26 @@ window.GENSOKYO_SCENES.push(
  {id:'goliath-workshop',batch:'31',image:'scene-goliath-workshop',title:'工房高窗 · 为巨大的试验留一点光',en:'Window light for a larger experiment',place:null,tag:'非想天则 / 巨大人偶意象',people:['goliath'],alt:'长金发红结的歌利亚人偶穿深色裙与白围裙，双剑向下安静站在想象高窗工房中，保持首批紧凑头身比例',lead:'当身形放大，针脚与光线也有另一种距离。',text:'以巨大化试验为线索，画一间容得下大人偶的想象工房。双剑、白围裙和长发清楚分层，高窗与门梁提示体量，纸面仍沿用小小画册的温柔笔触。',basis:'人物造型与巨大化背景对照非想天则游戏像素图、试验截图及官方书籍介绍。工房建筑、陈设、静止姿势和物件大小为同人构图，不是原作房间或精确身高比例图，也不作为新地点收入地图。',sources:[['歌利亚人偶 · 游戏资料','https://thbwiki.cc/歌利亚人偶'],['外来韦编 · 非想天则特辑','https://thbwiki.cc/东方外来韦编/2018_Autumn!/非想天则特辑']]},
  {id:'sokrates-window',batch:'31',image:'scene-sokrates-window',title:'窗边猫影 · 半眯眼里的午后',en:'An afternoon in half-lidded eyes',place:null,tag:'梦时空 / 猫的日常意象',people:['sokrates'],alt:'浅奶油色短毛猫苏格拉底带着半眯眼神坐在木窗边，完整猫爪和单尾自然可见，书本、花盆与窗外树影延续铅笔淡彩',lead:'故事还没读完，猫已经找到最暖和的位置。',text:'从原图独特的眼神出发，为这只猫留一页完整的安静身影。细胡须、三角耳和浅色短毛清楚可辨，窗光、旧书与植物则由画册另外安排。',basis:'名字与爱莲的关系见梦时空 Omake，猫头与眼神对照原作图。完整坐姿、尾巴、窗边书房和陈设是同人补绘，不确认爱莲住宅外观或猫的固定栖居地。',sources:[['苏格拉底 · 原作形象与资料','https://thbwiki.cc/苏格拉底'],['梦时空 · Omake','https://thbwiki.cc/附带文档:东方梦时空/Omake']]}
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'koutei-cloudpool',batch:'32',image:'scene-koutei-cloudpool',
+    title:'仙界云池 · 一尾绿影掠过水面',en:'A green reflection in the hermit garden',
+    place:null,tag:'华扇的仙界 / 日常意象',people:['koutei','kasen'],
+    alt:'一条绿身杏腹的幼龙盘旋在花木山庭的池上，粉发的华扇坐在石岸',
+    lead:'水面接住龙影，也接住山间的云。',
+    text:'在华扇的仙界想象一处小池，水面、石岸和圆形门洞把视线带向远山。黄帝从水上掠过，华扇坐在岸边看着它。',
+    basis:'幼龙造型参照深秘录的游戏图像，仙界意象参考漫画与凭依华的山川。池、门洞位置与相处情节为同人构图。',
+    sources:[['华扇的仙界 · 场景资料','https://thbwiki.cc/华扇的仙界'],['茨歌仙第五话 · 幼龙登场','https://thbwiki.cc/东方茨歌仙/第五话']]
+  },
+  {
+    id:'mukou-rain-eaves',batch:'32',image:'scene-mukou-rain-eaves',
+    title:'神社雨檐 · 雷声刚刚过去',en:'After thunder at the shrine',
+    place:'shrine',tag:'博丽神社 / 雷雨意象',people:['mukou','reimu'],
+    alt:'黑脊浅毛的务光伏在博丽神社廊边，红白衣裙的灵梦在木柱旁望向雨幕',
+    lead:'雨打屋檐，矮低的身影在湿石边蜷成一圈。',
+    text:'借第五、六话连着出现的雷雨意象，把视线停在神社屋檐下。浅色雷兽伏在廊边，灵梦隔着木柱望向雨幕，湿石和细小电光添了一点凉意。',
+    basis:'雷雨与博丽神社来自第六话。灵梦与雷兽在屋檐边的姿态、光线和距离为同人构图。',
+    sources:[['茨歌仙第六话 · 雷雨与务光','https://thbwiki.cc/东方茨歌仙/第六话']]
+  }
+);
