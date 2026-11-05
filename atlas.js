@@ -1,10 +1,20 @@
 (() => {
   'use strict';
   const data=window.GENSOKYO_ATLAS;
+  const characters=window.CHARACTERS;
+  const scenes=window.GENSOKYO_SCENES;
+  const chapters=window.GENSOKYO_LORE;
+  const trails=window.GENSOKYO.trails;
+  // These three locations share a reading theme, even without a matching scene in the route.
+  const bookTrailPlaces=new Set(['village','suzunaan','kourindou']);
   const $=selector=>document.querySelector(selector);
   const viewport=$('#atlas-viewport'),scene=$('#atlas-scene'),image=$('#atlas-image');
   const regionTabs=$('#atlas-region-tabs'),list=$('#atlas-place-list'),search=$('#atlas-search');
   const regions=new Map(data.regions.map(r=>[r.id,r])),places=new Map(data.places.map(p=>[p.id,p]));
+  const scenesByPlace=new Map(data.places.map(p=>[
+    p.id,scenes.filter(s=>s.place===p.id).sort((a,b)=>Number(b.batch||0)-Number(a.batch||0))
+  ]));
+  const peopleByPlace=new Map(data.places.map(p=>[p.id,placePeople(p,scenesByPlace.get(p.id))]));
   const volumes=['壹','贰','叁','肆','伍','陆'];
   const views=new Map(),lastSelections=new Map();
   const state={region:'village',place:'village',zoom:1,x:0,y:0,width:0,height:0,ready:false,labels:!matchMedia('(max-width:760px)').matches,wheel:false};
@@ -52,7 +62,7 @@
   }
   function renderDirectory(){
     const query=search.value.trim().toLocaleLowerCase();
-    const matched=query?data.places.filter(p=>[p.name,p.en,p.world,p.type,regions.get(p.region).name,...p.people].join(' ').toLocaleLowerCase().includes(query)):entries(state.region);
+    const matched=query?data.places.filter(p=>[p.name,p.en,p.world,p.type,regions.get(p.region).name,...peopleByPlace.get(p.id).map(([name])=>name)].join(' ').toLocaleLowerCase().includes(query)):entries(state.region);
     $('#atlas-place-count').textContent=`${entries(state.region).length} 处`;
     $('#atlas-result-label').textContent=query?`全册搜索 · ${matched.length} 处结果`:`${regions.get(state.region).scope} · 点选即可定位`;
     list.innerHTML=matched.length?matched.map(p=>`<button class="atlas-place-item" data-atlas-location="${p.id}" aria-label="定位${p.name}" aria-pressed="${state.place===p.id}"><i>${localNumber(p)}</i><span>${p.name}<small>${query?regions.get(p.region).name+' / ':''}${p.type}</small></span><b aria-hidden="true">↗</b></button>`).join(''):'<div class="atlas-no-result">没有找到这个地点。<button data-atlas-clear>清除搜索</button></div>';
@@ -61,11 +71,69 @@
     const region=regions.get(state.region);
     $('#atlas-pins').innerHTML=entries(state.region).map(p=>`<button class="atlas-pin" style="--x:${p.x}%;--y:${p.y}%;--region-color:${region.color}" data-atlas-pin="${p.id}" aria-label="地图地点：${p.name}" aria-pressed="${state.place===p.id}" aria-controls="atlas-place-detail"><i>${localNumber(p)}</i><span>${p.name}</span></button>`).join('');
   }
+  function placePeople(place,placeScenes){
+    const linked=new Set();
+    const known=[...new Set(place.people)].map(name=>{
+      const baseName=name.replace(/（[^（）]+）$/u,'');
+      const character=characters.find(c=>c.fullName===baseName)||characters.find(c=>c.name===baseName);
+      if(character)linked.add(character.id);
+      return [name,character?.id];
+    });
+    const scenePeople=placeScenes.flatMap(s=>s.people);
+    const extra=[...new Set([...place.residents,...scenePeople])]
+      .filter(id=>!linked.has(id))
+      .map(id=>characters.find(c=>c.id===id))
+      .filter(Boolean)
+      .map(c=>[c.fullName||c.name,c.id]);
+    return [...extra,...known];
+  }
+  function renderPeople(place){
+    const all=peopleByPlace.get(place.id).map(([name,id])=>id
+      ?`<button data-open="${id}">${escape(name)} ↗</button>`
+      :`<span>${escape(name)}</span>`);
+    return `<div class="atlas-people-tags">${all.slice(0,6).join('')}</div>${
+      all.length>6?`<details class="atlas-reading-more"><summary>展开其余 ${all.length-6} 位</summary><div class="atlas-people-tags">${all.slice(6).join('')}</div></details>`:''
+    }`;
+  }
+  function renderSceneLinks(placeScenes){
+    const featured=placeScenes.slice(0,2).map(s=>
+      `<button class="atlas-reading-scene" data-scene-open="${s.id}"><img src="assets/${s.image}.webp" width="96" height="64" alt="" loading="lazy"><span>${escape(s.title)} ↗</span></button>`
+    ).join('');
+    const additional=placeScenes.slice(2).map(s=>
+      `<button class="atlas-reading-link" data-scene-open="${s.id}">${escape(s.title)} ↗</button>`
+    ).join('');
+    if(!featured)return '<p class="atlas-reading-note">本地点暂无关联画页。</p>';
+    return `${featured}${
+      additional?`<details class="atlas-reading-more"><summary>展开其余 ${placeScenes.length-2} 幅</summary>${additional}</details>`:''
+    }`;
+  }
+  function renderReading(place,placeScenes){
+    const sceneIds=new Set(placeScenes.map(s=>s.id));
+    const relatedTrails=trails.filter(t=>t.scenes.some(id=>sceneIds.has(id))||
+      (t.id==='book-visitors'&&bookTrailPlaces.has(place.id)));
+    const relatedChapters=chapters.filter(chapter=>chapter.places.includes(place.id));
+    const readingLinks=[
+      ...relatedTrails.map(t=>`<a class="atlas-reading-link" href="?trail=${t.id}#guide"><small>主题导读</small>${escape(t.name)} ↗</a>`),
+      ...relatedChapters.map(c=>`<a class="atlas-reading-link" href="?lore=${c.id}#worldview"><small>世界手帖</small>${escape(c.name)} ↗</a>`)
+    ];
+    const reading=readingLinks.length?`${readingLinks.slice(0,3).join('')}${
+      readingLinks.length>3?`<details class="atlas-reading-more"><summary>展开其余 ${readingLinks.length-3} 篇</summary>${readingLinks.slice(3).join('')}</details>`:''
+    }`:'<p class="atlas-reading-note">可从下方的地点资料继续阅读。</p>';
+    return `<div class="atlas-place-reading">
+      <section><h4>相关人物</h4>${renderPeople(place)}</section>
+      <section><h4>关联画页</h4>${renderSceneLinks(placeScenes)}</section>
+      <section><h4>延伸阅读</h4>${reading}</section>
+    </div>`;
+  }
   function renderDetail(){
     const p=places.get(state.place),region=regions.get(p.region);
-    const portraits=new Set(p.residents);
-    const people=p.people.map(name=>{const c=window.CHARACTERS.find(c=>p.residents.includes(c.id)&&(c.name===name||c.fullName===name));return c?`<button data-open="${c.id}">${name} ↗</button>`:`<span>${name}</span>`;}).join('');
-    $('#atlas-place-detail').innerHTML=`<div class="atlas-detail-title"><div class="atlas-detail-kicker">${region.name} / PLACE ${localNumber(p)}</div><h3 id="atlas-place-name">${p.name}</h3><div class="atlas-detail-en">${p.en.toUpperCase()}</div><div class="atlas-location-tags"><span>${p.type}</span><span>${p.world}</span></div><div class="atlas-location-actions"><button data-atlas-locate-current>放大看这里 ⌕</button><button data-atlas-share>复制地点链接 ↗</button></div><input class="atlas-copy-url" aria-label="当前地点的分享链接" readonly hidden></div><div class="atlas-detail-copy"><h4>${p.summary}</h4><p>${p.detail}</p><div class="atlas-known-relation"><b>资料中的关系</b>${p.relation}</div></div><div class="atlas-detail-people"><span>相关人物${portraits.size?' · 可点选已绘角色':''}</span><div class="atlas-people-tags">${people}</div>${(window.GENSOKYO_SCENES||[]).filter(s=>s.place===p.id).map(s=>`<button class="atlas-scene-link" data-scene-open="${s.id}">展开场景 · ${s.title} ↗</button>`).join('')}<button class="atlas-gallery-link" data-gallery-place="${p.id}">看看这里的画廊作品 ↗</button><button class="atlas-gallery-link" data-gallery-submit data-gallery-place="${p.id}">投稿这处风景 ＋</button><p class="atlas-works">阅读线索：${p.work}</p><a class="atlas-source-link" href="${p.source}" target="_blank" rel="noopener noreferrer">${p.name} · 资料出处 ↗</a><p class="atlas-source-basis">${p.basis}</p><a class="atlas-source-link" href="assets/atlas-${region.id}.png" download="幻想乡地图册-${region.name}.png">保存本册原图 ↓</a></div>`;
+    const placeScenes=scenesByPlace.get(p.id);
+    $('#atlas-place-detail').innerHTML=`<div class="atlas-detail-title"><div class="atlas-detail-kicker">${region.name} / PLACE ${localNumber(p)}</div><h3 id="atlas-place-name">${p.name}</h3><div class="atlas-detail-en">${p.en.toUpperCase()}</div><div class="atlas-location-tags"><span>${p.type}</span><span>${p.world}</span></div><div class="atlas-location-actions"><button data-atlas-locate-current>放大看这里 ⌕</button><button data-atlas-share>复制地点链接 ↗</button></div><input class="atlas-copy-url" aria-label="当前地点的分享链接" readonly hidden></div><div class="atlas-detail-copy"><h4>${p.summary}</h4><p>${p.detail}</p><div class="atlas-known-relation"><b>资料中的关系</b>${p.relation}</div></div>
+      ${renderReading(p,placeScenes)}
+      <div class="atlas-place-footer">
+        <div class="atlas-place-sources"><a class="atlas-source-link" href="${p.source}" target="_blank" rel="noopener noreferrer">查看${p.name}的资料出处 ↗</a><p>${p.work} · ${p.basis}</p></div>
+        <div class="atlas-place-actions"><button class="atlas-gallery-link" data-gallery-place="${p.id}">浏览地点投稿 ↗</button><button class="atlas-gallery-link" data-gallery-submit data-gallery-place="${p.id}">投稿这处风景 ＋</button><a class="atlas-source-link" href="assets/atlas-${region.id}.png" download="幻想乡地图册-${region.name}.png">保存本册原图 ↓</a></div>
+      </div>`;
   }
   function activateRegion(id,{placeId,focus=false,locatePlace=false,clearSearch=true}={}){
     const region=regions.get(id);if(!region)return;

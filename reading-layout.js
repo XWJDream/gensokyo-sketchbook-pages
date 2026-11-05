@@ -58,7 +58,7 @@
     update();
   }
   shelf({id:'character-grid',selector:'.character-card',size:16,unit:'位住民',key:()=>[document.querySelector('.filter.active')?.dataset.filter,document.querySelector('#search').value,document.querySelector('#catalog-sort').value].join('|')});
-  shelf({id:'scene-grid',selector:'.scene-card',size:6,unit:'幅风景',key:()=>document.querySelector('[data-scene-filter][aria-pressed="true"]')?.dataset.sceneFilter});
+  shelf({id:'scene-grid',selector:'.scene-card',size:6,unit:'幅风景',key:()=>[document.querySelector('[data-scene-filter][aria-pressed="true"]')?.dataset.sceneFilter,document.querySelector('#scene-search')?.value,document.querySelector('#scene-region')?.value].join('|')});
   shelf({id:'bond-grid',selector:'.bond-card',size:6,unit:'组相识',key:()=>''});
   shelf({id:'book-grid',selector:'.book-card',size:6,unit:'个作品',key:()=>''});
   shelf({id:'character-routes',selector:'.character-route',size:8,unit:'条人物线索',key:()=>''});
