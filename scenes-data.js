@@ -190,3 +190,26 @@ window.GENSOKYO_SCENES.push(
     sources:[['茨歌仙第六话 · 雷雨与务光','https://thbwiki.cc/东方茨歌仙/第六话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'kitsune-daybreak',batch:'33',image:'scene-kitsune-daybreak',
+    title:'宴后晨光 · 狐耳藏不住了',en:'A pair of fox ears at daybreak',
+    place:'shrine',tag:'博丽神社 / 秋宴余韵',people:['shrine-kitsune','reimu','marisa'],
+    alt:'清晨木廊上灵梦看着假扮魔理沙的妖狐，她露出狐耳和狐尾，摘下的黑帽放在廊板上',
+    lead:'宴席散了，藏在帽子下的耳朵终于露出来。',
+    text:'落叶和几只小杯还留在廊边，灵梦转过身，看见熟悉的白围裙和遮不住的狐尾。把夜宴后的短短相遇放进一页秋日晨光。',
+    basis:'第八话描写灵梦发现妖狐，并从耳朵和尾巴点破伪装。第六页分镜提供耳尾和围巾的对照。把帽子放在廊板上，与晨光、杯盏和衣饰配色一起由本册安排。',
+    sources:[['茨歌仙第八话 · 狐的奸计','https://thbwiki.cc/东方茨歌仙/第八话']]
+  },
+  {
+    id:'zashiki-threshold',batch:'33',image:'scene-zashiki-threshold',
+    title:'人里门灯 · 临别时回头一望',en:'One last look from the threshold',
+    place:'village',tag:'人类村落 / 年末道别',people:['kimono-zashiki','kasen'],
+    alt:'短发的和服座敷童子在冬日木门前回首，灯光落在门槛和薄雪上',
+    lead:'门前有一点薄雪，屋里仍亮着灯。',
+    text:'用一扇亮着灯的木门来画年末的离别。和服上的大花、门槛上的暖光与屋外的冷色，停在她回头的那一刻。',
+    basis:'第十四话以华扇目睹人里住户挽留和服女孩为起点。门灯、薄雪、回望姿态和具体住处为同人构图。',
+    sources:[['茨歌仙第十四话 · 被人类所喜爱的妖怪','https://thbwiki.cc/东方茨歌仙/第十四话']]
+  }
+);

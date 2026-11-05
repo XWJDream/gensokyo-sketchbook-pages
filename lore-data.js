@@ -191,3 +191,22 @@ window.GENSOKYO_LORE.push({
   sources:[['茨歌仙第五话','https://thbwiki.cc/东方茨歌仙/第五话'],['茨歌仙第六话','https://thbwiki.cc/东方茨歌仙/第六话'],['华扇的仙界','https://thbwiki.cc/华扇的仙界']]
 });
 window.GENSOKYO_LORE.find(page=>page.id==='dolls-and-companions').related.push('kasen-weather');
+
+window.GENSOKYO_LORE.push({
+  id:'shrine-and-doorway',mark:'客',name:'神社与人家的来客',en:'Visitors at the shrine and the doorway',
+  title:'熟悉的模样，让人认出了谁？',color:'#a18472',image:'scene-kitsune-daybreak',
+  alt:'黑色魔女帽放在廊板上，灵梦在秋晨的神社木廊认出妖狐露出的耳尾',
+  lead:'从秋宴到年末，读两场相遇里的人情和传闻。',
+  paragraphs:[
+    '第八话里，灵梦先在神社碰到一只妖狐，再见到一位像魔理沙的来客。露出的耳尾让她认出了伪装。后来神社参拜客大增，华扇的调查把故事引向管狐。',
+    '第十四话里，华扇从人里门口的挽留看见另一种相处。魔理沙把家运与座敷童子的到来联系起来，华扇则问，座敷童子是否先看中了有望兴旺的家庭。跟着说话的人读，才能分清亲眼所见、听来的消息和各自的推断。'
+  ],
+  facts:[['第八话','灵梦从狐耳、狐尾认出伪装。'],['第十四话','华扇从一次离别问起座敷童子的来历。'],['两处入口','从博丽神社与人类村落的地图条目可继续看对应场景。']],
+  correction:'两则故事各有发生时间和地点，手帖按相遇的方式将它们放在一起读。',
+  perspective:'两幅角色造型参照原作黑白图，伪装情节和家运之问参照相应章节对话。',
+  caption:'廊下晨光、落叶与杯盏是画册对秋宴后的想象。',
+  people:['reimu','shrine-kitsune','marisa','kasen','kimono-zashiki'],places:['shrine','village'],
+  related:['kasen-weather','village'],
+  sources:[['茨歌仙第八话','https://thbwiki.cc/东方茨歌仙/第八话'],['茨歌仙第十四话','https://thbwiki.cc/东方茨歌仙/第十四话']]
+});
+window.GENSOKYO_LORE.find(page=>page.id==='kasen-weather').related.push('shrine-and-doorway');

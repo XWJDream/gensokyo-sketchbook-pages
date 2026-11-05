@@ -829,3 +829,28 @@ window.GENSOKYO.trails.push({
   scenes:['koutei-cloudpool','mukou-rain-eaves'],lore:'kasen-weather',work:'hermit-book',listening:[],
   note:'按漫画相邻两话并读。场景插图由各自的原作线索重新构图。'
 });
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'shrine-kitsune':{place:'shrine',related:['reimu','marisa','kasen'],work:'hermit-book',line:'从第八话的狐耳与尾巴读起，再看华扇发现的管狐。'},
+  'kimono-zashiki':{place:'village',related:['kasen','reimu','marisa'],work:'hermit-book',line:'沿第十四话开头的离别，比较住户和华扇怎样解释家运。'}
+});
+{
+  const book=window.GENSOKYO.books.find(book=>book.id==='hermit-book');
+  book.ids.push('shrine-kitsune','kimono-zashiki');
+  book.caption='从第五、六话的两场雨，到第八话的狐之伪装、第十一话的秘药和第十四话的座敷童子，可以按感兴趣的故事入门。';
+}
+window.GENSOKYO.bonds.push(
+  {title:'熟悉的帽子，露出的耳朵',label:'原作相遇 / 妖狐、灵梦与魔理沙',ids:['shrine-kitsune','reimu','marisa'],relation:'妖狐变成魔理沙的样子，灵梦从耳朵和尾巴发现了伪装。',description:'继续读第八话，可看到外表相似和借管狐聚财如何成为两条故事线。',color:'red',symbol:'狐'},
+  {title:'家门口的一次挽留',label:'原作见闻 / 座敷童子与华扇',ids:['kimono-zashiki','kasen','reimu'],relation:'华扇目睹和服女孩与住户道别，随后向灵梦问起这件事。',description:'同一场离别让人里住户谈起家运，也让华扇注意到她与住户的相处。',color:'violet',symbol:'灯'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'化形与伪装',en:'Shape-shifting and disguise',text:'在《茨歌仙》第八话，妖狐变作熟人的模样，露出的耳尾让灵梦认出它。读这一段时，可分别留意角色的外貌、举止和说话的人。',source:'https://thbwiki.cc/东方茨歌仙/第八话'},
+  {term:'座敷童子与家运',en:'Zashiki-warashi and household fortune',text:'《茨歌仙》第十四话中，魔理沙提到座敷童子能给家带来繁荣，华扇则问她们是否会挑选看起来将兴旺的家。两句话分别代表人物的看法。',source:'https://thbwiki.cc/东方茨歌仙/第十四话'}
+);
+window.GENSOKYO.trails.push({
+  id:'shrine-and-doorway',number:'15',name:'从神社廊下到人家门前',tag:'茨歌仙 / 伪装与来客',
+  image:'scene-kitsune-daybreak',intro:'一个在秋宴借了熟人的模样，一个在年末向住户道别。从两次相遇认识博丽神社和人里的日常。',
+  steps:[['reimu','从夜宴后的神社开始'],['shrine-kitsune','从耳尾认出伪装'],['marisa','辨认真人与她的模样'],['kasen','沿华扇的见闻转入人里'],['kimono-zashiki','回看门口的离别和家运之问']],
+  scenes:['kitsune-daybreak','zashiki-threshold'],lore:'shrine-and-doorway',work:'hermit-book',listening:[],
+  note:'并读第八、十四话，两幅场景各自取材于对应篇章。'
+});

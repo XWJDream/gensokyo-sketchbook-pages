@@ -211,6 +211,10 @@
     "sha256": "e12230fc719017aabee9d35a104362c6748859b7c64e21ed1a384b3a070482b3",
     "size": 2607742
   },
+  "kimono-zashiki.png": {
+    "sha256": "235854f39e4e6cf2f41ba5e22e2d3de3b1109643d388dba9e5ef3113ab5801e6",
+    "size": 2170209
+  },
   "kisume.png": {
     "sha256": "e8118ce35067b2d8d6e915985e3cbd0070484652e23327d0e8c5329f93200d5c",
     "size": 2753667
@@ -667,6 +671,10 @@
     "sha256": "f394e62c6e808484917dd16c2e3a6a163656632e7ad98eced288a99508b1c85a",
     "size": 3821057
   },
+  "scene-kitsune-daybreak.png": {
+    "sha256": "b7460e83161506b016958bec3b3f503f94e7ccc7d6e2ef6b08f49c0ca27ebac9",
+    "size": 3455398
+  },
   "scene-konngara-stillhall.png": {
     "sha256": "ca11e181803b5a1c4226f620ff6aff36b095ecef86e4947942ae0263a1a07995",
     "size": 3784899
@@ -891,6 +899,10 @@
     "sha256": "382bb6aa443758d55bf823127aced4a2d293e5c0d6c1bd62cc7eec2bd8c6a73e",
     "size": 3542107
   },
+  "scene-zashiki-threshold.png": {
+    "sha256": "b860cf873e7023b82f8fc5dde4c50b623fbecf10b1e93ee0026308043c1d77f8",
+    "size": 3410096
+  },
   "seiga.png": {
     "sha256": "2183db53534f9e80d8084c41a6f8cd2d66904d2e1b58aa46ac64641932ee82c2",
     "size": 3178865
@@ -930,6 +942,10 @@
   "shou.png": {
     "sha256": "a66a8e6a130483ce98d3f7693072284a66c0d57b4c35a1e543bb7704bb087d2a",
     "size": 2694566
+  },
+  "shrine-kitsune.png": {
+    "sha256": "1fd1286d39a51737827e5acf957498aa2353416fb4503113a3980c5c8c6e2a1a",
+    "size": 2407509
   },
   "singyoku.png": {
     "sha256": "69396a5a5fe61c2781be5cca970db5683696888764d978850ae2bbdf2b708325",
