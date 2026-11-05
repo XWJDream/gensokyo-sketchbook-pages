@@ -147,6 +147,10 @@
     "sha256": "6632809b70ea88f52b62db44c7733365139c8d6f515a13c62ca47cdf9b780dc2",
     "size": 2469822
   },
+  "hairclip-kappa.png": {
+    "sha256": "7aaf313db65a6f3ff35cf7d7971b4f085d3373d9516917e835fdb8acf176a101",
+    "size": 2560418
+  },
   "hatate.png": {
     "sha256": "18180a456b03506d25dd0f09bd74c0a34fb162c29ca403cdaaf965b1a8abee53",
     "size": 2678373
@@ -162,6 +166,10 @@
   "hisami.png": {
     "sha256": "4bb5002f7f481d3de87412ae399ba31c4061dabd9bd00212985ab573fdcdfbd0",
     "size": 2725469
+  },
+  "houso.png": {
+    "sha256": "8edcfe454f768bd7a5eec29bd0d92c69ea78a3bb00efe5a3cc8ec990c9ad4d9f",
+    "size": 2622823
   },
   "ichirin.png": {
     "sha256": "4625d954a72e9f803bf1f87050f89d2751b00d64f5a200c2477440b24dd8dd56",
@@ -655,6 +663,10 @@
     "sha256": "d67cb866829913ce3b7e1b42361a0cb632502605b038c0e1aa085b5b1f142625",
     "size": 3691078
   },
+  "scene-houso-pinegate.png": {
+    "sha256": "2bd14b1c90a70ac0d50369d9bdd824d51e6f9969dac31f10e82f645db70d9bd6",
+    "size": 4106487
+  },
   "scene-ice-magic-v2.png": {
     "sha256": "213780479d1abedbb28ac08d73c11ae6c8b7628ff977c78debbabab94993d8ee",
     "size": 3183597
@@ -666,6 +678,10 @@
   "scene-kana-window.png": {
     "sha256": "1b5fdc9aefd20784c05d6d9708e8dcc61aa2a51ce119409101c37ec2b5b8d34b",
     "size": 3609202
+  },
+  "scene-kappa-hillspring.png": {
+    "sha256": "d683da86a996c7374f92874ee85d491cb9303ec468bf9276c1acc860a9f88792",
+    "size": 3944939
   },
   "scene-kikuri-bronze.png": {
     "sha256": "f394e62c6e808484917dd16c2e3a6a163656632e7ad98eced288a99508b1c85a",

@@ -854,3 +854,31 @@ window.GENSOKYO.trails.push({
   scenes:['kitsune-daybreak','zashiki-threshold'],lore:'shrine-and-doorway',work:'hermit-book',listening:[],
   note:'并读第八、十四话，两幅场景各自取材于对应篇章。'
 });
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'hairclip-kappa':{place:'mountain',related:['nitori','takane','kasen'],work:'hermit-book',line:'从交叉发卡认出漫画里的身影，再读第十三话如何谈到离河与寻水。'},
+  houso:{place:null,related:['kasen','marisa','unshou'],work:'hermit-book',line:'读第十一话的守门虎与运松翁，再对照深秘录里的彩色像素图。'}
+});
+{
+  const book=window.GENSOKYO.books.find(book=>book.id==='hermit-book');
+  book.ids.push('hairclip-kappa','houso');
+  book.caption='可从第五、六话的两场雨，第八、十四话的来客，或第十一、十三话的山路、守门虎与河童故事入门。';
+  const game=window.GENSOKYO.books.find(book=>book.id==='th145');
+  game.ids.push('houso');
+  window.GENSOKYO.characterLinks.kasen.related.push('houso');
+}
+window.GENSOKYO.bonds.push(
+  {title:'山里也会为水发愁',label:'主题并读 / 河童与山童',ids:['hairclip-kappa','nitori','takane'],relation:'《茨歌仙》第十三话通过华扇的讲述描写一部分离河的河童。',description:'把漫画群像与《虹龙洞》的山童个别角色分别放回各自作品阅读。',color:'green',symbol:'泉'},
+  {title:'仙邸转弯处的虎',label:'原作关系 / 彭祖、华扇与魔理沙',ids:['houso','kasen','marisa'],relation:'彭祖替华扇看守仙邸。魔理沙在来路上遇见它，受伤后去找运松翁。',description:'第十一话先听魔理沙讲起遇虎，再由她与华扇的问答补全经过。',color:'red',symbol:'虎'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'离河的河童',en:'Kappa away from the river',text:'《茨歌仙》第十三话借华扇说明，一部分河童离开河流到了山中，她把远离水边生活的河童称作山童。缺水和游戏是这一话具体的故事背景。',source:'https://thbwiki.cc/东方茨歌仙/第十三话'},
+  {term:'虎符与看守的虎',en:'Houso in the manga and the game',text:'彭祖在漫画中随仙邸的看守故事被介绍，游戏《深秘录》则以华扇的虎符提供另一处入口。画册用漫画读职责，用游戏像素图辨配色和轮廓。',source:'https://thbwiki.cc/茨木华扇/分析考据'}
+);
+window.GENSOKYO.trails.push({
+  id:'mountain-paths',number:'16',name:'顺着山路看两种来路',tag:'茨歌仙 / 山泉与仙邸',
+  image:'scene-kappa-hillspring',intro:'从河童离河的故事走进山泉，再到仙邸门前认一认守路的虎。',
+  steps:[['nitori','从熟悉的河童开始'],['hairclip-kappa','读第十三话的山路与寻水'],['takane','另看虹龙洞的山童'],['kasen','沿华扇的见闻走向仙邸'],['houso','读第十一话守门虎的出场'],['unshou','继续看受伤之后的求助']],
+  scenes:['kappa-hillspring','houso-pinegate'],lore:'mountain-paths',work:'hermit-book',listening:[],
+  note:'按山中行动与栖地并读。图中泉池与门楼各自取材，路线是阅读顺序。'
+});

@@ -213,3 +213,26 @@ window.GENSOKYO_SCENES.push(
     sources:[['茨歌仙第十四话 · 被人类所喜爱的妖怪','https://thbwiki.cc/东方茨歌仙/第十四话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'kappa-hillspring',batch:'34',image:'scene-kappa-hillspring',
+    title:'山泉歇脚 · 水声落在石边',en:'A quiet stop by the hill spring',
+    place:'mountain',tag:'妖怪之山 / 山泉意象',people:['hairclip-kappa'],
+    alt:'带交叉发卡和迷彩软帽的河童在蕨叶间的山泉旁歇脚',
+    lead:'水从石缝间落下来，远处的林子慢慢安静。',
+    text:'顺着山里寻水的线索画一处阴凉的歇脚点。湿石、蕨叶和浅浅的水纹把山路收进画页，迷彩帽下仍能看清两枚交叉发卡。',
+    basis:'第十三话谈到一部分河童离河、山中缺水与游戏。泉池、取水用具和停留片刻由画册另作构图，地图链接指向妖怪之山的区域条目。',
+    sources:[['茨歌仙第十三话 · 舍弃河的河童','https://thbwiki.cc/东方茨歌仙/第十三话']]
+  },
+  {
+    id:'houso-pinegate',batch:'34',image:'scene-houso-pinegate',
+    title:'松影看门 · 虎尾掠过石阶',en:'The gatekeeper in the shade of pines',
+    place:null,tag:'茨华仙邸 / 来路意象',people:['houso','kasen'],
+    alt:'橙黑相间的老虎站在松树环抱的石路上，华扇在门边停步',
+    lead:'石阶转过弯，虎已经看见了来客。',
+    text:'松枝把入口遮了一半，彭祖站在石路上，华扇在后面停步。把第十一话里提到的看守职责，画成一次平静的巡看。',
+    basis:'看守职责见第十一话，彭祖配色取自深秘录。松林、石阶和门楼的相对位置为同人构图，作为独立场景收录。',
+    sources:[['茨歌仙第十一话 · 看门的虎','https://thbwiki.cc/东方茨歌仙/第十一话'],['华扇的仙界 · 场景资料','https://thbwiki.cc/华扇的仙界']]
+  }
+);

@@ -17,8 +17,8 @@ jobs:
           registry=json.loads(Path('artwork-registry.json').read_text())
           mirror='https://xwjdream.github.io/gensokyo-sketchbook-pages/'
           full='https://gensokyo-sketchbook.h6zsmjd2dn.chatgpt.site/'
-          with urllib.request.urlopen(mirror+'characters.js?v=cast33',timeout=30) as response:
-              assert "id:'kimono-zashiki'" in response.read().decode('utf-8')
+          with urllib.request.urlopen(mirror+'characters.js?v=cast34',timeout=30) as response:
+              assert "id:'houso'" in response.read().decode('utf-8')
           base=mirror
           def verify(item):
               name,entry=item
@@ -35,13 +35,13 @@ jobs:
           with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
               verified=list(pool.map(verify,registry.items()))
           print(f'{len(verified)} GitHub original artwork routes verified')
-          for name in ['shrine-kitsune.png','kimono-zashiki.png','scene-kitsune-daybreak.png','scene-zashiki-threshold.png','scene-bamboo-lantern-v2.png']:
+          for name in ['hairclip-kappa.png','houso.png','scene-kappa-hillspring.png','scene-houso-pinegate.png','scene-bamboo-lantern-v2.png']:
               with urllib.request.urlopen(base+'assets/'+name,timeout=40) as response:
                   assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
               print('Exact original bytes: '+name)
           try:
-              with urllib.request.urlopen(full+'characters.js?v=cast33',timeout=30) as response:
-                  assert "id:'kimono-zashiki'" in response.read().decode('utf-8')
+              with urllib.request.urlopen(full+'characters.js?v=cast34',timeout=30) as response:
+                  assert "id:'houso'" in response.read().decode('utf-8')
           except urllib.error.HTTPError as error:
               if error.code!=403:raise
               print('::warning::Sites returned HTTP 403 to this automated runner. Full-site image checks are unverified; GitHub checks above passed.')
@@ -50,7 +50,7 @@ jobs:
               with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
                   checked=list(pool.map(verify,registry.items()))
               print(f'{len(checked)} Sites PNG routes verified')
-              for name in ['shrine-kitsune.png','kimono-zashiki.png','scene-kitsune-daybreak.png','scene-zashiki-threshold.png']:
+              for name in ['hairclip-kappa.png','houso.png','scene-kappa-hillspring.png','scene-houso-pinegate.png']:
                   with urllib.request.urlopen(base+'assets/'+name,timeout=40) as response:
                       assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
                   print('Exact Sites original bytes: '+name)

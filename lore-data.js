@@ -210,3 +210,22 @@ window.GENSOKYO_LORE.push({
   sources:[['茨歌仙第八话','https://thbwiki.cc/东方茨歌仙/第八话'],['茨歌仙第十四话','https://thbwiki.cc/东方茨歌仙/第十四话']]
 });
 window.GENSOKYO_LORE.find(page=>page.id==='kasen-weather').related.push('shrine-and-doorway');
+
+window.GENSOKYO_LORE.push({
+  id:'mountain-paths',mark:'径',name:'从山泉到仙邸来路',en:'From a mountain spring to the hermit’s path',
+  title:'同在山里，各自认得一条路。',color:'#819077',image:'scene-kappa-hillspring',
+  alt:'有交叉发卡的河童在被松林、蕨叶和石头围起的泉水旁停步',
+  lead:'用两话来读山里怎样生活，又怎样遇见来客。',
+  paragraphs:[
+    '第十三话把山中游戏与缺水连在一起。华扇解释，有些河童在居所受到扰动后离开了河。人物对游戏和山中骚动起初有不同推断，读到调查结果再回头比较，能看清水、栖地与误会各起了什么作用。',
+    '第十一话从魔理沙的伤口说起。华扇家的虎原有看门的职责，魔理沙后来又说起自己动了取虎皮的念头。仙邸入口与内部空间有原作线索，画册在松林和门楼之间另外安排了一段来路。'
+  ],
+  facts:[['栖地','离河与缺水由第十三话的故事展开。'],['看守','第十一话通过问答逐步补全遇虎经过。'],['造型','河童参考黑白分镜，彭祖参考彩色游戏图。']],
+  correction:'图鉴用妖怪之山标出山泉场景的区域，具体泉池与仙邸门楼均由画册重新构图。',
+  perspective:'漫画章节用于核对故事和造型。不同章节的河童图像提供不同衣饰信息。',
+  caption:'这处泉池是根据山里寻水的线索想象的一角。',
+  people:['hairclip-kappa','nitori','takane','kasen','houso','marisa','unshou'],places:['mountain'],
+  related:['kasen-weather','shrine-and-doorway'],
+  sources:[['茨歌仙第十三话','https://thbwiki.cc/东方茨歌仙/第十三话'],['茨歌仙第十一话','https://thbwiki.cc/东方茨歌仙/第十一话']]
+});
+window.GENSOKYO_LORE.find(page=>page.id==='kasen-weather').related.push('mountain-paths');
