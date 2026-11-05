@@ -1,7 +1,7 @@
 (() => {
  'use strict';
  const $ = s => document.querySelector(s);
- const base = 'https://gensokyo-sketchbook.silverjoy8.chatgpt.site/';
+ const base = 'https://gensokyo-sketchbook.h6zsmjd2dn.chatgpt.site/';
  const dialog = $('#gallery-submit-dialog');
  let opener = null;
  const urlFor = ({character, place, kind, submit = false, art} = {}) => {

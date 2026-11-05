@@ -10,7 +10,7 @@
 画廊的作品浏览、登录、上传与审核需要服务端，入口会说明并链接到完整版，不会在此收集或假装提交作品。
 本机收藏与完整版中的收藏不会跨域同步。
 
-完整版：https://gensokyo-sketchbook.silverjoy8.chatgpt.site/
+完整版：https://gensokyo-sketchbook.h6zsmjd2dn.chatgpt.site/
 
 ## 更新与发布
 
