@@ -585,3 +585,110 @@ window.CHARACTERS.push(
     design:{work:'东方茨歌仙第三十七话 · 幸存的睡鼠',source:'https://thbwiki.cc/文件:睡鼠（茨歌仙）.png',checks:['核对圆耳、小眼、细须与宽绒尾','保留低伏的四足动物轮廓','灰褐背毛和浅腹是本册补色'],note:'裂木与驻足姿态为画册构图。'}
   }
 );
+
+window.CHARACTERS.push(
+  {
+    id:'shrine-mid-tank',batch:'40',name:'一面道中战车',jp:'１面中ボス',en:'Stage 1 Midboss Tank',
+    title:'沿履带前行的深红战车',species:'里香制作的战车',place:'紫野 · 一面道中',group:'pc98',color:'#9e5750',
+    ability:'在《封魔录》第一面道中迎战灵梦',
+    keywords:'里香 战车 一面 中 boss 紫野 封魔录',
+    imageAlt:'深红的方形车身有两道履带，斜线把车盖分成四块。',
+    intro:'深红的方形车身有两道履带，斜线把车盖分成四块。',
+    story:'它是第一面途中率先出现的战车。往后到了关底，灵梦才遇见搭乘 Flower～战车的里香。两者都出自里香之手，原作像素图的轮廓和配色各有辨识点。',
+    motif:'深红方盖 · 双履带 · 前端短管',
+    relation:'由里香制造，是一面道中的机械对手。',
+    reference:'https://thbwiki.cc/东方封魔录/其他角色',
+    design:{work:'东方封魔录 · 游戏像素图',source:'https://thbwiki.cc/文件:东方封魔录一面道中（封魔录立绘）.png',checks:['核对两个纵向履带和方形车盖','保留四分车盖与短管','按像素原图把红色压成暖淡彩'],note:'本册按出场位置命名。'}
+  },
+  {
+    id:'flower-tank',batch:'40',name:'Flower～战车',jp:'ふらわ～戦車',en:'Flower Tank',
+    title:'圆面板上转开的两色纹',species:'里香驾驶的战车',place:'紫野 · 一面关底',group:'pc98',color:'#747e53',
+    ability:'里香在第一面关底使用的载具',
+    keywords:'Flower 里香 关底 阴阳纹 机械 封魔录',
+    imageAlt:'红色机械底盘围着灰色圆盘，上方一排绿甲像叶子。',
+    intro:'红色机械底盘围着灰色圆盘，上方一排绿甲像叶子。',
+    story:'里香在第一面使用的载具。原图正中是深浅两色的阴阳纹圆盘，外面包着灰色圈，绿甲沿上缘排列，下方伸出红色构件。',
+    motif:'阴阳纹圆盘 · 绿色弧甲 · 暗红底盘',
+    relation:'与一面道中方形战车为同关不同机体，里香在 Extra 使用邪眼西格玛。',
+    reference:'https://thbwiki.cc/里香',
+    design:{work:'东方封魔录 · 游戏像素图',source:'https://thbwiki.cc/文件:Flower～战车（封魔录立绘）.png',checks:['核对圆形外壳和阴阳纹','核对上缘绿甲与正前红色长构件','保留红、灰、绿三组色块'],note:'画册用纸面排线翻译低色数像素。'}
+  },
+  {
+    id:'curse-child',batch:'40',name:'诅咒子（二面道中）',jp:'２面中ボス',en:'Stage 2 Midboss (Curse Child)',
+    title:'紫袖之间的两点赤光',species:'原作未交代',place:'二面道中',group:'pc98',color:'#80648d',
+    ability:'攻击中使用「咒」字弹',
+    keywords:'诅咒子 呪い子 咒字 二面 夜路 封魔录',
+    imageAlt:'深紫肩袖围着暗脸，两只浅色小手在袖口伸开。',
+    intro:'深紫肩袖围着暗脸，两只浅色小手在袖口伸开。',
+    story:'它在《封魔录》第二面途中出现，攻击会带着醒目的「咒」字。玩家称它为诅咒子，作品只按关卡位置记录它。第二面最后出现的是明罗。',
+    motif:'暗面赤眼 · 紫肩袖 · 红紫下摆',
+    relation:'与明罗同在第二面，分别处于道中和关底。',
+    reference:'https://thbwiki.cc/东方封魔录/其他角色',
+    design:{work:'东方封魔录 · 游戏像素图',source:'https://thbwiki.cc/文件:东方封魔录二面道中（封魔录立绘）.png',checks:['核对紫肩袖、红眼与红紫弧形下摆','保留袖外伸出的浅色小手','以原图弧线绘制身侧丝带'],note:'「诅咒子」是玩家通称。'}
+  },
+  {
+    id:'dream-disks',batch:'40',name:'幻梦盘（三面道中）',jp:'３面中ボス',en:'Stage 3 Midboss (Dream Disks)',
+    title:'从两侧出现的一双红盘',species:'原作未交代',place:'幻梦界 · 三面道中',group:'pc98',color:'#9a5557',
+    ability:'两个同形单位从两侧夹击',
+    keywords:'幻梦盘 红盘 三面 道中 幻梦界 封魔录',
+    imageAlt:'两只圆盘有赤红圆心和深色环框，盘沿伸出弯曲细线。',
+    intro:'两只圆盘有赤红圆心和深色环框，盘沿伸出弯曲细线。',
+    story:'第三面以幻梦界为舞台。道中出现一对形状相同的红盘，玩家常称它们为幻梦盘。这里把二者做成一张图卡，保留它们在画面中的成对关系。',
+    motif:'成对红心 · 深色外圈 · 卷曲轮缘',
+    relation:'经过这一对红盘后，关卡继续通向三面固定炮台。',
+    reference:'https://thbwiki.cc/东方封魔录/其他角色',
+    design:{work:'东方封魔录 · 游戏像素图',source:'https://thbwiki.cc/文件:东方封魔录三面道中（封魔录立绘）.png',checks:['核对成对的红色圆心与深色外圈','保留卷线及两盘间的空隙','按游戏画面绘成一张双单位图卡'],note:'「幻梦盘」是玩家通称。'}
+  },
+  {
+    id:'dream-turrets',batch:'40',name:'固定炮台（三面关底）',jp:'３面ボス',en:'Stage 3 Fixed Turrets',
+    title:'并排而立的五个灰炮头',species:'固定炮台',place:'幻梦界 · 三面关底',group:'pc98',color:'#7b7378',
+    ability:'从固定阵位发起攻击',
+    keywords:'炮台 炮塔 固定 三面 关底 幻梦界 封魔录',
+    imageAlt:'五个灰色圆炮头沿台基横排，左右两端略低。',
+    intro:'五个灰色圆炮头沿台基横排，左右两端略低。',
+    story:'第三面关底由固定炮台组成。原作画面中五个炮头横向排开，灰色头部下压着细小的红黑结构。画册沿这个排布画出整组。',
+    motif:'五炮头 · 两端略低 · 红黑底座',
+    relation:'与幻梦盘同在第三面，位置分别在关底与道中。',
+    reference:'https://thbwiki.cc/东方封魔录/其他角色',
+    design:{work:'东方封魔录 · 游戏像素图',source:'https://thbwiki.cc/文件:东方封魔录三面BOSS（封魔录立绘）.png',checks:['核对五个灰色炮头和横向站位','对照外侧两门略低的排布','保留红黑支脚和细台基'],note:'此处使用关卡位置和外观描述。'}
+  },
+  {
+    id:'winged-midboss',batch:'40',name:'魔天使（四面道中）',jp:'４面中ボス',en:'Stage 4 Winged Midboss',
+    title:'蓝袍从白羽之间垂下',species:'原作未交代',place:'封魔录 · 四面道中',group:'pc98',color:'#617f9d',
+    ability:'在《封魔录》第四面道中登场',
+    keywords:'魔天使 四面 羽翼 蓝袍 紫帽 封魔录',
+    imageAlt:'白色大翅斜向两侧，蓝袍中央有一处浅色衣纹。',
+    intro:'白色大翅斜向两侧，蓝袍中央有一处浅色衣纹。',
+    story:'在第四面关底的红发魔理沙之前，灵梦先遇到这个有翼身影。其深蓝衣袍、紫色头罩和白色羽翼都可从游戏原图辨认。',
+    motif:'紫色头罩 · 蓝衣 · 一对白羽',
+    relation:'第四面先有这名道中首领，再出现旧作形象的魔理沙。',
+    reference:'https://thbwiki.cc/东方封魔录/其他角色',
+    design:{work:'东方封魔录 · 游戏像素图',source:'https://thbwiki.cc/文件:东方封魔录四面道中（封魔录立绘）.png',checks:['核对蓝袍与紫色角形头罩','保留一对向下展开的白色羽翼','人物的五官与布褶按初版比例补绘'],note:'「魔天使」是玩家通称，种族未明。'}
+  },
+  {
+    id:'evil-eye-sigma',batch:'40',name:'邪眼西格玛',jp:'イビルアイ∑',en:'Evil Eye Sigma',
+    title:'带着光环升起的飞行战车',species:'里香驾驶的飞行战车',place:'异空 · Extra 关底',group:'pc98',color:'#876785',
+    ability:'在 Extra 随里香进行空中战斗',
+    keywords:'邪眼西格玛 Σ Sigma 里香 异空 Extra 封魔录',
+    imageAlt:'一只红瞳大眼固定在暗色机身，紫翼上方浮着白环。',
+    intro:'一只红瞳大眼固定在暗色机身，紫翼上方浮着白环。',
+    story:'到了 Extra，里香换上飞行战车邪眼西格玛。机体把一只红瞳眼、紫色翼、浅色环和深绿色下缘组合在一起，与第一面的低伏载具形成对照。',
+    motif:'单眼红瞳 · 紫翼 · 白环 · 绿饰',
+    relation:'一面与 Extra 都有里香出场，使用不同载具。',
+    reference:'https://thbwiki.cc/里香',
+    design:{work:'东方封魔录 · 游戏像素图',source:'https://thbwiki.cc/文件:邪眼西格玛（封魔录立绘）.png',checks:['核对一只红瞳大眼与顶端白环','保留紫色翼和绿色下饰','旧像素的明暗改用铅笔排线表现'],note:'图卡采用《封魔录》Extra 像素图的结构。'}
+  },
+  {
+    id:'ibaraki-arm',batch:'40',name:'茨木童子之臂',jp:'茨木童子の腕',en:'Ibaraki-Douji’s Arm',
+    title:'在无间地狱显形的影华扇',species:'被封印的鬼之右臂',place:'无间地狱 · 茨歌仙末段',group:'strange',color:'#876675',
+    ability:'幻化出与华扇相似的身形，凭鬼力击裂地面',
+    keywords:'茨木童子之臂 影华扇 鬼之臂 无间地狱 茨歌仙 断善修恶',
+    imageAlt:'短直双角从乱发间伸出，深色裙摆下拖着脚镣。',
+    intro:'短直双角从乱发间伸出，深色裙摆下拖着脚镣。',
+    story:'《东方茨歌仙》第四十九话前篇，灵梦在无间地狱遇见一位面貌酷似华扇的对手。漫画随后揭示，这个形态来自被封印的右臂。设定页将这一形态标作「影华扇」，并与融合后的形态分列。',
+    motif:'反向分缝与乱直发 · 直角 · 深裙 · 脚镣',
+    relation:'与茨木华扇的旧事相连，在第四十九话与灵梦对峙。',
+    reference:'https://thbwiki.cc/东方茨歌仙/第四十九话上',
+    design:{work:'东方茨歌仙第十卷 · 影华扇设定',source:'https://thbwiki.cc/文件:影华扇_鬼华扇（茨歌仙设定页）.jpg',checks:['对照单行本第十卷设定页上半的影华扇','保留直角、深裙、深色袜与脚镣','衣服层次参照黑白设定，发色为画册补绘'],note:'本条涉及第十卷的身份剧情。'}
+  }
+);

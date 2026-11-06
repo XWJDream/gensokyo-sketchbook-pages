@@ -29,14 +29,14 @@
     if(sort.value==='name')visible.sort((a,b)=>(a.fullName||a.name).localeCompare(b.fullName||b.name,'zh-CN'));
     visibleIds=visible.map(c=>c.id);
     grid.innerHTML = visible.map(c => `<article class="character-card" style="--character-color:${c.color}"><button class="favorite-button" data-favorite="${c.id}" aria-pressed="${favorites.has(c.id)}" aria-label="${favorites.has(c.id)?'取消收藏':'收藏'}${c.name}">${favorites.has(c.id)?'♥':'♡'}</button><button class="character-open" data-open="${c.id}" aria-label="查看${c.fullName||c.name}的插图与介绍"><div class="card-picture"><span class="card-number">NO. ${number(c)}${Number(c.batch)===latestBatch?'<small class="new-resident">新入册</small>':''}</span><img src="assets/${c.artwork||c.id}.webp" alt="${escape(c.imageAlt||c.name+'的淡彩铅笔 Q 版全身插图')}" loading="lazy" width="700" height="700"><span class="card-expand" aria-hidden="true">↗</span></div><div class="card-meta"><span>${c.title}</span><span class="place-tag">${c.place}</span></div><h3>${c.name}</h3><p class="character-en">${c.en.toUpperCase()}</p></button><p class="character-intro">${c.intro}</p><div class="card-foot"><i aria-hidden="true"></i>${c.species}<span aria-hidden="true"> / </span>${c.ability.replace('程度的能力','')}</div></article>`).join('');
-    document.querySelector('#result-count').textContent = `共 ${visible.length} 位住民`;
+    document.querySelector('#result-count').textContent = `共 ${visible.length} 张图卡`;
     document.querySelector('#empty-state').hidden = visible.length > 0;
     const onlyFavorites = currentFilter === 'favorites' && !query;
-    document.querySelector('#empty-title').textContent = onlyFavorites?'收藏册还空着':'还没有遇见这位住民';
+    document.querySelector('#empty-title').textContent = onlyFavorites?'收藏册还空着':'没有找到符合条件的图卡';
     document.querySelector('#empty-copy').textContent = onlyFavorites?'点亮角色插图上的爱心，把喜欢的她留在这里。':'换个名字，或到其他地方找找吧。';
     filters.forEach(button=>{const key=button.dataset.filter;const count=key==='all'?characters.length:key==='new'?characters.filter(c=>Number(c.batch)===latestBatch).length:key==='favorites'?favorites.size:characters.filter(c=>c.group===key).length;let badge=button.querySelector('sup');if(!badge){badge=document.createElement('sup');button.append(' ',badge);}badge.textContent=String(count).padStart(2,'0');});
-    const label=document.querySelector('.filter.active')?.childNodes[0]?.textContent.trim()||'全部住民';
-    document.querySelector('#catalog-context').textContent=query?`${label} · 搜索“${search.value.trim()}”`:`${label} · 点开一位，沿着这组结果继续翻阅。`;
+    const label=document.querySelector('.filter.active')?.childNodes[0]?.textContent.trim()||'全部图卡';
+    document.querySelector('#catalog-context').textContent=query?`${label} · 搜索“${search.value.trim()}”`:`${label} · 点开一张，沿着这组结果继续翻阅。`;
     document.querySelector('#clear-catalog').hidden=currentFilter==='all'&&!query;
   }
   function toast(message) {

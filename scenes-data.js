@@ -377,3 +377,56 @@ window.GENSOKYO_SCENES.push(
     sources:[['茨歌仙第三十七话 · 雷击与睡鼠祠','https://thbwiki.cc/东方茨歌仙/第三十七话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'rika-shrine-track',batch:'40',image:'scene-rika-shrine-track',
+    title:'紫野初晓 · 砖道上的两辆战车',en:'Two tanks at purple dawn',
+    place:null,tag:'旧作 / 紫野第一面',people:['shrine-mid-tank','flower-tank','rika','reimu'],
+    alt:'晨光照着砖道，方形履带车与圆盘战车相隔一段路，里香在远处',
+    lead:'砖道拐了个弯，两辆车各留下一种轮廓。',
+    text:'从第一面的方形战车看过去，绿甲和圆形阴阳纹在远处露出来。画册把原作里先后遇到的两辆战车分置在一段路的两端。',
+    basis:'车辆造型取自一面道中与关底的像素图。道路透视、晨光与两车同框为同人取景。',
+    sources:[['封魔录 · 第一面资料','https://thbwiki.cc/东方封魔录'],['里香 · 两辆战车原图','https://thbwiki.cc/里香'],['旧作场景 · 神社后山','https://thbwiki.cc/官方场景（旧作）']]
+  },
+  {
+    id:'dream-battery',batch:'40',image:'scene-dream-battery',
+    title:'幻梦界 · 赤盘与五炮台',en:'Disks and turrets in the dream realm',
+    place:null,tag:'旧作 / 幻梦界第三面',people:['dream-disks','dream-turrets','reimu'],
+    alt:'暗紫峡道两侧浮着赤心圆盘，远处台基上横排灰色炮头',
+    lead:'一对赤盘浮在近处，峡道对面还有一整排灰色炮头。',
+    text:'把关卡的暗底、紫色星点和红色纵向边线画进一条峡道。前景与远处分别留给道中双盘和关底炮列。',
+    basis:'双盘、固定炮台和黑紫红配色可对照原作截图。矿岩、路径和同框次序为画册安排。',
+    sources:[['封魔录 · 第三面角色','https://thbwiki.cc/东方封魔录/其他角色'],['旧作场景 · 幻梦界','https://thbwiki.cc/官方场景（旧作）#幻梦界']]
+  },
+  {
+    id:'violet-threshold',batch:'40',image:'scene-violet-threshold',
+    title:'紫火门廊 · 白翼与红发',en:'White wings at a violet threshold',
+    place:null,tag:'旧作 / 四面见闻',people:['winged-midboss','marisa','reimu'],
+    alt:'紫色余烬飘过门廊，一侧浮着蓝袍白翼，远处站着戴紫帽的红发魔理沙',
+    lead:'白翼掠过门廊，另一端露出一顶紫帽。',
+    text:'先用白羽和深蓝袍认出道中对手，再看远处保留红发与紫帽的魔理沙。画中两人停在门廊的不同位置。',
+    basis:'游戏第四面先后出现两者。魔理沙参考《封魔录》早期红发头像，门廊和同框场面为同人绘制。',
+    sources:[['封魔录 · 四面道中与关底','https://thbwiki.cc/东方封魔录'],['魔梨沙 · 历作原图','https://thbwiki.cc/魔梨沙']]
+  },
+  {
+    id:'sigma-dream',batch:'40',image:'scene-sigma-dream',
+    title:'异空方格 · 西格玛升起',en:'Sigma above the tiled void',
+    place:null,tag:'旧作 / 异空 Extra',people:['evil-eye-sigma','rika','reimu'],
+    alt:'赭红方块在紫夜里错落，一台红瞳紫翼飞行战车悬在远处，里香靠近台阶',
+    lead:'赤色方块没有铺到尽头，白环浮在深处。',
+    text:'原作 Extra 的方格在这一页成了浮在雾上的层台。里香留在画面一侧，紫翼飞行战车把最亮的红色聚在一只眼里。',
+    basis:'借用异空画面的红方格与里香 Extra 像素图。悬浮层台、独立坐在一边的里香和光线为同人取景。',
+    sources:[['里香 · Extra 机体与原曲','https://thbwiki.cc/里香'],['旧作场景 · 异空截图','https://thbwiki.cc/官方场景（旧作）#异空']]
+  },
+  {
+    id:'avici-box',batch:'40',image:'scene-avici-box',
+    title:'无间地狱 · 手中的木盒',en:'The wooden box in Avici',
+    place:null,tag:'茨歌仙 / 第四十九话前篇',people:['ibaraki-arm','reimu','kasen'],
+    alt:'空旷灰紫地面上，灵梦抱着木盒，短发双角的影华扇站在对面',
+    lead:'木盒还在怀里，对面那个人有张熟悉的脸。',
+    text:'把灵梦手中的木盒和远处显形的影华扇放进一页。两个人之间留出一片空地，用浅裂纹和稀疏石块表现漫无边际的感觉。',
+    basis:'持盒与影华扇显形取自同一话不同分镜。站位、灯色与静止对峙是同人取景，影华扇参考单行本第十卷设定页。',
+    sources:[['茨歌仙第四十九话上 · 无间地狱','https://thbwiki.cc/东方茨歌仙/第四十九话上'],['茨歌仙第十卷 · 影华扇设定','https://thbwiki.cc/东方茨歌仙/设定资料图#影华扇_鬼华扇']]
+  }
+);

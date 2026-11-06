@@ -83,6 +83,10 @@
     "sha256": "7754a6a49c21b4f9640e54d425df192fb2fb4554529057255b97b56fd865b529",
     "size": 2717831
   },
+  "curse-child.png": {
+    "sha256": "3f12d0c9c1f3de837e6f3bbb472556964dfec43a971e4b0f9dd3ffa7abee9bac",
+    "size": 2925470
+  },
   "daiyousei.png": {
     "sha256": "e3b24bfa68665c36f6bfec9bf12597f6d6804025e8074096e3525d7f0d365c32",
     "size": 2379510
@@ -94,6 +98,14 @@
   "dormouse.png": {
     "sha256": "0e82fe5a36a9bd96311816ede2a5f24ece26d425b187bcc6f8188b355a52bc1c",
     "size": 2857827
+  },
+  "dream-disks.png": {
+    "sha256": "5e25f72e480fa7312047846369753b237cec7231a5304012033186256c196ce1",
+    "size": 2179517
+  },
+  "dream-turrets.png": {
+    "sha256": "cec83c5a47de619a53fa86812aa6d1825741f6b591ba2f1b73c00df1d0fee866",
+    "size": 2158113
   },
   "eika.png": {
     "sha256": "dcb7e8d984789790e69632008bc317a8c8f3b708dc53e8752cbb5d7b91f059af",
@@ -127,9 +139,17 @@
     "sha256": "9232aef1c9d4335d6f99aba1eb369d27da07ce160492dc4d97002aec4369564a",
     "size": 2877987
   },
+  "evil-eye-sigma.png": {
+    "sha256": "f9e06459b1cbb18407d6765ff49d8cd8ab7afce9ed8adfcb0f6e831f42f415ec",
+    "size": 2732875
+  },
   "flandre.png": {
     "sha256": "1b7041fa8226b4a1cd686052eb6377134d3e6674aad078dcb179e9d98f32154f",
     "size": 2621244
+  },
+  "flower-tank.png": {
+    "sha256": "28f32b8f0dad182defcfc2c2abacdc213446c3f67bbc42e14795631dd9f80845",
+    "size": 2696435
   },
   "fortune-teller.png": {
     "sha256": "534f70f2f6b63604865fa7e913e0b28a4a3eb06669ef2f225f10034f8207f738",
@@ -186,6 +206,10 @@
   "hungry-villager.png": {
     "sha256": "9dd8a6dd2ca85031d62189a09769691033c5807aedad138977db4fd6a4b87e74",
     "size": 2528440
+  },
+  "ibaraki-arm.png": {
+    "sha256": "0014bb1b2a518522acb255b546f6bd280f675a2220f0214bf663319793148d46",
+    "size": 2618164
   },
   "ichirin.png": {
     "sha256": "4625d954a72e9f803bf1f87050f89d2751b00d64f5a200c2477440b24dd8dd56",
@@ -611,6 +635,10 @@
     "sha256": "5e22a279e4ad3306da9e072cc4e7e34c8c28c8553f0dbfc548c3a814ebc18497",
     "size": 3640302
   },
+  "scene-avici-box.png": {
+    "sha256": "cc45105a562d908485ce54ed53d0d3cf577f44709d297fe9d0ef01e08a73518e",
+    "size": 3233504
+  },
   "scene-backdoor-stage.png": {
     "sha256": "5c35b9aa00d601537fb4487b889b0fd1c23ad22311876754e60456685b63184c",
     "size": 3406092
@@ -650,6 +678,10 @@
   "scene-dragon-scroll.png": {
     "sha256": "8d95dbef3fed1b926c90ee26a4746a1efa4f6402ead3e2c9f6f36f85ea915778",
     "size": 3806267
+  },
+  "scene-dream-battery.png": {
+    "sha256": "4c0916749314fedb2f759231cca7c0d2eeb6b8b194cc05866e9da2e16d046131",
+    "size": 3847234
   },
   "scene-dream-corridor.png": {
     "sha256": "ee74861b4ae2f9e2e32acb9a26367b2f9be3a952b2a2f134e3ff6fcdfbb0d363",
@@ -907,6 +939,10 @@
     "sha256": "cc7854325b9f615bbcb16784ebb0ef24b82cc6ed24d9c65adb46197e54cefc9b",
     "size": 3561549
   },
+  "scene-rika-shrine-track.png": {
+    "sha256": "a19a9691116c30cc3c7a8d9357eaf507a16d18a0e384277ae3b31018be440f6e",
+    "size": 4073966
+  },
   "scene-rika-workshop.png": {
     "sha256": "68ae7757aeb1c1e3e49ac38bcd4923e65d7e5acf34e1ce1517a5808f8711b2eb",
     "size": 3486764
@@ -950,6 +986,10 @@
   "scene-shrine-guardian.png": {
     "sha256": "c9a956698e68f1ab81724ce8ad9f3c1f7a35029960df482ed2909b3c10bc741a",
     "size": 3637474
+  },
+  "scene-sigma-dream.png": {
+    "sha256": "9d81d5cb6129918a80c68fe0d7d8a8393b942aa3dd5502a4b570c99b8c215fa9",
+    "size": 3381934
   },
   "scene-singyoku-threshold.png": {
     "sha256": "fbde0afa01f4a5b8f2ed195386a08e0634e2a8cf6cee86386c27a98d6db847ef",
@@ -1010,6 +1050,10 @@
   "scene-unshou-riverside.png": {
     "sha256": "6cd2463130f8fbe7f4a11d11135e21a0204fb2dc721745749f9f10f730c92a7a",
     "size": 3683937
+  },
+  "scene-violet-threshold.png": {
+    "sha256": "366b55f0a678b1ab2b275f2bc2e2e1134f07b056c26ebade300f13332180e28f",
+    "size": 3993772
   },
   "scene-winter-whisper.png": {
     "sha256": "1b49608825b0cd6a4564eff698d46306c53ada693fa7baaf830c168b39aa598b",
@@ -1074,6 +1118,10 @@
   "shrine-kitsune.png": {
     "sha256": "1fd1286d39a51737827e5acf957498aa2353416fb4503113a3980c5c8c6e2a1a",
     "size": 2407509
+  },
+  "shrine-mid-tank.png": {
+    "sha256": "e815b8e419215095a7256b256aa295c7c9fb70b613dffe8fd0dd7b256557a031",
+    "size": 2859732
   },
   "singyoku.png": {
     "sha256": "69396a5a5fe61c2781be5cca970db5683696888764d978850ae2bbdf2b708325",
@@ -1158,6 +1206,10 @@
   "wakasagihime.png": {
     "sha256": "c346437e0348be41393e707bade65a2094e9104206ddaadfc70c7b894717dd58",
     "size": 2983479
+  },
+  "winged-midboss.png": {
+    "sha256": "8a09ef2655edefed78fe6bff31c167ce666c2730b66d68dc089a37c49d664953",
+    "size": 2707093
   },
   "world-boundary.png": {
     "sha256": "e8b6586dde01d1b2e74e44565a7cf4598e4c7fc44069733f982998ba66305b43",

@@ -1004,3 +1004,60 @@ window.GENSOKYO.trails.push(
     note:'按第三十、三十六、三十七话阅读，秋日与雪日分别成图。'
   }
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'shrine-mid-tank':{place:null,related:['rika','flower-tank','reimu'],work:'th02',line:'在第一面先认方形履带，再去关底比较 Flower～战车。'},
+  'flower-tank':{place:null,related:['rika','shrine-mid-tank','evil-eye-sigma'],work:'th02',line:'沿圆盘与绿甲辨认一面关底，再读里香在 Extra 的飞行载具。'},
+  'curse-child':{place:null,related:['meira','reimu','dream-disks'],work:'th02',line:'从紫袖与咒字弹读起，辨认第二面道中和明罗的关底出场。'},
+  'dream-disks':{place:null,related:['dream-turrets','reimu','winged-midboss'],work:'th02',line:'沿第三面的顺序，先辨一对赤盘，再看关底固定炮列。'},
+  'dream-turrets':{place:null,related:['dream-disks','reimu'],work:'th02',line:'按原画数一数五个炮头，留意两端与中间的高度变化。'},
+  'winged-midboss':{place:null,related:['marisa','mima','reimu'],work:'th02',line:'用白翼和蓝袍认出第四面道中，再从紫火门廊画页看红发魔理沙。'},
+  'evil-eye-sigma':{place:null,related:['rika','flower-tank','reimu'],work:'th02',line:'从异空的方格走到 Extra 关底，看里香的另一台载具。'},
+  'ibaraki-arm':{place:null,related:['kasen','reimu','tenshi','komachi'],work:'hermit-book',line:'在第十卷设定页区分影华扇与鬼华扇。此条涉及第四十九话的身份剧情。'}
+});
+{
+  const book=window.GENSOKYO.books.find(book=>book.id==='th02');
+  book.ids.push('shrine-mid-tank','flower-tank','curse-child','dream-disks','dream-turrets','winged-midboss','evil-eye-sigma');
+  book.caption='1997 年的 PC-98 作品。图鉴补收道中、关底与载具。红发魔理沙可在「紫火门廊」里辨认，人物主图仍采用各自所标注的版本。';
+  window.GENSOKYO.books.find(book=>book.id==='hermit-book').ids.push('ibaraki-arm');
+  window.GENSOKYO.characterLinks.rika.related.push('flower-tank','evil-eye-sigma');
+  window.GENSOKYO.characterLinks.kasen.related.push('ibaraki-arm');
+}
+window.GENSOKYO.bonds.push(
+  {title:'第一面有两副不同的车身',label:'同关并读 / 里香与两辆战车',ids:['rika','shrine-mid-tank','flower-tank'],relation:'方形履带车先在道中出现，里香在关底驾驶圆盘造型的 Flower～战车。',description:'对照两张原像素图，分别寻找方盖、履带、阴阳纹与绿甲。',color:'red',symbol:'轮'},
+  {title:'从地面载具换到异空飞行',label:'原作机体 / 里香与邪眼西格玛',ids:['rika','flower-tank','evil-eye-sigma'],relation:'里香在第一面和 Extra 出现，两个关底用的是不同机体。',description:'异空画页可以对照飞行机体和里香的 Extra 衣装。',color:'violet',symbol:'翼'},
+  {title:'同一关里的双盘与炮列',label:'关卡次序 / 幻梦界',ids:['dream-disks','dream-turrets','reimu'],relation:'《封魔录》第三面道中是双盘，关底是并排的固定炮头。',description:'画页将先后出场的单位分别画在峡道两端。',color:'violet',symbol:'盘'},
+  {title:'第四面先白翼，后红发',label:'关卡次序 / 魔天使与魔理沙',ids:['winged-midboss','marisa','reimu'],relation:'蓝袍白翼单位在道中，红发魔理沙在关底。',description:'两张原作像素图各自保留衣色与剪影，门廊画页把它们并置。',color:'green',symbol:'羽'},
+  {title:'木盒前出现的熟悉身影',label:'原作对峙 / 影华扇与灵梦',ids:['ibaraki-arm','kasen','reimu'],relation:'灵梦在无间地狱面对与华扇相似的身影，漫画给出「茨木童子之臂」的名牌。',description:'第十卷设定页另行对照影华扇与融合后的鬼华扇。含身份剧情。',color:'red',symbol:'封'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'道中与关底',en:'Midstage and stage end',text:'《封魔录》里，同一关可以先遇见道中首领，再遇到关底对手。第一面的方形履带车和 Flower～战车是两次出场。',source:'https://thbwiki.cc/东方封魔录'},
+  {term:'旧作里的关卡通称',en:'Stage-based names and fan names',text:'诅咒子、幻梦盘和魔天使属于玩家通称。旧作图鉴同时保留第二、三、四面的道中位置，便于用原作顺序查找。',source:'https://thbwiki.cc/东方封魔录/其他角色'},
+  {term:'幻梦界与固定炮台',en:'The Dream World’s fixed battery',text:'幻梦界是《封魔录》第三面的场景。第三面道中的双盘与关底固定炮台可以分别对照原作画面。',source:'https://thbwiki.cc/官方场景（旧作）#幻梦界'},
+  {term:'异空与 Extra',en:'The Extra stage and the strange space',text:'异空是《封魔录》Extra 关卡的舞台。背景有分层的方块纹理，里香在此使用飞行载具邪眼西格玛。',source:'https://thbwiki.cc/官方场景（旧作）#异空'},
+  {term:'影华扇',en:'Shadow Kasen',text:'《东方茨歌仙》第十卷设定页上半画影华扇，特征包括反向分发、深裙和脚镣。下半另列融合后的鬼华扇。',source:'https://thbwiki.cc/东方茨歌仙/设定资料图#影华扇_鬼华扇'}
+);
+window.GENSOKYO.trails.push(
+  {
+    id:'rika-machines',number:'23',name:'从紫野的履带读到异空的白环',tag:'封魔录 / 三台机体',
+    image:'scene-rika-shrine-track',intro:'先认第一面的两辆地面战车，再比较 Extra 里的紫翼飞行载具。',
+    steps:[['shrine-mid-tank','辨认第一面途中深红方盖'],['flower-tank','比较关底的阴阳纹圆盘'],['rika','读两场相遇的驾驶者与不同衣装'],['evil-eye-sigma','把视线从履带抬到异空的白环']],
+    scenes:['rika-shrine-track','sigma-dream'],lore:'rika-machines',work:'th02',
+    listening:[["She's in a temper!!",'第一面里香的主题曲','https://thbwiki.cc/里香'],['战车娘所做的梦','Extra 里香的主题曲','https://thbwiki.cc/里香']],
+    note:'第一面与 Extra 分开阅读。两张图页从旧作关卡和像素图取材。'
+  },
+  {
+    id:'dream-border-bosses',number:'24',name:'沿赤盘和炮列走到紫火门廊',tag:'封魔录 / 第二到第四面',
+    image:'scene-dream-battery',intro:'从二面道中的紫袖开始，在幻梦界辨认双盘与五门炮台，再去第四面看白翼和红发。',
+    steps:[['curse-child','在第二面辨认紫袖与咒字弹'],['meira','找到第二面的关底对手'],['dream-disks','进入第三面，认出道中双盘'],['dream-turrets','看关底炮台的五头横排'],['winged-midboss','在第四面道中找白羽'],['marisa','对照门廊画页里的早期红发形象']],
+    scenes:['meira-rainpath','dream-battery','violet-threshold'],lore:'dream-border-bosses',work:'th02',listening:[],
+    note:'按原作关卡次序组织阅读。图页中的峡道和门廊为同人取景。'
+  },
+  {
+    id:'avici-arm',number:'25',name:'沿着木盒追到无间地狱',tag:'茨歌仙 / 第十卷剧情',
+    image:'scene-avici-box',intro:'从灵梦失踪的追查走向木盒、黑影和第十卷的造型设定。',
+    steps:[['komachi','从三途河边的问话开始'],['tenshi','顺着失踪线索继续找人'],['reimu','读木盒随灵梦来到无间地狱的分镜'],['ibaraki-arm','辨认黑影化出的直角和脚镣'],['kasen','用设定稿继续对照后篇的形态']],
+    scenes:['avici-box'],lore:'avici-arm',work:'hermit-book',listening:[],
+    note:'并读第四十八话、第四十九话上下与单行本第十卷设定页，含身份剧情。'
+  }
+);

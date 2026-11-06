@@ -339,3 +339,46 @@ window.GENSOKYO_LORE.push(
   }
 );
 window.GENSOKYO_LORE.find(page=>page.id==='letters-and-supper').related.push('fortune-and-rumors');
+
+window.GENSOKYO_LORE.push(
+  {
+    id:'rika-machines',mark:'轮',name:'里香的三种机体',en:'Rika’s three machines',
+    title:'从红色履带到空中白环。',color:'#8d6e54',image:'scene-rika-shrine-track',
+    people:['rika','shrine-mid-tank','flower-tank','evil-eye-sigma','reimu'],places:[],related:['eastern-wonderland','dream-border-bosses'],
+    alt:'砖道两端分别立着方形战车和绿甲圆盘战车',
+    lead:'把《封魔录》一面道中、一面关底和 Extra 的三个轮廓并排辨认。',
+    paragraphs:['第一面途中，先出现里香制作的方形战车。到了关底，里香驾驶中央带阴阳纹的 Flower～战车。方盖、圆盘、履带和绿甲比颜色更容易用来辨认两辆车。','在独立的 Extra 关卡，里香再度出场，这次用的是邪眼西格玛。原作的浅环、红瞳和紫翼连在一起，轮廓从地面的低伏机身转向空中。'],
+    facts:[['一面道中','深红方盖和双履带。'],['一面关底','Flower～战车的灰圆盘和绿甲。'],['Extra 关底','邪眼西格玛的单眼、紫翼和白环。']],
+    correction:'紫野和异空按旧作原图及关卡阅读。新画的砖路和浮台为画册取景。',
+    perspective:'先按关卡分清三台机体，再从原作头像比较里香在一面和 Extra 的衣饰。',
+    caption:'第一幅画并置了同一关先后遇到的两台车。',
+    sources:[['封魔录 · 游戏与关卡','https://thbwiki.cc/东方封魔录'],['里香 · 三台载具原图','https://thbwiki.cc/里香'],['旧作场景 · 异空','https://thbwiki.cc/官方场景（旧作）#异空']]
+  },
+  {
+    id:'dream-border-bosses',mark:'盘',name:'走到幻梦界的另一边',en:'Through the Dream World',
+    title:'从一对红盘，读到紫帽下的红发。',color:'#7c6d86',image:'scene-dream-battery',
+    people:['curse-child','meira','dream-disks','dream-turrets','winged-midboss','marisa','mima'],places:[],related:['rika-machines','eastern-wonderland','old-flight'],
+    alt:'黑紫峡道里有两个红心盘，远方一排灰炮头',
+    lead:'沿第二面到第四面的道中与关底辨认旧像素。',
+    paragraphs:['第二面夜色里，诅咒子以咒字弹为辨认线索。到第三面幻梦界，途中出现双盘，关底则是沿台基排开的固定炮台。这里把分开的两次出场放在同一张风景里。','第四面道中换成蓝袍白翼的身影，关底则出现早期红发的魔理沙。图卡和画页分别标明玩家通称与原作出场位置，从旧作头像也能看出熟悉人物的早期样貌。'],
+    facts:[['二面道中','暗脸、紫袍与咒字弹。'],['三面','双盘在道中，固定炮台在关底。'],['四面','蓝袍白翼先登场，后到红发魔理沙。']],
+    correction:'幻梦界作为旧作关卡场景独立阅读。本页不替它在新版地图上指认路线。',
+    perspective:'通称用来帮助搜索；关卡位置用来辨认出场次序。',
+    caption:'画页把原作的暗底与红紫纹理转成峡道风景。',
+    sources:[['封魔录 · 未命名首领及像素图','https://thbwiki.cc/东方封魔录/其他角色'],['旧作场景 · 幻梦界','https://thbwiki.cc/官方场景（旧作）#幻梦界'],['魔梨沙 · 游戏造型','https://thbwiki.cc/魔梨沙']]
+  },
+  {
+    id:'avici-arm',mark:'封',name:'木盒与无间地狱',en:'The box and Avici',
+    title:'两张相似的脸，在设定稿上各有位置。',color:'#7b6a78',image:'scene-avici-box',
+    people:['komachi','tenshi','kasen','reimu','ibaraki-arm'],places:[],related:['ennichi-and-snow','kasen-weather','realms'],
+    alt:'灵梦抱着木盒，与影华扇隔着一片空地',
+    lead:'从仙邸的追查走到第四十九话的对峙。本页含第十卷剧情。',
+    paragraphs:['第四十八话从灵梦失踪后的追查展开。第四十九话前篇在无间地狱写到灵梦手中的盒子，也写到她遇见的身影如何从黑影变成一张熟悉的脸。','单行本第十卷的设定页把「影华扇」和「鬼华扇」分别画在上、下。图卡取前者，保留偏分短发、直角、深裙和脚镣。后篇里的融合形态可以沿原作继续辨认。'],
+    facts:[['无间地狱','对峙发生的舞台。'],['影华扇','封印右臂显形的样貌。'],['第十卷设定稿','上下分别记录影华扇与鬼华扇。']],
+    correction:'无间地狱保留为独立场景。画页中的两人站位和光线属于同人构图。',
+    perspective:'先读第四十八话的追查，再读前、后篇，并用单行本设定稿区分形态。',
+    caption:'这一幅把前篇里的持盒和显形并置，保留大块空地。',
+    sources:[['茨歌仙第四十八话 · 追查','https://thbwiki.cc/东方茨歌仙/第四十八话'],['第四十九话上 · 显形','https://thbwiki.cc/东方茨歌仙/第四十九话上'],['第四十九话下 · 后篇','https://thbwiki.cc/东方茨歌仙/第四十九话下'],['第十卷 · 影华扇与鬼华扇设定','https://thbwiki.cc/东方茨歌仙/设定资料图#影华扇_鬼华扇']]
+  }
+);
+window.GENSOKYO_LORE.find(page=>page.id==='eastern-wonderland').related.push('rika-machines','dream-border-bosses');
