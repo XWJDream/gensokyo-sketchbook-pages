@@ -1061,3 +1061,26 @@ window.GENSOKYO.trails.push(
     note:'并读第四十八话、第四十九话上下与单行本第十卷设定页，含身份剧情。'
   }
 );
+
+window.GENSOKYO.trails.push(
+  {
+    id:'borrowed-moon',number:'26',name:'循着假月走进迷途竹林',tag:'永夜抄 / 竹林与永远亭',
+    image:'scene-bamboo-lantern-v2',intro:'沿竹林夜路读两件事。谁换了月亮，又是谁把这一夜延长？',
+    steps:[['yukari','从发现月亮不对的妖怪视角开始'],['reimu','看一对搭档如何踏上调查'],['reisen','在永远亭门前辨认守门的月兔'],['eirin','从第六面读换月的缘由'],['kaguya','沿另一终盘读被保护的人']],
+    scenes:['bamboo-lantern'],lore:'borrowed-moon',work:'th08',listening:[],
+    note:'第六面有两条终盘路线，导读把它们并排阅读。竹林夜路沿用画册已有场景。'
+  },
+  {
+    id:'two-newsrooms',number:'27',name:'带着两份报纸上妖怪之山',tag:'文花帖 DS / 摄影与取材',
+    image:'scene-tengu-notebook',intro:'从同一个取材对象出发，比较文的镜头、果的念写和刊登后的文字。',
+    steps:[['aya','从《文文。新闻》的取材者开始'],['hatate','用果的念写相机对照另一种取材方式'],['momiji','读两位记者对同一位山中住民的照片评语']],
+    scenes:['tengu-notebook'],lore:'two-newsrooms',work:'th125',listening:[],
+    note:'先读游戏附带故事，再按同一张符卡比较两份评语。山中双人场景沿用画册已有插图。'
+  }
+);
+window.GENSOKYO.glossary.push(
+  {term:'假月',en:'The false moon',text:'《永夜抄》中，八意永琳用幻象替换眼前的满月，以隔断地月之间的通道。调查者为争取时间延长了夜晚，两件事可分别读。',source:'https://thwiki.cc/附带文档:东方永夜抄/角色设定'},
+  {term:'永夜抄的两条终盘',en:'Imperishable Night’s two final routes',text:'第六面分为 Final A 与 Final B，对应八意永琳与蓬莱山辉夜。从游戏对话阅读时，留意当前走的是哪条路线。',source:'https://thbwiki.cc/东方永夜抄'},
+  {term:'花果子念报',en:'Kakashi Spirit News',text:'姬海棠果的报纸。她平时用念写取材，在《文花帖 DS》的附带故事里决定亲自追踪射命丸文，寻找新的报道素材。',source:'https://thwiki.cc/附带文档:东方文花帖DS/Omake'},
+  {term:'符卡照片评语',en:'Spell-card photo comments',text:'《文花帖 DS》里，文与果会为同一个拍摄对象留下不同评语。沿同一符卡并排阅读，可以看出她们各自关注的细节。',source:'https://thwiki.cc/东方文花帖DS/Level_4'}
+);

@@ -382,3 +382,37 @@ window.GENSOKYO_LORE.push(
   }
 );
 window.GENSOKYO_LORE.find(page=>page.id==='eastern-wonderland').related.push('rika-machines','dream-border-bosses');
+
+window.GENSOKYO_LORE.push(
+  {
+    id:'borrowed-moon',mark:'月',name:'竹林中的假月与长夜',en:'The false moon and the long night',
+    title:'两种术，让同一夜变得不同。',color:'#807886',image:'scene-bamboo-lantern-v2',
+    alt:'影狼与赤蛮奇提灯走过夜间竹径',lead:'《永夜抄》的异变可以分成换月与延夜两条线索。',
+    paragraphs:[
+      '一边是永远亭为了隔断地月通道而换上的假月。另一边是察觉月相异常的妖怪们拉上熟识的人类，延长夜晚来争取调查时间。顺着两边的行动读，便能分清月亮与时间分别发生了什么。',
+      '竹林把搭档们引到永远亭。进入宅邸后，游戏第六面分作两条终盘，分别以永琳和辉夜为中心。两条路线的对话可以一起查阅，也可以先读自己熟悉的一位。'
+    ],
+    facts:[['假月','永琳制造幻象，隐藏真正的满月。'],['延夜','调查一方延长夜晚，争取查明异变的时间。'],['终盘','Final A、Final B 分开看对话。']],
+    correction:'迷途竹林、永远亭和月都是不同舞台。画页中的提灯和竹径为同人取景。',
+    perspective:'这篇先理清各方行动，再看角色设定和不同终盘的对话。',
+    caption:'沿用「迷途竹林 · 提灯经过的夜路」，画中是影狼与赤蛮奇。',
+    people:['reimu','yukari','reisen','eirin','kaguya'],places:['bamboo','eientei'],related:['moon','dreams','spellcards'],
+    sources:[['上海爱丽丝幻乐团 · 东方永夜抄','https://www16.big.or.jp/~zun/html/th08top.html'],['永夜抄 · 原作角色设定与译文','https://thwiki.cc/附带文档:东方永夜抄/角色设定'],['永夜抄 · 游戏剧情与终盘索引','https://thbwiki.cc/东方永夜抄']]
+  },
+  {
+    id:'two-newsrooms',mark:'报',name:'天狗的两份报纸',en:'Two tengu newspapers',
+    title:'同一张照片，可以写成两条新闻。',color:'#80715e',image:'scene-tengu-notebook',
+    alt:'山风里，文与果各自举着取材用的器材',lead:'沿《东方文花帖 DS》的附带故事和照片评语认识两位记者。',
+    paragraphs:[
+      '射命丸文经营《文文。新闻》，姬海棠果经营《花果子念报》。附带故事中的果原本常用念写取得照片，后来跟着文观察她的取材过程，也试着直接走到现场。',
+      '第四层 4-6 的两条评语都写犬走椛。文关注她怎样用招式驱赶闯入者，果则留意白狼天狗的视力与嗅觉，认为这些本领值得报道。'
+    ],
+    facts:[['文','可以从她的照片评语读到现场观察。'],['果','在附带故事里重新考虑只靠念写取材的做法。'],['并读','选同一张符卡，比较文和果的两条评语。']],
+    correction:'照片评语代表写作者当时的看法。取材图页中的双人站位由画册安排。',
+    perspective:'以原作附带故事和符卡照片评语为主，先分清发言的是文还是果。',
+    caption:'沿用「山风取材 · 两份报纸的视角」画页。',
+    people:['aya','hatate','momiji'],places:['mountain','tengu'],related:['village','spellcards','mountain-paths'],
+    sources:[['文花帖 DS · 原作附带故事与译文','https://thwiki.cc/附带文档:东方文花帖DS/Omake'],['文花帖 DS · 第四层照片评语','https://thwiki.cc/东方文花帖DS/Level_4']]
+  }
+);
+window.GENSOKYO_LORE.find(c=>c.id==='moon').related.push('borrowed-moon');

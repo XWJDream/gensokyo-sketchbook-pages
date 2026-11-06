@@ -56,3 +56,147 @@
  .lore-tab small{display:none}
 }
 @media(max-width:400px){.filters{gap:0 13px}.filter,.catalog-regions summary{font-size:11px}.character-card h3{font-size:20px}.chapter-index nav{gap:20px}}
+
+.index-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 31rem;
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.index-search > span { flex: none; }
+.index-search input {
+  min-width: 0;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+.index-search input:focus-visible,
+.lore-directory summary:focus-visible,
+.lore-directory .lore-tab:focus-visible,
+.book-cast-overflow summary:focus-visible,
+.glossary summary:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+.index-empty { padding: 16px 0; color: var(--muted); font-size: 13px; }
+
+.lore-reader { display: block; }
+.lore-directory {
+  border-bottom: 1px solid var(--line);
+  background: #f3ede1;
+}
+.lore-directory > summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 15px;
+  align-items: center;
+  min-height: 54px;
+  padding: 10px 22px;
+  list-style: none;
+  cursor: pointer;
+}
+.lore-directory > summary::-webkit-details-marker { display: none; }
+.lore-directory-number {
+  padding: 3px 7px;
+  border: 1px solid var(--line);
+  color: var(--red);
+  font: 11px/1.5 Georgia, serif;
+  white-space: nowrap;
+}
+.lore-directory summary strong { font: 500 16px/1.45 var(--serif); }
+.lore-directory-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--red);
+  font-size: 13px;
+  white-space: nowrap;
+}
+.lore-directory-action i {
+  width: 6px;
+  height: 6px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  transform: rotate(45deg) translateY(-2px);
+}
+.lore-directory[open] .lore-directory-action i { transform: rotate(225deg); }
+.lore-directory-body { padding: 0 22px 16px; }
+.lore-directory .lore-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-block-size: 17rem;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  padding: 3px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.lore-directory .lore-tab {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  min-height: 48px;
+  padding: 8px 9px;
+  border: 0;
+  border-inline-start: 2px solid transparent;
+}
+.lore-directory .lore-tab > span:first-child {
+  min-width: 23px;
+  margin: 0;
+  font-size: 20px;
+}
+.lore-directory .lore-tab[aria-selected="true"] {
+  border-inline-start-color: var(--chapter-color);
+  background: #eee6d8;
+  color: var(--ink);
+}
+.lore-directory .lore-tab:focus-visible { outline-offset: -2px; }
+.lore-essay { max-inline-size: 43em; }
+#lore-chapter-title, .trail-directory li, .glossary details { scroll-margin-top: 80px; }
+
+.book-grid { align-items: start; }
+.book-cast-overflow { margin-top: 7px; }
+.book-cast-overflow summary {
+  width: fit-content;
+  padding: 6px 2px 6px 0;
+  color: var(--red);
+  font-size: 12px;
+  cursor: pointer;
+}
+.book-cast-overflow .book-cast { margin-top: 4px; }
+.notebook-index { min-width: 0; }
+.notebook-index .glossary summary { padding-block: 14px; }
+.notebook-index .reading-shelf, .trail-directory-panel .reading-shelf { margin-top: 12px; }
+
+.trail-content { min-width: 0; }
+.trail-content h4 { line-height: 1.4; }
+.trail-steps { gap: 11px; margin-block: 16px; }
+.trail-scenes, .trail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+.trail-scenes { padding-top: 12px; }
+.trail-scenes b { flex-basis: 100%; }
+.trail-links { padding-block: 12px; }
+.trail-links a { font-size: 12px; }
+
+@media (max-width: 760px) {
+  .trail-content { padding: 16px; }
+  .lore-directory > summary { gap: 8px; padding-inline: 10px; }
+  .lore-directory summary strong { font-size: 14px; }
+  .lore-directory-action { gap: 5px; font-size: 12px; }
+  .lore-directory-number { padding-inline: 4px; font-size: 10px; }
+  .lore-directory-body { padding-inline: 10px; }
+  .lore-directory .lore-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lore-directory .lore-tab { gap: 5px; padding-inline: 5px; }
+  .lore-directory .lore-tab > span:first-child { font-size: 17px; min-width: 18px; }
+}
