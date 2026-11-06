@@ -904,3 +904,28 @@ window.GENSOKYO.trails.push({
   scenes:['kume-parcel','kanda-zelkova'],lore:'flying-home',work:'hermit-book',listening:[],
   note:'阅读顺序取自第十话。画面把包裹归来和山中辨路分别放在两幅图里。'
 });
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'fox-student':{place:'suzunaan',related:['kosuzu','akyuu'],work:'scrollery',line:'先看寺子屋的纸门，再看小铃怎样用空白本换来写过的笔记。'},
+  'kosuzu-father':{place:'suzunaan',related:['kosuzu','hakusen'],work:'scrollery',line:'从第二十话的还书登记读起，找一找父亲带回的猫画。'},
+  hakusen:{place:null,related:['kosuzu','akyuu','kosuzu-father'],work:'scrollery',line:'读阿求在第二十话里如何解释白仙、猫画和鼠害。'},
+  kutsutsura:{place:'village',related:['marisa','kosuzu','akyuu'],work:'scrollery',line:'从小铃丢失的鞋走到瓜田，再看魔理沙怎样辨认黑影。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='scrollery').ids.push('fox-student','kosuzu-father','hakusen','kutsutsura');
+window.GENSOKYO.bonds.push(
+  {title:'一本旧笔记，换一本新笔记',label:'原作相遇 / 小铃与年幼的妖狐',ids:['kosuzu','fox-student','akyuu'],relation:'小铃以空白本让狐狸继续写字，旧本则留给她阅读。',description:'第十九话可以对照阿求看到的借书和小铃自己安排的交换。',color:'red',symbol:'笺'},
+  {title:'从书箱翻出一幅猫画',label:'原作线索 / 铃奈庵与白仙',ids:['kosuzu-father','kosuzu','hakusen'],relation:'父亲带回的猫画让小铃与阿求谈到白仙。',description:'第二十话先写父亲归店，随后再由猫画展开鼠害故事。',color:'green',symbol:'画'},
+  {title:'鞋比主人先到了瓜田',label:'原作调查 / 沓颊、阿求与魔理沙',ids:['kutsutsura','akyuu','marisa'],relation:'阿求拾到小铃的鞋，魔理沙去田里查找失瓜的原因。',description:'鞋是调查的起点，黑影的来历还要结合魔理沙读过的图卷。',color:'violet',symbol:'沓'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'狐狸的笔记本',en:'The fox student’s notebook',text:'《铃奈庵》第十九话里，小铃把空白本借给在纸门上写字的妖狐，又用新本换取写过的本子。她因而得到用狐狸文字写的妖魔书。',source:'https://thbwiki.cc/东方铃奈庵/第十九话'},
+  {term:'白仙的猫画',en:'Hakusen’s cat picture',text:'《铃奈庵》第二十话里，阿求猜测白仙能操纵鼠群，猫画是他给鼠群留下的记号。小铃从父亲购入的东西里找到的旧画，引出了这段说法。',source:'https://thbwiki.cc/东方铃奈庵/第二十话'},
+  {term:'瓜田李下',en:'The melon field and the plum tree',text:'成语用容易惹人怀疑的举动提醒人避嫌。《铃奈庵》第十三话借它把失鞋、瓜田和沓颊的故事串了起来。',source:'https://thbwiki.cc/东方铃奈庵/第十三话'}
+);
+window.GENSOKYO.trails.push({
+  id:'suzunaan-clues',number:'18',name:'沿着三件小物走进铃奈庵',tag:'铃奈庵 / 笔记、猫画与鞋',
+  image:'scene-fox-notebooks',intro:'从瓜田的失物进村，在借书柜台读完两本笔记，再问一幅猫画从哪里来。',
+  steps:[['kutsutsura','从田里的失鞋与黑影开始'],['marisa','顺着她对旧图卷的记忆辨认沓颊'],['fox-student','读纸门上的两种文字'],['kosuzu','回到书铺，看小铃换出新本'],['kosuzu-father','从归店的书箱找一幅猫画'],['hakusen','沿画去读白仙与鼠害的旧闻']],
+  scenes:['melon-shadow','fox-notebooks','suzunaan-bookbox'],lore:'suzunaan-clues',work:'scrollery',listening:[],
+  note:'把第十三、十九、二十话按物件线索并读。画页为同人取景。'
+});

@@ -259,3 +259,36 @@ window.GENSOKYO_SCENES.push(
     sources:[['茨歌仙第十话 · 帚木的别天地','https://thbwiki.cc/东方茨歌仙/第十话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'fox-notebooks',batch:'37',image:'scene-fox-notebooks',
+    title:'新旧笔记本 · 铃奈庵的柜台',en:'Two notebooks at Suzunaan',
+    place:'suzunaan',tag:'铃奈庵 / 换笔记本',people:['fox-student','kosuzu'],
+    alt:'小妖狐站在铃奈庵柜台边，小铃看着一旧一新的两本线装笔记本',
+    lead:'旧本摆在阳光里，新本的纸还没写过。',
+    text:'两本封皮一深一浅。小铃把空白本留在柜台上，小妖狐带来写过的旧本。画页把原作里几次换本，收在一个安静的午后。',
+    basis:'第十九话交代小铃借出空白本、以新本换旧本的办法。店内布局、封皮颜色与采光为同人构图。',
+    sources:[['铃奈庵第十九话 · 新本换旧本','https://thbwiki.cc/东方铃奈庵/第十九话']]
+  },
+  {
+    id:'suzunaan-bookbox',batch:'37',image:'scene-suzunaan-bookbox',
+    title:'书箱与猫画 · 铃奈庵的夏日',en:'The book box and the cat picture',
+    place:'suzunaan',tag:'铃奈庵 / 夏日归店',people:['kosuzu-father','kosuzu','hakusen'],
+    alt:'低笠店主在放下的木箱旁站定，小铃看向借书铺柜台上画有猫的卷纸',
+    lead:'书箱刚刚放下，柜台上多了一张猫画。',
+    text:'店主带着一箱书回来。画册把第二十话的归店和随后提起的猫画放在同一幕，卷里的那只猫引向画僧白仙的旧闻。',
+    basis:'原作先画父亲归店，再由小铃向阿求提到父亲购入的猫画。两段事件合成一幅画，人物入口中的白仙是画的故事线索。',
+    sources:[['铃奈庵第二十话 · 鼠害之夏前篇','https://thbwiki.cc/东方铃奈庵/第二十话']]
+  },
+  {
+    id:'melon-shadow',batch:'37',image:'scene-melon-shadow',
+    title:'瓜畦里的黑影 · 一只落下的鞋',en:'A shadow in the melon rows',
+    place:'village',tag:'人类村落 / 瓜田线索',people:['kutsutsura','marisa','akyuu'],
+    alt:'蓝紫暮色下，瓜藤旁伏着一点浅眼的黑影，魔理沙停在田埂上，瓜叶下有一只鞋',
+    lead:'瓜藤抖了一下。魔理沙先看见了一点微白的眼光。',
+    text:'顺着鞋和瓜的线索，画一段田埂上的相遇。近处只见沓颊的黑影，村里的灯已经亮起来了。',
+    basis:'第十三话先写阿求捡到鞋，后画魔理沙在农田遇见沓颊。暮色、李枝以及鞋留在同一画面，是画册并置的线索。',
+    sources:[['铃奈庵第十三话 · 万宝槌的残余后篇','https://thbwiki.cc/东方铃奈庵/第十三话']]
+  }
+);

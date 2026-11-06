@@ -247,3 +247,22 @@ window.GENSOKYO_LORE.push({
   sources:[['茨歌仙第十话 · 包裹、大榉树和帚木','https://thbwiki.cc/东方茨歌仙/第十话'],['华扇的仙界 · 仙邸资料','https://thbwiki.cc/华扇的仙界']]
 });
 window.GENSOKYO_LORE.find(page=>page.id==='mountain-paths').related.push('flying-home');
+
+window.GENSOKYO_LORE.push({
+  id:'suzunaan-clues',mark:'笺',name:'铃奈庵的纸、画与鞋',en:'Paper, pictures and a shoe',
+  title:'有些线索，要拿到柜台上才看得清。',color:'#927859',image:'scene-fox-notebooks',
+  alt:'铃奈庵的柜台上摆着两本线装笔记，小铃和尖耳妖狐各守一边',
+  lead:'从一只鞋、两本笔记和一幅猫画，读三次小铃身边的追索。',
+  paragraphs:[
+    '第十三话先写阿求在瓜田里发现鞋，又写魔理沙把线索和《百器徒然袋》里的沓颊联系起来。小铃没去瓜田，失物却在那里出现。单看一件证物，很容易把鞋的主人当成做事的人。',
+    '第十八、十九话，寺子屋纸门上的涂写让人不安。小铃把两种文字并读，发现它们可能是在记同一堂课，于是改用空白本接住妖狐的笔记。第二十话里，父亲带回的猫画则让小铃和阿求追问白仙的来历，以及一张画为什么会被当成防鼠的东西。'
+  ],
+  facts:[['鞋','失物出现在稗田家的田里，调查随后指向沓颊。'],['笔记本','小铃以新本换旧本，让纸门上的涂写停了下来。'],['猫画','阿求从书中找画僧的来历，并给出自己的解释。']],
+  correction:'三组线索分别来自不同话数。白仙的来历是阿求在故事中的推断，父亲与猫画同框是画册把先后两段情节放在一幕。',
+  perspective:'四张图卡都对照漫画黑白分镜。衣色、墨色和柜台陈设由画册补绘。',
+  caption:'这一幅取第十九话的换本故事。两本封皮的颜色用来区分新本和旧本。',
+  people:['kosuzu','fox-student','akyuu','kosuzu-father','hakusen','marisa','kutsutsura'],places:['suzunaan','village'],
+  related:['book-visitors','village'],
+  sources:[['铃奈庵第十三话 · 鞋与瓜田','https://thbwiki.cc/东方铃奈庵/第十三话'],['铃奈庵第十九话 · 妖狐的笔记','https://thbwiki.cc/东方铃奈庵/第十九话'],['铃奈庵第二十话 · 猫画来历','https://thbwiki.cc/东方铃奈庵/第二十话']]
+});
+window.GENSOKYO_LORE.find(page=>page.id==='book-visitors').related.push('suzunaan-clues');

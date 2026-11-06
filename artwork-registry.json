@@ -131,6 +131,10 @@
     "sha256": "534f70f2f6b63604865fa7e913e0b28a4a3eb06669ef2f225f10034f8207f738",
     "size": 2585795
   },
+  "fox-student.png": {
+    "sha256": "474cb433f713840edf9253a25a45cddb66eafee3b16f66b962aaf0334a690b42",
+    "size": 2345506
+  },
   "futo.png": {
     "sha256": "2145f7991a7fd8b1b8ff04984af578a0ecf4b3429a4a8fb01582aea15d0d9b53",
     "size": 3106046
@@ -150,6 +154,10 @@
   "hairclip-kappa.png": {
     "sha256": "7aaf313db65a6f3ff35cf7d7971b4f085d3373d9516917e835fdb8acf176a101",
     "size": 2560418
+  },
+  "hakusen.png": {
+    "sha256": "23beb8c2e98671f335b75a0a1f0517523b36790969493a2785e8a2dca1b8b409",
+    "size": 2691769
   },
   "hatate.png": {
     "sha256": "18180a456b03506d25dd0f09bd74c0a34fb162c29ca403cdaaf965b1a8abee53",
@@ -255,6 +263,10 @@
     "sha256": "d231850ccb4d7e2e9a2b7e1ab7fe7c6718ffddb4154f739e9152cfdc07a9617a",
     "size": 2735975
   },
+  "kosuzu-father.png": {
+    "sha256": "5e7e1268c86b5295deaf9e3ddd1edcd9233ff4fc3ba64f36e94156d73e44acc8",
+    "size": 2759724
+  },
   "kosuzu.png": {
     "sha256": "ef7be9e7bb551ab93e33e51884ff893564ea1ed5b94d6b940d1f7fe9b2f0a0bc",
     "size": 2545770
@@ -278,6 +290,10 @@
   "kutaka.png": {
     "sha256": "bd18587aabc8aa4a28e94f1438d071d242903d78f5d0f7b4d3445275d8e4a0ef",
     "size": 2682976
+  },
+  "kutsutsura.png": {
+    "sha256": "ac2790805e694f88d4ef282ff024b2d18d25ac81c4d0b3ccdc4153efa5cddc19",
+    "size": 2709291
   },
   "kyouko.png": {
     "sha256": "76320f656ef58739f4e347d3c3f711bcd9e41ab9c9c1e5f976e19dc319abca85",
@@ -639,6 +655,10 @@
     "sha256": "0fde9a94d98ce280ca1799137d411cab353b2e330a13dcea684af16fa8dc9ab3",
     "size": 3510520
   },
+  "scene-fox-notebooks.png": {
+    "sha256": "f899a3a84c0a8b49f40eb16c828fbe7fbb310a04c251db9f4ad96ea97f862c20",
+    "size": 4037543
+  },
   "scene-geidontei-supper.png": {
     "sha256": "6329b97b5dcd98512ed44f7de4de0ee49c5131786cf2217b0b40c1005fcd85f3",
     "size": 3065045
@@ -754,6 +774,10 @@
   "scene-meira-rainpath.png": {
     "sha256": "bdc8405c104cfa7ee9e16f23d93ac25c91ffe648418f5b3177acd9c0fd24e0db",
     "size": 3957870
+  },
+  "scene-melon-shadow.png": {
+    "sha256": "ae607d5bf4245e59a3e4ef4141c19a03ffb5c29a6bfe60ba1e61bdb0566e0165",
+    "size": 4093015
   },
   "scene-mermaid-lake.png": {
     "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
@@ -886,6 +910,10 @@
   "scene-subterranean-bridge.png": {
     "sha256": "e65447a0ca1493f77ebefa31db4d072c5204833bddec6e31ca21403ba024b6c1",
     "size": 3631637
+  },
+  "scene-suzunaan-bookbox.png": {
+    "sha256": "d214d4b71328e0041442d95a24501f16a25b1b1e288049045051ee7d120e44d2",
+    "size": 3868304
   },
   "scene-suzunaan.png": {
     "sha256": "57837e6927e783a18c3b592ebe1cd8be1321cc1748269687152f0bd748ef8a54",
