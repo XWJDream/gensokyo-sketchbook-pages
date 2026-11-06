@@ -561,3 +561,92 @@ window.GENSOKYO_LORE.push(
     sources:[['香霖堂外来韦编第八话 · 原作章节','https://thbwiki.cc/东方香霖堂/东方外来韦编第8话']]
   }
 );
+
+window.GENSOKYO_LORE.push(
+  {
+    id:'old-seal-memory',mark:'忆',name:'结界初立时的封印记忆',en:'A memory from the early barrier',
+    title:'同一段旧事，分别从觉传来的画面和妹红的话读起。',color:'#886e84',image:'scene-miko-memory',
+    alt:'宽袖的先代巫女立于纸符之间。',
+    lead:'先看谁让灵梦看见了过去，再翻到妹红所见的一幕。',
+    paragraphs:['《智灵奇传》第六章第十三话，觉把先代巫女封印瑞灵时的记忆传给灵梦。画页从其中选取长发束、宽袖和御币，用暮色与纸符画出旧事浮现的瞬间。','同章第十四话，妹红想起自己在结界初立时见过一位被追赶的巫女。她讲的经过与瑞灵的说法有出入，读到这里可以先记下是谁在讲。'],
+    facts:[['先代巫女','图卡指回忆里出现的这一位。'],['觉的记忆传递','第十三话，灵梦由此看见旧日封印。'],['妹红的目击','第十四话从另一处见闻切入。']],
+    correction:'画页的树影、纸符与光线为同人取景。',
+    perspective:'先辨讲述者，再比较记忆与说法之间的出入。',
+    caption:'宽袖和束尾长发来自原作分镜。',
+    people:['previous-miko','mizuchi','satori','reimu','mokou'],places:[],
+    related:['spirits-detective','boundary'],
+    sources:[['智灵奇传第六章第十三话','https://thbwiki.cc/东方智灵奇传/第六章第十三话'],['智灵奇传第六章第十四话','https://thbwiki.cc/东方智灵奇传/第六章第十四话']]
+  },
+  {
+    id:'steam-effigy',mark:'汽',name:'山麓巨影的来处',en:'Where the giant silhouette came from',
+    title:'早苗一路追着暖雾，最后才看见集市的展品。',color:'#a1775b',image:'scene-steam-festival',
+    alt:'早苗望向蒸汽里抬起双臂的红色巨偶。',
+    lead:'从早苗的猜想读到蒸汽怎样让手臂升降。',
+    paragraphs:['《非想天则》的早苗路线从山中的巨影开始。结局说明是诹访子请河童制作的集市展品，间歇泉蒸汽的压力能让双臂升降。','琪露诺路线也出现巨影和爱丽丝的巨大人偶试验。可以分别点开非想天则与歌利亚人偶，比较胸甲、双剑和原作的出场语境。'],
+    facts:[['巨影','早苗最初怀疑是巨大机器人。'],['蒸汽','原作结局交代手臂由压力带动。'],['未来水妖集市','巨偶作为受关注的展品出现。']],
+    correction:'原作彩图可见上半身，图卡和场景都用蒸汽遮住未见部分。',
+    perspective:'不同角色路线给出各自的猜想，先按一条路线读完，再回看另外的说法。',
+    caption:'雾中红色轮廓来自早苗结局彩图。',
+    people:['hisoutensoku','sanae','suwako','nitori','goliath','cirno'],places:['mountain'],
+    related:['dolls-and-companions','mountain-paths'],
+    sources:[['非想天则 · 东风谷早苗路线与结局','https://thbwiki.cc/游戏对话:东方非想天则/东风谷早苗']]
+  },
+  {
+    id:'storm-and-tracks',mark:'雷',name:'雷光与山林里的伤痕',en:'Lightning and tracks in the mountains',
+    title:'一次听来像枪响，一次在雷雨里闪光。',color:'#707e7b',image:'scene-lizard-storm',
+    alt:'蜥蜴伏在湿润的岩石上，华扇站在远处。',
+    lead:'从两段山林调查看华扇如何辨认不同的妖兽。',
+    paragraphs:['《茨歌仙》第十三话中，华扇发现村民的伤口更像是被兽咬。她循线到山里找出野铁炮，并谈及山童的游戏。','第二十四话另写反常雷雨和能招雷的蜥蜴。两篇的第一眼线索都容易误认，分别回到原作才看得出推理如何变化。'],
+    facts:[['野铁炮','图卡取四只猯同框的分镜。'],['雷蜥蜴','原作画出低伏姿势、尖鳞和长尾。'],['务光','漫画另有雷兽务光的故事，可并读比较。']],
+    correction:'野铁炮与雷蜥蜴出自不同话数。雨中画页只取雷蜥蜴一线。',
+    perspective:'先看现场留下的痕迹，再读华扇给出的解释。',
+    caption:'远处的电光与林地为同人构图。',
+    people:['nodeppou','thunder-lizard','kasen','mukou','koutei'],places:['mountain'],
+    related:['kasen-weather','mountain-paths'],
+    sources:[['茨歌仙第十三话 · 野铁炮','https://thbwiki.cc/东方茨歌仙/第十三话'],['茨歌仙第二十四话 · 雷蜥蜴','https://thbwiki.cc/东方茨歌仙/第二十四话']]
+  },
+  {
+    id:'story-within-a-story',mark:'帚',name:'旧宅故事里的两张面孔',en:'Two faces in the old-house tale',
+    title:'从当下目击转到旧宅回忆，先分清侍童出现在何处。',color:'#897260',image:'scene-novel-courtyard',
+    alt:'持扫帚的侍童与穿深衣的宅主分立院落两端。',
+    lead:'先读当下是谁看见了倒下的人，再去看旧故事里的两个人。',
+    paragraphs:['《铃奈庵》第四十一话把当下的证词、阿求的连载与猯藏转述的旧事接在一起。图鉴已有当下向魔理沙讲述的目击者，本次补画旧故事中持扫帚的侍童。','旧故事里的大老爷另有狸猫变装的情节。读到同一张面孔时，可以回到前后段落看是谁在讲、又是在讲哪一次相遇。'],
+    facts:[['当下的侍童','曾在门外见到异常。'],['旧故事的侍童','背身、腰后结和扫帚来自分镜。'],['大老爷','选用小髻和深衣的旧宅主形象。']],
+    correction:'旧宅场景以两张图卡作构图，补绘走廊与院中距离。',
+    perspective:'在证词、连载与旧故事切换时，留意讲述者。',
+    caption:'只画旧宅日常，线索集中在扫帚和两套轮廓。',
+    people:['memoir-servant','memoir-master','witness-page','akyuu','mamizou'],places:[],
+    related:['witness-at-gate','blank-page-and-jar'],
+    sources:[['铃奈庵第四十一话 · 当下目击与旧事','https://thbwiki.cc/东方铃奈庵/第四十一话']]
+  },
+  {
+    id:'village-weather-rumor',mark:'眼',name:'龙眼天气与街巷传闻',en:'Weather and word of mouth',
+    title:'天气线索有可见的颜色，末日传闻来自人的转述。',color:'#748176',image:'scene-dragon-square',
+    alt:'人里广场的龙形石像立在薄雾中。',
+    lead:'从龙眼的颜色读到人里另一段关于传闻的故事。',
+    paragraphs:['《求闻史纪》分别记述龙神与村中心的龙神石像。村里人用石像的龙眼颜色判断天气，第四十四话另出现让人留意外出的紫眼。','第三十四、三十五话写到村民听信末日传闻，有人到神社参拜，也有人买药。把这组章节并读，可以看清观察到的现象与沿街流传的解释各从何来。'],
+    facts:[['龙神','图卡对照《求闻史纪》插图。'],['石像','天气线索来自村里石像的龙眼。'],['参拜客','末日传闻线中一位未具名村民。']],
+    correction:'石像造型对照漫画插图，广场与阿求的站位由画册补绘。紫眼天气与末日传闻各有独立章节。',
+    perspective:'分别读阿求的记载、漫画的现场观察和角色的猜想。',
+    caption:'阿求与石像同框为画册安排。',
+    people:['dragon-god','akyuu','kosuzu','rumor-villager','reisen','reimu'],places:['village','shrine'],
+    related:['fortune-and-rumors','village'],
+    sources:[['求闻史纪 · 龙及村中的石像','https://thbwiki.cc/东方求闻史纪/龙/中日对照'],['铃奈庵第四十四话 · 紫眼天气','https://thbwiki.cc/东方铃奈庵/第四十四话'],['铃奈庵第三十四话 · 谣言前篇','https://thbwiki.cc/东方铃奈庵/第三十四话'],['铃奈庵第三十五话 · 谣言后篇','https://thbwiki.cc/东方铃奈庵/第三十五话']]
+  },
+  {
+    id:'doors-and-waystones',mark:'龛',name:'家里的帮手与路边的石像',en:'Household helpers and wayside stone',
+    title:'从座敷童子暂离的人家，走到另一篇路旁的石龛。',color:'#8b846c',image:'scene-house-help',
+    alt:'地精在廊边做家务，另一侧有一位短发座敷童子。',
+    lead:'先读村里为什么需要帮手，再到路口看两尊并坐的石像。',
+    paragraphs:['《茨歌仙》第十四话，八云紫从外面找来地精，希望弥补座敷童子暂离留下的空缺。村里人的反应与紫设想的有出入，故事后来交代了地精的新去处。','第二十三话在路旁画出两尊道祖神。画册保留石龛里的单髻和双髻，再与《锦上京》中取材于道祖神的驯子图卡并排读。'],
+    facts:[['地精','原作由紫从外面带来。'],['座敷童子','第十四话以暂离和归来带出村落的变化。'],['道祖神','图卡选择双尊石刻形象。']],
+    correction:'廊下同框与路口取景由画册安排，原作线索分属第十四话和第二十三话。',
+    perspective:'两篇分别从家中日常和路边信仰切入。',
+    caption:'地精的尖耳与座敷童子的短发各有出处。',
+    people:['hobgoblin','kimono-zashiki','yukari','dousojin','kasen','nareko'],places:['village'],
+    related:['shrine-and-doorway','sanctuary-stones'],
+    sources:[['茨歌仙第十四话 · 家里的帮手','https://thbwiki.cc/东方茨歌仙/第十四话'],['茨歌仙第二十三话 · 道祖神','https://thbwiki.cc/东方茨歌仙/第二十三话']]
+  }
+);
+
+window.GENSOKYO_LORE.find(page=>page.id==='spirits-detective').related.push('old-seal-memory');

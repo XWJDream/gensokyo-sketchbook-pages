@@ -107,6 +107,14 @@
     "sha256": "0e82fe5a36a9bd96311816ede2a5f24ece26d425b187bcc6f8188b355a52bc1c",
     "size": 2857827
   },
+  "dousojin.png": {
+    "sha256": "270f34b61a000d033bcb2cd9fb8413ec68fc1c501252def4e185cd68074dd1bb",
+    "size": 3071537
+  },
+  "dragon-god.png": {
+    "sha256": "af7489da846b019e07ded3e016b0914695b154c79e38f2e9afd38d9a0610e3dd",
+    "size": 2555876
+  },
   "dream-disks.png": {
     "sha256": "5e25f72e480fa7312047846369753b237cec7231a5304012033186256c196ce1",
     "size": 2179517
@@ -218,6 +226,14 @@
   "hisami.png": {
     "sha256": "4bb5002f7f481d3de87412ae399ba31c4061dabd9bd00212985ab573fdcdfbd0",
     "size": 2725469
+  },
+  "hisoutensoku.png": {
+    "sha256": "dafb1f7788107a66215a135f72da133618cabbb60992d942ca3fbaf7c2bdc9af",
+    "size": 2996751
+  },
+  "hobgoblin.png": {
+    "sha256": "53ef2021eef906fcb67af4af8a3bf0afe8092d3c4d22859d8a5a15daf5579472",
+    "size": 2551247
   },
   "horse-possession.png": {
     "sha256": "294ea06e7278f174b751c1ffe8940aad2e4eb65f6a86f74ede7876c485eb7662",
@@ -459,6 +475,14 @@
     "sha256": "5d6eee2f67f8a2c849d5e8c11bddb89ffb8ce1b9e32fcc14193eeeca50f42068",
     "size": 2700077
   },
+  "memoir-master.png": {
+    "sha256": "ab00080be763a20f53731083fb5b89c6952928b02a6089b710c27d3049410eca",
+    "size": 2467334
+  },
+  "memoir-servant.png": {
+    "sha256": "e60fe3929b9964a7ade3871638a39cf2faf8120e93fa771481d10f7a70c8c4f8",
+    "size": 2332976
+  },
   "merlin.png": {
     "sha256": "fdfdaf4c6a3c6114b73c1ef4a92fffcb5629c9037b5d2f3db114b1a7a5a8201d",
     "size": 2534621
@@ -563,6 +587,10 @@
     "sha256": "da1739ecb652abe7f25e6064c0a18ca96983ef17054d1b3a94850f414a743db5",
     "size": 2558240
   },
+  "nodeppou.png": {
+    "sha256": "a34debe270831ac65762a73272c995a56469959e9ea321b45de670d4e297406e",
+    "size": 3013724
+  },
   "nue.png": {
     "sha256": "16130cc22548fab84f5205d80a8f762b86069785597ea55046e151aba138365e",
     "size": 2694408
@@ -586,6 +614,10 @@
   "patchouli.png": {
     "sha256": "91b9381e8e08b21a33991fdbd48ba6d23d38691c0e49eb7a4d13e3b724e70397",
     "size": 2709658
+  },
+  "previous-miko.png": {
+    "sha256": "2b428d1245780b5493d32d6c15238b499c8c8ebd5b4f9437ce36ff763087095c",
+    "size": 2796924
   },
   "raiko.png": {
     "sha256": "71a636ac39ed65c10bf17bd160ae9cc7ef7455d2f94b8ee1b03725d1614f8291",
@@ -638,6 +670,10 @@
   "rumia-soft-v3.png": {
     "sha256": "6459aa9f6a1a7db43a4eefc6fff1fd0f1e2b97a4245cb6f19a204131fc4024ea",
     "size": 2431043
+  },
+  "rumor-villager.png": {
+    "sha256": "41f0dfe90b0cb81c8bdcc967cefee82997bad797e2276209413bfe5269f8ea38",
+    "size": 2502347
   },
   "ruukoto.png": {
     "sha256": "954e9dc9daba94ec8222979196b148b223fd702426f0887464494030532eeeb1",
@@ -747,6 +783,10 @@
     "sha256": "8d95dbef3fed1b926c90ee26a4746a1efa4f6402ead3e2c9f6f36f85ea915778",
     "size": 3806267
   },
+  "scene-dragon-square.png": {
+    "sha256": "db56b3202a38d84b578a1779de3ec353cbf018b24daafd6370c1ca8a37a2eeb0",
+    "size": 3302069
+  },
   "scene-dream-battery.png": {
     "sha256": "4c0916749314fedb2f759231cca7c0d2eeb6b8b194cc05866e9da2e16d046131",
     "size": 3847234
@@ -851,6 +891,10 @@
     "sha256": "d67cb866829913ce3b7e1b42361a0cb632502605b038c0e1aa085b5b1f142625",
     "size": 3691078
   },
+  "scene-house-help.png": {
+    "sha256": "84ea37403f7fbbe4c3f7ce96e3b492ca11d1e09a6dfe499af7c7de18a7d0d6bc",
+    "size": 3821589
+  },
   "scene-houso-pinegate.png": {
     "sha256": "2bd14b1c90a70ac0d50369d9bdd824d51e6f9969dac31f10e82f645db70d9bd6",
     "size": 4106487
@@ -927,6 +971,10 @@
     "sha256": "a404949204e1aced5c6d392f0a35f0f5d2a8e03cab9e83aa3b1015abf018ac09",
     "size": 3135963
   },
+  "scene-lizard-storm.png": {
+    "sha256": "03386dc05b505b31f2715f6e0e620b1aba9c7806e5c0e5bee783f8b6c5edd40d",
+    "size": 3902497
+  },
   "scene-luize-passage.png": {
     "sha256": "a3602443e5477e1918fc2c188907527cb6260a8cba759ffa1afbf150d7828df4",
     "size": 3985651
@@ -962,6 +1010,10 @@
   "scene-midautumn-dango.png": {
     "sha256": "209ca53f32a1469669c5af75dd02be34fee86be92a1e6691ed54a189dbee6421",
     "size": 3873283
+  },
+  "scene-miko-memory.png": {
+    "sha256": "ff616eeeffb1210f75f0d8e4c81085944ff68b6c48f2217804a67d7078c11b84",
+    "size": 3691596
   },
   "scene-mima-crescent.png": {
     "sha256": "4d779062518ace2ed61283370c8522942eefbda66b7edd63f81d1412af457d1f",
@@ -1007,6 +1059,10 @@
     "sha256": "e38acbacf2acd218423b3749fb0c691fcbd1496846c67d6c56624bfa2d239038",
     "size": 3499239
   },
+  "scene-novel-courtyard.png": {
+    "sha256": "77b881a67ce25d556cb1e5708db7b5afdeaa973364e7d7e892082996ca6adcda",
+    "size": 4124084
+  },
   "scene-old-bloodpool.png": {
     "sha256": "5597cbfd15fefa46a2de7950c8e56cb0569542e5b4cbde139a146f5b911e0982",
     "size": 3425473
@@ -1046,6 +1102,10 @@
   "scene-rikako-workbench.png": {
     "sha256": "7b3d964d14e09d2d216ba016260d45dbfee60831e002ed1f15a6624d2f580d4c",
     "size": 3455824
+  },
+  "scene-roadside-stone.png": {
+    "sha256": "47ace9bfd3e0daebb9b26649f0c7ae7db0703f961443073d4068e233d2784f22",
+    "size": 3958326
   },
   "scene-rumor-lane.png": {
     "sha256": "51ee54d55f35998b44ca9aa59a824a4e864d33894b56f47263e286e6abaa7d64",
@@ -1118,6 +1178,10 @@
   "scene-spring-announcement.png": {
     "sha256": "f7af18e9a82aeed5be555a6cb86bc1f52dcadbffe248608da8d9be99203547e8",
     "size": 3555602
+  },
+  "scene-steam-festival.png": {
+    "sha256": "ebd260b8a8ad23317b124ab0c2e8fbbebbd8ba81c7c3bbe3467f898b8023b9cd",
+    "size": 3999586
   },
   "scene-subterranean-bridge.png": {
     "sha256": "e65447a0ca1493f77ebefa31db4d072c5204833bddec6e31ca21403ba024b6c1",
@@ -1270,6 +1334,10 @@
   "tewi.png": {
     "sha256": "956559a90b4bb2356a2d250d2bf839c3bba3ae8a58e155037578d7aa5fe7dd3a",
     "size": 2269223
+  },
+  "thunder-lizard.png": {
+    "sha256": "977efac45379b1b2e073340b34d5281df07d1bc8310540ffc1d7ee523a802a55",
+    "size": 2327483
   },
   "tojiko.png": {
     "sha256": "d0a54dc8adf4342b19993b45f683d636d6c41492276dcade32b32503f46f2ddf",

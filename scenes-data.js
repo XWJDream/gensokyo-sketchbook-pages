@@ -546,3 +546,76 @@ window.GENSOKYO_SCENES.push(
     sources:[['香霖堂外来韦编第八话 · 莱卡','https://thbwiki.cc/东方香霖堂/东方外来韦编第8话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'steam-festival',batch:'44',image:'scene-steam-festival',
+    title:'山麓集市 · 蒸汽里的巨偶',en:'The giant puppet in festival steam',
+    place:'mountain',tag:'未来水妖集市 / 早苗结局',people:['hisoutensoku','sanae','suwako','nitori'],
+    alt:'蓝白衣的早苗望向雾里举起双臂的红色巨偶。',
+    lead:'蒸汽升起时，先从雾里露出的是两只手。',
+    text:'早苗原先追着巨影调查。画页想象她在山麓集市抬头看见那具展品的时刻。',
+    basis:'原作结局交代展品与蒸汽装置。画中的摊位、山水位置与光线由画册安排。',
+    sources:[['早苗路线 · 未来水妖集市','https://thbwiki.cc/游戏对话:东方非想天则/东风谷早苗']]
+  },
+  {
+    id:'lizard-storm',batch:'44',image:'scene-lizard-storm',
+    title:'林石边 · 一线雷光',en:'A flicker by a woodland stone',
+    place:null,tag:'茨歌仙 / 有足之雷',people:['thunder-lizard','kasen','mukou'],
+    alt:'雨中的石面上伏着蜥蜴，华扇在小径远处留意它。',
+    lead:'岩石上的水光断了一下，石边还有一点雷光。',
+    text:'把雷雨放远一点，留一块近处湿石给蜥蜴的背鳞和长尾。',
+    basis:'会降雷的蜥蜴和华扇的调查来自第二十四话。山林站位和球状光点为同人取景。',
+    sources:[['茨歌仙第二十四话 · 有足之雷','https://thbwiki.cc/东方茨歌仙/第二十四话']]
+  },
+  {
+    id:'miko-memory',batch:'44',image:'scene-miko-memory',
+    title:'旧日记忆 · 纸符与长影',en:'Paper seals in an old memory',
+    place:null,tag:'智灵奇传 / 旧日的博丽',people:['previous-miko','mizuchi','reimu','satori'],
+    alt:'一位长发巫女在漂浮纸符间握着御币，树影与远山隐在暮色里。',
+    lead:'灵梦看见的，只是从过去传来的一段记忆。',
+    text:'让御币、长发束和宽袖从纸符后显出，画面停在回忆被传到眼前的一瞬。',
+    basis:'回忆源自第六章第十三话。光线、林地和纸符位置由画册安排。',
+    sources:[['智灵奇传第六章第十三话 · 觉传来的记忆','https://thbwiki.cc/东方智灵奇传/第六章第十三话'],['同章第十四话 · 妹红的回忆','https://thbwiki.cc/东方智灵奇传/第六章第十四话']]
+  },
+  {
+    id:'novel-courtyard',batch:'44',image:'scene-novel-courtyard',
+    title:'旧故事 · 廊前的扫帚',en:'A broom by the old house corridor',
+    place:null,tag:'铃奈庵 / 故事里的院落',people:['memoir-servant','memoir-master','witness-page','akyuu','mamizou'],
+    alt:'背身侍童拿着扫帚，另一头的廊下坐着穿交领深衣的老爷。',
+    lead:'扫帚搭在台阶边，院里的故事还没讲到后来。',
+    text:'两端各留一张图卡可辨认的轮廓。画页呈现的是旧故事里的院落。',
+    basis:'旧故事中的人物见第四十一话。庭院、同框时刻与人物姿态由画册安排。',
+    sources:[['铃奈庵第四十一话 · 当下与旧故事','https://thbwiki.cc/东方铃奈庵/第四十一话']]
+  },
+  {
+    id:'dragon-square',batch:'44',image:'scene-dragon-square',
+    title:'人里广场 · 龙眼与晨雾',en:'The dragon’s eyes in the morning mist',
+    place:'village',tag:'人类村落 / 天气与石像',people:['dragon-god','akyuu','kosuzu','nitori'],
+    alt:'双角长颈的龙神石像绕在高柱上，阿求拿着小册子站在广场一侧。',
+    lead:'街坊出门前，可以先到广场看看龙眼。',
+    text:'画一尊供人观察天色的石像，把阿求放在石座之外，留下记录者观察的距离。',
+    basis:'《求闻史纪》记述村中心的石像与龙眼颜色，雕像的双长角、柱身和抱珠造型对照《铃奈庵》第四十四话插图。街巷和阿求的站位由画册安排。',
+    sources:[['求闻史纪 · 龙与龙神石像','https://thbwiki.cc/东方求闻史纪/龙/中日对照'],['铃奈庵第四十四话 · 紫眼之日','https://thbwiki.cc/东方铃奈庵/第四十四话'],['铃奈庵原作插图 · 人类村落中的龙神石像','https://thbwiki.cc/文件:人类村落中的龙神石像.png']]
+  },
+  {
+    id:'house-help',batch:'44',image:'scene-house-help',
+    title:'廊前日常 · 新来的帮手',en:'A new helper on the veranda',
+    place:'village',tag:'人类村落 / 地精与座敷童子',people:['hobgoblin','kimono-zashiki','yukari','kasen'],
+    alt:'地精整理廊边的布巾，短发座敷童子在院落另一端。',
+    lead:'先看屋里少了谁，再看门口来了谁。',
+    text:'把地精与座敷童子的辨认点分别放在廊下两侧，留一把扫帚提示两者与家务的关系。',
+    basis:'《茨歌仙》第十四话交代座敷童子离去、地精来访。两者同框、庭院和布巾为画册安排。',
+    sources:[['茨歌仙第十四话 · 地精来访','https://thbwiki.cc/东方茨歌仙/第十四话']]
+  },
+  {
+    id:'roadside-stone',batch:'44',image:'scene-roadside-stone',
+    title:'路边石龛 · 并坐的两尊像',en:'Two figures in the wayside niche',
+    place:null,tag:'茨歌仙 / 路边的道祖神',people:['dousojin','kasen','reimu','nareko'],
+    alt:'华扇站在路边，旁边的椭圆石龛里并列着两尊石像。',
+    lead:'走到路边，能先辨出两种发髻，再看石龛里刻着什么。',
+    text:'用沿路植物围出静静坐着的双尊，让发髻和衣领成为画面中心。',
+    basis:'双尊石刻取自《茨歌仙》第二十三话。道路、植被和华扇站位为同人构图。',
+    sources:[['茨歌仙第二十三话 · 路旁道祖神','https://thbwiki.cc/东方茨歌仙/第二十三话']]
+  }
+);

@@ -1212,3 +1212,82 @@ window.GENSOKYO.trails.push(
     note:'沿《外来韦编》续载第八话阅读，打烊场景为同人取景。'
   }
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'previous-miko':{place:null,related:['reimu','mizuchi','satori','mokou'],work:'cheating-detective',line:'先看觉传递的记忆，再读妹红讲出的另一处见闻。'},
+  'hisoutensoku':{place:'mountain',related:['sanae','suwako','nitori','goliath'],work:'th123',line:'按早苗路线读到结局，再去比较琪露诺遇见的歌利亚人偶。'},
+  'thunder-lizard':{place:null,related:['kasen','mukou','koutei'],work:'hermit-book',line:'对照同一部漫画里的雷蜥蜴、务光和幼龙黄帝。'},
+  'rumor-villager':{place:'shrine',related:['reimu','reisen','marisa'],work:'scrollery',line:'从神社问话读到谁在售药，再看漫画是否交代了谣言源头。'},
+  'memoir-servant':{place:null,related:['memoir-master','witness-page','akyuu','mamizou'],work:'scrollery',line:'按当下目击、阿求的连载、猯藏转述的旧事来分辨叙事层次。'},
+  'memoir-master':{place:null,related:['memoir-servant','mamizou','akyuu'],work:'scrollery',line:'先认宅主的轮廓，再看旧事如何讲同一面孔后来的变化。'},
+  'dragon-god':{place:'village',related:['akyuu','kosuzu','nitori'],work:'memento',line:'分开读龙的传说、河童制作的石像，以及漫画里一次紫眼天气。'},
+  'nodeppou':{place:'mountain',related:['kasen','takane','mamizou'],work:'hermit-book',line:'读华扇怎样从伤口和声响得到不同线索。'},
+  'hobgoblin':{place:'village',related:['yukari','kimono-zashiki','kasen','miyoi'],work:'hermit-book',line:'先读村里缺的人手，再看八云紫和村民怎么看这位来客。'},
+  'dousojin':{place:null,related:['kasen','reimu','nareko'],work:'hermit-book',line:'从路旁石刻的故事继续读，也可与驯子的游戏造型对照。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='cheating-detective').ids.push('previous-miko');
+window.GENSOKYO.books.find(book=>book.id==='th123').ids.push('hisoutensoku');
+window.GENSOKYO.books.find(book=>book.id==='hermit-book').ids.push('thunder-lizard','nodeppou','hobgoblin','dousojin');
+window.GENSOKYO.books.find(book=>book.id==='scrollery').ids.push('rumor-villager','memoir-servant','memoir-master');
+window.GENSOKYO.books.find(book=>book.id==='memento').ids.push('dragon-god');
+window.GENSOKYO.bonds.push(
+  {title:'从旧日回忆看博丽神社',label:'封印回忆 / 先代巫女与瑞灵',ids:['previous-miko','mizuchi','satori','reimu'],relation:'觉让灵梦看到旧日封印的记忆。',description:'可和同章第十四话妹红的讲述并读。',color:'violet',symbol:'忆'},
+  {title:'集市里终于认出的巨影',label:'原作结局 / 早苗、诹访子与非想天则',ids:['sanae','suwako','hisoutensoku','nitori'],relation:'早苗追查巨影，诹访子交代河童和蒸汽装置。',description:'彩图和结局在早苗路线末尾。',color:'red',symbol:'汽'},
+  {title:'沿伤痕进到山林',label:'原作调查 / 华扇与野铁炮',ids:['nodeppou','kasen','takane'],relation:'华扇从伤痕辨认出线索，在山里找到了野铁炮。',description:'山童的游戏与野铁炮的行动可分开看。',color:'green',symbol:'迹'},
+  {title:'扫帚留在旧宅门前',label:'旧事并读 / 侍童、宅主与猯藏',ids:['memoir-servant','memoir-master','mamizou'],relation:'第四十一话转入旧宅的故事，狸猫也牵涉其中。',description:'图卡另区分当下的目击侍童。',color:'red',symbol:'帚'},
+  {title:'观察天气的人里石像',label:'资料并读 / 龙神、阿求与小铃',ids:['dragon-god','akyuu','kosuzu'],relation:'阿求记录龙和石像，漫画另画出紫眼天气。',description:'可按《求闻史纪》和《铃奈庵》第四十四话分别阅读。',color:'green',symbol:'眼'},
+  {title:'家中暂时少了一位帮手',label:'原作相识 / 紫、座敷童子与地精',ids:['yukari','kimono-zashiki','hobgoblin'],relation:'八云紫找来地精，希望暂时承担座敷童子的工作。',description:'第十四话随后交代地精另有去处。',color:'violet',symbol:'门'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'大结界初立时的先代巫女',en:'The earlier Hakurei maiden',text:'《智灵奇传》第六章回忆里出现的那一位博丽巫女，先代巫女也是历代前任的通称。',source:'https://thbwiki.cc/东方智灵奇传/第六章第十三话'},
+  {term:'未来水妖集市',en:'Future Water Goblin Bazaar',text:'早苗路线结局交代在妖怪之山山麓举办的集市。蒸汽巨偶非想天则是展品。',source:'https://thbwiki.cc/游戏对话:东方非想天则/东风谷早苗'},
+  {term:'有足之雷',en:'Thunder with feet',text:'《茨歌仙》第二十四话的标题与能招雷的蜥蜴相连。',source:'https://thbwiki.cc/东方茨歌仙/第二十四话'},
+  {term:'野铁炮的伤痕',en:'Signs left by the nodeppou',text:'《茨歌仙》第十三话里，华扇从疑似枪击的描述转向查看兽咬的痕迹。',source:'https://thbwiki.cc/东方茨歌仙/第十三话'},
+  {term:'龙神石像的眼色',en:'The dragon statue’s eye colors',text:'阿求记述人里石像的眼色可以提示天气。书中也谈到无法预测时出现的颜色。',source:'https://thbwiki.cc/东方求闻史纪/龙/中日对照'},
+  {term:'帮忙做家事的地精',en:'The household hobgoblin',text:'《茨歌仙》第十四话里，八云紫把地精带来人里，试着接替暂时离开的座敷童子。',source:'https://thbwiki.cc/东方茨歌仙/第十四话'},
+  {term:'并坐的道祖神',en:'The paired wayside guardians',text:'《茨歌仙》第二十三话画出椭圆石龛内并坐的双尊，可对照不同的发髻与衣领。',source:'https://thbwiki.cc/东方茨歌仙/第二十三话'}
+);
+window.GENSOKYO.trails.push(
+  {
+    id:'old-seal-memory',number:'37',name:'结界初立时的封印记忆',tag:'智灵奇传 / 第六章回忆',
+    image:'scene-miko-memory',intro:'先看谁让灵梦看见了过去，再翻到妹红所见的一幕。',
+    steps:[['previous-miko','在旧日分镜里辨认宽袖、发束和御币'],['satori','读觉传递记忆的段落'],['reimu','看灵梦怎样回应所见'],['mokou','翻到下一话听另一位目击者']],
+    scenes:['miko-memory'],lore:'old-seal-memory',work:'cheating-detective',listening:[],
+    note:'第六章后段，包含封印相关剧情。'
+  },
+  {
+    id:'steam-effigy',number:'38',name:'山麓巨影的来处',tag:'非想天则 / 早苗路线',
+    image:'scene-steam-festival',intro:'从早苗的猜想读到蒸汽怎样让手臂升降。',
+    steps:[['sanae','沿巨影和山脚的暖雾继续调查'],['suwako','在结局听她讲间歇泉与装置'],['hisoutensoku','对照早苗结局彩图的胸甲和机械臂'],['goliath','换到另一条路线里的巨大人偶试验']],
+    scenes:['steam-festival'],lore:'steam-effigy',work:'th123',listening:[],
+    note:'按早苗路线读结局，集市场景为画册取景。'
+  },
+  {
+    id:'storm-and-tracks',number:'39',name:'雷光与山林里的伤痕',tag:'茨歌仙 / 章节并读',
+    image:'scene-lizard-storm',intro:'从两段山林调查看华扇如何辨认不同的妖兽。',
+    steps:[['kasen','顺着伤口而非枪响追查'],['nodeppou','看华扇在山中发现的小群'],['thunder-lizard','换到第二十四话辨认鳞片与长尾'],['mukou','回看雷兽务光的独立故事']],
+    scenes:['lizard-storm'],lore:'storm-and-tracks',work:'hermit-book',listening:[],
+    note:'两篇按各自的调查线阅读。'
+  },
+  {
+    id:'story-within-a-story',number:'40',name:'旧宅故事里的两张面孔',tag:'铃奈庵 / 叙事线索',
+    image:'scene-novel-courtyard',intro:'先读当下是谁看见了倒下的人，再去看旧故事里的两个人。',
+    steps:[['witness-page','先从门外的目击证词开始'],['akyuu','认清她写的连载如何进入故事'],['memoir-servant','换到旧宅里背身持扫帚的人'],['memoir-master','沿同一层旧事继续读宅主的变化']],
+    scenes:['novel-courtyard'],lore:'story-within-a-story',work:'scrollery',listening:[],
+    note:'旧故事与当下目击各有独立图卡。'
+  },
+  {
+    id:'village-weather-rumor',number:'41',name:'龙眼天气与街巷传闻',tag:'求闻史纪与铃奈庵 / 人里见闻',
+    image:'scene-dragon-square',intro:'从龙眼的颜色读到人里另一段关于传闻的故事。',
+    steps:[['dragon-god','先辨别书中龙图与村中心石像'],['akyuu','读她如何记录眼色对应的天气'],['rumor-villager','换到另一组章节，看传闻如何带来参拜'],['reisen','顺同一篇线索读到药物售卖']],
+    scenes:['dragon-square'],lore:'village-weather-rumor',work:'memento',listening:[],
+    note:'分别沿石像线与末日传闻线阅读。'
+  },
+  {
+    id:'doors-and-waystones',number:'42',name:'家里的帮手与路边的石像',tag:'茨歌仙 / 章节并读',
+    image:'scene-house-help',intro:'先读村里为什么需要帮手，再到路口看两尊并坐的石像。',
+    steps:[['kimono-zashiki','看村里为什么一度少了座敷童子'],['hobgoblin','读新帮手怎样来到村里'],['dousojin','转到第二十三话辨认石龛里的两尊像'],['nareko','比较后来游戏里的道祖神母题']],
+    scenes:['house-help','roadside-stone'],lore:'doors-and-waystones',work:'hermit-book',listening:[],
+    note:'两个故事各自成篇，两个图页分别取景。'
+  }
+);

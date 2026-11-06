@@ -958,3 +958,136 @@ window.CHARACTERS.push(
     design:{work:'《香霖堂》外来韦编第八话 · 莱卡插图',source:'https://thbwiki.cc/文件:莱卡（香霖堂）.png',checks:['保留尖耳和深色面板','核对四足关节与上扬的机械尾','按原图维持机械犬轮廓'],note:'外壳色、光线和后足着地的姿势为画册补绘。'}
   }
 );
+
+window.CHARACTERS.push(
+  {
+    id:'previous-miko',batch:'44',name:'先代巫女',jp:'先代巫女',en:'An earlier Hakurei shrine maiden',
+    title:'在结界初立时守护神社的巫女',species:'人类 · 博丽巫女',place:'博丽神社 · 旧日回忆',group:'boundary',color:'#a27372',
+    ability:'曾在旧日的冲突中施展封印',
+    keywords:'先代 前代 博丽巫女 大结界 智灵奇传 瑞灵 第六章',
+    imageAlt:'长发末端束着大结，宽袖垂着细绳的先代巫女握着御币。',
+    intro:'觉让灵梦看见旧日的封印一幕。',
+    story:'先代巫女可以泛指灵梦之前的历代巫女。本卡只收录《智灵奇传》第六章回忆中、结界初立时期的这位巫女。第十三话从觉传递的记忆看见封印，第十四话另有妹红回忆。',
+    motif:'束尾长发 · 宽袖细绳 · 御币',
+    relation:'与宫出口瑞灵的往事由不同人物讲起。',
+    reference:'https://thbwiki.cc/东方智灵奇传/第六章第十三话',
+    design:{work:'《智灵奇传》第六章第十三话 · 回忆分镜',source:'https://thbwiki.cc/文件:先代巫女（智灵奇传）.jpg',checks:['核对宽袖、袖口细绳和末端束起的长发','沿用分镜中五官不清的处理','朱色、下装和落脚细节为补绘'],note:'原作造型与画册取景分别说明，黑白原图缺少的颜色为淡彩补绘。'}
+  },
+  {
+    id:'hisoutensoku',batch:'44',name:'非想天则',jp:'非想天則',en:'Hisoutensoku',
+    title:'未来水妖集市的蒸汽巨偶',species:'机械人偶',place:'妖怪之山山麓 · 未来水妖集市',group:'mountain',color:'#ae7760',
+    ability:'间歇泉蒸汽的压力使手臂升降',
+    keywords:'非想天则 巨影 蒸汽 河童 未来水妖集市 早苗 诹访子',
+    imageAlt:'云汽间的旧金色机械头、青蓝眼窗和红色胸甲。',
+    intro:'早苗追着巨影走了很远，直到集市才看见它的用处。',
+    story:'早苗路线结局揭晓了巨影的来处。诹访子安排河童制作了这具巨大展品。间歇泉蒸汽带动手臂升降，后来它在山麓举办的未来水妖集市吸引观众。',
+    motif:'旧金头盔 · 青蓝眼窗 · 红胸甲和肩后尖角',
+    relation:'由诹访子安排制作，早苗沿温热的雾追查。',
+    reference:'https://thbwiki.cc/游戏对话:东方非想天则/东风谷早苗',
+    design:{work:'《非想天则》早苗结局彩图',source:'https://thbwiki.cc/文件:非想天则（非想天则2）.png',checks:['对照旧金色脸、青蓝眼窗和红色弧面胸甲','保留两条机械臂、红色尖角和蒸汽','原图可见上半身，画册沿用裁切范围'],note:'主体红、金、青配色对照原作彩图，纸面雾气是画册处理。'}
+  },
+  {
+    id:'thunder-lizard',batch:'44',name:'雷蜥蜴',jp:'トカゲ',en:'Thunder-calling lizard',
+    title:'雷雨里伏在低处的蜥蜴',species:'蜥蜴 · 有招雷能力',place:'幻想乡 · 雷雨旧闻',group:'strange',color:'#778071',
+    ability:'能招来雷电和阵雨',
+    keywords:'雷蜥蜴 有足之雷 球状闪电 华扇 茨歌仙 二十四话',
+    imageAlt:'扁吻的低伏蜥蜴，背部覆叠尖鳞，长尾旁有淡淡静电。',
+    intro:'村里先看见异常的雷光，华扇后来辨认了它的来处。',
+    story:'《茨歌仙》第二十四话里，雷雨引发异常，华扇把线索追到一只会降雷的蜥蜴。她还提到，这类蜥蜴可能长成龙。图卡选择它仍为蜥蜴的形态。',
+    motif:'扁吻 · 层叠尖鳞 · 四足长尾',
+    relation:'由茨木华扇辨认，和她照料的雷兽务光可对照阅读。',
+    reference:'https://thbwiki.cc/东方茨歌仙/第二十四话',
+    design:{work:'《茨歌仙》第二十四话 · 有足之雷',source:'https://thbwiki.cc/文件:雷蜥蜴.jpg',checks:['核对低伏身形、扁吻和背鳞','保持蜥蜴的四足长尾轮廓','灰绿色与微弱电光为补绘'],note:'原作造型与画册取景分别说明，黑白原图缺少的颜色为淡彩补绘。'}
+  },
+  {
+    id:'rumor-villager',batch:'44',name:'听信末日传闻的参拜客',jp:'抗鬱薬おじさん',en:'The worried shrine visitor',
+    title:'被末日传闻吓到的人里居民',species:'人类',place:'人类村落 · 博丽神社',group:'village',color:'#746f77',
+    ability:'因传闻去神社祈求，也向其他人转述买药的经过',
+    keywords:'末日 谣言 参拜客 胡须 兔角同盟 铃仙 第三十四话 第三十五话',
+    imageAlt:'留深色长刘海和嘴角弯胡须的参拜客拿着一个纸包。',
+    intro:'人们口中的末日，让他走到神社台阶前。',
+    story:'《铃奈庵》第三十四、三十五话中，村里流传着末日传闻。他到神社参拜，随后又向别人谈起买到的药。本卡名称用于辨认这位未具名的参拜客。',
+    motif:'遮住一侧眼睛的长刘海 · 嘴角弯胡须 · 素色交领',
+    relation:'涉及灵梦听到的来访理由，以及铃仙售卖药物的情节。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第三十四话',
+    design:{work:'《铃奈庵》第三十四、三十五话 · 参拜客分镜',source:'https://thbwiki.cc/文件:长相酷似周杰伦的参拜客（铃奈庵）.jpg',checks:['保留披散长发、遮眼发束和嘴角胡须','以同一人的漫画近景为对照','纸包、衣色和鞋袜为补绘'],note:'原作造型与画册取景分别说明，黑白原图缺少的颜色为淡彩补绘。'}
+  },
+  {
+    id:'memoir-servant',batch:'44',name:'旧故事中的侍童',jp:'小間使',en:'The servant in the old tale',
+    title:'阿求与猯藏谈及的旧故事人物',species:'人类 · 故事中的人物',place:'人类村落 · 旧宅故事',group:'village',color:'#8e856d',
+    ability:'在旧宅劳动，随身带扫帚',
+    keywords:'旧事 小说 猯藏 阿求 侍童 大老爷 扫帚 第四十一话',
+    imageAlt:'短乱发的侍童背对读者，腰后系结，斜拿一把扫帚。',
+    intro:'翻过当下的证词，旧故事里还有一个扫院子的身影。',
+    story:'《铃奈庵》第四十一话在当下调查之外，讲述了旧宅中的一段往事。本卡从旧故事里背身持扫帚的一格取材。图鉴另有当下向魔理沙讲述见闻的目击者。',
+    motif:'短乱发 · 工作衣 · 腰后结 · 扫帚',
+    relation:'与同一层故事里的大老爷相连，可和目击的侍童并读。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第四十一话',
+    design:{work:'《铃奈庵》第四十一话 · 旧故事的背影',source:'https://thbwiki.cc/文件:杀死大老爷的侍童（铃奈庵）.png',checks:['取背身持扫帚的原作分镜','核对腰后结、裤脚和短发轮廓','以低饱和色区分两位侍童的图卡'],note:'原作造型与画册取景分别说明，黑白原图缺少的颜色为淡彩补绘。'}
+  },
+  {
+    id:'memoir-master',batch:'44',name:'旧故事中的大老爷',jp:'大旦那',en:'The master in the old tale',
+    title:'旧宅故事里坐在廊前的人',species:'人类 · 故事中的人物',place:'人类村落 · 旧宅故事',group:'village',color:'#866f65',
+    ability:'在《铃奈庵》的旧事中以宅主身份出现',
+    keywords:'大老爷 大旦那 旧宅 侍童 猯藏 第四十一话',
+    imageAlt:'额头宽、头顶一束小髻、浓眉和深衣交领的宅主坐在矮阶上。',
+    intro:'同一张面孔，在旧事里有两段不同的来历。',
+    story:'《铃奈庵》第四十一话提到旧宅主与侍童的冲突，随后还有狸猫化作宅主的经过。图卡沿用旧故事里宅主小髻、粗眉和宽衣的轮廓。',
+    motif:'宽额小髻 · 浓眉 · 阔袖交领',
+    relation:'与旧故事中的侍童相连，猯藏讲出狸猫介入的经过。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第四十一话',
+    design:{work:'《铃奈庵》第四十一话 · 大老爷分镜',source:'https://thbwiki.cc/文件:大老爷（铃奈庵）.png',checks:['对照宽额、头顶小髻和斜眉','保留较宽的交领袍','坐姿、下装和深茶色由画册补绘'],note:'原作造型与画册取景分别说明，黑白原图缺少的颜色为淡彩补绘。'}
+  },
+  {
+    id:'dragon-god',batch:'44',name:'龙神',jp:'龍神',en:'Dragon of Gensokyo',
+    title:'阿求笔下的幻想乡最高神',species:'龙 · 神灵',place:'幻想乡 · 人里有祭祀石像',group:'village',color:'#6b8077',
+    ability:'传说会在幻想乡经历重大变化时现身',
+    keywords:'龙神 龙眼 石像 天气 人类村落 求闻史纪',
+    imageAlt:'卷成 S 形的深墨长身龙，带圆眼、卷须与扇形鳞纹。',
+    intro:'古书留下龙的轮廓，人里也留着一尊能报天象的石像。',
+    story:'《求闻史纪》记述龙神很少现身，并给出龙的插图。书里也另记村中心的龙神石像与天气观察方法。本卡以书中龙图为造型参考，村中石像另有场景。',
+    motif:'卷曲长身 · 圆眼卷须 · 交叠鳞纹',
+    relation:'阿求在《求闻史纪》中记载龙神与龙眼。',
+    reference:'https://thbwiki.cc/东方求闻史纪/龙/中日对照',
+    design:{work:'《求闻史纪》 · 龙的插图',source:'https://thbwiki.cc/文件:龙（求闻史纪）.jpg',checks:['核对盘曲的长身、卷须和重复鳞纹','保持无翅的东方龙轮廓','墨绿、灰金淡彩为补绘'],note:'原作造型与画册取景分别说明，黑白原图缺少的颜色为淡彩补绘。'}
+  },
+  {
+    id:'nodeppou',batch:'44',name:'野铁炮',jp:'野鉄砲',en:'Nodeppou',
+    title:'伏在山林里的四只猯',species:'妖兽群像',place:'妖怪之山',group:'mountain',color:'#918070',
+    ability:'老猯可变化为野铁炮并袭击猎物',
+    keywords:'野铁炮 猯 山童 生存游戏 茨歌仙 第十三话 妖怪之山',
+    imageAlt:'四只圆脸、浅色面罩和带环纹蓬尾的猯围成一小群。',
+    intro:'听来像枪响，华扇却沿伤口找到了山里的小群。',
+    story:'《茨歌仙》第十三话里，村民原以为遭到枪击，华扇检查伤口后追查到野铁炮。漫画用四只猯的群像呈现这段相遇。',
+    motif:'圆形面罩 · 小三角耳 · 带环纹的单尾',
+    relation:'由华扇辨认，与山童的生存游戏有关。',
+    reference:'https://thbwiki.cc/东方茨歌仙/第十三话',
+    design:{work:'《茨歌仙》第十三话 · 四只猯的分镜',source:'https://thbwiki.cc/文件:野铁炮（茨歌仙）.jpg',checks:['保留分镜的四只群像','核对面罩、短吻与蓬松环纹尾','暖灰和土褐为补绘'],note:'以漫画黑白分镜核对轮廓，构图与淡彩由画册补绘。'}
+  },
+  {
+    id:'hobgoblin',batch:'44',name:'地精',jp:'ホフゴブリン',en:'Hobgoblin',
+    title:'八云紫带来帮忙做家事的小个子',species:'地精 · 妖怪',place:'人类村落 · 后在恶魔之家工作',group:'village',color:'#9b8a68',
+    ability:'在人家居住并帮忙做家事',
+    keywords:'地精 霍布哥布林 家事 八云紫 座敷童子 红魔馆 茨歌仙',
+    imageAlt:'宽鼻尖耳的地精围着深色领巾，腰上系着一块浅色布。',
+    intro:'村里一度少了座敷童子，紫带来了这位新帮手。',
+    story:'《茨歌仙》第十四话，八云紫从外面找来地精，试着补上座敷童子离开后的人手。村民不习惯地精的外表，后记交代地精受雇到恶魔之家做幕后工作。',
+    motif:'大尖耳 · 宽鼻 · 单露小牙 · 深领巾',
+    relation:'八云紫带它们来，与座敷童子的去留是同篇线索。',
+    reference:'https://thbwiki.cc/东方茨歌仙/第十四话',
+    design:{work:'《茨歌仙》第十四话 · 地精初次来访',source:'https://thbwiki.cc/文件:地精（茨歌仙）.jpg',checks:['核对宽鼻、横向大尖耳和一枚小牙','保留深领巾、浅色系腰布','肤色和鞋面为补绘'],note:'以漫画黑白分镜核对轮廓，构图与淡彩由画册补绘。'}
+  },
+  {
+    id:'dousojin',batch:'44',name:'道祖神',jp:'道祖神',en:'Wayside guardian relief',
+    title:'同一个石龛里的两尊道祖神',species:'道祖神 · 石刻形象',place:'幻想乡 · 路旁石龛',group:'mountain',color:'#8b8d78',
+    ability:'漫画将路旁的石像与出产、道路的信仰相连',
+    keywords:'道祖神 道禄神 石龛 石像 误入歧途的巫女 茨歌仙 二十三话',
+    imageAlt:'椭圆石龛内并列两尊无五官浅浮雕，一尊双髻，一尊单髻。',
+    intro:'路边的石龛里，两尊神像并肩坐着。',
+    story:'《茨歌仙》第二十三话画出路旁的道祖神。两尊神像并列在椭圆石龛内，各有不同发髻。本卡沿用石刻形象，另可比较《锦上京》道神驯子取材的道祖神母题。',
+    motif:'椭圆石龛 · 双髻与单髻 · 并坐',
+    relation:'华扇在原作谈到这一对石刻的意义。',
+    reference:'https://thbwiki.cc/东方茨歌仙/第二十三话',
+    design:{work:'《茨歌仙》第二十三话 · 石龛分镜',source:'https://thbwiki.cc/文件:道祖神（茨歌仙23）.png',checks:['依分镜保留双尊浅浮雕','对照双髻、单髻与椭圆龛','苔色和石材质感为补绘'],note:'以漫画黑白分镜核对轮廓，构图与淡彩由画册补绘。'}
+  }
+);
