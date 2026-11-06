@@ -8,7 +8,11 @@
   // These three locations share a reading theme, even without a matching scene in the route.
   const bookTrailPlaces=new Set(['village','suzunaan','kourindou']);
   const $=selector=>document.querySelector(selector);
-  const viewport=$('#atlas-viewport'),scene=$('#atlas-scene'),image=$('#atlas-image');
+  const workspace=$('#atlas-workspace'),viewport=$('#atlas-viewport'),scene=$('#atlas-scene');
+  const pins=$('#atlas-pins'),miniImage=$('#atlas-mini-image'),miniWindow=$('#atlas-mini-window');
+  const zoomIn=$('#atlas-zoom-in'),zoomOut=$('#atlas-zoom-out'),zoomValue=$('#atlas-zoom-value');
+  const originalLink=$('#atlas-original');
+  let image=$('#atlas-image'),detailImage=null,pinPositions=[];
   const regionTabs=$('#atlas-region-tabs'),list=$('#atlas-place-list'),search=$('#atlas-search');
   const regions=new Map(data.regions.map(r=>[r.id,r])),places=new Map(data.places.map(p=>[p.id,p]));
   const scenesByPlace=new Map(data.places.map(p=>[
@@ -17,47 +21,80 @@
   const peopleByPlace=new Map(data.places.map(p=>[p.id,placePeople(p,scenesByPlace.get(p.id))]));
   const volumes=['壹','贰','叁','肆','伍','陆'];
   const views=new Map(),lastSelections=new Map();
-  const state={region:'village',place:'village',zoom:1,x:0,y:0,width:0,height:0,ready:false,labels:!matchMedia('(max-width:760px)').matches,wheel:false};
-  let loadToken=0,positionAfterLoad=null,drag=null,pinch=null,suppressClickUntil=0;
+  const state={region:'village',place:'village',zoom:1,x:0,y:0,width:0,height:0,viewportWidth:0,viewportHeight:0,ready:false,labels:!matchMedia('(max-width:760px)').matches,wheel:false};
+  let positionAfterLoad=null,drag=null,pinch=null,suppressClickUntil=0;
   const pointers=new Map();
   const escape=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const clamp=(value,min,max)=>Math.max(min,Math.min(max,value));
   const entries=regionId=>data.places.filter(p=>p.region===regionId);
   const localNumber=p=>String(entries(p.region).findIndex(item=>item.id===p.id)+1).padStart(2,'0');
-  const allControls=[...document.querySelectorAll('#atlas-zoom-in,#atlas-zoom-out,#atlas-reset')];
+  const allControls=[zoomIn,zoomOut,$('#atlas-reset')];
+  const originalImage=region=>region.image.replace(/\.webp$/,'.png');
+  function updateDetail(scaledWidth){
+    const enoughPixels=scaledWidth*(window.devicePixelRatio||1)>=image.naturalWidth*.75;
+    const showDetail=enoughPixels&&(state.zoom>=1.65||document.fullscreenElement===workspace);
+    if(!detailImage&&showDetail){
+      const layer=new Image();
+      detailImage=layer;
+      layer.className='atlas-map-detail';
+      layer.alt='';
+      layer.draggable=false;
+      layer.hidden=true;
+      layer.decoding='async';
+      layer.addEventListener('load',()=>{if(detailImage===layer)draw();},{once:true});
+      layer.src=regions.get(state.region).detailImage;
+      scene.append(layer);
+    }
+    if(detailImage)detailImage.hidden=!(showDetail&&detailImage.naturalWidth);
+  }
   function draw(){
-    if(!state.ready)return;
+    if(!state.ready||!state.width||!state.height)return;
     const width=viewport.clientWidth,height=viewport.clientHeight;
     const scaledW=state.width*state.zoom,scaledH=state.height*state.zoom;
     state.x=scaledW<=width?(width-scaledW)/2:clamp(state.x,width-scaledW-12,12);
     state.y=scaledH<=height?(height-scaledH)/2:clamp(state.y,height-scaledH-12,12);
-    scene.style.transform=`translate(${state.x}px,${state.y}px) scale(${state.zoom})`;
-    scene.style.setProperty('--pin-scale',1/state.zoom);
-    const zoomLabel=`${Math.round(state.zoom*100)}%`;if($('#atlas-zoom-value').textContent!==zoomLabel)$('#atlas-zoom-value').textContent=zoomLabel;
-    $('#atlas-zoom-in').disabled=state.zoom>=4;
-    $('#atlas-zoom-out').disabled=state.zoom<=1;
-    const left=clamp(-state.x/scaledW*100,0,100),top=clamp(-state.y/scaledH*100,0,100);
-    Object.assign($('#atlas-mini-window').style,{left:`${left}%`,top:`${top}%`,width:`${Math.min(100-left,width/scaledW*100)}%`,height:`${Math.min(100-top,height/scaledH*100)}%`});
+    const left=Math.round(state.x),top=Math.round(state.y);
+    Object.assign(scene.style,{width:`${scaledW}px`,height:`${scaledH}px`,transform:`translate(${left}px,${top}px)`});
+    for(const {button,x,y} of pinPositions){
+      const pinX=Math.round(left+x*scaledW),pinY=Math.round(top+y*scaledH);
+      button.style.left=`${pinX}px`;
+      button.style.top=`${pinY}px`;
+      button.tabIndex=pinX>=0&&pinX<=width&&pinY>=0&&pinY<=height?0:-1;
+    }
+    updateDetail(scaledW);
+    const zoomLabel=`${Math.round(state.zoom*100)}%`;if(zoomValue.textContent!==zoomLabel)zoomValue.textContent=zoomLabel;
+    zoomIn.disabled=state.zoom>=4;
+    zoomOut.disabled=state.zoom<=1;
+    const minX=clamp(-left/scaledW,0,1),maxX=clamp((width-left)/scaledW,0,1);
+    const minY=clamp(-top/scaledH,0,1),maxY=clamp((height-top)/scaledH,0,1);
+    Object.assign(miniWindow.style,{left:`${minX*100}%`,top:`${minY*100}%`,width:`${(maxX-minX)*100}%`,height:`${(maxY-minY)*100}%`});
   }
-  function saveView(){if(state.ready)views.set(state.region,{zoom:state.zoom,cx:(viewport.clientWidth/2-state.x)/(state.width*state.zoom),cy:(viewport.clientHeight/2-state.y)/(state.height*state.zoom)});}
+  function viewCenter(){
+    return {cx:(state.viewportWidth/2-state.x)/(state.width*state.zoom),cy:(state.viewportHeight/2-state.y)/(state.height*state.zoom)};
+  }
+  function centerOn(cx,cy){
+    state.x=state.viewportWidth/2-cx*state.width*state.zoom;
+    state.y=state.viewportHeight/2-cy*state.height*state.zoom;
+  }
+  function saveView(){if(state.ready)views.set(state.region,{zoom:state.zoom,...viewCenter()});}
   function resize(preserve=true){
     if(!state.ready||!image.naturalWidth||!viewport.clientWidth||!viewport.clientHeight)return;
-    const center=preserve&&state.width?{x:(viewport.clientWidth/2-state.x)/(state.width*state.zoom),y:(viewport.clientHeight/2-state.y)/(state.height*state.zoom)}:{x:.5,y:.5};
-    const fit=Math.min(viewport.clientWidth/image.naturalWidth,viewport.clientHeight/image.naturalHeight);
+    const {cx,cy}=preserve&&state.width?viewCenter():{cx:.5,cy:.5};
+    state.viewportWidth=viewport.clientWidth;state.viewportHeight=viewport.clientHeight;
+    const fit=Math.min(state.viewportWidth/image.naturalWidth,state.viewportHeight/image.naturalHeight);
     state.width=image.naturalWidth*fit;state.height=image.naturalHeight*fit;
-    scene.style.width=`${state.width}px`;scene.style.height=`${state.height}px`;
-    state.x=viewport.clientWidth/2-center.x*state.width*state.zoom;state.y=viewport.clientHeight/2-center.y*state.height*state.zoom;draw();
+    centerOn(cx,cy);draw();
   }
   function zoomTo(value,anchorX=viewport.clientWidth/2,anchorY=viewport.clientHeight/2){
     if(!state.ready)return;
     const next=clamp(value,1,4),ratio=next/state.zoom;
     state.x=anchorX-(anchorX-state.x)*ratio;state.y=anchorY-(anchorY-state.y)*ratio;state.zoom=next;draw();
   }
-  function reset(){state.zoom=1;state.x=(viewport.clientWidth-state.width)/2;state.y=(viewport.clientHeight-state.height)/2;draw();}
-  function locate(p){if(!state.ready){positionAfterLoad=p.id;return;}state.zoom=Math.max(2.2,state.zoom);state.x=viewport.clientWidth/2-state.width*state.zoom*p.x/100;state.y=viewport.clientHeight/2-state.height*state.zoom*p.y/100;draw();}
+  function reset(){if(!state.ready)return;state.zoom=1;centerOn(.5,.5);draw();}
+  function locate(p){if(!state.ready){positionAfterLoad=p.id;return;}state.zoom=Math.max(2.2,state.zoom);centerOn(p.x/100,p.y/100);draw();}
   function renderTabs(){
     regionTabs.innerHTML=data.regions.map((r,i)=>`<button class="atlas-region-tab" style="--region-color:${r.color}" id="atlas-tab-${r.id}" role="tab" aria-selected="${r.id===state.region}" aria-controls="atlas-workspace" tabindex="${r.id===state.region?0:-1}" data-atlas-region="${r.id}"><span aria-hidden="true">${r.mark}</span><span><small>VOL. ${String(i+1).padStart(2,'0')}</small>${r.name}</span></button>`).join('');
-    $('#atlas-workspace').setAttribute('role','tabpanel');$('#atlas-workspace').setAttribute('aria-labelledby',`atlas-tab-${state.region}`);
+    workspace.setAttribute('role','tabpanel');workspace.setAttribute('aria-labelledby',`atlas-tab-${state.region}`);
     viewport.classList.toggle('labels-hidden',!state.labels);$('#atlas-label-toggle').setAttribute('aria-pressed',String(state.labels));
   }
   function renderDirectory(){
@@ -69,7 +106,9 @@
   }
   function renderPins(){
     const region=regions.get(state.region);
-    $('#atlas-pins').innerHTML=entries(state.region).map(p=>`<button class="atlas-pin" style="--x:${p.x}%;--y:${p.y}%;--region-color:${region.color}" data-atlas-pin="${p.id}" aria-label="地图地点：${p.name}" aria-pressed="${state.place===p.id}" aria-controls="atlas-place-detail"><i>${localNumber(p)}</i><span>${p.name}</span></button>`).join('');
+    const locations=entries(state.region);
+    pins.innerHTML=locations.map(p=>`<button class="atlas-pin" style="--region-color:${region.color}" data-atlas-pin="${p.id}" aria-label="地图地点：${p.name}" aria-pressed="${state.place===p.id}" aria-controls="atlas-place-detail"><i>${localNumber(p)}</i><span>${p.name}</span></button>`).join('');
+    pinPositions=locations.map((p,i)=>({button:pins.children[i],x:p.x/100,y:p.y/100}));
   }
   function placePeople(place,placeScenes){
     const linked=new Set();
@@ -132,7 +171,7 @@
       ${renderReading(p,placeScenes)}
       <div class="atlas-place-footer">
         <div class="atlas-place-sources"><a class="atlas-source-link" href="${p.source}" target="_blank" rel="noopener noreferrer">查看${p.name}的资料出处 ↗</a><p>${p.work} · ${p.basis}</p></div>
-        <div class="atlas-place-actions"><button class="atlas-gallery-link" data-gallery-place="${p.id}">浏览地点投稿 ↗</button><button class="atlas-gallery-link" data-gallery-submit data-gallery-place="${p.id}">投稿这处风景 ＋</button><a class="atlas-source-link" href="assets/atlas-${region.id}.png" download="幻想乡地图册-${region.name}.png">保存本册原图 ↓</a></div>
+        <div class="atlas-place-actions"><button class="atlas-gallery-link" data-gallery-place="${p.id}">浏览地点投稿 ↗</button><button class="atlas-gallery-link" data-gallery-submit data-gallery-place="${p.id}">投稿这处风景 ＋</button><a class="atlas-source-link" href="${originalImage(region)}" download="幻想乡地图册-${region.name}.png">保存本册原图 ↓</a></div>
       </div>`;
   }
   function activateRegion(id,{placeId,focus=false,locatePlace=false,clearSearch=true}={}){
@@ -145,28 +184,40 @@
     $('#atlas-volume').textContent=`卷${volumes[data.regions.indexOf(region)]}`;$('#atlas-region-title').textContent=region.name;
     $('#atlas-region-note').textContent=region.note;$('#atlas-scope').textContent=region.scope;
     $('#atlas-loading').hidden=false;$('#atlas-image-error').hidden=true;
+    pins.hidden=true;
+    originalLink.href=originalImage(region);
     allControls.forEach(button=>button.disabled=true);
     renderTabs();renderPins();renderDirectory();renderDetail();
-    const ticket=++loadToken;
-    let didLoad=false;
+    detailImage?.remove();detailImage=null;
+    const overview=new Image();
+    overview.id='atlas-image';
+    overview.alt=`${region.name}独立精绘图页，具体方位与建筑细部为意象设计`;
+    overview.draggable=false;
+    image.replaceWith(overview);image=overview;
     function loaded(){
-      if(ticket!==loadToken||!image.naturalWidth||didLoad)return;didLoad=true;
+      if(image!==overview||!overview.naturalWidth||state.ready)return;
       state.ready=true;state.zoom=1;resize(false);
-      const saved=views.get(id);if(saved){state.zoom=saved.zoom;state.x=viewport.clientWidth/2-saved.cx*state.width*state.zoom;state.y=viewport.clientHeight/2-saved.cy*state.height*state.zoom;}
-      $('#atlas-loading').hidden=true;allControls.forEach(button=>button.disabled=false);draw();
-      if(positionAfterLoad){const p=places.get(positionAfterLoad);positionAfterLoad=null;locate(p);}
+      const saved=views.get(id);if(saved){state.zoom=saved.zoom;centerOn(saved.cx,saved.cy);}
+      $('#atlas-loading').hidden=true;pins.hidden=false;allControls.forEach(button=>button.disabled=false);
+      if(positionAfterLoad){const p=places.get(positionAfterLoad);positionAfterLoad=null;locate(p);}else draw();
       if(focus)viewport.focus({preventScroll:true});
     }
-    image.onload=loaded;
-    image.onerror=()=>{if(ticket!==loadToken)return;$('#atlas-loading').hidden=true;$('#atlas-image-error').hidden=false;};
-    image.alt=`${region.name}独立精绘图页，具体方位与建筑细部为意象设计`;
-    image.src=region.image;$('#atlas-mini-image').src=region.image;
-    if(image.complete&&image.naturalWidth)loaded();
+    const original=originalImage(region);
+    overview.addEventListener('load',loaded);
+    overview.addEventListener('error',()=>{
+      if(image!==overview)return;
+      if(overview.getAttribute('src')!==original){overview.src=original;miniImage.src=original;return;}
+      $('#atlas-loading').hidden=true;$('#atlas-image-error').hidden=false;
+    });
+    overview.src=region.image;miniImage.src=region.image;
+    if(overview.complete&&overview.naturalWidth)loaded();
   }
   function selectPlace(id,{locatePlace=false,focus=false}={}){
     const p=places.get(id);if(!p)return;
     if(p.region!==state.region){activateRegion(p.region,{placeId:id,locatePlace,focus,clearSearch:false});return;}
-    state.place=id;lastSelections.set(p.region,id);renderPins();renderDirectory();renderDetail();
+    state.place=id;lastSelections.set(p.region,id);
+    for(const {button} of pinPositions)button.setAttribute('aria-pressed',String(button.dataset.atlasPin===id));
+    renderDirectory();renderDetail();
     if(locatePlace)locate(p);if(focus)viewport.focus({preventScroll:true});
   }
   regionTabs.addEventListener('click',event=>{const button=event.target.closest('[data-atlas-region]');if(button)activateRegion(button.dataset.atlasRegion);});
@@ -178,14 +229,14 @@
   });
   search.addEventListener('input',renderDirectory);
   list.addEventListener('click',event=>{const button=event.target.closest('[data-atlas-location]');if(button)selectPlace(button.dataset.atlasLocation,{locatePlace:true});if(event.target.closest('[data-atlas-clear]')){search.value='';renderDirectory();search.focus();}});
-  $('#atlas-pins').addEventListener('click',event=>{const button=event.target.closest('[data-atlas-pin]');if(button)selectPlace(button.dataset.atlasPin);});
-  $('#atlas-zoom-in').addEventListener('click',()=>zoomTo(state.zoom*1.3));
-  $('#atlas-zoom-out').addEventListener('click',()=>zoomTo(state.zoom/1.3));
+  pins.addEventListener('click',event=>{const button=event.target.closest('[data-atlas-pin]');if(button)selectPlace(button.dataset.atlasPin);});
+  zoomIn.addEventListener('click',()=>zoomTo(state.zoom*1.3));
+  zoomOut.addEventListener('click',()=>zoomTo(state.zoom/1.3));
   $('#atlas-reset').addEventListener('click',reset);
   $('#atlas-label-toggle').addEventListener('click',event=>{state.labels=!state.labels;event.currentTarget.setAttribute('aria-pressed',String(state.labels));viewport.classList.toggle('labels-hidden',!state.labels);});
   $('#atlas-wheel-toggle').addEventListener('click',event=>{state.wheel=!state.wheel;event.currentTarget.setAttribute('aria-pressed',String(state.wheel));});
   $('#atlas-retry').addEventListener('click',()=>activateRegion(state.region,{placeId:state.place,clearSearch:false}));
-  $('#atlas-fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await $('#atlas-workspace').requestFullscreen();}catch{$('#atlas-fullscreen').textContent='浏览器未允许全屏';}});
+  $('#atlas-fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await workspace.requestFullscreen();}catch{$('#atlas-fullscreen').textContent='浏览器未允许全屏';}});
   document.addEventListener('fullscreenchange',()=>{$('#atlas-fullscreen').textContent=document.fullscreenElement?'退出全屏 ↙':'全屏 ↗';$('#atlas-fullscreen').setAttribute('aria-label',document.fullscreenElement?'退出地图全屏':'全屏查看地图');requestAnimationFrame(()=>resize());});
   function pointerPoint(event){const rect=viewport.getBoundingClientRect();return {x:event.clientX-rect.left,y:event.clientY-rect.top};}
   function beginPinch(){const a=[...pointers.values()];const cx=(a[0].x+a[1].x)/2,cy=(a[0].y+a[1].y)/2;pinch={distance:Math.max(1,Math.hypot(a[1].x-a[0].x,a[1].y-a[0].y)),zoom:state.zoom,worldX:(cx-state.x)/state.zoom,worldY:(cy-state.y)/state.zoom};drag=null;}
@@ -213,8 +264,8 @@
     if(event.key==='+'||event.key==='=')zoomTo(state.zoom*1.25);else if(event.key==='-')zoomTo(state.zoom/1.25);else if(event.key==='0')reset();else if(event.key==='ArrowLeft'){state.x+=amount;draw();}else if(event.key==='ArrowRight'){state.x-=amount;draw();}else if(event.key==='ArrowUp'){state.y+=amount;draw();}else if(event.key==='ArrowDown'){state.y-=amount;draw();}else return;event.preventDefault();
   });
   $('#atlas-minimap').addEventListener('click',event=>{
-    if(!state.ready)return;const rect=event.currentTarget.getBoundingClientRect();const point=event.detail===0?{x:.5,y:.5}:{x:clamp((event.clientX-rect.left)/rect.width,0,1),y:clamp((event.clientY-rect.top)/rect.height,0,1)};
-    state.x=viewport.clientWidth/2-point.x*state.width*state.zoom;state.y=viewport.clientHeight/2-point.y*state.height*state.zoom;draw();
+    if(!state.ready)return;const rect=miniImage.getBoundingClientRect();const point=event.detail===0?{x:.5,y:.5}:{x:clamp((event.clientX-rect.left)/rect.width,0,1),y:clamp((event.clientY-rect.top)/rect.height,0,1)};
+    centerOn(point.x,point.y);draw();
   });
   document.addEventListener('click',async event=>{
     if(event.target.closest('[data-atlas-locate-current]')){locate(places.get(state.place));viewport.focus({preventScroll:true});}

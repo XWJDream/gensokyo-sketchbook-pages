@@ -1,12 +1,12 @@
 // Artwork coordinates describe this atlas's composition, never canonical distances or bearings.
 window.GENSOKYO_ATLAS = {
   regions: [
-    {id:'village',name:'人里与森林',subtitle:'人间的街巷，森林的入口',mark:'里',color:'#7e8767',image:'assets/atlas-village.webp',defaultPlace:'village',note:'将人类聚落、森林与神社归为一册；画中相邻不表示原作中紧邻。',scope:'地上 / 聚落与森林'},
-    {id:'scarlet',name:'雾湖与红魔馆',subtitle:'湖畔的洋馆，书页深处的世界',mark:'紅',color:'#a26266',image:'assets/atlas-scarlet.webp',defaultPlace:'scarlet',note:'图书馆以馆内剖视小景呈现，钟楼属于红魔馆建筑，并非独立聚落。',scope:'地上 / 湖泊与馆内'},
-    {id:'mountain',name:'妖怪之山',subtitle:'沿着溪流与瀑布，仰望山中的神社',mark:'山',color:'#718376',image:'assets/atlas-mountain.webp',defaultPlace:'mountain',note:'保留山、瀑布、山麓与神社的区域关系；天狗聚落等具体位置未明。',scope:'地上 / 山中与山麓'},
-    {id:'bamboo',name:'迷途竹林',subtitle:'月色穿过竹叶，长廊藏在林间',mark:'竹',color:'#678d87',image:'assets/atlas-bamboo.webp',defaultPlace:'bamboo',note:'永远亭位于迷途竹林内；曲折小径与宅邸细部属于插图设计。',scope:'地上 / 竹林与宅邸'},
-    {id:'nether',name:'冥界与彼岸',subtitle:'樱庭与渡河，各有各的边界',mark:'幽',color:'#a48096',image:'assets/atlas-nether.webp',defaultPlace:'nether',note:'冥界与三途河、彼岸为并列小景，留白分隔，不表示三者是同一处空间。',scope:'异界 / 冥界与彼岸'},
-    {id:'underground',name:'旧地狱',subtitle:'旧都的灯火，地底更深处的余热',mark:'底',color:'#a6795f',image:'assets/atlas-underground.webp',defaultPlace:'oldcapital',note:'依据旧都、地灵殿、灼热地狱遗址与炉心的层次整理；不采用真实深度比例。',scope:'地底 / 旧地狱一带'}
+    {id:'village',name:'人里与森林',subtitle:'人间的街巷，森林的入口',mark:'里',color:'#7e8767',image:'assets/atlas-village.webp',detailImage:'assets/atlas-village-detail.webp',defaultPlace:'village',note:'将人类聚落、森林与神社归为一册；画中相邻不表示原作中紧邻。',scope:'地上 / 聚落与森林'},
+    {id:'scarlet',name:'雾湖与红魔馆',subtitle:'湖畔的洋馆，书页深处的世界',mark:'紅',color:'#a26266',image:'assets/atlas-scarlet.webp',detailImage:'assets/atlas-scarlet-detail.webp',defaultPlace:'scarlet',note:'图书馆以馆内剖视小景呈现，钟楼属于红魔馆建筑，并非独立聚落。',scope:'地上 / 湖泊与馆内'},
+    {id:'mountain',name:'妖怪之山',subtitle:'沿着溪流与瀑布，仰望山中的神社',mark:'山',color:'#718376',image:'assets/atlas-mountain.webp',detailImage:'assets/atlas-mountain-detail.webp',defaultPlace:'mountain',note:'保留山、瀑布、山麓与神社的区域关系；天狗聚落等具体位置未明。',scope:'地上 / 山中与山麓'},
+    {id:'bamboo',name:'迷途竹林',subtitle:'月色穿过竹叶，长廊藏在林间',mark:'竹',color:'#678d87',image:'assets/atlas-bamboo.webp',detailImage:'assets/atlas-bamboo-detail.webp',defaultPlace:'bamboo',note:'永远亭位于迷途竹林内；曲折小径与宅邸细部属于插图设计。',scope:'地上 / 竹林与宅邸'},
+    {id:'nether',name:'冥界与彼岸',subtitle:'樱庭与渡河，各有各的边界',mark:'幽',color:'#a48096',image:'assets/atlas-nether.webp',detailImage:'assets/atlas-nether-detail.webp',defaultPlace:'nether',note:'冥界与三途河、彼岸为并列小景，留白分隔，不表示三者是同一处空间。',scope:'异界 / 冥界与彼岸'},
+    {id:'underground',name:'旧地狱',subtitle:'旧都的灯火，地底更深处的余热',mark:'底',color:'#a6795f',image:'assets/atlas-underground.webp',detailImage:'assets/atlas-underground-detail.webp',defaultPlace:'oldcapital',note:'依据旧都、地灵殿、灼热地狱遗址与炉心的层次整理；不采用真实深度比例。',scope:'地底 / 旧地狱一带'}
   ],
   places: [
     {id:'shrine',region:'village',name:'博丽神社',en:'Hakurei Shrine',type:'神社',world:'地上',x:14,y:27,residents:['reimu','suika'],people:['博丽灵梦','伊吹萃香'],summary:'幻想乡与外界边界上的神社。',detail:'灵梦担任巫女，在这里处理神社日常，也从这里走向异变。神社与幻想乡、外面世界的边界紧密相关。',relation:'处于幻想乡与外面世界的境界一带；不据此推定精确方位。',work:'《东方求闻史纪》；历代游戏与书籍',source:'https://thwiki.cc/博丽神社',basis:'场景词条及原作资料摘录'},

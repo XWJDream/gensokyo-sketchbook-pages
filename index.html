@@ -7,25 +7,25 @@
   <meta name="description" content="一本暖纸与淡彩绘成的东方 Project 角色小图鉴。遇见灵梦、魔理沙与幻想乡的伙伴们。">
   <title>东方幻想乡 · 纸上相逢</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=cast45">
-  <link rel="stylesheet" href="explore.css?v=cast45">
-  <link rel="stylesheet" href="atlas.css?v=cast45">
-  <link rel="stylesheet" href="lore.css?v=cast45">
-  <link rel="stylesheet" href="scenes.css?v=cast45">
-  <link rel="stylesheet" href="gallery.css?v=cast45">
-  <link rel="stylesheet" href="reading-layout.css?v=cast45">
-  <script src="characters.js?v=cast45" defer></script>
-  <script src="world.js?v=cast45" defer></script>
-  <script src="atlas-data.js?v=cast45" defer></script>
-  <script src="lore-data.js?v=cast45" defer></script>
-  <script src="scenes-data.js?v=cast45" defer></script>
-  <script src="app.js?v=cast45" defer></script>
-  <script src="explore.js?v=cast45" defer></script>
-  <script src="atlas.js?v=cast45" defer></script>
-  <script src="lore.js?v=cast45" defer></script>
-  <script src="scenes.js?v=cast45" defer></script>
-  <script src="gallery.js?v=cast45" defer></script>
-  <script src="reading-layout.js?v=cast45" defer></script>
+  <link rel="stylesheet" href="style.css?v=atlas46">
+  <link rel="stylesheet" href="explore.css?v=atlas46">
+  <link rel="stylesheet" href="atlas.css?v=atlas46">
+  <link rel="stylesheet" href="lore.css?v=atlas46">
+  <link rel="stylesheet" href="scenes.css?v=atlas46">
+  <link rel="stylesheet" href="gallery.css?v=atlas46">
+  <link rel="stylesheet" href="reading-layout.css?v=atlas46">
+  <script src="characters.js?v=atlas46" defer></script>
+  <script src="world.js?v=atlas46" defer></script>
+  <script src="atlas-data.js?v=atlas46" defer></script>
+  <script src="lore-data.js?v=atlas46" defer></script>
+  <script src="scenes-data.js?v=atlas46" defer></script>
+  <script src="app.js?v=atlas46" defer></script>
+  <script src="explore.js?v=atlas46" defer></script>
+  <script src="atlas.js?v=atlas46" defer></script>
+  <script src="lore.js?v=atlas46" defer></script>
+  <script src="scenes.js?v=atlas46" defer></script>
+  <script src="gallery.js?v=atlas46" defer></script>
+  <script src="reading-layout.js?v=atlas46" defer></script>
 </head>
 <body>
   <header class="site-header wrap">
@@ -62,15 +62,16 @@
       <div class="atlas-region-tabs" id="atlas-region-tabs" role="tablist" aria-label="选择地图册区域"></div>
       <div class="atlas-workspace" id="atlas-workspace">
         <div class="atlas-main">
-          <div class="atlas-toolbar"><div><span id="atlas-volume">卷一</span><strong id="atlas-region-title">人里与森林</strong></div><div class="atlas-toolbar-actions"><button id="atlas-label-toggle" aria-pressed="true">地名</button><button id="atlas-wheel-toggle" aria-pressed="false" title="开启后，鼠标滚轮在图内缩放">滚轮缩放</button><button id="atlas-fullscreen" aria-label="全屏查看地图">全屏 ↗</button></div></div>
+          <div class="atlas-toolbar"><div><span id="atlas-volume">卷一</span><strong id="atlas-region-title">人里与森林</strong></div><div class="atlas-toolbar-actions"><button id="atlas-label-toggle" aria-pressed="true">地名</button><button id="atlas-wheel-toggle" aria-pressed="false" title="开启后，鼠标滚轮在图内缩放">滚轮缩放</button><a id="atlas-original" href="assets/atlas-village.png" target="_blank" rel="noopener" aria-label="在新标签页查看本册原图">原图 ↗</a><button id="atlas-fullscreen" aria-label="全屏查看地图">全屏 ↗</button></div></div>
           <div class="atlas-viewport" id="atlas-viewport" tabindex="0" role="region" aria-label="区域地图，可拖动平移，使用加减键缩放，方向键移动，零键复位" aria-describedby="atlas-help">
-            <div class="atlas-scene" id="atlas-scene"><img id="atlas-image" src="assets/atlas-village.webp" alt="人里与森林的精细区域插图" draggable="false" width="1536" height="1024"><div id="atlas-pins" role="group" aria-label="地图地点"></div></div>
+            <div class="atlas-scene" id="atlas-scene"><img id="atlas-image" alt="" draggable="false"></div>
+            <div id="atlas-pins" role="group" aria-label="地图地点" hidden></div>
             <div class="atlas-loading" id="atlas-loading" role="status">正在展开这册风景…</div><div class="atlas-image-error" id="atlas-image-error" hidden>这张图暂时未能加载。<button id="atlas-retry">重新加载</button></div>
             <div class="atlas-corner-seal" aria-hidden="true">幻想<br>图册</div>
             <div class="atlas-zoom-controls" role="group" aria-label="地图缩放"><button id="atlas-zoom-in" aria-label="放大地图">＋</button><output id="atlas-zoom-value" aria-live="polite">100%</output><button id="atlas-zoom-out" aria-label="缩小地图">−</button><button id="atlas-reset" class="atlas-fit" aria-label="复位并显示完整地图">复位</button></div>
-            <button class="atlas-minimap" id="atlas-minimap" aria-label="点击缩略图移动视野"><img id="atlas-mini-image" src="assets/atlas-village.webp" alt="" draggable="false"><span id="atlas-mini-window"></span></button>
+            <button class="atlas-minimap" id="atlas-minimap" aria-label="点击缩略图移动视野"><img id="atlas-mini-image" alt="" draggable="false"><span id="atlas-mini-window"></span></button>
           </div>
-          <div class="atlas-map-foot"><p id="atlas-help">拖动平移 · 双指缩放 · Ctrl + 滚轮缩放 · 双击放大</p><span>意象绘图 / 无地理比例尺</span></div>
+          <div class="atlas-map-foot"><p id="atlas-help">拖动平移 · 双指或 Ctrl + 滚轮缩放 · 双击放大</p><span>意象绘图 / 无地理比例尺</span></div>
         </div>
         <aside class="atlas-directory" aria-label="地点目录"><div class="atlas-directory-heading"><span>本册地点</span><span id="atlas-place-count">8 处</span></div><label class="atlas-search"><span aria-hidden="true">⌕</span><input id="atlas-search" type="search" placeholder="搜索全册地点或人物…" aria-label="搜索地图册的地点或相关人物"></label><div class="atlas-result-label" id="atlas-result-label" aria-live="polite"></div><div class="atlas-place-list" id="atlas-place-list"></div><div class="atlas-directory-note"><span id="atlas-scope">地上 / 聚落与森林</span><p id="atlas-region-note"></p></div></aside>
       </div>
