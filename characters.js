@@ -692,3 +692,136 @@ window.CHARACTERS.push(
     design:{work:'东方茨歌仙第十卷 · 影华扇设定',source:'https://thbwiki.cc/文件:影华扇_鬼华扇（茨歌仙设定页）.jpg',checks:['对照单行本第十卷设定页上半的影华扇','保留直角、深裙、深色袜与脚镣','衣服层次参照黑白设定，发色为画册补绘'],note:'本条涉及第十卷的身份剧情。'}
   }
 );
+
+window.CHARACTERS.push(
+  {
+    id:'kosuzu-grandfather',batch:'42',name:'小铃的爷爷',jp:'小鈴の祖父',en:'Kosuzu’s Grandfather',
+    title:'讲起食字虫的长辈',species:'人类',place:'铃奈庵 · 小铃的回忆',group:'village',color:'#8a7865',
+    ability:'把食字虫的见闻讲给小铃',
+    keywords:'小铃 爷爷 祖父 食字虫 铃奈庵',
+    imageAlt:'侧坐的老人穿朴素交领衣，举起一根食指。',
+    intro:'讲起食字虫的长辈。',
+    story:'卷轴上的字莫名消失时，小铃想起爷爷讲过能吞吃文字的妖虫。第二话用一格回忆交代了这段话的来处。',
+    motif:'侧身轮廓 · 交领外衣 · 举指讲述',
+    relation:'本居小铃的祖父，在她的回忆里出现。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第二话',
+    design:{work:'铃奈庵第二话 · 食字虫的回忆',source:'https://thbwiki.cc/文件:小铃的爷爷.png',checks:['取回忆格里背身转头的长者','对照高交领和举指动作','正面细节、矮凳与灰褐配色为补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'enenra',batch:'42',name:'烟烟罗',jp:'煙々羅',en:'Enenra',
+    title:'无火之处出现的怪烟',species:'烟状妖怪',place:'人类村落附近 · 铃奈庵事件',group:'strange',color:'#72757e',
+    ability:'化作无火之处升起的怪烟',
+    keywords:'烟烟罗 煙々羅 烟 火 字 藏书 封印',
+    imageAlt:'两点亮眼浮在深灰烟团里，边缘散成细烟。',
+    intro:'无火之处出现的怪烟。',
+    story:'小铃发现抄本记载烟烟罗的那一页变成了空白，便把怪烟与书里的封印联系起来。第三话中，灵梦也在烟雾中看见了它。',
+    motif:'两枚浅色眼形 · 烟团 · 细散的灰边',
+    relation:'小铃追查抄本，灵梦面对显形的怪烟。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第三话',
+    design:{work:'铃奈庵第三话 · 怪烟显形',source:'https://thbwiki.cc/文件:烟烟罗.jpg',checks:['核对两枚形状不同的浅色眼睛','保留烟雾轮廓与散边','淡墨、蓝灰和纸色为补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'chupacabra',batch:'42',name:'卓柏卡布拉',jp:'チュパカブラ',en:'Chupacabra',
+    title:'被咲夜唤作树鼩的珍兽',species:'珍兽（UMA）',place:'红魔馆',group:'scarlet',color:'#867663',
+    ability:'跑得很快，长爪和尖牙格外醒目',
+    keywords:'卓柏卡布拉 珍兽 树鼩 红魔馆 咲夜 瓮',
+    imageAlt:'有背棘和深色斑点的小兽伏在布上睡着。',
+    intro:'被咲夜唤作树鼩的珍兽。',
+    story:'第七话，珍兽从瓮中跃出，在屋里迅速穿行。咲夜把它捉住，最后带回红魔馆。树鼩是咲夜对它的叫法，小铃后来把两个名字分开理解。',
+    motif:'伏低身躯 · 背棘 · 侧腹深斑 · 细长爪',
+    relation:'咲夜负责把走失的珍兽带回红魔馆。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第七话',
+    design:{work:'铃奈庵第七话 · 瓮中珍兽',source:'https://thbwiki.cc/文件:卓柏卡布拉.png',checks:['核对低伏的四足、背棘和侧腹深斑','保留睡姿与细长爪','毛皮色与垫布由画册补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'salt-merchant',batch:'42',name:'盐家老板',jp:'塩屋の主人',en:'The Salt Merchant',
+    title:'来借过园艺书的盐家主人',species:'人类',place:'人类村落 · 盐家大院',group:'village',color:'#626b76',
+    ability:'在盐家经营生意，也是铃奈庵的老客',
+    keywords:'盐家 老板 园艺书 小铃 无首马 马凭',
+    imageAlt:'黑发向后梳起，细胡须与深色家纹外衣很醒目。',
+    intro:'来借过园艺书的盐家主人。',
+    story:'第三十七话里，小铃提到他是借书铺的老主顾，近期借过园艺书。猯藏与灵梦从不同线索察觉盐家和马凭的关联。图卡取老板的人形样貌。',
+    motif:'后梳短发 · 细胡须 · 深衣 · 圆纹',
+    relation:'与小铃有借书来往，盐家事件牵涉马凭。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第三十七话',
+    design:{work:'铃奈庵第三十七话 · 盐家老板',source:'https://thbwiki.cc/文件:盐家老板.png',checks:['对照后梳发束、胡须和深衣圆纹','将原画俯身改为站姿','手中的折纸为画册道具'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'horse-possession',batch:'42',name:'马凭',jp:'馬憑き',en:'Umatsuki',
+    title:'在借书屋出现的无首马影',species:'凭依妖怪',place:'人类村落 · 盐家事件',group:'strange',color:'#776d69',
+    ability:'凭依在亏待重要马匹的人身上',
+    keywords:'马凭 无首马 盐家 凭依 铃奈庵',
+    imageAlt:'灰色马身带有胸带与圆饰，颈端隐入浅雾。',
+    intro:'在借书屋出现的无首马影。',
+    story:'在铃奈庵出现的马影没有头。第三十七话，猯藏据此判断凭依已经开始，灵梦则循盐家大院与马醉木的线索调查。画册用雾和圆钝轮廓表现马影。',
+    motif:'马身 · 胸带圆饰 · 平滑颈端',
+    relation:'与盐家老板有关。猯藏向读者解释它的凭依条件。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第三十七话',
+    design:{work:'铃奈庵第三十七话 · 马凭的轮廓',source:'https://thbwiki.cc/文件:马凭.png',checks:['核对无首马身、胸带和圆形垂饰','以平滑颈端与浅雾表现轮廓','灰褐毛色为补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'witness-page',batch:'42',name:'目击的侍童',jp:'小間使い',en:'The Eyewitness Page',
+    title:'坚持讲出所见的孩子',species:'人类',place:'人类村落 · 大宅门外',group:'village',color:'#687888',
+    ability:'在第四十一话讲述门外的见闻',
+    keywords:'侍童 小厮 目击 证人 阿求 第四十一话',
+    imageAlt:'短乱发的侍童穿补丁交领衣，跪坐时两手放在膝上。',
+    intro:'坚持讲出所见的孩子。',
+    story:'他坚持说在大门外见到了倒下的大老爷。因现场找不到人倒下的痕迹，旁人多不相信。阿求后来向他询问经过。这张图卡取当下的目击者。',
+    motif:'短乱发 · 粗眉 · 补丁衣 · 跪坐',
+    relation:'魔理沙去门外查看，阿求随后听他讲述。',
+    reference:'https://thbwiki.cc/东方铃奈庵/第四十一话',
+    design:{work:'铃奈庵第四十一话 · 当下的目击者',source:'https://thbwiki.cc/文件:侍童（铃奈庵）.jpg',checks:['对照短乱发、补丁和双手落膝的姿势','取当下时间线的目击侍童','靛蓝、米白配色由画册补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'geidontei-owner',batch:'42',name:'鲵吞亭店主',jp:'鯢呑亭の店主',en:'Owner of Geidontei',
+    title:'柜台里忙着招呼的长者',species:'人类',place:'人类村落 · 鲵吞亭',group:'village',color:'#88725d',
+    ability:'经营鲵吞亭，熟悉店里常来的客人',
+    keywords:'鲵吞亭 店主 老板 醉蝶华 美宵 柜台',
+    imageAlt:'头顶稀发的长者穿浅色交领工作衣，手里拿着布巾。',
+    intro:'柜台里忙着招呼的长者。',
+    story:'《醉蝶华》第一话里，灵梦找店主打听酒客失踪的传闻，店主对是否有妖怪介入有所保留。故事也用他的回答展现了店家对常客的了解。',
+    motif:'宽额 · 浅色交领 · 细眉 · 布巾',
+    relation:'经营鲵吞亭，美宵在店里招呼客人。',
+    reference:'https://thbwiki.cc/东方醉蝶华/第一话',
+    design:{work:'醉蝶华 · 鲵吞亭店主分镜',source:'https://thbwiki.cc/文件:鲵吞亭店主（醉蝶华）.png',checks:['对照宽额、两鬓浅发和微皱的眼周','保留交领工作衣的轮廓','布巾和围裙为画册取景补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'geidontei-regular',batch:'42',name:'鲵吞亭的常客',jp:'鯢呑亭の常連客',en:'A Regular at Geidontei',
+    title:'桌边端着小杯的熟面孔',species:'人类',place:'人类村落 · 鲵吞亭',group:'village',color:'#74695c',
+    ability:'作为常客出现在酒馆的闲谈里',
+    keywords:'鲵吞亭 常客 酒客 胡须 醉蝶华',
+    imageAlt:'发际向后退的客人留深色马蹄形胡须，坐在矮凳上。',
+    intro:'桌边端着小杯的熟面孔。',
+    story:'漫画开头以店内的客人和传闻带出人里的酒馆日常。这里选取常客分镜右侧那位有深胡须的男子作独立图卡。',
+    motif:'宽额深发 · 马蹄形胡须 · 暗纹衣 · 小杯',
+    relation:'鲵吞亭常客之一，与店主、美宵共处酒馆日常。',
+    reference:'https://thbwiki.cc/东方醉蝶华/第一话',
+    design:{work:'醉蝶华 · 常客分镜右侧',source:'https://thbwiki.cc/文件:鲵吞亭常客（醉蝶华）.png',checks:['选取双人画面右侧的客人','核对宽额、两侧深发和下垂胡须','坐凳、足部和衣色为补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'chokuboro',batch:'42',name:'猪口暮露',jp:'猪口暮露',en:'Chokuboro',
+    title:'倒扣酒盅下的黑衣小影',species:'醉魔的一种',place:'人类村落 · 鲵吞亭事件',group:'strange',color:'#7b6c75',
+    ability:'可随酒进入饮酒者体内，引人继续饮酒',
+    keywords:'猪口暮露 酒盅 虚无僧 醉魔 鲵吞亭 酒林',
+    imageAlt:'倒扣酒盅遮住面容，黑衣上搭一块浅色肩布。',
+    intro:'倒扣酒盅下的黑衣小影。',
+    story:'第二十六话里，猯藏把这名头顶酒盅的妖怪称为猪口暮露，并说它和被弃用的器具相近。追查其来处时，猯藏想起从废酒窖搬来的酒林。',
+    motif:'倒扣酒盅 · 浅肩布 · 黑袍 · 小竖笛',
+    relation:'猯藏认出它，并把线索指向搬来的旧物。',
+    reference:'https://thbwiki.cc/东方醉蝶华/第二十六话',
+    design:{work:'醉蝶华第二十六话 · 倒扣酒盅',source:'https://thbwiki.cc/文件:猪口暮露（醉蝶华）.png',checks:['核对覆盖头部的倒扣酒盅','保留深色袍、浅肩布和手中细管','以陶色和深靛给黑白稿补色'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  },
+  {
+    id:'worried-villager',batch:'42',name:'不安的村姑',jp:'不安を抱く里の娘',en:'The Worried Villager',
+    title:'请灵梦来看门上涂写的人',species:'人类',place:'人类村落 · 雪日门前',group:'village',color:'#937767',
+    ability:'在发现异样的涂写后向灵梦求助',
+    keywords:'村姑 村民 门上记号 涂写 大雪 醉蝶华',
+    imageAlt:'梳高发髻的村民留着两缕长鬓发，侧刘海别着细发卡。',
+    intro:'请灵梦来看门上涂写的人。',
+    story:'第四十九话，村民因家门反复出现涂写而请灵梦查看。第五十话沿同一线索追到狸猫收集冬日物资的做法。图卡保留她在村落分镜中的造型。',
+    motif:'高发髻 · 侧分刘海 · 双细发卡 · 长鬓发',
+    relation:'先向灵梦求助。猯藏散布的说法随后影响了村人的判断。',
+    reference:'https://thbwiki.cc/东方醉蝶华/第四十九话',
+    design:{work:'醉蝶华第四十九、五十话 · 村落分镜',source:'https://thbwiki.cc/文件:不安的村姑（醉蝶华）.jpg',checks:['核对高发髻、侧刘海、长鬓发和细发卡','保留竹柄清扫物的轮廓','短衣、足部和暖棕配色由画册补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
+  }
+);

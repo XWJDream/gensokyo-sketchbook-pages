@@ -430,3 +430,56 @@ window.GENSOKYO_SCENES.push(
     sources:[['茨歌仙第四十九话上 · 无间地狱','https://thbwiki.cc/东方茨歌仙/第四十九话上'],['茨歌仙第十卷 · 影华扇设定','https://thbwiki.cc/东方茨歌仙/设定资料图#影华扇_鬼华扇']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'ink-grandfather',batch:'42',image:'scene-ink-grandfather',
+    title:'书柜前的旧故事',en:'A story between the bookshelves',
+    place:'suzunaan',tag:'铃奈庵 / 小铃的回忆',people:['kosuzu-grandfather','kosuzu','akyuu','enenra'],
+    alt:'交领衣的爷爷举指向年幼的小铃讲故事，两人之间摊着卷轴',
+    lead:'卷轴摊开，老人还记得什么东西专吃字。',
+    text:'把小铃向阿求提起的家中旧闻画成书柜前的一段回忆。故事里那种只吃字的虫，后来成了她追查空白书页的第一条线索。',
+    basis:'爷爷讲食字虫来自第二话的回忆。书柜、卷轴和屋内光线为同人取景。',
+    sources:[['铃奈庵第二话 · 爷爷的旧闻','https://thbwiki.cc/东方铃奈庵/第二话'],['铃奈庵第三话 · 空白的一页','https://thbwiki.cc/东方铃奈庵/第三话']]
+  },
+  {
+    id:'scarlet-pet',batch:'42',image:'scene-scarlet-pet',
+    title:'红魔馆 · 瓮旁的小兽',en:'A sleeping creature by the jar',
+    place:'scarlet',tag:'红魔馆 / 珍兽归来',people:['chupacabra','sakuya','remilia'],
+    alt:'银发的咲夜跪坐在瓮和小兽旁，暖灯照着兽背上的棘与侧腹斑点',
+    lead:'瓮沿还有一点暖光，小兽已经蜷起来了。',
+    text:'沿着第七话里咲夜把珍兽带回红魔馆的结尾，想象归来后一个安静的片刻。',
+    basis:'原作中珍兽从瓮里跃出，随后被咲夜捕获并带回红魔馆。打盹、馆内的器具和咲夜的动作是画册安排。',
+    sources:[['铃奈庵第七话 · 珍兽归来','https://thbwiki.cc/东方铃奈庵/第七话']]
+  },
+  {
+    id:'salt-stable',batch:'42',image:'scene-salt-stable',
+    title:'盐家旧厩 · 门边的马影',en:'A horse’s shadow by the stable',
+    place:'village',tag:'人类村落 / 盐家线索',people:['salt-merchant','horse-possession','reimu','mamizou'],
+    alt:'黄昏的旧马厩边，深衣商人提灯，门另一侧有一团形如马身的淡影',
+    lead:'一盏灯照着旧门，马影停在光线外。',
+    text:'门两侧各保留一个辨认细节，盐家老板的深衣和马影的胸前圆饰。',
+    basis:'马影出现在借书屋一带，盐家大院是后续调查地点。旧厩、提灯与二者同框属于画册构图。',
+    sources:[['铃奈庵第三十七话 · 马凭与盐家','https://thbwiki.cc/东方铃奈庵/第三十七话']]
+  },
+  {
+    id:'cup-afterhours',batch:'42',image:'scene-cup-afterhours',
+    title:'鲵吞亭 · 收起酒盅之前',en:'Before the cups are put away',
+    place:'village',tag:'人类村落 / 酒馆与酒盅',people:['geidontei-owner','geidontei-regular','chokuboro','miyoi','mamizou'],
+    alt:'店主在柜台边收拾，深胡须的常客坐在灯下，托盘旁有一枚酒盅遮住的小影',
+    lead:'杯盏快收齐了，柜台边还有一枚倒扣的小盅。',
+    text:'用同一盏灯照亮店主、末席的熟客和酒盅下的猪口暮露。',
+    basis:'店家与常客来自酒馆日常，猪口暮露在第二十六话被认出。同桌时刻、妖怪比例与收桌动作是画册并置。',
+    sources:[['醉蝶华第一话 · 酒馆见闻','https://thbwiki.cc/东方醉蝶华/第一话'],['醉蝶华第二十六话 · 猪口暮露','https://thbwiki.cc/东方醉蝶华/第二十六话']]
+  },
+  {
+    id:'snow-mark',batch:'42',image:'scene-snow-mark',
+    title:'雪里墙上的记号',en:'A small mark in the snow',
+    place:'village',tag:'人类村落 / 冬日涂写',people:['worried-villager','reimu','mamizou'],
+    alt:'墙脚有一个小记号，扫雪的村民和红白衣的灵梦隔着小路站着',
+    lead:'雪停了一阵，门旁留下的笔迹还看得见。',
+    text:'村民请灵梦来看反复出现的涂写。画页把故事停在她们还在想这是什么意思的时候。',
+    basis:'门上出现涂写取自第四十九话。雪路、站位、扫帚和记号图形为同人取景。',
+    sources:[['醉蝶华第四十九话 · 门上的涂写','https://thbwiki.cc/东方醉蝶华/第四十九话'],['醉蝶华第五十话 · 记号的来处','https://thbwiki.cc/东方醉蝶华/第五十话']]
+  }
+);

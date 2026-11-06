@@ -1084,3 +1084,62 @@ window.GENSOKYO.glossary.push(
   {term:'花果子念报',en:'Kakashi Spirit News',text:'姬海棠果的报纸。她平时用念写取材，在《文花帖 DS》的附带故事里决定亲自追踪射命丸文，寻找新的报道素材。',source:'https://thwiki.cc/附带文档:东方文花帖DS/Omake'},
   {term:'符卡照片评语',en:'Spell-card photo comments',text:'《文花帖 DS》里，文与果会为同一个拍摄对象留下不同评语。沿同一符卡并排阅读，可以看出她们各自关注的细节。',source:'https://thwiki.cc/东方文花帖DS/Level_4'}
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'kosuzu-grandfather':{place:'suzunaan',related:['kosuzu','akyuu'],work:'scrollery',line:'从第二话小铃想起的故事，读到卷轴上只剩纸、没剩字的线索。'},
+  enenra:{place:null,related:['kosuzu','reimu','marisa'],work:'scrollery',line:'从第三话抄本空白的一页，继续读灵梦遇见的怪烟。'},
+  chupacabra:{place:'scarlet',related:['sakuya','kosuzu','remilia'],work:'scrollery',line:'在第七话对照瓮中的小兽、咲夜的叫法和小铃的叙述。'},
+  'salt-merchant':{place:'village',related:['horse-possession','kosuzu','reimu'],work:'scrollery',line:'从借来的园艺书读到盐家大院里与马有关的线索。'},
+  'horse-possession':{place:'village',related:['salt-merchant','mamizou','reimu'],work:'scrollery',line:'留意猯藏怎样从马影的外形判断凭依已经发生。'},
+  'witness-page':{place:'village',related:['marisa','akyuu','mamizou'],work:'scrollery',line:'从门外的证词读到阿求的小说。第四十一话分开讲当下与旧闻。'},
+  'geidontei-owner':{place:'village',related:['geidontei-regular','miyoi','reimu'],work:'lotus-eaters',line:'从灵梦与店主的第一场谈话读起，看看他怎样描述酒馆的客人。'},
+  'geidontei-regular':{place:'village',related:['geidontei-owner','miyoi'],work:'lotus-eaters',line:'对照《醉蝶华》开头的双人分镜，认出右侧的胡须客人。'},
+  chokuboro:{place:'village',related:['mamizou','miyoi','suika'],work:'lotus-eaters',line:'从倒扣的小酒盅出发，读猯藏怎样想起旧酒窖的挂饰。'},
+  'worried-villager':{place:'village',related:['reimu','miyoi','mamizou'],work:'lotus-eaters',line:'先看门边反复出现的涂写，再翻后篇核对流言与真正用途。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='scrollery').ids.push('kosuzu-grandfather','enenra','chupacabra','salt-merchant','horse-possession','witness-page');
+window.GENSOKYO.books.find(book=>book.id==='lotus-eaters').ids.push('geidontei-owner','geidontei-regular','chokuboro','worried-villager');
+window.GENSOKYO.bonds.push(
+  {title:'一本书，想起一位长辈',label:'回忆与调查 / 小铃、爷爷与阿求',ids:['kosuzu-grandfather','kosuzu','akyuu'],relation:'小铃看到缺字的纸卷，想起爷爷说过的食字虫。',description:'第二话分别画出当下的查阅和小铃记得的故事。',color:'green',symbol:'字'},
+  {title:'从瓮里一跃而出',label:'原作相遇 / 咲夜与红魔馆的珍兽',ids:['chupacabra','sakuya','kosuzu'],relation:'咲夜认出走失的宠物，将它带回红魔馆。',description:'小铃的叙述将“树鼩”的叫法和卓柏卡布拉的名称分别交代。',color:'red',symbol:'瓮'},
+  {title:'一匹马留下的线索',label:'原作调查 / 马凭与盐家',ids:['horse-possession','salt-merchant','reimu'],relation:'猯藏辨出马凭，灵梦顺着盐家的痕迹调查。',description:'原作将借书店的马影与盐家大院分在不同场面。',color:'violet',symbol:'马'},
+  {title:'柜台内外的熟面孔',label:'同店见闻 / 店主、常客与美宵',ids:['geidontei-owner','geidontei-regular','miyoi'],relation:'店家、熟客和店里的美宵一起勾勒鲵吞亭日常。',description:'可先读《醉蝶华》第一话，再到第二十六话看酒盅带来的新线索。',color:'green',symbol:'盅'},
+  {title:'门边笔迹传遍冬日村落',label:'同篇并读 / 村民、灵梦与猯藏',ids:['worried-villager','reimu','mamizou'],relation:'村民向灵梦询问涂写，猯藏传播的说法改变了大家对记号的看法。',description:'前篇看见痕迹，后篇再交代狸猫实际记录的东西。',color:'violet',symbol:'雪'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'食字虫',en:'Letter-eating bugs',text:'小铃从爷爷处听说会吞吃文字的妖虫。《铃奈庵》第二话，她以纸面完好而字迹脱落这一细节推测它出现过。',source:'https://thbwiki.cc/东方铃奈庵/第二话'},
+  {term:'封着怪烟的抄本',en:'The manuscript and the strange smoke',text:'《铃奈庵》第三话，小铃发现稗田抄本上写烟烟罗的一页成了空白。她将书中的封印与外面的怪烟联系起来。',source:'https://thbwiki.cc/东方铃奈庵/第三话'},
+  {term:'马醉木的线索',en:'The Japanese andromeda clue',text:'《铃奈庵》第三十七话，灵梦发现墓地的马醉木被砍，借此推想马和盐家发生的异常。',source:'https://thbwiki.cc/东方铃奈庵/第三十七话'},
+  {term:'酒林',en:'Sugidama',text:'酒家挂起的球状饰物。《醉蝶华》第二十六话中，猯藏想起它取自废酒窖，由此追查猪口暮露的来处。',source:'https://thbwiki.cc/东方醉蝶华/第二十六话'},
+  {term:'狸猫的门边记号',en:'The tanuki’s door marks',text:'《醉蝶华》第五十话揭开涂写用途。狸猫借门边笔迹记下各家物资，便于冬日行动。',source:'https://thbwiki.cc/东方醉蝶华/第五十话'}
+);
+window.GENSOKYO.trails.push(
+  {
+    id:'blank-page-and-jar',number:'28',name:'从爷爷讲的空白纸页读到红魔馆',tag:'铃奈庵 / 纸墨与珍兽',
+    image:'scene-ink-grandfather',intro:'先循缺字的纸卷找怪烟，再看一口瓮里的小兽被带回哪里。',
+    steps:[['kosuzu-grandfather','从小铃记起的食字虫旧闻开始'],['kosuzu','跟着小铃查抄本上的空页'],['enenra','看纸上的名字怎样引向外面的烟'],['chupacabra','换到第七话，辨认瓮中跃出的珍兽'],['sakuya','读咲夜把它带回红魔馆的经过']],
+    scenes:['ink-grandfather','scarlet-pet'],lore:'blank-page-and-jar',work:'scrollery',listening:[],
+    note:'并读第二、三和第七话，回忆与珍兽归来各成一幅同人场景。'
+  },
+  {
+    id:'witness-at-gate',number:'29',name:'从盐家马影读到大宅门外',tag:'铃奈庵 / 两次目击',
+    image:'scene-salt-stable',intro:'跟着马影、园艺书和门外的一小块草地，比较几个人各自见到什么。',
+    steps:[['horse-possession','先从怪异的马影轮廓开始'],['salt-merchant','走到盐家大院，回想借书线索'],['witness-page','换到第四十一话，听侍童的证词'],['marisa','沿门外的草地核对痕迹'],['akyuu','看阿求如何把目击和小说并读']],
+    scenes:['salt-stable'],lore:'witness-at-gate',work:'scrollery',listening:[],
+    note:'马影和侍童分属不同故事。先读当下线索，再读人物转述的旧闻。'
+  },
+  {
+    id:'tavern-and-cup',number:'30',name:'在鲵吞亭从柜台读到旧酒盅',tag:'醉蝶华 / 熟客与旧物',
+    image:'scene-cup-afterhours',intro:'从店家的回答和熟客的样貌读起，最后找出酒盅旁那道小影的来处。',
+    steps:[['geidontei-owner','从柜台后的店家听亲历'],['geidontei-regular','在客席认出深胡须的熟面孔'],['chokuboro','看第二十六话中倒扣酒盅下的样子'],['mamizou','循猯藏的回想找酒林']],
+    scenes:['cup-afterhours'],lore:'tavern-and-cup',work:'lotus-eaters',listening:[],
+    note:'同读第一话与第二十六话，画页把先后的线索放进一场想象中的打烊。'
+  },
+  {
+    id:'snow-door-marks',number:'31',name:'沿雪地的小记号走进人里',tag:'醉蝶华 / 冬日记号',
+    image:'scene-snow-mark',intro:'先看村民在门边发现什么，再读街上传开的说法和后篇交代的用途。',
+    steps:[['worried-villager','从门旁的反复涂写读起'],['reimu','对照灵梦最初看到的笔迹'],['miyoi','转到鲵吞亭附近的相似记号'],['mamizou','读到说法如何流传，笔迹用来记什么']],
+    scenes:['snow-mark'],lore:'snow-door-marks',work:'lotus-eaters',listening:[],
+    note:'前、后篇按发现、传闻、揭晓的顺序阅读。'
+  }
+);

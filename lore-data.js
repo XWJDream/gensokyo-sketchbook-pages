@@ -416,3 +416,75 @@ window.GENSOKYO_LORE.push(
   }
 );
 window.GENSOKYO_LORE.find(c=>c.id==='moon').related.push('borrowed-moon');
+
+window.GENSOKYO_LORE.push(
+  {
+    id:'blank-page-and-jar',mark:'卷',name:'一页空白与一口封住的瓮',en:'A blank page and a sealed jar',
+    title:'从缺掉的字，查到跑出来的东西。',color:'#847765',image:'scene-ink-grandfather',
+    alt:'爷爷向年幼的小铃讲旧闻，两人之间摊着一卷纸',
+    lead:'并读《铃奈庵》第二、三话和第七话，看看小铃怎样辨认两类来客。',
+    paragraphs:[
+      '第二话，阿求展开字迹缺失的卷轴。纸面完好让小铃想起爷爷讲过的食字虫。到第三话，小铃又发现抄本中记载烟烟罗的那一页成了空白，把缺页与怪烟联系起来。',
+      '第七话换成一口封着的瓮。珍兽跃出后，咲夜认出它并带回红魔馆。小铃在叙述里区分了咲夜叫的“树鼩”和书中查到的卓柏卡布拉。'
+    ],
+    facts:[['食字虫','小铃借爷爷讲过的故事解释只缺墨字的纸面。'],['烟烟罗','小铃从抄本的空页追查怪烟。'],['珍兽','咲夜识得红魔馆走失的小兽。']],
+    correction:'食字虫、烟烟罗和珍兽分属不同线索。柜台回忆和馆内歇息是画册取景。',
+    perspective:'沿小铃实际看见的纸面和听来的称呼，分开阅读观察、旧闻与推测。',
+    caption:'两人之间的纸卷把爷爷的旧闻与第二话的调查线索接起来。',
+    people:['kosuzu-grandfather','kosuzu','akyuu','enenra','chupacabra','sakuya'],places:['suzunaan','scarlet'],
+    related:['suzunaan-clues','hood-and-scroll','witness-at-gate'],
+    sources:[['铃奈庵第二话 · 食字虫','https://thbwiki.cc/东方铃奈庵/第二话'],['铃奈庵第三话 · 烟烟罗','https://thbwiki.cc/东方铃奈庵/第三话'],['铃奈庵第七话 · 珍兽','https://thbwiki.cc/东方铃奈庵/第七话']]
+  },
+  {
+    id:'witness-at-gate',mark:'门',name:'两次门外的目击',en:'Two sightings outside a gate',
+    title:'看到了轮廓，还要回去找留下的痕迹。',color:'#777c80',image:'scene-salt-stable',
+    alt:'盐家老板提灯站在木厩门外，门另一侧是马影',
+    lead:'把第三十七话的马影，与第四十一话的侍童证词分开读。',
+    paragraphs:[
+      '第三十七话中，猯藏从马影没有头判断凭依已经开始。灵梦转去盐家一带查找线索，小铃则记得盐家老板近期借过园艺书。这些细节分别从三个人的视角进入故事。',
+      '第四十一话，侍童坚持说在大宅门外看见倒下的人。魔理沙去看草地时，只见一小块被压过的痕迹。阿求随后单独听他讲述，又将这件事同自己的连载小说联系起来。'
+    ],
+    facts:[['马影','猯藏用轮廓判断是否发生凭依。'],['侍童','图卡画的是当下的目击者。'],['门外的草地','魔理沙用现场痕迹核对证词。']],
+    correction:'盐家和侍童的故事发生在不同话数。盐家老板与马影同站在厩门外是画册的线索并置。',
+    perspective:'读到第四十一话时，留意当下的目击、阿求写下的小说和猯藏转述的旧闻。',
+    caption:'暮色下的旧厩和提灯由画册补绘。',
+    people:['salt-merchant','horse-possession','witness-page','reimu','marisa','akyuu','mamizou'],places:['village','suzunaan'],
+    related:['blank-page-and-jar','letters-and-supper'],
+    sources:[['铃奈庵第三十七话 · 盐家与马凭','https://thbwiki.cc/东方铃奈庵/第三十七话'],['铃奈庵第四十一话 · 门外的目击','https://thbwiki.cc/东方铃奈庵/第四十一话']]
+  },
+  {
+    id:'tavern-and-cup',mark:'盅',name:'柜台内外与倒扣的酒盅',en:'The counter and the overturned cup',
+    title:'一位店家、一位熟客，还有一件认错的旧物。',color:'#8a7160',image:'scene-cup-afterhours',
+    alt:'鲵吞亭店主收拾柜台，熟客坐在一边，酒盅下有一道小影',
+    lead:'从《醉蝶华》开头的酒馆日常，读到第二十六话的醉魔。',
+    paragraphs:[
+      '第一话以几位客人的闲谈和店主的回答引出鲵吞亭。村里传说酒客被妖怪拐走，灵梦问起时，店主对传闻另有看法。先看他说了哪些亲历，便能分清传闻从哪里传来。',
+      '第二十六话，猯藏认出头顶酒盅的猪口暮露。她起初怀疑别人的酒，随后才想起自己从旧酒窖带来的酒林。杯盏和旧物把新的怪事牵回平时的柜台。'
+    ],
+    facts:[['店主','从他的话听酒馆一侧的见闻。'],['常客','图卡选用双人分镜右侧的深胡须男子。'],['酒林','旧酒窖来的挂饰，成为查找醉魔来处的线索。']],
+    correction:'图页将开头的店家与常客、第二十六话的妖怪并置。酒盅小影的大小为画册安排。',
+    perspective:'作品中的醉魔属于故事设定。沿猯藏改换怀疑对象的顺序读，容易找到被忽略的旧物。',
+    caption:'打烊的取景用来区分柜台内外与台边的小影。',
+    people:['geidontei-owner','geidontei-regular','miyoi','chokuboro','mamizou'],places:['village'],
+    related:['snow-door-marks','village','fortune-and-rumors'],
+    sources:[['KADOKAWA · 东方醉蝶华第一卷','https://www.kadokawa.co.jp/product/322005000454'],['醉蝶华第一话 · 店里的传闻','https://thbwiki.cc/东方醉蝶华/第一话'],['醉蝶华第二十六话 · 酒盅与酒林','https://thbwiki.cc/东方醉蝶华/第二十六话']]
+  },
+  {
+    id:'snow-door-marks',mark:'雪',name:'雪日门边的涂写',en:'Door markings in winter',
+    title:'同一处笔迹，在人里传成了几种解释。',color:'#74848b',image:'scene-snow-mark',
+    alt:'雪路上村民与灵梦相望，门边有淡淡的记号',
+    lead:'沿第四十九、五十话看村民怎样发现、谈论并逐渐忽略涂写。',
+    paragraphs:[
+      '第四十九话，村民请灵梦查看门边反复出现的涂写。鲵吞亭附近也出现了类似文字。人们注意到笔迹和高度，却仍无法从外形判断它是谁留下的。',
+      '第五十话，猯藏给村民传播了另一套解释。等涂写渐渐被忽略后，叙事才转到狸猫储备过冬物资的行动，交代这些标记真正记录了什么。'
+    ],
+    facts:[['涂写','起初在低处反复出现。'],['传闻','猯藏散布说法，改变了村里人看待涂写的方式。'],['用途','后篇交代狸猫用它标记各户物资。']],
+    correction:'画页中的符形与两人的站位为同人构图；原作笔迹可回对应分镜查看。',
+    perspective:'按先看见、后听说、最后揭晓的顺序阅读，能区分角色猜想和叙事给出的解释。',
+    caption:'雪地亮处留给门边的小记号。',
+    people:['worried-villager','reimu','miyoi','mamizou'],places:['village'],
+    related:['tavern-and-cup','fortune-and-rumors','suzunaan-clues'],
+    sources:[['醉蝶华第四十九话 · 门上的涂写','https://thbwiki.cc/东方醉蝶华/第四十九话'],['醉蝶华第五十话 · 涂写的用途','https://thbwiki.cc/东方醉蝶华/第五十话']]
+  }
+);
+window.GENSOKYO_LORE.find(c=>c.id==='suzunaan-clues').related.push('blank-page-and-jar');

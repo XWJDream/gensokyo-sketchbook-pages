@@ -75,6 +75,14 @@
     "sha256": "05ec8e309d05f879cee1b7b7f3fa2fee4f06ee152c7cd9c56d52787c44b56d5a",
     "size": 2309463
   },
+  "chokuboro.png": {
+    "sha256": "6ff0a2e51cca235549131be3832f233d4ac3d705936b2d6bc0724824af31e638",
+    "size": 2853011
+  },
+  "chupacabra.png": {
+    "sha256": "6e54eccfcb3f5c436bf3fb916a77933359eb03359da15fbef3317ec86781fe74",
+    "size": 2661778
+  },
   "cirno.png": {
     "sha256": "fe228c20d7500c116d85659cfb58673e3d49ed01b38a7ca11b75410305bde272",
     "size": 2558334
@@ -131,6 +139,10 @@
     "sha256": "e0685f9856db604ff3d1559f7a3d388997e3eea26189ba22f747ee383a51d167",
     "size": 2304198
   },
+  "enenra.png": {
+    "sha256": "0dbf0c461506eed8ade9c9c74cb5d30042bd041035e56ec8d9d3da82b179a7d4",
+    "size": 2763449
+  },
   "enoko.png": {
     "sha256": "fb750a30cc31ded98583483a5e5a6aac6640a8fb84957a3a7b34bbebd9236c5f",
     "size": 2443672
@@ -162,6 +174,14 @@
   "futo.png": {
     "sha256": "2145f7991a7fd8b1b8ff04984af578a0ecf4b3429a4a8fb01582aea15d0d9b53",
     "size": 3106046
+  },
+  "geidontei-owner.png": {
+    "sha256": "69fa137314f27960de1da118b449ea60349d539b6a464c19b3a0c4f60df8bf03",
+    "size": 2402381
+  },
+  "geidontei-regular.png": {
+    "sha256": "83817dbc81c5382955f284b9953a803b45a5b1e91e382da120cb0af1b03f2a68",
+    "size": 2754034
   },
   "gengetsu.png": {
     "sha256": "2a41c766805019527afc2b3f67dc52e68c81f6327e7e7559230b5e8875731abd",
@@ -198,6 +218,10 @@
   "hisami.png": {
     "sha256": "4bb5002f7f481d3de87412ae399ba31c4061dabd9bd00212985ab573fdcdfbd0",
     "size": 2725469
+  },
+  "horse-possession.png": {
+    "sha256": "294ea06e7278f174b751c1ffe8940aad2e4eb65f6a86f74ede7876c485eb7662",
+    "size": 2889296
   },
   "houso.png": {
     "sha256": "8edcfe454f768bd7a5eec29bd0d92c69ea78a3bb00efe5a3cc8ec990c9ad4d9f",
@@ -310,6 +334,10 @@
   "kosuzu-father.png": {
     "sha256": "5e7e1268c86b5295deaf9e3ddd1edcd9233ff4fc3ba64f36e94156d73e44acc8",
     "size": 2759724
+  },
+  "kosuzu-grandfather.png": {
+    "sha256": "1397035aa01367ee94aae57660326afbc999b9272995c0631aebb1231b790df1",
+    "size": 2690868
   },
   "kosuzu.png": {
     "sha256": "ef7be9e7bb551ab93e33e51884ff893564ea1ed5b94d6b940d1f7fe9b2f0a0bc",
@@ -603,6 +631,10 @@
     "sha256": "765a66669c127aa58c33287afa16c3bb4b17b491744e96a9544d1543b193297a",
     "size": 2572289
   },
+  "salt-merchant.png": {
+    "sha256": "02379902ee8b032bf4519a55196d67e6b51ec22b29596b4eb9697b3a2c03bcac",
+    "size": 2646645
+  },
   "sanae.png": {
     "sha256": "e404f9dc56309c9b2f875ed0ebd9dca53a921bb4b5feba2b97c792b34e706ef1",
     "size": 2742267
@@ -658,6 +690,10 @@
   "scene-chimi-rill.png": {
     "sha256": "9814a70812b2849319f23903c1f91914e665b9470ec9e175ff144cd983c16ecf",
     "size": 3611861
+  },
+  "scene-cup-afterhours.png": {
+    "sha256": "a5318e1967cc834dd360650cf252098d59c7fb2380e8553f9525fe164e9fcbe8",
+    "size": 3869394
   },
   "scene-dango-stalls.png": {
     "sha256": "719aeaab068cf95ce1c11df3fe0980a21b9116a906ea5e9e7453a74faab6ffe5",
@@ -782,6 +818,10 @@
   "scene-inari-hood.png": {
     "sha256": "f9e3a898617cb881ab26a1d45b916f92e5a945ebda77d033c1e31d6e750916a3",
     "size": 4012010
+  },
+  "scene-ink-grandfather.png": {
+    "sha256": "a4995856637dffad32192de29b8ab1a8fc659db527825a3d000f80c97c27e5b9",
+    "size": 4133095
   },
   "scene-inverted-castle.png": {
     "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
@@ -959,6 +999,10 @@
     "sha256": "edcc7791e16e59d346493712e29d157ead75f76a4aeea740c9432d6bd109eaa0",
     "size": 3795734
   },
+  "scene-salt-stable.png": {
+    "sha256": "610dc70166c4e0e070d396518ae9e3266a6fb83a5fa60947e34b1c99b2eb3cd9",
+    "size": 4153775
+  },
   "scene-sanzu-stones.png": {
     "sha256": "43a91cbe99497bf7d19165c5982056a8428bb9800dff93c3882dad20b443dc15",
     "size": 3512613
@@ -966,6 +1010,10 @@
   "scene-sariel-sanctuary.png": {
     "sha256": "58f0d6c16bc0744d64af441720e5a13a4395e33694bd9cd105237397963d2eff",
     "size": 3556001
+  },
+  "scene-scarlet-pet.png": {
+    "sha256": "7b1c23b0a17d8d5f88afe44828b5227a03e6cbe127e238fa14622a0a32064ec2",
+    "size": 3998689
   },
   "scene-season-mountain.png": {
     "sha256": "9d647a70fdcd939a3bd47fda7620546c4ba07f8a4d0f0ec9b71321561ea98e6e",
@@ -998,6 +1046,10 @@
   "scene-sisters-riverside.png": {
     "sha256": "88d7f2dff67fd12c6e1e722dbf3eb6e647b97eef1a136e984cfd48560364be71",
     "size": 3500360
+  },
+  "scene-snow-mark.png": {
+    "sha256": "d903567456fc89841f7eb3aff0dad4d601faecd2e6df4055f62305677b2f130b",
+    "size": 3895654
   },
   "scene-sokrates-window.png": {
     "sha256": "011dda8c485d7d96b2438423e5ca46356ee5037daa82255490e67e8b619b5904",
@@ -1211,6 +1263,10 @@
     "sha256": "8a09ef2655edefed78fe6bff31c167ce666c2730b66d68dc089a37c49d664953",
     "size": 2707093
   },
+  "witness-page.png": {
+    "sha256": "5d40605da15774001f7b2acc49fcf5dd887fddc19c70978a1bfa470dcdae6f5c",
+    "size": 2554306
+  },
   "world-boundary.png": {
     "sha256": "e8b6586dde01d1b2e74e44565a7cf4598e4c7fc44069733f982998ba66305b43",
     "size": 4079918
@@ -1234,6 +1290,10 @@
   "world-village.png": {
     "sha256": "0d3ccb17f5c9d7035faf93a8d41627f54bc668ac9cae471afe638c96c7b69d45",
     "size": 4054114
+  },
+  "worried-villager.png": {
+    "sha256": "efd4747c14cba966de382a2a9c1c2db2909e23d6e17b9e88d8be11257c542c9f",
+    "size": 2570533
   },
   "wriggle.png": {
     "sha256": "e37ea4aa2fb860efc9ebe48a7696c7d3abce7af85f73f1c7f09466802deb7654",
