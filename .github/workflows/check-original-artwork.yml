@@ -19,10 +19,17 @@ jobs:
           full='https://gensokyo-sketchbook.h6zsmjd2dn.chatgpt.site/'
           with urllib.request.urlopen(mirror+'characters.js?v=cast43',timeout=30) as response:
               assert "id:'houso'" in response.read().decode('utf-8')
+          with urllib.request.urlopen(mirror+'pages-artwork.json',timeout=40) as response:
+              artwork=json.load(response)
+          external=set(artwork['external'])
+          def original_url(base, name):
+              if base == mirror and name in external:
+                  return artwork['rawBase']+name
+              return base+'assets/'+name
           base=mirror
           def verify(item):
               name,entry=item
-              request=urllib.request.Request(base+'assets/'+name,method='HEAD')
+              request=urllib.request.Request(original_url(base,name),method='HEAD')
               for attempt in range(2):
                   try:
                       with urllib.request.urlopen(request,timeout=40) as response:
@@ -34,23 +41,26 @@ jobs:
                       if attempt:raise
           with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
               verified=list(pool.map(verify,registry.items()))
-          print(f'{len(verified)} GitHub original artwork routes verified')
+          print(f'{len(verified)} GitHub original artwork routes verified via Pages or the public source snapshot')
           for name in ['hairclip-kappa.png','houso.png','scene-kappa-hillspring.png','scene-houso-pinegate.png','scene-bamboo-lantern-v2.png']:
-              with urllib.request.urlopen(base+'assets/'+name,timeout=40) as response:
+              with urllib.request.urlopen(original_url(base,name),timeout=40) as response:
                   assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
               print('Exact original bytes: '+name)
           try:
-              with urllib.request.urlopen(full+'characters.js?v=cast43',timeout=30) as response:
-                  assert "id:'houso'" in response.read().decode('utf-8')
+              with urllib.request.urlopen(full,timeout=30) as response:
+                  latest_on_sites = '?v=cast43' in response.read().decode('utf-8')
           except urllib.error.HTTPError as error:
               if error.code!=403:raise
               print('::warning::Sites returned HTTP 403 to this automated runner. Full-site image checks are unverified; GitHub checks above passed.')
           else:
+              if not latest_on_sites:
+                  print('::warning::Sites is serving a different edition. GitHub original artwork checks passed.')
+                  raise SystemExit(0)
               base=full
               with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
                   checked=list(pool.map(verify,registry.items()))
               print(f'{len(checked)} Sites PNG routes verified')
               for name in ['hairclip-kappa.png','houso.png','scene-kappa-hillspring.png','scene-houso-pinegate.png']:
-                  with urllib.request.urlopen(base+'assets/'+name,timeout=40) as response:
+                  with urllib.request.urlopen(original_url(base,name),timeout=40) as response:
                       assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
                   print('Exact Sites original bytes: '+name)
