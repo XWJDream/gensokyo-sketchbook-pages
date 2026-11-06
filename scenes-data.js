@@ -619,3 +619,86 @@ window.GENSOKYO_SCENES.push(
     sources:[['茨歌仙第二十三话 · 路旁道祖神','https://thbwiki.cc/东方茨歌仙/第二十三话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'th04-hillflower',batch:'45',image:'scene-th04-hillflower',
+    title:'神社后山 · 伏在岸边的花',en:'A blossom at the hillside bank',
+    place:null,tag:'东方幻想乡 / 一面',people:['th04-mid-flower','orange','reimu','marisa'],
+    alt:'粉白下垂的花状单位在绿坡上，旁边是淡紫蓝水面。',
+    lead:'从绿坡接到浅水，花瓣刚越过地面。',
+    text:'以一面草地和水色为参照，留出那簇从地下出现的花。这里取白日光线。',
+    basis:'一面道中像素图与后山背景来自游戏。草坡、岸形和近景位置由画册补绘。',
+    sources:[['TH04 原作关卡与自机路线','https://thbwiki.cc/东方幻想乡'],['神社后山 · 原作背景','https://thbwiki.cc/文件:神社后山（幻想乡）.png']]
+  },
+  {
+    id:'th04-mirror-hall',batch:'45',image:'scene-th04-mirror-hall',
+    title:'梦幻馆路上 · 黑镜与绿衣',en:'A dark mirror and a green silhouette',
+    place:null,tag:'东方幻想乡 / 三、四面并置',people:['th04-mid-mirror','th04-mid-light','elly','reimu','marisa'],
+    alt:'红砖廊前浮着黑面蓝边翼镜，远处有绿衣黄裙的身影。',
+    lead:'先认黑镜，再在另一段门廊找绿衣。',
+    text:'把两段道中分别留在前景和远景，延续旧作梦幻馆的红砖色。',
+    basis:'翼镜出现在三面，绿衣身影出现在四面。画页的同框、廊柱和光线为同人并置。',
+    sources:[['TH04 道中原像素图','https://thbwiki.cc/东方幻想乡/其他角色'],['梦幻馆 · 原作砖纹','https://thbwiki.cc/文件:梦幻馆（幻想乡）1.png']]
+  },
+  {
+    id:'th04-extra-orb',batch:'45',image:'scene-th04-extra-orb',
+    title:'梦幻世界 · 粉光穿过紫阶',en:'A rose glow among violet steps',
+    place:null,tag:'东方幻想乡 / Extra',people:['th04-extra-orb','mugetsu','gengetsu'],
+    alt:'一道浅粉圆光悬在高低相间的紫色台阶和细蓝轮廓之间。',
+    lead:'台阶还很暗，圆光先照出了边缘。',
+    text:'以 Extra 背景的紫色轮廓和细蓝边为出发点，留一块开阔暗色给粉色光球。',
+    basis:'原作提供光球像素图与背景色。远处阶台是把背景图样转成纸本风景的构图。',
+    sources:[['TH04 Extra 关卡索引','https://thbwiki.cc/东方幻想乡'],['梦幻世界 · 原作背景','https://thbwiki.cc/文件:梦幻世界（幻想乡）1.png']]
+  },
+  {
+    id:'th05-gate-ring',batch:'45',image:'scene-th05-gate-ring',
+    title:'魔界之门 · 红门前的蓝环',en:'A blue ring before the red gate',
+    place:null,tag:'东方怪绮谈 / 一面',people:['th05-mid-ring','sara','reimu'],
+    alt:'红色门影深处有暖光，前方浮着带四枚亮球的蓝环与红裙身影。',
+    lead:'远处红门开着，近处四枚光点围成一圈。',
+    text:'用远处的红色与近处的蓝色分出游戏背景和一面道中的轮环。',
+    basis:'魔界之门的红色圆形和道中蓝环来自游戏。石拱、石路与二者在景中的距离由画册安排。',
+    sources:[['TH05 一面原作关卡','https://thbwiki.cc/东方怪绮谈'],['魔界之门 · 原作背景','https://thbwiki.cc/文件:魔界之门（怪绮谈）.png']]
+  },
+  {
+    id:'th05-star-passage',batch:'45',image:'scene-th05-star-passage',
+    title:'魔空间 · 星线旁的翼球',en:'A winged sphere in the star passage',
+    place:null,tag:'东方怪绮谈 / 二面',people:['th05-mid-mirror','louise','reimu'],
+    alt:'深蓝星空里浮着一枚浅紫蓝色翼球，球心与背景各有细细星线。',
+    lead:'两片浅翼，把球心星线从远处星光里挑了出来。',
+    text:'把原作魔空间背景的连星图样延伸成带远近的暗色通道。',
+    basis:'二面翼球和星图背景来自原作。漂浮微尘、光线和画面纵深为同人补绘。',
+    sources:[['TH05 二面道中原像素图','https://thbwiki.cc/东方怪绮谈/其他角色'],['魔空间 · 原作星图背景','https://thbwiki.cc/文件:魔空间（怪绮谈）.png']]
+  },
+  {
+    id:'th05-street-light',batch:'45',image:'scene-th05-street-light',
+    title:'魔界街道 · 斜砖路上有光',en:'A light over the diagonal red street',
+    place:null,tag:'东方怪绮谈 / 三面与灵梦结局',people:['th05-mid-light','th05-resident-a','th05-resident-b','alice'],
+    alt:'斜铺红砖上方有绿衣红结身影，街边一位金发居民走过。',
+    lead:'屋檐收在暗处，斜砖路照亮了两种剪影。',
+    text:'用斜铺红砖留住三面背景，再让结局里的居民 A 走过画面的另一端。',
+    basis:'绿衣身影属于三面道中，居民 A 的像素图来自灵梦结局。两者同框和沿街建筑由画册安排。',
+    sources:[['TH05 三面关卡与结局记录','https://thbwiki.cc/东方怪绮谈'],['魔界街道 · 原作背景','https://thbwiki.cc/文件:魔界街道（怪绮谈）1.png'],['灵梦路线与结局','https://thbwiki.cc/游戏对话:东方怪绮谈/博丽灵梦']]
+  },
+  {
+    id:'th05-snow-passage',batch:'45',image:'scene-th05-snow-passage',
+    title:'冰雪世界 · 浅檐下的寒气',en:'A pale brim in the ice passage',
+    place:null,tag:'东方怪绮谈 / 四面',people:['th05-mid-frost','louise','yuki','mai-pc98'],
+    alt:'浅色宽檐帽和蓝领白裙从淡蓝寒气中显出，身旁是层叠冰崖。',
+    lead:'从裙边的寒气读起，沿冰道走向雪与舞。',
+    text:'让帽檐、蓝肩领和白裙成为前景，远处留原作背景的深蓝和浅冰纹。',
+    basis:'浅帽单位与关底雪、舞同属四面，游戏里按道中与关底分开出场。冰阶、姿态和光线为同人绘制。',
+    sources:[['TH05 四面道中原像素图','https://thbwiki.cc/东方怪绮谈/其他角色'],['冰雪世界 · 原作背景','https://thbwiki.cc/文件:冰雪世界（怪绮谈）1.png']]
+  },
+  {
+    id:'th05-palace-card',batch:'45',image:'scene-th05-palace-card',
+    title:'万魔殿与牌门 · 两段岔路',en:'Two passages through palace and cards',
+    place:null,tag:'东方怪绮谈 / 五面与 Extra 并置',people:['th05-mid-wing','th05-extra-card','yumeko','shinki','alice'],
+    alt:'左侧蓝色殿廊有红裙弧翼身影，右侧另一路口有戴金冠的卡牌兵。',
+    lead:'从深蓝殿廊翻页，再走进冠饰卡牌兵的 Extra。',
+    text:'用一段墙体分隔五面的蓝砖与另一侧纸牌意象，沿两边分别辨认剪影。',
+    basis:'弧翼少女在第五面，冠饰卡牌兵在 Extra。墙、牌门与同页并置为画册安排。',
+    sources:[['TH05 道中与 Extra 原像素图','https://thbwiki.cc/东方怪绮谈/其他角色'],['万魔殿 · 原作背景','https://thbwiki.cc/文件:万魔殿（怪绮谈）1.png'],['外来韦编数字特辑 · 卡牌兵','https://thbwiki.cc/东方外来韦编/2021_Spring!/数字特辑']]
+  }
+);

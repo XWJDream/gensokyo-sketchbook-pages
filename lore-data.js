@@ -650,3 +650,93 @@ window.GENSOKYO_LORE.push(
 );
 
 window.GENSOKYO_LORE.find(page=>page.id==='spirits-detective').related.push('old-seal-memory');
+
+window.GENSOKYO_LORE.push(
+  {
+    id:'hill-bloom-day-night',mark:'花',name:'同一座后山的昼夜',en:'Two times of day on one hillside',
+    title:'两位自机经过同一关，听见的却是不同的曲子。',color:'#8d8069',image:'scene-th04-hillflower',
+    alt:'浅色垂瓣从后山岸边冒出。',
+    lead:'先找一面地上的花，再用两首道中曲区分昼夜。',
+    paragraphs:['《东方幻想乡》的一面会随所选自机呈现白天或夜晚。灵梦路线是白日，魔理沙路线是夜间。花状道中单位和后续关底奥莲姬均可从一面索引查找。','看画页时，可以先找浅色垂瓣和暗红瓣底。绿色岸坡、浅紫蓝水面来自原作的色彩线索。'],
+    facts:[['花状单位','原作从地面出现，图卡以出场位置命名。'],['灵梦路线','一面白天，道中曲 Witching Dream。'],['魔理沙路线','一面夜晚，道中曲 Selene’s light。']],
+    correction:'画页取白日，并以原作的草地与水色补绘岸线。',
+    perspective:'先比较路线，再沿同一关从道中读到奥莲姬。',
+    caption:'浅色花瓣与原作像素的暗红瓣底分开绘制。',
+    people:['th04-mid-flower','orange','reimu','marisa'],places:[],
+    related:['lotusland','oldworks'],
+    sources:[['东方幻想乡 · 关卡与路线','https://thbwiki.cc/东方幻想乡'],['东方幻想乡 · 未命名道中原像素','https://thbwiki.cc/东方幻想乡/其他角色']]
+  },
+  {
+    id:'two-wings-and-a-mirror',mark:'镜',name:'从黑翼镜读到两作绿衣身影',en:'A dark mirror and two green silhouettes',
+    title:'《幻想乡》三、四面各有道中；相似的绿衣像素也出现在《怪绮谈》。',color:'#8e7680',image:'scene-th04-mirror-hall',
+    alt:'红砖廊前的黑面翼镜和更远处的绿衣身影。',
+    lead:'先辨轮廓，再把两作的关卡位置对上。',
+    paragraphs:['《幻想乡》第三面可以先看到黑面翼镜，再见梦幻馆的门卫艾丽。第四面途中则是红结、绿衣与黄裙的带翼身影，关底依自机而变。','《怪绮谈》第三面有一位外观相近的带翼单位。本册保留两张原像素来源，各自以关卡标注。部分二创使用同名或双子解释，可与原作出场信息分开看。'],
+    facts:[['黑面翼镜','第三面途中，蓝边和尖形下锥清楚。'],['TH04 绿衣身影','第四面道中。'],['TH05 绿衣身影','第三面道中，像素同样有红结和绿衣。']],
+    correction:'廊前与廊后代表不同段落。游戏分关呈现，画页将两种剪影放在同一页。',
+    perspective:'逐张打开两张绿衣图卡的造型对照，核对相近的衣色和发结。',
+    caption:'近景保留黑镜蓝边，远景给绿衣留出一处亮边。',
+    people:['th04-mid-mirror','elly','th04-mid-light','th05-mid-light','reimu','marisa'],places:[],
+    related:['lotusland','oldworks','red-brick-residents'],
+    sources:[['东方幻想乡 · 道中原像素','https://thbwiki.cc/东方幻想乡/其他角色'],['东方怪绮谈 · 道中原像素','https://thbwiki.cc/东方怪绮谈/其他角色'],['外来韦编数字特辑 · 旧作部分','https://thbwiki.cc/东方外来韦编/2021_Spring!/数字特辑']]
+  },
+  {
+    id:'violet-extra-orb',mark:'光',name:'Extra 的粉色光球',en:'A rose orb in Extra',
+    title:'从只剩圆心和光边的像素，读到梦月与幻月。',color:'#84708e',image:'scene-th04-extra-orb',
+    alt:'一枚浅粉色光球漂浮在紫阶与蓝边之间。',
+    lead:'先找光球的外圈，再沿梦幻世界去见梦月和幻月。',
+    paragraphs:['《东方幻想乡》Extra 的道中首领是粉色光球状单位。原像素提供浅心、亮边和零星粉点，造型信息很少。','幽香的部分形态也呈光球状，玩家因此会拿来对照。作品中的位置不同，图鉴保留各自出处。再顺着 Extra 的关底去看梦月与幻月。'],
+    facts:[['粉色光球','Extra 道中出场。'],['梦幻世界','原作背景可见紫色形块与细蓝边。'],['梦月和幻月','沿 Extra 继续往关底读。']],
+    correction:'紫阶是对原作背景形块的风景化处理。',
+    perspective:'从外形相似出发，把不同出场位置分别记下。',
+    caption:'保留一枚无五官的浅粉光球。',
+    people:['th04-extra-orb','mugetsu','gengetsu','yuuka'],places:[],
+    related:['lotusland','dreams','oldworks'],
+    sources:[['东方幻想乡 · Extra 关卡','https://thbwiki.cc/东方幻想乡'],['东方幻想乡 · Extra 道中原像素','https://thbwiki.cc/东方幻想乡/其他角色']]
+  },
+  {
+    id:'makai-gate-to-stars',mark:'环',name:'从红门到魔空间的星线',en:'From the red gate to lines of stars',
+    title:'门前是蓝环，穿过去是长白翼的圆球。',color:'#766f91',image:'scene-th05-gate-ring',
+    alt:'魔界红门之前，蓝环围着四枚亮球。',
+    lead:'从魔界之门认两种圆形，再读二面的翼球。',
+    paragraphs:['《怪绮谈》一面背景里的红形和道中少女身边的蓝环可以分别对照。蓝环上四方各一枚亮球，关底则由萨拉出场。','第二面的魔空间背景出现深蓝星点与连线。这里的道中单位像一枚带浅翼的球，与二面关底露易兹的造型截然不同。'],
+    facts:[['红门','一面的背景图样。'],['蓝环少女','一面道中，环上四枚亮球。'],['星纹翼球','二面道中，两侧浅羽翼。']],
+    correction:'红门的石拱、星空的纵深为画册取景，原作截图提供轮廓与配色。',
+    perspective:'先按关卡区分道中和关底，再比较红环、蓝环与翼球。',
+    caption:'近处蓝环的四枚亮球和远处红门分别描绘。',
+    people:['th05-mid-ring','sara','th05-mid-mirror','louise'],places:[],
+    related:['makai','first-gates','two-wings-and-a-mirror'],
+    sources:[['东方怪绮谈 · 一、二面出场','https://thbwiki.cc/东方怪绮谈'],['东方怪绮谈 · 道中原像素','https://thbwiki.cc/东方怪绮谈/其他角色'],['旧作场景 · 魔界之门与魔空间','https://thbwiki.cc/官方场景（旧作）#魔界之门']]
+  },
+  {
+    id:'red-brick-residents',mark:'街',name:'红砖街道与结局里的居民',en:'The red street and two ending residents',
+    title:'从三面的一条斜砖路走到灵梦结局的两副翼。',color:'#967584',image:'scene-th05-street-light',
+    alt:'红砖街道上方有绿衣身影，街边一位金发居民走过。',
+    lead:'看关卡的背景，再翻结局看两位住民。',
+    paragraphs:['《怪绮谈》第三面在魔界街道展开。原作背景中有倾斜的砖路，道中绿衣身影与关底爱丽丝依次出现。','灵梦结局另有魔界居民 A、B 的像素图。A 的浅紫翼和金发、B 的深边粉色膜翼与白发适合分别辨认。原图只显示部分身体，图卡的下装与鞋履采用同色补绘。'],
+    facts:[['红砖街道','三面背景的斜线是画页取景的依据。'],['居民 A','浅金发、粉白衣、浅紫翼。'],['居民 B','白发、深色背心、粉色膜翼。']],
+    correction:'画页将居民 A 和三面道中并置。居民 B 收于独立图卡。',
+    perspective:'按三面与灵梦结局两个入口读图，不为居民补写能力或经历。',
+    caption:'结局的居民在场景里占很小的前景位置。',
+    people:['th05-mid-light','alice','th05-resident-a','th05-resident-b','reimu'],places:[],
+    related:['makai','two-wings-and-a-mirror','oldworks'],
+    sources:[['东方怪绮谈 · 三面关卡与结局角色','https://thbwiki.cc/东方怪绮谈'],['东方怪绮谈 · 灵梦路线和结局','https://thbwiki.cc/游戏对话:东方怪绮谈/博丽灵梦'],['东方怪绮谈 · 两位居民的像素图','https://thbwiki.cc/东方怪绮谈/其他角色#ED']]
+  },
+  {
+    id:'makai-ice-palace-extra',mark:'冠',name:'冰道、万魔殿与 Extra 的冠饰',en:'Ice, palace tiles, and a crown in Extra',
+    title:'一顶浅帽、一对弧翼，再加一张戴冠饰的牌。',color:'#747f99',image:'scene-th05-snow-passage',
+    alt:'浅帽白裙的身影悬在层层冰崖之间。',
+    lead:'从四面沿冰道认到万魔殿，然后另开 Extra。',
+    paragraphs:['《怪绮谈》第四面途中可从浅帽、白裙和寒气辨认道中身影，关底的雪与舞在后。第五面先见两侧带分节弧形结构的少女形单位，再遇梦子。','Extra 中先遇有金色冠饰的卡牌兵，图案是画在牌身上的少女。其后是 Extra 关底爱丽丝。并置图用蓝砖和牌门分开五面与 Extra。'],
+    facts:[['浅帽身影','四面道中，身旁有寒气。'],['弧翼少女','五面途中，浅粉结构向两边下弯。'],['冠饰卡牌兵','Extra 途中，可辨认冠饰和红手脚。']],
+    correction:'冰道取景、殿廊和牌门由画册补绘。五面与 Extra 在画页里用墙体分开。',
+    perspective:'沿四、五面读主线，再单独打开 Extra 对照爱丽丝。',
+    caption:'浅帽的颜色和低帽冠来自原像素图。',
+    people:['th05-mid-frost','yuki','mai-pc98','th05-mid-wing','yumeko','th05-extra-card','alice'],places:[],
+    related:['makai','dream-border-bosses','makai-gate-to-stars'],
+    sources:[['东方怪绮谈 · 主线与 Extra','https://thbwiki.cc/东方怪绮谈'],['东方怪绮谈 · 道中原像素','https://thbwiki.cc/东方怪绮谈/其他角色'],['外来韦编数字特辑 · 冠饰卡牌兵','https://thbwiki.cc/东方外来韦编/2021_Spring!/数字特辑']]
+  }
+);
+
+window.GENSOKYO_LORE.find(page=>page.id==='lotusland').related.push('hill-bloom-day-night');
+window.GENSOKYO_LORE.find(page=>page.id==='makai').related.push('makai-gate-to-stars');

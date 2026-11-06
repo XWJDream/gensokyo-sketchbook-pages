@@ -1207,6 +1207,38 @@
     "sha256": "546298b407be4de0e1898ff80eee60311ec14683fb95db18b56ca6010edb79de",
     "size": 3536305
   },
+  "scene-th04-extra-orb.png": {
+    "sha256": "b483d7487c2dbdb9b29ec3f547b352a34611883b658fa2e89afd8c6ae6696f60",
+    "size": 2664275
+  },
+  "scene-th04-hillflower.png": {
+    "sha256": "302efbd489e8608b4f2bb6d28a7782e59b9aa7ed2d3dc13fd45775f48ddeaca2",
+    "size": 3607087
+  },
+  "scene-th04-mirror-hall.png": {
+    "sha256": "91924b83c123afcd6dd31ed3ef697de024d96fd9bddd93d29415e74f23091631",
+    "size": 3222715
+  },
+  "scene-th05-gate-ring.png": {
+    "sha256": "ae5c2c7171cbefd908c6c88302623c72c91403ae6177fe1cfb0397b6b8d7697e",
+    "size": 3347718
+  },
+  "scene-th05-palace-card.png": {
+    "sha256": "6de8c2df45d1359e8109238baf603edee06f2b5b47fff11833f1541ea535b407",
+    "size": 3614756
+  },
+  "scene-th05-snow-passage.png": {
+    "sha256": "579c2c2979d99c6edf46d60eb29be1470a4284b0a3027ba543c1740193171841",
+    "size": 3498740
+  },
+  "scene-th05-star-passage.png": {
+    "sha256": "7932c7cf58deeaeca32159eb92a73f496aeafc164a940150b3db8b9201a10320",
+    "size": 3243585
+  },
+  "scene-th05-street-light.png": {
+    "sha256": "f64db60ebb9a942e9cf97b6813f3be174b325acc5493e6b73c94e711ad2d7d58",
+    "size": 3659866
+  },
   "scene-tokiko-reading.png": {
     "sha256": "9e9e03fd7fc1b95f664207601d0d7a78ded1e5d04e0b5918aba7b8147d691c9e",
     "size": 3818387
@@ -1334,6 +1366,54 @@
   "tewi.png": {
     "sha256": "956559a90b4bb2356a2d250d2bf839c3bba3ae8a58e155037578d7aa5fe7dd3a",
     "size": 2269223
+  },
+  "th04-extra-orb.png": {
+    "sha256": "1392c3c5fb1ffa539d74a4f305f4e4e3f746b859fd14a7c1c6bb70e8a6b6ff4d",
+    "size": 1936467
+  },
+  "th04-mid-flower.png": {
+    "sha256": "935a575b1c26427ea7da2de97520b98e88ad72ad800b87715e3f8b0ae8160a44",
+    "size": 2499474
+  },
+  "th04-mid-light.png": {
+    "sha256": "597ed379d2f2be74e1332af8a1a22868ecbfc27895d04635ab9e8ae1985f3d23",
+    "size": 2579816
+  },
+  "th04-mid-mirror.png": {
+    "sha256": "da6ec6a1fd4f1f1fd8501a8b89f8bb77c6a37ad165d1ef46dd643bf444da8ed1",
+    "size": 2348578
+  },
+  "th05-extra-card.png": {
+    "sha256": "da00bb1331c483aace28e3ceb625b9e23869911da1f2d67463e40b4a9d7bd2da",
+    "size": 2544032
+  },
+  "th05-mid-frost.png": {
+    "sha256": "948cb02f45aa96530834c177d7db3decad65df88d3f91dc0b4b227ad1fd914c9",
+    "size": 2391336
+  },
+  "th05-mid-light.png": {
+    "sha256": "44c48f89af515327dcbade9855014566a88b50cd39094d69aabaf0984b4c4b9c",
+    "size": 2591545
+  },
+  "th05-mid-mirror.png": {
+    "sha256": "d1112b23d89330171c947f34a9bb7b88ff2fb7bfb178aa851a7f4fbea7262d71",
+    "size": 2540266
+  },
+  "th05-mid-ring.png": {
+    "sha256": "34dfd8ddc9ceb86573955f4a04b5b40a577d5e0573d7f0233acfa270e42e5903",
+    "size": 2506336
+  },
+  "th05-mid-wing.png": {
+    "sha256": "17196b26a9f147b40bea378bfddafa00647db6bcad130ce4e88bd9a07677b2df",
+    "size": 2433991
+  },
+  "th05-resident-a.png": {
+    "sha256": "2fdb64f678352225bc8eb634ff9f114115b745b11d26444b97e2c9901273eaa3",
+    "size": 2364326
+  },
+  "th05-resident-b.png": {
+    "sha256": "a7e4e55e00142460abcbe116e1e8e3ebf3fc2542b4bf05781184c8b7aedb61df",
+    "size": 2508102
   },
   "thunder-lizard.png": {
     "sha256": "977efac45379b1b2e073340b34d5281df07d1bc8310540ffc1d7ee523a802a55",
