@@ -199,6 +199,10 @@
     "sha256": "ed3226c0ab2655405741f3aa903d4618ad1231af3d616b418b210a799951ba26",
     "size": 2573206
   },
+  "giant-toad.png": {
+    "sha256": "85a3d923306808b905b700f1a74926ef820051125cb39ba4ddc41d78b103e7b0",
+    "size": 2853759
+  },
   "goliath.png": {
     "sha256": "6632809b70ea88f52b62db44c7733365139c8d6f515a13c62ca47cdf9b780dc2",
     "size": 2469822
@@ -218,6 +222,10 @@
   "hecatia.png": {
     "sha256": "adba6234f7c40cf7d8aaf551ebc348838a6d07c0bd49e986e7e149335fa40b74",
     "size": 2616061
+  },
+  "hijiri-myouren.png": {
+    "sha256": "f2b1595093488f154f9402e298265f5eaa2897af2770dfcb7c1b98ff2384ab3e",
+    "size": 2442379
   },
   "hina.png": {
     "sha256": "8bb77866a75874f81961a8e97214e7712d49276ee1c64d6ad94fe0c141210f1a",
@@ -394,6 +402,10 @@
   "laika.png": {
     "sha256": "bc493301fc4704add12f52e506ba91bd4ec9d26d7caa2a330064d187a84b3736",
     "size": 2443523
+  },
+  "layla.png": {
+    "sha256": "8ff5932cf950bb5999e545a5fbe88a2e61c6ada49d0ed91da4571f3f8b088212",
+    "size": 2584378
   },
   "leg-seller.png": {
     "sha256": "9da383da9e5f64d9a6bc0258fc946e3dca6463070b2d8054b9f7bf32ba4a1daa",
@@ -1526,6 +1538,10 @@
   "yoshika.png": {
     "sha256": "2444c6fd70ab659e32c2e5622a3703d8dac2e0127e35b7f4f8fbedd36c18ce8e",
     "size": 2970691
+  },
+  "youki.png": {
+    "sha256": "02bb1fed618ecf0b431a78de06d4129e03c519d8b9ac4c779b9a3527882d7dd4",
+    "size": 2568687
   },
   "youmu-soft-v3.png": {
     "sha256": "198957ff01b03069ea5dafd7a60e3f899aaecafbd509d445ab437323c926c108",

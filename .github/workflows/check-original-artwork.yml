@@ -17,7 +17,7 @@ jobs:
           registry=json.loads(Path('artwork-registry.json').read_text())
           mirror='https://xwjdream.github.io/gensokyo-sketchbook-pages/'
           full='https://gensokyo-sketchbook.h6zsmjd2dn.chatgpt.site/'
-          with urllib.request.urlopen(mirror+'characters.js?v=atlas46',timeout=30) as response:
+          with urllib.request.urlopen(mirror+'characters.js?v=cast47',timeout=30) as response:
               assert "id:'houso'" in response.read().decode('utf-8')
           with urllib.request.urlopen(mirror+'pages-artwork.json',timeout=40) as response:
               artwork=json.load(response)
@@ -48,7 +48,7 @@ jobs:
               print('Exact original bytes: '+name)
           try:
               with urllib.request.urlopen(full,timeout=30) as response:
-                  latest_on_sites = '?v=atlas46' in response.read().decode('utf-8')
+                  latest_on_sites = '?v=cast47' in response.read().decode('utf-8')
           except urllib.error.HTTPError as error:
               if error.code!=403:raise
               print('::warning::Sites returned HTTP 403 to this automated runner. Full-site image checks are unverified; GitHub checks above passed.')

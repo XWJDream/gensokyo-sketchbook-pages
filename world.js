@@ -1369,3 +1369,23 @@ window.GENSOKYO.trails.push(
     note:'主线第五面与 Extra 分开呈现。'
   }
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  layla:{place:null,related:['lunasa','merlin','lyrica'],work:'th07',line:'翻到妖妖梦的骚灵三姐妹设定，读她们与旧宅的来历。'},
+  youki:{place:'nether',related:['youmu','yuyuko'],work:'th07',line:'沿着妖梦的角色设定，回看白玉楼两代园艺师。'},
+  'hijiri-myouren':{place:null,related:['byakuren'],work:'th12',line:'从白莲早年的修行读起，再读她后来建立寺院的故事。'},
+  'giant-toad':{place:null,related:['cirno','aya'],work:'th09',line:'原作报道见书籍《东方文花帖》，池塘还出现在花映塚的琪露诺结局。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='th07').ids.push('layla','youki');
+window.GENSOKYO.books.find(book=>book.id==='th12').ids.push('hijiri-myouren');
+window.GENSOKYO.books.find(book=>book.id==='th09').ids.push('giant-toad');
+window.GENSOKYO.characterLinks.youmu.related.push('youki');
+window.GENSOKYO.characterLinks.byakuren.related.push('hijiri-myouren');
+window.GENSOKYO.characterLinks.cirno.related.push('giant-toad');
+window.GENSOKYO.characterLinks.lunasa.related.push('layla');
+window.GENSOKYO.bonds.push(
+  {title:'旧宅里的第四个女儿',label:'原作线索 / 蕾拉与骚灵',ids:['layla','lunasa','merlin','lyrica'],relation:'蕾拉唤出的骚灵有着三位姐姐的模样。',description:'从旧宅的往事读到后来活跃的骚灵乐团。',color:'green',symbol:'音'},
+  {title:'从先代庭师到妖梦',label:'师徒 / 白玉楼',ids:['youki','youmu','yuyuko'],relation:'妖忌退隐后，妖梦接过白玉楼的园艺与护卫工作。',description:'把妖忌昔日任职的地方和他退隐后的去向分开理解。',color:'green',symbol:'桜'},
+  {title:'沼泽边的一则新闻',label:'见闻 / 琪露诺与大蛤蟆',ids:['giant-toad','cirno','aya'],relation:'射命丸文将琪露诺在沼泽的遭遇写入报纸。',description:'并读池塘条目和当事人的说法。',color:'blue',symbol:'池'}
+);
+window.GENSOKYO.trails.find(trail=>trail.id==='poltergeist').steps.splice(1,0,['layla','从蕾拉留在旧宅的往事读起']);
