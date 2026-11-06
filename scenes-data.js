@@ -236,3 +236,26 @@ window.GENSOKYO_SCENES.push(
     sources:[['茨歌仙第十一话 · 看门的虎','https://thbwiki.cc/东方茨歌仙/第十一话'],['华扇的仙界 · 场景资料','https://thbwiki.cc/华扇的仙界']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'kume-parcel',batch:'36',image:'scene-kume-parcel',
+    title:'廊下归包 · 雾散之前',en:'A parcel on the veranda before the mist clears',
+    place:null,tag:'茨华仙邸 / 雾中归来',people:['kume','kasen'],
+    alt:'久米停在薄雾中的木廊上，华扇坐在门槛旁，两者之间放着系结的布包',
+    lead:'包裹落在廊板上，老鹫终于能收起翅膀。',
+    text:'久米站定，华扇在门槛上等它喘口气。画页用廊下的暖色和林间的雾，留住它带回包裹后的那一刻。',
+    basis:'第十话开头，久米从浓雾中带回包裹。静坐、落脚的木廊和布包纹样均由画册构图，仙邸内部作为独立画页收录。',
+    sources:[['茨歌仙第十话 · 久米带回包裹','https://thbwiki.cc/东方茨歌仙/第十话'],['华扇的仙界 · 场景资料','https://thbwiki.cc/华扇的仙界']]
+  },
+  {
+    id:'kanda-zelkova',batch:'36',image:'scene-kanda-zelkova',
+    title:'榉树引路 · 翼过山雾',en:'The zelkova that guides the way home',
+    place:'mountain',tag:'妖怪之山 / 大榉树',people:['kanda'],
+    alt:'栗褐翼、白头和浅扇尾的大鹫飞过泛着微光的古榉树，山谷积着薄雾',
+    lead:'树梢几处微光，刚够竿打从雾里认出。',
+    text:'落叶后的榉树伸出枝杈。竿打掠过山腰，在雾色和枝间微光里辨认熟悉的方向。',
+    basis:'第十话写到华扇把发光的玉弹附在落叶的大榉树上，让竿打认路。树形、光点位置和飞行视角由画册重新构图，地图链接指向妖怪之山的区域条目。',
+    sources:[['茨歌仙第十话 · 帚木的别天地','https://thbwiki.cc/东方茨歌仙/第十话']]
+  }
+);

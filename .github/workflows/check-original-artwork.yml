@@ -17,7 +17,7 @@ jobs:
           registry=json.loads(Path('artwork-registry.json').read_text())
           mirror='https://xwjdream.github.io/gensokyo-sketchbook-pages/'
           full='https://gensokyo-sketchbook.h6zsmjd2dn.chatgpt.site/'
-          with urllib.request.urlopen(mirror+'characters.js?v=cast35',timeout=30) as response:
+          with urllib.request.urlopen(mirror+'characters.js?v=cast36',timeout=30) as response:
               assert "id:'houso'" in response.read().decode('utf-8')
           base=mirror
           def verify(item):
@@ -40,7 +40,7 @@ jobs:
                   assert hashlib.sha256(response.read()).hexdigest()==registry[name]['sha256'],name
               print('Exact original bytes: '+name)
           try:
-              with urllib.request.urlopen(full+'characters.js?v=cast35',timeout=30) as response:
+              with urllib.request.urlopen(full+'characters.js?v=cast36',timeout=30) as response:
                   assert "id:'houso'" in response.read().decode('utf-8')
           except urllib.error.HTTPError as error:
               if error.code!=403:raise

@@ -203,6 +203,10 @@
     "sha256": "367998edde287d5edfc79ece211294f3638bb91fe408c97f67c9eedcdb5b9297",
     "size": 2827880
   },
+  "kanda.png": {
+    "sha256": "8a0fea2eafee5f3d7e4e2efeff67d04979ddf2b7cf62f7473a0c20b39c1a03c1",
+    "size": 2393238
+  },
   "kasen.png": {
     "sha256": "e016198a78defb9ec0437b695e7e3ca36d66b8254812c3e7c8688c59818eea4d",
     "size": 2879910
@@ -262,6 +266,10 @@
   "koutei.png": {
     "sha256": "8d628bd2eac025ec75ca5d8d68f57a2f1c827b9d6e0d24e1f60990faefde20d2",
     "size": 2583839
+  },
+  "kume.png": {
+    "sha256": "f50468909349c50c0e7e05664551c071f9acab8fba6ca7221539b094f43786c9",
+    "size": 2763868
   },
   "kurumi.png": {
     "sha256": "a77de70bbfd35e7e2bba42ee3249369ac43834a5dd167cedf2ac87c93dc9ff2e",
@@ -679,6 +687,10 @@
     "sha256": "1b5fdc9aefd20784c05d6d9708e8dcc61aa2a51ce119409101c37ec2b5b8d34b",
     "size": 3609202
   },
+  "scene-kanda-zelkova.png": {
+    "sha256": "aa9b3ed6b10c0f5cc0238ff5285b0234d43b03764bcf71a34afe799b7eda45af",
+    "size": 3614013
+  },
   "scene-kappa-hillspring.png": {
     "sha256": "d683da86a996c7374f92874ee85d491cb9303ec468bf9276c1acc860a9f88792",
     "size": 3944939
@@ -702,6 +714,10 @@
   "scene-koutei-cloudpool.png": {
     "sha256": "8f8eb725507d3481c19d33bc59ffc080f5c2233f902c483ac2b0c92649a18418",
     "size": 3764480
+  },
+  "scene-kume-parcel.png": {
+    "sha256": "2f6e539f16a5ee1757b8c3685276590236f8b41e7d7836c91722cad407732022",
+    "size": 3958382
   },
   "scene-kurumi-lakeshore.png": {
     "sha256": "740a11ae4c0a7398d278beeee74047da82b4ba403e39680738b0fb43409ffa5c",

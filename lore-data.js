@@ -229,3 +229,21 @@ window.GENSOKYO_LORE.push({
   sources:[['茨歌仙第十三话','https://thbwiki.cc/东方茨歌仙/第十三话'],['茨歌仙第十一话','https://thbwiki.cc/东方茨歌仙/第十一话']]
 });
 window.GENSOKYO_LORE.find(page=>page.id==='kasen-weather').related.push('mountain-paths');
+
+window.GENSOKYO_LORE.push({
+  id:'flying-home',mark:'翼',name:'雾里的仙邸归路',en:'Finding the hermitage through the mist',
+  title:'同一棵树，路过的人看出了不同的故事。',color:'#8b826d',image:'scene-kanda-zelkova',
+  alt:'飞过古榉树的白头栗褐大鹫，枝上几处微光映着雾',
+  lead:'从久米送来的包裹，读到华扇留给竿打的山中标记。',
+  paragraphs:[
+    '第十话开头，久米带着包裹穿雾归来。华扇打算让年轻的竿打接替它，却发现浓雾会遮住必经的标记。她选择一棵大榉树作为参照，并用光点让落叶的树更容易被看见。',
+    '对竿打而言，榉树是识路的线索。对在山外听到传闻的魔理沙而言，它一度像是传说中的玉枝树。华扇后来换了照亮树的方法，雾中的树影又引出帚木传闻。继续读到风雪中的追踪，能看到魔理沙怎样顺着大鹫的飞行找到了仙邸。'
+  ],
+  facts:[['久米','第十话开头带回包裹，华扇提到它已经上了年纪。'],['竿打','年轻的大鹫，华扇用大榉树帮它辨方向。'],['榉树','辨路的标记和人们的传闻都围绕这棵树展开。']],
+  correction:'手帖按一话中的见闻和传闻安排阅读。地图只标出妖怪之山的区域，仙邸的隐蔽与辨路方式可沿原作继续读。',
+  perspective:'久米用漫画黑白分镜核对羽形，竿打用深秘录彩色像素图核对配色，场景采用画册的淡彩与铅笔构图。',
+  caption:'这是枝上还留着点光时的同人画页。画中没有叠加后来出现的雾中树影。',
+  people:['kume','kanda','kasen','marisa'],places:['mountain'],related:['mountain-paths','kasen-weather'],
+  sources:[['茨歌仙第十话 · 包裹、大榉树和帚木','https://thbwiki.cc/东方茨歌仙/第十话'],['华扇的仙界 · 仙邸资料','https://thbwiki.cc/华扇的仙界']]
+});
+window.GENSOKYO_LORE.find(page=>page.id==='mountain-paths').related.push('flying-home');

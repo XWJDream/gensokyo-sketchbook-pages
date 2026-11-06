@@ -882,3 +882,25 @@ window.GENSOKYO.trails.push({
   scenes:['kappa-hillspring','houso-pinegate'],lore:'mountain-paths',work:'hermit-book',listening:[],
   note:'按山中行动与栖地并读。图中泉池与门楼各自取材，路线是阅读顺序。'
 });
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  kume:{place:null,related:['kasen','kanda'],work:'hermit-book',line:'从第十话开头送回的包裹读起，看看华扇为什么想为老鹫找一位接班者。'},
+  kanda:{place:'mountain',related:['kume','kasen','marisa'],work:'hermit-book',line:'从大榉树识路读到魔理沙在风雪中追着大鹫，再看深秘录的飞鹰信标。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='hermit-book').ids.push('kume','kanda');
+window.GENSOKYO.books.find(book=>book.id==='th145').ids.push('kanda');
+window.GENSOKYO.bonds.push(
+  {title:'老鹫送回的包裹',label:'原作关系 / 久米、竿打与华扇',ids:['kume','kanda','kasen'],relation:'久米老了，华扇准备让年轻的竿打接手跑腿。',description:'第十话从一个送到仙邸的包裹开始，接着讲竿打怎样认路。',color:'green',symbol:'翼'},
+  {title:'顺着奇怪的飞法',label:'原作相遇 / 竿打与魔理沙',ids:['kanda','marisa','kasen'],relation:'魔理沙在风雪里追着飞法奇特的竿打，最后来到华扇的仙邸。',description:'读第十话后半，可以沿着魔理沙的视角看同一条路。',color:'violet',symbol:'霧'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'仙邸的正路',en:'The route to the hermitage',text:'《茨歌仙》第十话里，华扇说要按正确的走法才能到被方术隐藏的家。大榉树是用来辨路的标记。',source:'https://thbwiki.cc/东方茨歌仙/第十话'},
+  {term:'帚木传闻',en:'The Hahakigi rumor',text:'魔理沙听闻雾里出现大树的影子，便联想到帚木。继续读这一话可对照她听到的传闻和华扇实际使用的标记。',source:'https://thbwiki.cc/东方茨歌仙/第十话'}
+);
+window.GENSOKYO.trails.push({
+  id:'flying-home',number:'17',name:'跟着两只大鹫找归路',tag:'茨歌仙 / 帚木的别天地',
+  image:'scene-kanda-zelkova',intro:'从久米带回的包裹开始，顺着年轻大鹫的飞行找一找雾中的榉树。',
+  steps:[['kume','从老鹫带回包裹的一幕开始'],['kasen','看华扇怎样在雾中布置标记'],['kanda','认出大榉树和年轻大鹫的飞行路线'],['marisa','从风雪中的追踪再看这条来路']],
+  scenes:['kume-parcel','kanda-zelkova'],lore:'flying-home',work:'hermit-book',listening:[],
+  note:'阅读顺序取自第十话。画面把包裹归来和山中辨路分别放在两幅图里。'
+});
