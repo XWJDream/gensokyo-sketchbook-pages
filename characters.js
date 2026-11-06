@@ -825,3 +825,136 @@ window.CHARACTERS.push(
     design:{work:'醉蝶华第四十九、五十话 · 村落分镜',source:'https://thbwiki.cc/文件:不安的村姑（醉蝶华）.jpg',checks:['核对高发髻、侧刘海、长鬓发和细发卡','保留竹柄清扫物的轮廓','短衣、足部和暖棕配色由画册补绘'],note:'以原作黑白分镜核对造型，衣色与光线为画册补绘。'}
   }
 );
+
+window.CHARACTERS.push(
+  {
+    id:'iwakasa',batch:'43',name:'岩笠',jp:'岩笠',en:'Iwakasa',
+    title:'带着药壶登山的队长',species:'人类',place:'富士山 · 妹红的回忆',group:'moon',color:'#87756a',
+    ability:'奉命销毁蓬莱之药',
+    keywords:'妹红 富士山 不死药 队长 背影 儚月抄',
+    imageAlt:'背身坐在岩石旁的短身人物，深色外衣下露出浅色衣袖。',
+    intro:'妹红记得他曾救过自己。',
+    story:'《儚月抄》小说第四话，妹红回忆带着蓬莱之药登上富士山的队伍。岩笠是负责处置药物的领队，也曾在山上救助她。',
+    motif:'背身 · 深色外衣 · 浅袖',
+    relation:'在妹红的旧事里与木花咲耶姬相遇。',
+    reference:'https://thbwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照',
+    design:{work:'《儚月抄》小说第四话插图',source:'https://thbwiki.cc/文件:岩笠（儚月抄小说）.png',checks:['沿用原作背身角度','保留深衣与浅袖的层次','岩石与衣色采用画册补绘'],note:'原作插图可见背影，画册沿用这一角度。'}
+  },
+  {
+    id:'sakuya-hime',batch:'43',name:'木花咲耶姬',jp:'木花咲耶姫',en:'Konohana-Sakuyahime',
+    title:'富士山的神明',species:'神灵',place:'富士山 · 蓬莱旧闻',group:'moon',color:'#ae7c83',
+    ability:'在妹红的旧事里出面阻止药壶被抛入火山',
+    keywords:'富士山 水神 木花 樱花 蓬莱之药 八岳',
+    imageAlt:'长黑发垂过白色宽袖，面部以浅色留白呈现，衣上有花枝与水纹。',
+    intro:'山上的神，给药壶指了另一条路。',
+    story:'《儚月抄》小说第四话写她出面阻止岩笠把药物投入富士山的火口，指引他去八岳。人物图借《茨歌仙》第十九话的图像核对长发与衣袖。',
+    motif:'长直黑发 · 留白面部 · 花枝与水纹',
+    relation:'与岩笠、妹红的登山旧事相连。',
+    reference:'https://thbwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照',
+    design:{work:'《茨歌仙》第十九话 · 神明图像',source:'https://thbwiki.cc/文件:木花咲耶姬（茨歌仙）.png',checks:['按黑白原图保留无五官的面部','核对长直发和宽袖的纹样','花色和衣色采用淡彩补绘'],note:'小说提供富士山的情节，漫画提供本图卡的造型依据。'}
+  },
+  {
+    id:'zenki-goki',batch:'43',name:'前鬼与后鬼',jp:'前鬼と後鬼',en:'Zenki and Goki',
+    title:'八云紫派出的乌鸦式神',species:'式神',place:'八云紫身边 · 月都侦察线',group:'moon',color:'#6b707d',
+    ability:'借乌鸦之身替八云紫侦察',
+    keywords:'前鬼 后鬼 鸟 乌鸦 紫 式神 月都 儚月抄',
+    imageAlt:'两只深色乌鸦一前一后落在枝上。',
+    intro:'原作以乌鸦身形画出这对式神。',
+    story:'八云紫的式神，在《儚月抄》漫画和小说中与月都的侦察有关。两只乌鸦合用一张图卡，图上以不同姿势区分轮廓。',
+    motif:'鸦喙 · 深羽 · 双鸦',
+    relation:'八云紫差遣式神，相关侦察亦牵涉绵月丰姬。',
+    reference:'https://thbwiki.cc/东方儚月抄_～_Silent_Sinner_in_Blue./第六话',
+    design:{work:'《儚月抄》漫画第六话 · 鸦形',source:'https://thbwiki.cc/文件:前鬼后鬼（儚月抄漫画）.jpg',checks:['按原图保留乌鸦外形','用前后站位和头部角度区别两道剪影','合卡以一组式神呈现'],note:'两只鸟的站位是画册安排，图中未标各自姓名。'}
+  },
+  {
+    id:'lunar-soldier',batch:'43',name:'月人士兵',jp:'月の都の門番',en:'Gateguards of the Lunar Capital',
+    title:'绵月家门前的两名卫士',species:'月人',place:'月之都 · 绵月家门前',group:'moon',color:'#7c8493',
+    ability:'守在绵月家门前，查问来访者',
+    keywords:'绵月 门卫 月都 两名 门番 Reisen 信',
+    imageAlt:'两名短发卫士并立，穿有甲片和肩甲的制服。',
+    intro:'门前查问递信月兔的两名守卫。',
+    story:'《儚月抄》漫画第七话，月兔 Reisen 想见绵月姐妹，先在门前遇到这两名卫士。画册以绵月家的门卫合卡收录。',
+    motif:'两种短发 · 层叠甲片 · 肩甲',
+    relation:'拦问前来送信的 Reisen，与绵月家有关。',
+    reference:'https://thbwiki.cc/东方儚月抄_～_Silent_Sinner_in_Blue./第七话',
+    design:{work:'《儚月抄》漫画第七话 · 绵月家门前',source:'https://thbwiki.cc/文件:月人士兵（儚月抄漫画）.png',checks:['区分侧分短发与尖短发','保留层叠甲片和肩甲','两名未具名门卫同卡'],note:'盔甲与衣料的彩色搭配由画册补绘。'}
+  },
+  {
+    id:'tsuchinoko',batch:'43',name:'槌蛇',jp:'槌の子',en:'Tsuchinoko',
+    title:'被饭菜香引出的小蛇',species:'妖怪',place:'三月精的树屋',group:'forest',color:'#938455',
+    ability:'能够操纵草木藤蔓',
+    keywords:'野槌 槌之子 斯塔 做饭 藤蔓 三月精S',
+    imageAlt:'短粗带横纹的小蛇伏在纸面，圆头上有一枚小眼睛。',
+    intro:'刚被食物引出，下一站是魔理沙身边。',
+    story:'三妖精发现家里的食物被吃掉，斯塔用做好的食物将槌蛇引了出来。故事末尾，魔理沙将它收作伙伴，留意它操纵藤蔓的本领。',
+    motif:'短粗身 · 横纹 · 圆头小眼',
+    relation:'被斯塔引出，之后由魔理沙收养。',
+    reference:'https://thbwiki.cc/东方三月精_～_Strange_and_Bright_Nature_Deity./第十话',
+    design:{work:'《三月精》第二系列第十话 · 槌蛇分镜',source:'https://thbwiki.cc/文件:野槌（三月精）.jpg',checks:['保留短粗比例与背部横纹','按原图画成圆头的小蛇','土黄与橄榄色为淡彩补绘'],note:'造型据黑白分镜，身上的淡彩是画册处理。'}
+  },
+  {
+    id:'sake-worm',batch:'43',name:'酒虫',jp:'酒虫',en:'Sake Bug',
+    title:'从坛子里现身的酒虫',species:'妖异生物',place:'永远亭 · 辨认酒虫一幕',group:'strange',color:'#867b70',
+    ability:'获得少量水后能持续造酒',
+    keywords:'酒虫 酒坛 永琳 萃香 伊吹瓢 三月精S',
+    imageAlt:'灰蓝色大头小虫弯着尾巴，前肢短小，头侧有一根须。',
+    intro:'辨认它的时候，先要打开坛子。',
+    story:'《三月精》第二系列第十八话，永琳在永远亭辨认坛里的酒虫。萃香也谈到酒虫的本领和自己的伊吹瓢。',
+    motif:'圆钝的大头 · 小前肢 · 弯曲细尾',
+    relation:'永琳检查过坛子，萃香熟悉酒虫的来历。',
+    reference:'https://thbwiki.cc/东方三月精_～_Strange_and_Bright_Nature_Deity./第十八话',
+    design:{work:'《三月精》第二系列第十八话 · 酒虫分镜',source:'https://thbwiki.cc/文件:酒虫（三月精）.jpg',checks:['核对大头、短小前肢与尾巴','保持原作的非人形轮廓','灰蓝色为淡彩补绘'],note:'身形依据黑白画面，身体质感与光线由画册补绘。'}
+  },
+  {
+    id:'mirage-clam',batch:'43',name:'蜃',jp:'長太の妖貝',en:'Nagafu’s Mirage Clam',
+    title:'吐出蜃气的妖贝',species:'妖怪海贝',place:'三月精 · 塌方后露出的海贝',group:'strange',color:'#879797',
+    ability:'呼出的气息能让人看到蜃气楼',
+    keywords:'长太 妖贝 蜃气楼 贝壳 三月精O 幻影',
+    imageAlt:'两片带纵纹的贝壳张开，壳沿有轻淡的雾气。',
+    intro:'从露出的海贝，望见气息中的幻影。',
+    story:'《三月精》第三系列第九话，塌方让原本埋在地下的贝壳露出来。它吐出的气息会显出蜃气楼。后来的渡里贝子也取材于蜃的传说，分别收录于两张图卡。',
+    motif:'张开的双壳 · 纵向壳纹 · 淡雾',
+    relation:'与渡里贝子可沿蜃的母题并读。',
+    reference:'https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第九话',
+    design:{work:'《三月精》第三系列第九话 · 妖贝分镜',source:'https://thbwiki.cc/文件:蜃（三月精）.jpg',checks:['保留张壳轮廓和原作壳纹','以淡雾表现蜃气','保持贝类形态'],note:'蜃气的画法与壳面颜色为画册补绘。'}
+  },
+  {
+    id:'moon-tanuki',batch:'43',name:'假扮魔理沙的狸猫',jp:'化け狸',en:'Unnamed bake-danuki',
+    title:'中秋夜的圆耳来客',species:'化狸',place:'博丽神社 · 中秋夜',group:'forest',color:'#aa8068',
+    ability:'能变化成雾雨魔理沙的模样',
+    keywords:'假魔理沙 化狸 狸猫 中秋 团子 三月精O 博丽神社',
+    imageAlt:'浅发侧辫的狸猫露出两只圆耳和一条蓬尾，抱臂站在纸面。',
+    intro:'来吃团子，也带来一个神社里认得的身影。',
+    story:'《三月精》第三系列第十一话，中秋夜有位扮成魔理沙的来客，在神社吃团子、喝酒。灵梦识破了狸猫的伪装。',
+    motif:'圆耳 · 侧辫 · 单条蓬尾 · 围裙',
+    relation:'模仿魔理沙的外貌，被灵梦认出。',
+    reference:'https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第十一话',
+    design:{work:'《三月精》第三系列第十一话 · 抱臂分镜',source:'https://thbwiki.cc/文件:假扮魔理沙的狸猫（三月精）.jpg',checks:['保留圆耳、侧辫和一条蓬尾','沿用分镜里抱臂的围裙造型','淡金发色与棕褐尾巴为补绘'],note:'图卡取露出耳尾的那一格，衣装颜色与小鞋为画册补绘。'}
+  },
+  {
+    id:'mountain-dog',batch:'43',name:'山犬',jp:'ヤマイヌ',en:'Unnamed okuri-inu',
+    title:'愿意送人过林道的山犬',species:'妖怪 · 护送犬',place:'三月精 · 山林小径',group:'strange',color:'#797571',
+    ability:'受华扇教导后成为护送犬',
+    keywords:'山犬 护送犬 送り犬 华扇 三月精O 山路',
+    imageAlt:'深毛色四足山犬，竖着尖耳，眼里有小小的星形亮点。',
+    intro:'这段故事从山犬的来历说到护送。',
+    story:'《三月精》第三系列第十六话讲到一只山犬过去会袭击路人。在华扇的教导下，它悔过，成了愿意护送他人的犬。',
+    motif:'尖耳 · 深色毛 · 星形眼光',
+    relation:'华扇的教导改变了它与过路人的关系。',
+    reference:'https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第十六话',
+    design:{work:'《三月精》第三系列第十六话 · 山犬分镜',source:'https://thbwiki.cc/文件:山犬（三月精）.png',checks:['对照四足、尖耳与眼中星形','保留深毛色的犬形剪影','表情取护送时的安静神态'],note:'嘴部神态和四足站姿是画册对同一形象的补绘。'}
+  },
+  {
+    id:'laika',batch:'43',name:'莱卡',jp:'ライカ',en:'Raika',
+    title:'香霖堂里的机械小狗',species:'机器狗 · 幼犬之灵',place:'香霖堂',group:'everyday',color:'#8a8070',
+    ability:'由转生幼犬的灵依附的机器狗',
+    keywords:'莱卡 机器狗 霖之助 外来韦编 转生 香霖堂',
+    imageAlt:'有三角耳和深色面罩的机械小狗，机身分出关节和上扬的尾巴。',
+    intro:'旧货店里，霖之助多了一位四足伙伴。',
+    story:'《香霖堂》在《外来韦编》刊出的第八话写到莱卡，一只与转生幼犬之灵有关的机器狗。霖之助把它留在身边。',
+    motif:'三角耳 · 深面罩 · 机械关节 · 扬尾',
+    relation:'森近霖之助的宠物。',
+    reference:'https://thbwiki.cc/东方香霖堂/东方外来韦编第8话',
+    design:{work:'《香霖堂》外来韦编第八话 · 莱卡插图',source:'https://thbwiki.cc/文件:莱卡（香霖堂）.png',checks:['保留尖耳和深色面板','核对四足关节与上扬的机械尾','按原图维持机械犬轮廓'],note:'外壳色、光线和后足着地的姿势为画册补绘。'}
+  }
+);

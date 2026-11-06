@@ -247,6 +247,10 @@
     "sha256": "aef20e42dcc95076232b33582d596518f723c835818a50fdea7c48141df41bff",
     "size": 2672962
   },
+  "iwakasa.png": {
+    "sha256": "2efcba08e6dc33879124b3b42cfff44f8be5b16c029139109b644b3f2e506ef2",
+    "size": 2618531
+  },
   "joon.png": {
     "sha256": "39560e9f5b6e60899749b64bb2ea000df153173ff1ef0eea0192069a995329a4",
     "size": 2872314
@@ -371,6 +375,10 @@
     "sha256": "76320f656ef58739f4e347d3c3f711bcd9e41ab9c9c1e5f976e19dc319abca85",
     "size": 2884637
   },
+  "laika.png": {
+    "sha256": "bc493301fc4704add12f52e506ba91bd4ec9d26d7caa2a330064d187a84b3736",
+    "size": 2443523
+  },
   "leg-seller.png": {
     "sha256": "9da383da9e5f64d9a6bc0258fc946e3dca6463070b2d8054b9f7bf32ba4a1daa",
     "size": 2858088
@@ -394,6 +402,10 @@
   "luna.png": {
     "sha256": "58f4943a49606d0829bd9a29247452799693e3919f3160fdc13c71922babe07d",
     "size": 2697181
+  },
+  "lunar-soldier.png": {
+    "sha256": "b10740632bc35a1d60085bbb9d3fa582184d71688acd815a80483dbb4363153e",
+    "size": 2933928
   },
   "lunasa.png": {
     "sha256": "4edd26a9c365efd4b025c39ab94b867df1d27fbf82fea8ad15ebdf41c151609e",
@@ -475,6 +487,10 @@
     "sha256": "85bdcdedf7fbdd00283ede0fdebc757d31b0dbfc275adf75f9a5ee4fcee945e4",
     "size": 2539740
   },
+  "mirage-clam.png": {
+    "sha256": "5b387e82cb2653b7c19928afefdc416e7a2cd4960f1386dc295b0e0548659b5c",
+    "size": 3265934
+  },
   "misumaru.png": {
     "sha256": "11fbcfdc3c43b2363aac47810839c65074e4b118df2f96ec47ea63e1c2f9f324",
     "size": 2772347
@@ -498,6 +514,14 @@
   "momoyo.png": {
     "sha256": "bef79831f9165c83eabefb740128eb537595e0b451fcffbba7a99b84c47974e7",
     "size": 3058304
+  },
+  "moon-tanuki.png": {
+    "sha256": "2f3ffe0e9dbc3f4e92fa235e75f05595f44ce0ce691ae2438b7aa0e4d90d93f1",
+    "size": 2556058
+  },
+  "mountain-dog.png": {
+    "sha256": "f27d67d35569a761ef0a0a2ed8e239c4c70ee89b9fd683f6b6674ffd44cf473f",
+    "size": 2945194
   },
   "mugetsu.png": {
     "sha256": "10810e19475102fb57e442c9d85d4dfac9ac3e5a76d231de48e6a36ef3f2dc20",
@@ -623,9 +647,17 @@
     "sha256": "ae38d0d63196241622bf31f2a9f4a5b066174f81f7d31637dbea6d5724abfa7c",
     "size": 2708292
   },
+  "sake-worm.png": {
+    "sha256": "858ceb6a3953d27e06a977ad207737dc012811136292bb47158a1bd314f8b2b0",
+    "size": 2525508
+  },
   "saki.png": {
     "sha256": "30b29d92f2c15c470b769b9bc8bafccd298a5d06a08b1f5183732b87e4ef8fc1",
     "size": 3135842
+  },
+  "sakuya-hime.png": {
+    "sha256": "68e7627cc7bde6ae2ea3e154f1cd362917f60363b70224797aef15a3d28a4734",
+    "size": 2838860
   },
   "sakuya.png": {
     "sha256": "765a66669c127aa58c33287afa16c3bb4b17b491744e96a9544d1543b193297a",
@@ -743,9 +775,17 @@
     "sha256": "1490b179c1abb041b5f7c106796d7950240295c21625e95df33fac6f0ace7e11",
     "size": 3926109
   },
+  "scene-escort-forest.png": {
+    "sha256": "6201f795ed7f035d49053f4f164eddf47deb96686cced39dd373af51fc249c47",
+    "size": 3862744
+  },
   "scene-fairy-lakeside.png": {
     "sha256": "a70a4f900cf7d3ed420a585ec40435ee8dcf16c4c6e78547788f4de963ab122f",
     "size": 3708370
+  },
+  "scene-fairy-pantry.png": {
+    "sha256": "05fa8e54359823350eec4d9624ea7bfcdc46bcf737fdaaf2f6702d9340e0bf74",
+    "size": 4116719
   },
   "scene-fairy-treehouse.png": {
     "sha256": "59f790cc4a7296082c962a21a9f0b9d83df77512dabb0df99b04fde290941e8f",
@@ -774,6 +814,10 @@
   "scene-fox-notebooks.png": {
     "sha256": "f899a3a84c0a8b49f40eb16c828fbe7fbb310a04c251db9f4ad96ea97f862c20",
     "size": 4037543
+  },
+  "scene-fuji-medicine.png": {
+    "sha256": "fba1bc23c6850ea59cd2857b8504bbaf89d2b2fcc03544b3a9ce55ed4c477e79",
+    "size": 3535021
   },
   "scene-geidontei-supper.png": {
     "sha256": "6329b97b5dcd98512ed44f7de4de0ee49c5131786cf2217b0b40c1005fcd85f3",
@@ -867,6 +911,10 @@
     "sha256": "740a11ae4c0a7398d278beeee74047da82b4ba403e39680738b0fb43409ffa5c",
     "size": 3794468
   },
+  "scene-laika-shop.png": {
+    "sha256": "89664007077c8abe59fb76b71cd898811f1d51ce601a283505f437e0ef3e214e",
+    "size": 3752791
+  },
   "scene-letter-lantern.png": {
     "sha256": "e66c47d473d09fcca057b401d839ac31953b3503a777bf83c3ad7cf716cdadde",
     "size": 3957760
@@ -911,6 +959,10 @@
     "sha256": "2d12bcf4f5bc9b0e17665fd42d6a191b5f04303dea6b8282bbce46458a434f41",
     "size": 3383760
   },
+  "scene-midautumn-dango.png": {
+    "sha256": "209ca53f32a1469669c5af75dd02be34fee86be92a1e6691ed54a189dbee6421",
+    "size": 3873283
+  },
   "scene-mima-crescent.png": {
     "sha256": "4d779062518ace2ed61283370c8522942eefbda66b7edd63f81d1412af457d1f",
     "size": 3525397
@@ -926,6 +978,10 @@
   "scene-monkey-sanctuary.png": {
     "sha256": "085e71c3c7f19ba2f9415fc330cc24b2838262cd6567c69ca8d07d5f5b5858e0",
     "size": 3952897
+  },
+  "scene-moon-gatewatch.png": {
+    "sha256": "3e63d80266231e87efbf583f8dd88362fef13c54d946ff2801da5c9eaaa18ef0",
+    "size": 3909608
   },
   "scene-moonrainbow-market.png": {
     "sha256": "aebb9babe606e2b0844e3382ca2c07245fd3211b6bf87c19fdb778a7911712c7",
@@ -1227,6 +1283,10 @@
     "sha256": "de26b052fbd154579e3198f9a4e22780e011945e55b305dad98cf7df33810e07",
     "size": 2849981
   },
+  "tsuchinoko.png": {
+    "sha256": "1078a4fd79c4315546be6f8e64af96649a846466000c60f897539b468f7b4f7a",
+    "size": 2409435
+  },
   "tsukasa.png": {
     "sha256": "29db12f877fee8ebe5b96fa229bfe1b429ffea85397932bb5dc89caeb1adad6d",
     "size": 2779394
@@ -1370,5 +1430,9 @@
   "zanmu.png": {
     "sha256": "87231e5a971eea42bb6201e51402b1fe9e4235515b4cdee04744d31d94133d88",
     "size": 2730276
+  },
+  "zenki-goki.png": {
+    "sha256": "9189c207df184fea81d427e8005f2b7bfd3884b25fd3fce132a1f96a0a190371",
+    "size": 3039897
   }
 }

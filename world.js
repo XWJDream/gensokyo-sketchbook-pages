@@ -1143,3 +1143,72 @@ window.GENSOKYO.trails.push(
     note:'前、后篇按发现、传闻、揭晓的顺序阅读。'
   }
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'iwakasa':{place:null,related:['mokou','sakuya-hime','kaguya'],work:'bougetsusho',line:'回到小说第四话，沿妹红的第一人称讲述读上山前后。'},
+  'sakuya-hime':{place:null,related:['iwakasa','mokou'],work:'bougetsusho',line:'先读富士山的劝告，再对照另一部漫画如何画这位神明。'},
+  'zenki-goki':{place:null,related:['yukari','toyohime'],work:'bougetsusho',line:'把漫画里的乌鸦与月都段落并读，追踪紫得到消息的途径。'},
+  'lunar-soldier':{place:null,related:['reisen-moon','yorihime','toyohime'],work:'bougetsusho',line:'在漫画第七话读门卫如何回应来访，再看绵月家收到信后发生了什么。'},
+  'tsuchinoko':{place:null,related:['star','marisa','sunny'],work:'sangetsu',line:'从树屋里消失的食物读到斯塔端出的那道诱饵。'},
+  'sake-worm':{place:'eientei',related:['eirin','suika','chokuboro'],work:'sangetsu',line:'读到坛子被打开的分镜，再对照萃香关于伊吹瓢的说法。'},
+  'mirage-clam':{place:null,related:['sunny','luna','star','nina'],work:'sangetsu',line:'先在第九话找贝壳露出的分镜，再看气息如何影响眼前所见。'},
+  'moon-tanuki':{place:'shrine',related:['marisa','reimu','mamizou'],work:'sangetsu',line:'看中秋夜这一段灵梦何时看破伪装，再比较圆耳和尾巴。'},
+  'mountain-dog':{place:null,related:['kasen','sunny','star'],work:'sangetsu',line:'沿华扇的讲述看山犬如何从袭人走到护送。'},
+  'laika':{place:'kourindou',related:['rinnosuke','marisa'],work:'kourindou-book',line:'读《外来韦编》第八话，留意故事如何把外界的器物与转生放在一起。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='bougetsusho').ids.push('iwakasa','sakuya-hime','zenki-goki','lunar-soldier');
+window.GENSOKYO.books.find(book=>book.id==='sangetsu').ids.push('tsuchinoko','sake-worm','mirage-clam','moon-tanuki','mountain-dog');
+window.GENSOKYO.books.find(book=>book.id==='kourindou-book').ids.push('laika');
+window.GENSOKYO.books.find(book=>book.id==='hermit-book').ids.push('sakuya-hime');
+window.GENSOKYO.bonds.push(
+  {title:'富士山上的那次停步',label:'原作回忆 / 岩笠、妹红与咲耶姬',ids:['iwakasa','mokou','sakuya-hime'],relation:'岩笠奉命处置药物，妹红记得他曾救助自己，山神随后劝阻他把药抛进火口。',description:'从小说第四话读三者在山上的相遇。',color:'red',symbol:'壶'},
+  {title:'一封信先过了哪道门',label:'原作相遇 / 门卫、月兔与绵月家',ids:['lunar-soldier','reisen-moon','yorihime','toyohime'],relation:'月兔 Reisen 前来送信，绵月家的卫士在门前拦问她。',description:'漫画第七话可对照两位门卫的不同短发。',color:'violet',symbol:'门'},
+  {title:'从树屋到魔理沙身边',label:'同篇并读 / 斯塔、槌蛇与魔理沙',ids:['star','tsuchinoko','marisa'],relation:'斯塔用饭菜引出槌蛇，魔理沙后来将它留下。',description:'食物与藤蔓分别是故事前后的线索。',color:'green',symbol:'碟'},
+  {title:'圆耳露出来的中秋夜',label:'原作变装 / 狸猫、魔理沙与灵梦',ids:['moon-tanuki','marisa','reimu'],relation:'狸猫借魔理沙的样貌走进神社，灵梦认出了来客。',description:'可回原作分镜核对耳尾、侧辫与围裙。',color:'red',symbol:'月'},
+  {title:'旧货店的新伙伴',label:'原作相伴 / 莱卡与霖之助',ids:['laika','rinnosuke'],relation:'莱卡留在森近霖之助身边。',description:'可按《外来韦编》续载找机器狗与转生幼犬的故事。',color:'green',symbol:'伴'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'富士山的蓬莱药壶',en:'The Hourai medicine vessel',text:'《儚月抄》小说第四话中，岩笠奉命带药上富士山。木花咲耶姬的劝阻改变了队伍的去向。',source:'https://thbwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照'},
+  {term:'绵月家门前的查问',en:'The check at the Watatsuki gate',text:'《儚月抄》漫画第七话的门前一幕。两名月人士兵查问来送信的月兔 Reisen。',source:'https://thbwiki.cc/东方儚月抄_～_Silent_Sinner_in_Blue./第七话'},
+  {term:'槌蛇与藤蔓',en:'Tsuchinoko and its vines',text:'《三月精》第二系列第十话先用食物引出槌蛇。魔理沙后来留意到它操纵藤蔓的本领。',source:'https://thbwiki.cc/东方三月精_～_Strange_and_Bright_Nature_Deity./第十话'},
+  {term:'装着酒虫的坛子',en:'The jar with a sake bug',text:'《三月精》第二系列第十八话，永琳打开坛子后辨认酒虫。可和萃香关于伊吹瓢的说法并读。',source:'https://thbwiki.cc/东方三月精_～_Strange_and_Bright_Nature_Deity./第十八话'},
+  {term:'妖贝的蜃气',en:'Breath of the mirage clam',text:'《三月精》第三系列第九话，妖贝呼出的气息让人看到蜃气楼。与后来《锦上京》的渡里贝子共用蜃的母题。',source:'https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第九话'},
+  {term:'机器狗莱卡',en:'Laika the mechanical dog',text:'《香霖堂》在《外来韦编》续载的第八话中，霖之助身边有一只与转生幼犬之灵相关的机器狗。',source:'https://thbwiki.cc/东方香霖堂/东方外来韦编第8话'}
+);
+window.GENSOKYO.trails.push(
+  {
+    id:'fuji-vessel',number:'32',name:'沿石径追一只蓬莱药壶',tag:'儚月抄小说 / 妹红的回忆',
+    image:'scene-fuji-medicine',intro:'从领队的背影读到山神的劝告，循小说第四话找药壶的去向。',
+    steps:[['iwakasa','从负责处置药物的领队读起'],['mokou','跟随小说中讲述往事的妹红'],['sakuya-hime','在富士山读山神的劝告'],['kaguya','再找蓬莱之药更早的线索']],
+    scenes:['fuji-medicine'],lore:'fuji-vessel',work:'bougetsusho',listening:[],
+    note:'小说第四话含人物身世剧情。咲耶姬的造型图另见《茨歌仙》。'
+  },
+  {
+    id:'moon-threshold',number:'33',name:'从绵月家的门前读回八云紫的乌鸦',tag:'儚月抄漫画 / 来信与侦察',
+    image:'scene-moon-gatewatch',intro:'从查问递信人开始，再回前一话找另一条消息线。',
+    steps:[['lunar-soldier','对照门前两名卫士的甲片与短发'],['reisen-moon','认出受托送信的月兔'],['yorihime','沿信件读绵月姐妹'],['zenki-goki','翻回第六话找到乌鸦式神'],['yukari','找出差遣式神的人']],
+    scenes:['moon-gatewatch'],lore:'moon-threshold',work:'bougetsusho',listening:[],
+    note:'门前来信与乌鸦侦察分在不同章节。'
+  },
+  {
+    id:'fairies-small-guests',number:'34',name:'从树屋饭碟读到坛子与妖贝',tag:'三月精 / 三件物件',
+    image:'scene-fairy-pantry',intro:'跟着一碟饭、一只坛子和一枚贝壳读三篇短故事。',
+    steps:[['star','找斯塔端出食物的一格'],['tsuchinoko','辨认伏在低处的小蛇'],['sake-worm','换到永远亭，看永琳辨认坛中生物'],['mirage-clam','再翻第三系列，沿贝壳读蜃气楼']],
+    scenes:['fairy-pantry'],lore:'fairies-small-guests',work:'sangetsu',listening:[],
+    note:'第二系列第十、十八话和第三系列第九话各自成篇。'
+  },
+  {
+    id:'shrine-and-trail',number:'35',name:'从中秋团子走到雨后的山路',tag:'三月精 / 两段来访',
+    image:'scene-midautumn-dango',intro:'先在神社认狸猫的耳与尾，再走进华扇讲过的山犬故事。',
+    steps:[['moon-tanuki','辨认变装来客的圆耳、侧辫和尾巴'],['reimu','读灵梦何时看破伪装'],['kasen','换到第十六话，听华扇说山犬的来路'],['mountain-dog','从尖耳犬形看它后来怎样对待路人']],
+    scenes:['midautumn-dango','escort-forest'],lore:'shrine-and-trail',work:'sangetsu',listening:[],
+    note:'中秋夜与山犬旧事分属两篇，两幅画页各自取景。'
+  },
+  {
+    id:'laika-afterhours',number:'36',name:'跟着莱卡走进打烊后的香霖堂',tag:'香霖堂 / 外来韦编续载',
+    image:'scene-laika-shop',intro:'从机器狗的三角耳和关节开始，回原作读霖之助的新伙伴。',
+    steps:[['laika','对照原作插画里的暗面板和机械关节'],['rinnosuke','读莱卡怎样到了霖之助身边']],
+    scenes:['laika-shop'],lore:'laika-afterhours',work:'kourindou-book',listening:[],
+    note:'沿《外来韦编》续载第八话阅读，打烊场景为同人取景。'
+  }
+);

@@ -488,3 +488,76 @@ window.GENSOKYO_LORE.push(
   }
 );
 window.GENSOKYO_LORE.find(c=>c.id==='suzunaan-clues').related.push('blank-page-and-jar');
+
+window.GENSOKYO_LORE.push(
+  {
+    id:'fuji-vessel',mark:'壶',name:'富士山的药壶与旧闻',en:'The vessel on Mount Fuji',
+    title:'沿着妹红的一段回忆，分辨药壶的来处、领队与山神。',color:'#95726c',image:'scene-fuji-medicine',
+    alt:'深衣的岩笠与药壶留在清晨的山径上。',
+    lead:'从一只药壶开始读妹红很久以前的故事。',
+    paragraphs:['小说第四话由妹红回忆过去。带药上富士山的领队是岩笠，途中他曾救助妹红。山上的神木花咲耶姬阻止队伍把药投入火口，并把去处指向八岳。','画册从小说插画取岩笠的背身造型，咲耶姬的图卡则依据《茨歌仙》里的图像。章节文本和形象来源可以分别打开。'],
+    facts:[['药壶','原作旧闻中的蓬莱之药。'],['背影','小说插画中可核对岩笠的角度与深浅衣层。'],['咲耶姬','富士山故事与造型图出自两部作品。']],
+    correction:'富士山画页里的陶壶外形、天气和站位由画册补绘。',
+    perspective:'小说这一话以妹红的回忆为主。读到药壶的去向前，先留意谁看见了哪些事。',
+    caption:'画页沿原作背影取景，留出药壶与山路。',
+    people:['iwakasa','mokou','sakuya-hime','kaguya'],places:[],
+    related:['moon','borrowed-moon'],
+    sources:[['儚月抄小说第四话 · 妹红的回忆','https://thbwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照'],['茨歌仙第十九话 · 咲耶姬形象','https://thbwiki.cc/东方茨歌仙/第十九话']]
+  },
+  {
+    id:'moon-threshold',mark:'门',name:'月门内外的来信与侦察',en:'Letters and scouts near the Moon',
+    title:'一条线在门前递信，另一条线跟随八云紫的乌鸦。',color:'#798698',image:'scene-moon-gatewatch',
+    alt:'卫士在月门前拦问一位送信的月兔。',
+    lead:'把相邻章节的两条线分开读，先看门前，再看乌鸦。',
+    paragraphs:['漫画第七话里，月兔 Reisen 在绵月家门前被查问。她承接了一个熟悉的名字，但在图鉴中有自己的独立人物卡。','前鬼与后鬼属于八云紫的侦察线。沿漫画第六话核对乌鸦的图像，再翻到第七话查看两名门卫怎样拦住来访者。'],
+    facts:[['来信','跟随月兔回到绵月家门前。'],['门卫','两名未具名卫士合用一张图卡。'],['乌鸦','两只式神共用一张图卡，姿态由画册安排。']],
+    correction:'乌鸦侦察和门卫查问分属不同场面。月门画页只取递信一线。',
+    perspective:'遇见同名线索时，点开月都的 Reisen 或永远亭的铃仙图卡核对。',
+    caption:'取景中的门柱和台阶以同人方式绘制。',
+    people:['lunar-soldier','reisen-moon','toyohime','yorihime','zenki-goki','yukari'],places:[],
+    related:['moon','borrowed-moon','fuji-vessel'],
+    sources:[['儚月抄漫画第六话 · 侦察线','https://thbwiki.cc/东方儚月抄_～_Silent_Sinner_in_Blue./第六话'],['儚月抄漫画第七话 · 门前的来访','https://thbwiki.cc/东方儚月抄_～_Silent_Sinner_in_Blue./第七话']]
+  },
+  {
+    id:'fairies-small-guests',mark:'碟',name:'妖精身旁的三种来客',en:'Three small guests',
+    title:'一碟饭菜、一只酒坛和一枚海贝，各自打开一段故事。',color:'#75836b',image:'scene-fairy-pantry',
+    alt:'树屋里的蓝衣妖精与藏在低处的小蛇。',
+    lead:'从画页的饭碟出发，读三段由小东西引起的插曲。',
+    paragraphs:['第二系列第十话，斯塔想办法引出吃掉树屋食物的槌蛇。读到故事末尾，还能看到魔理沙怎样接手照看它。','第二系列第十八话的酒虫由永琳从坛子里辨认。第三系列第九话则出现一枚埋在地下的妖贝，它吐出的气息可以让人看见蜃气楼。'],
+    facts:[['饭碟','斯塔用食物把槌蛇引出来。'],['酒坛','永琳打开坛子，交代里面的生物。'],['妖贝','塌方露出贝壳，引向蜃气楼。']],
+    correction:'三件东西来自不同篇章。树屋画页只取槌蛇一段，厨房光线和陈设由画册补绘。',
+    perspective:'先认物件，再看是谁解释它的作用，能跟上每篇独立的小转折。',
+    caption:'树屋低处留了一点位置给槌蛇。',
+    people:['tsuchinoko','star','marisa','sake-worm','eirin','suika','mirage-clam'],places:['eientei'],
+    related:['shrine-and-trail','dolls-and-companions'],
+    sources:[['三月精第二系列第十话 · 槌蛇','https://thbwiki.cc/东方三月精_～_Strange_and_Bright_Nature_Deity./第十话'],['三月精第二系列第十八话 · 酒虫','https://thbwiki.cc/东方三月精_～_Strange_and_Bright_Nature_Deity./第十八话'],['三月精第三系列第九话 · 蜃','https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第九话']]
+  },
+  {
+    id:'shrine-and-trail',mark:'径',name:'月下变装与林中护送',en:'A disguise and a guide',
+    title:'神社认出一个来客，山里听见一个旧故事。',color:'#9a7e6e',image:'scene-midautumn-dango',
+    alt:'灵梦与带圆耳的来客相望，身边摆着一盘团子。',
+    lead:'中秋夜跟灵梦认耳尾，再沿华扇的话走进另一篇山犬故事。',
+    paragraphs:['第三系列第十一话里，狸猫化作魔理沙的样子来博丽神社。读到灵梦看穿伪装时，可以回头对照两者的耳、辫子和尾巴。','第十六话把视线转向山犬。华扇讲到它过去袭击行人，以及后来悔过、愿意护送的经过。两段故事各有自己的来处。'],
+    facts:[['团子','狸猫在中秋夜来到博丽神社。'],['圆耳与蓬尾','图卡取露出耳尾的分镜。'],['护送犬','山犬在华扇教导之后改换行事方式。']],
+    correction:'两幅场景分属不同篇章。廊边对坐和雨后林道由画册取景。',
+    perspective:'对比从外形认出变化与听见一段经历，两篇漫画让读者得到信息的方式不同。',
+    caption:'暖光留在团子旁，耳尾勾出与魔理沙不同的轮廓。',
+    people:['moon-tanuki','marisa','reimu','mountain-dog','kasen'],places:['shrine'],
+    related:['shrine-and-doorway','mountain-paths','fairies-small-guests'],
+    sources:[['三月精第三系列第十一话 · 狸猫','https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第十一话'],['三月精第三系列第十六话 · 山犬','https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第十六话']]
+  },
+  {
+    id:'laika-afterhours',mark:'灯',name:'古道具屋里的机器小狗',en:'A mechanical dog in the curios shop',
+    title:'用莱卡的外壳和身世再读一次香霖堂。',color:'#8d7c64',image:'scene-laika-shop',
+    alt:'霖之助和尖耳机器狗在旧货架旁。',
+    lead:'从尖耳、暗色面板和关节读起，再翻到霖之助身边的故事。',
+    paragraphs:['《香霖堂》在《外来韦编》刊载的第八话提到莱卡。它是一只与转生幼犬之灵有关的机器狗，留在了霖之助身边。','图卡从插画辨认三角耳、深色面板和关节，场景则给这位四足伙伴留了一块柜台旁的位置。'],
+    facts:[['莱卡','森近霖之助的机器狗。'],['外来韦编','可按续载章节查找这段故事。'],['灯下的旧货架','画册想象的香霖堂一角。']],
+    correction:'莱卡的外形取自原作插画。打烊后的灯光、店内位置与相处动作由画册补绘。',
+    perspective:'读的是后来在《外来韦编》的续载，可用作品索引回到早期《香霖堂》单行本。',
+    caption:'旧货架和暖灯围住一小块机械轮廓。',
+    people:['laika','rinnosuke'],places:['kourindou'],
+    related:['dolls-and-companions'],
+    sources:[['香霖堂外来韦编第八话 · 原作章节','https://thbwiki.cc/东方香霖堂/东方外来韦编第8话']]
+  }
+);

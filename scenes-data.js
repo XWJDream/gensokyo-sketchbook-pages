@@ -483,3 +483,66 @@ window.GENSOKYO_SCENES.push(
     sources:[['醉蝶华第四十九话 · 门上的涂写','https://thbwiki.cc/东方醉蝶华/第四十九话'],['醉蝶华第五十话 · 记号的来处','https://thbwiki.cc/东方醉蝶华/第五十话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'fuji-medicine',batch:'43',image:'scene-fuji-medicine',
+    title:'富士旧闻 · 石径上的药壶',en:'The vessel on the mountain path',
+    place:null,tag:'富士山 / 妹红的回忆',people:['iwakasa','mokou','sakuya-hime'],
+    alt:'深衣背影停在山石旁，小小的妹红与陶壶留在晨光中。',
+    lead:'山路停在将明的时候，那只壶还没有打开。',
+    text:'从妹红的回忆取一个停顿，把岩笠的背影和药壶放进同一段石径。',
+    basis:'岩笠领队与富士山上的阻拦见小说第四话。远眺山形、药壶外形及人物站位为同人构图。',
+    sources:[['小说第四话 · 妹红的回忆','https://thbwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照']]
+  },
+  {
+    id:'moon-gatewatch',batch:'43',image:'scene-moon-gatewatch',
+    title:'月都 · 绵月家门前',en:'At the Watatsuki gate',
+    place:null,tag:'月之都 / 递信一幕',people:['lunar-soldier','reisen-moon','toyohime','yorihime'],
+    alt:'两名短发卫士立在月门两侧，一名垂耳月兔带着信走近。',
+    lead:'送信的人已到门前，守卫还在查问。',
+    text:'把月兔和卫士放在同一道门槛两边，留出递信前的空隙。',
+    basis:'门卫查问 Reisen 来自漫画第七话。门柱、阶石、照明与站位为同人取景。',
+    sources:[['漫画第七话 · 绵月家门前','https://thbwiki.cc/东方儚月抄_～_Silent_Sinner_in_Blue./第七话']]
+  },
+  {
+    id:'fairy-pantry',batch:'43',image:'scene-fairy-pantry',
+    title:'树屋小厨房 · 碟子后面',en:'Something behind the saucer',
+    place:null,tag:'三月精 / 槌蛇来访',people:['tsuchinoko','star','marisa'],
+    alt:'蓝衣妖精伏在桌旁，槌蛇从盛放食物的碟子后探出。',
+    lead:'饭香刚散开，低处就传来一点动静。',
+    text:'顺着食物线索画树屋的一角。把槌蛇放在视线下面，留给读者自己找一找。',
+    basis:'斯塔用食物引出槌蛇来自第二系列第十话。厨房陈设、食物摆盘与光线由画册补绘。',
+    sources:[['三月精第二系列第十话 · 树屋的来客','https://thbwiki.cc/东方三月精_～_Strange_and_Bright_Nature_Deity./第十话']]
+  },
+  {
+    id:'midautumn-dango',batch:'43',image:'scene-midautumn-dango',
+    title:'神社中秋 · 团子与圆耳',en:'Dumplings and round ears',
+    place:'shrine',tag:'博丽神社 / 中秋来客',people:['moon-tanuki','reimu','marisa'],
+    alt:'秋夜的神社廊边摆着团子，红白衣的灵梦看向有圆耳和蓬尾的浅发来客。',
+    lead:'盘里还有几个团子，廊上已经看得到圆耳朵。',
+    text:'选狸猫显露耳尾后的片刻，画她和灵梦隔着一盘团子相望。',
+    basis:'狸猫变装赴神社、吃团子并被灵梦识破取自第三系列第十一话。夜色、座位和庭院为同人取景。',
+    sources:[['三月精第三系列第十一话 · 中秋来客','https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第十一话']]
+  },
+  {
+    id:'escort-forest',batch:'43',image:'scene-escort-forest',
+    title:'雨后林道 · 山犬的来路',en:'The dog on the forest trail',
+    place:null,tag:'山林 / 华扇与护送犬',people:['mountain-dog','kasen'],
+    alt:'阴凉的林道上，深毛色的尖耳山犬在华扇身旁停步。',
+    lead:'山犬在弯道上回头，林间的水汽还没散。',
+    text:'从华扇的山犬故事取一幅安静的同行图，保留犬的尖耳和眼中亮点。',
+    basis:'山犬受华扇教导并成为护送犬取自第三系列第十六话。雨后同行、林道与人物动作由画册安排。',
+    sources:[['三月精第三系列第十六话 · 山犬旧事','https://thbwiki.cc/东方三月精_～_Oriental_Sacred_Place./第十六话']]
+  },
+  {
+    id:'laika-shop',batch:'43',image:'scene-laika-shop',
+    title:'香霖堂 · 关门后的莱卡',en:'Laika after closing time',
+    place:'kourindou',tag:'香霖堂 / 霖之助的新伙伴',people:['laika','rinnosuke'],
+    alt:'戴眼镜的霖之助在旧货架旁，机械小狗的面板在灯下亮着一点光。',
+    lead:'架上的旧物都静了，莱卡的面板还亮着。',
+    text:'画册想象霖之助留在店中与莱卡相处的时刻，把机械关节和旧货架放在同一盏灯下。',
+    basis:'霖之助与莱卡的关系来自《外来韦编》第八话。打烊、店内陈设和灯下互动为同人取景。',
+    sources:[['香霖堂外来韦编第八话 · 莱卡','https://thbwiki.cc/东方香霖堂/东方外来韦编第8话']]
+  }
+);
