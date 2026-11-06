@@ -266,3 +266,39 @@ window.GENSOKYO_LORE.push({
   sources:[['铃奈庵第十三话 · 鞋与瓜田','https://thbwiki.cc/东方铃奈庵/第十三话'],['铃奈庵第十九话 · 妖狐的笔记','https://thbwiki.cc/东方铃奈庵/第十九话'],['铃奈庵第二十话 · 猫画来历','https://thbwiki.cc/东方铃奈庵/第二十话']]
 });
 window.GENSOKYO_LORE.find(page=>page.id==='book-visitors').related.push('suzunaan-clues');
+
+window.GENSOKYO_LORE.push(
+  {
+    id:'hood-and-scroll',mark:'卷',name:'听耳头巾与百鬼夜行绘卷',en:'The listening hood and the picture scroll',
+    title:'能听见一句话，还要想想是谁在说。',color:'#85836f',image:'scene-dragon-scroll',
+    alt:'小铃在暖灯下看翼蛇从展开的绘卷上方振翅',
+    lead:'小祠里少了一块布。到了铃奈庵，绘卷里又少了一部分。',
+    paragraphs:[
+      '第八话从狐像的头巾失踪说起。阿求记得旧日的头巾据说能听到动植物的声音，也解释了原物与替代头巾的分别。读者最先得到的是一段童话和一段记忆。',
+      '第九话则换成白蛇与魔理沙的行动。白蛇借头巾让魔理沙听懂它，把她引到收藏绘卷的借书铺。小铃看到白蛇展翼后，才发现卷里有一部分已经不见了。'
+    ],
+    facts:[['狐像','第八话所画的对象是祠中的狐狸雕像。'],['头巾','让佩戴者听懂动物和植物的声音。'],['绘卷','封住过白蛇的力量，打开后白蛇展翼。']],
+    correction:'小祠画页为独立取景，卷轴画页链接到原作事件发生的铃奈庵。',
+    perspective:'漫画把阿求的记忆和邪龙自己的说法分开交代，可以按说话的人逐段阅读。',
+    caption:'案头与暖灯是同人布置。原作中白蛇先从魔理沙帽中出来。',
+    people:['inari-messenger','akyuu','marisa','kosuzu','jyaryu'],places:['village','suzunaan'],related:['suzunaan-clues','letters-and-supper'],
+    sources:[['铃奈庵第八话 · 听耳头巾','https://thbwiki.cc/东方铃奈庵/第八话'],['铃奈庵第九话 · 开卷','https://thbwiki.cc/东方铃奈庵/第九话']]
+  },
+  {
+    id:'letters-and-supper',mark:'灯',name:'旧情书与暮色里的饭桌',en:'An old letter and a table at dusk',
+    title:'夜里留下的痕迹，各有来处。',color:'#8d7e88',image:'scene-letter-lantern',
+    alt:'月下廊板上摆着纸灯和信，浅色和服的长发怨灵立在近处',
+    lead:'一束情书留在屋顶，一桌空碗留在人里的酒肆。',
+    paragraphs:[
+      '第十六、十七话以旧信和夜里的怪事为起点。读者会先听到少女的旧闻，再看到小铃如何被卷进去。阿求查到祐天上人的逸闻，对传下来的退灵故事提出了自己的疑问。',
+      '第二十二、二十三话写另一件人里传闻。食客逃账时没人能辨认，直到猯藏认出蟒蛇的伪装。两段故事可以沿各自的目击者读，看看谁先发现不对，谁有机会把来龙去脉补齐。'
+    ],
+    facts:[['旧信','怨灵与一束情书相连，夜里出现的身影又涉及小铃。'],['祐天上人','通过阿求查到的旧闻进入故事。'],['食客','蟒蛇用人形在人里用餐，猯藏看穿了伪装。']],
+    correction:'旧信与逃账是不同篇章。僧影和怨灵在同一月廊出现，是画册的意象构图。',
+    perspective:'有些结论是人物在当时掌握的说法，手帖保留每条线索的叙述者。',
+    caption:'纸灯、长廊和远处的僧影用来并置一封信和它的旧闻。',
+    people:['letter-spirit','yuten','kosuzu','reimu','village-serpent','mamizou'],places:['suzunaan','village'],related:['hood-and-scroll','suzunaan-clues'],
+    sources:[['铃奈庵第十七话 · 旧信与怨灵','https://thbwiki.cc/东方铃奈庵/第十七话'],['铃奈庵第二十二话 · 逃账传闻','https://thbwiki.cc/东方铃奈庵/第二十二话'],['铃奈庵第二十三话 · 认出食客','https://thbwiki.cc/东方铃奈庵/第二十三话']]
+  }
+);
+window.GENSOKYO_LORE.find(page=>page.id==='suzunaan-clues').related.push('hood-and-scroll');

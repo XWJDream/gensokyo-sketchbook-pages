@@ -187,6 +187,10 @@
     "sha256": "8f3a044041491a1e3b30dfa7e95873a60fd026f66f23853ef2e863c23df7b262",
     "size": 3252443
   },
+  "inari-messenger.png": {
+    "sha256": "aef20e42dcc95076232b33582d596518f723c835818a50fdea7c48141df41bff",
+    "size": 2672962
+  },
   "joon.png": {
     "sha256": "39560e9f5b6e60899749b64bb2ea000df153173ff1ef0eea0192069a995329a4",
     "size": 2872314
@@ -194,6 +198,10 @@
   "junko.png": {
     "sha256": "209088744e1fa15b1732285e58c39b6bef94b5525b91777e8010c8a6f1a0b2d1",
     "size": 3051428
+  },
+  "jyaryu.png": {
+    "sha256": "4aec73139516943a1ce290ca28a3d683625a7fd9a9db93ec4abaad219f0b5093",
+    "size": 2589052
   },
   "kagerou.png": {
     "sha256": "254563e22a9f3d647ce60009bac4c843fc5f590294942bcbc0992b017459a5f0",
@@ -298,6 +306,10 @@
   "kyouko.png": {
     "sha256": "76320f656ef58739f4e347d3c3f711bcd9e41ab9c9c1e5f976e19dc319abca85",
     "size": 2884637
+  },
+  "letter-spirit.png": {
+    "sha256": "3886e48ebdc4684f7c9e3d6fd08eb2e3958f7301ad5d7b607dd68ee7eba27524",
+    "size": 2640004
   },
   "letty.png": {
     "sha256": "3680cb29b985b887a082fdfa04da00e6d8ab925ed89e52dabfadf0469cb0f2af",
@@ -611,6 +623,10 @@
     "sha256": "cb978dfc8d3b878a7bc1b3f7ddfd4bbc1cec03df6a29a9dea502bfe421d0cb83",
     "size": 3768936
   },
+  "scene-dragon-scroll.png": {
+    "sha256": "8d95dbef3fed1b926c90ee26a4746a1efa4f6402ead3e2c9f6f36f85ea915778",
+    "size": 3806267
+  },
   "scene-dream-corridor.png": {
     "sha256": "ee74861b4ae2f9e2e32acb9a26367b2f9be3a952b2a2f134e3ff6fcdfbb0d363",
     "size": 3035115
@@ -699,6 +715,10 @@
     "sha256": "213780479d1abedbb28ac08d73c11ae6c8b7628ff977c78debbabab94993d8ee",
     "size": 3183597
   },
+  "scene-inari-hood.png": {
+    "sha256": "f9e3a898617cb881ab26a1d45b916f92e5a945ebda77d033c1e31d6e750916a3",
+    "size": 4012010
+  },
   "scene-inverted-castle.png": {
     "sha256": "ce045264c9cbbeec635a606486aaa2761436bd3b53f66a2ab869f8716fbe160e",
     "size": 2946888
@@ -742,6 +762,10 @@
   "scene-kurumi-lakeshore.png": {
     "sha256": "740a11ae4c0a7398d278beeee74047da82b4ba403e39680738b0fb43409ffa5c",
     "size": 3794468
+  },
+  "scene-letter-lantern.png": {
+    "sha256": "e66c47d473d09fcca057b401d839ac31953b3503a777bf83c3ad7cf716cdadde",
+    "size": 3957760
   },
   "scene-library-booklight.png": {
     "sha256": "77951739b1dc3e731c3bb63351a824104c9d7acfd43740a45503ece7f07bd5f0",
@@ -878,6 +902,10 @@
   "scene-senkai.png": {
     "sha256": "c09cc8fb11e72990d17dddf29ca49257163073ad8675bf9432278353a24deb83",
     "size": 3805836
+  },
+  "scene-serpent-supper.png": {
+    "sha256": "2cc07f6a97b532bdc7e5783d00fdd82bf1409e97f76fd1060d0a845ba0a656d7",
+    "size": 3961678
   },
   "scene-shanghai-threadlight.png": {
     "sha256": "01c3f217d47370518afe3c3a2c99545d18670e236846fe62fc97c1d056842b39",
@@ -1083,6 +1111,10 @@
     "sha256": "7490288925e5472dcd014309c36831bab30847f52424213b92ae34e895aa2ff2",
     "size": 2932115
   },
+  "village-serpent.png": {
+    "sha256": "4523655441924680fa082fd85fa5fb33110ca39f34bf080add7ffa81df4a6f78",
+    "size": 2922040
+  },
   "wakasagihime.png": {
     "sha256": "c346437e0348be41393e707bade65a2094e9104206ddaadfc70c7b894717dd58",
     "size": 2983479
@@ -1158,6 +1190,10 @@
   "yumemi.png": {
     "sha256": "a174e83126bafc952aa08999a6955d8920b2c6b60afa95cf86a7dada9fbb910f",
     "size": 2503414
+  },
+  "yuten.png": {
+    "sha256": "aac29902969e78ddfba42443d741e66bad25aaf4c267120a6fdc341f73b9bb2c",
+    "size": 2256831
   },
   "yuugenmagan.png": {
     "sha256": "2acfe13e43f871338c130ed275e0b4aabef1b48a22d53223cb99a29db0e69d44",

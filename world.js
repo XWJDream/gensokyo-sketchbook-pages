@@ -929,3 +929,40 @@ window.GENSOKYO.trails.push({
   scenes:['melon-shadow','fox-notebooks','suzunaan-bookbox'],lore:'suzunaan-clues',work:'scrollery',listening:[],
   note:'把第十三、十九、二十话按物件线索并读。画页为同人取景。'
 });
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'inari-messenger':{place:'village',related:['akyuu','kosuzu','jyaryu'],work:'scrollery',line:'先从第八话的狐像失物读起，再听阿求区分头巾的原物和替代品。'},
+  jyaryu:{place:'suzunaan',related:['marisa','kosuzu','inari-messenger'],work:'scrollery',line:'看白蛇怎样借头巾说话，又怎样在铃奈庵的绘卷前展翼。'},
+  yuten:{place:null,related:['letter-spirit','akyuu'],work:'scrollery',line:'跟着阿求在第十七话里读关于祐天上人的退灵逸闻。'},
+  'letter-spirit':{place:null,related:['yuten','kosuzu','reimu'],work:'scrollery',line:'从情书的来历转到人里的夜间调查，留意小铃和怨灵的经历。'},
+  'village-serpent':{place:'village',related:['mamizou','kosuzu','reimu'],work:'scrollery',line:'从人里逃账的传闻读到猯藏看穿食客的伪装。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='scrollery').ids.push('inari-messenger','jyaryu','yuten','letter-spirit','village-serpent');
+window.GENSOKYO.bonds.push(
+  {title:'狐像旁少了一块布',label:'原作线索 / 稻荷狐像与阿求',ids:['inari-messenger','akyuu','kosuzu'],relation:'阿求向小铃解释狐像和头巾的旧事。',description:'顺着第八话读，能把普通布巾、童话中的宝物和祠中失物分别认出来。',color:'green',symbol:'巾'},
+  {title:'白蛇借来一句人话',label:'原作相遇 / 邪龙与魔理沙',ids:['jyaryu','marisa','kosuzu'],relation:'白蛇借听耳头巾取得魔理沙的信任，随后在铃奈庵取回力量。',description:'同一场开卷，魔理沙以为自己在查事，小铃却看见绘卷少了一部分。',color:'violet',symbol:'卷'},
+  {title:'信纸里留下的逸闻',label:'原作旧闻 / 祐天上人与怨灵少女',ids:['yuten','letter-spirit','akyuu'],relation:'阿求从一束情书查到了关于僧人封灵的旧事。',description:'继续读第十七话，分别听旧闻、阿求的解释与亲历者的见闻。',color:'violet',symbol:'信'},
+  {title:'猯藏认出了桌边的食客',label:'原作相遇 / 蟒蛇与猯藏',ids:['village-serpent','mamizou'],relation:'蟒蛇化作人类去人里用餐，猯藏看穿了伪装。',description:'第二十三话把一桌饭菜与妖怪在人里的处事规矩放在一起。',color:'red',symbol:'碗'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'听耳头巾',en:'The listening hood',text:'《铃奈庵》第八、九话中的布巾。阿求提到佩戴者能听到动植物的声音，白蛇随后利用这件事和魔理沙交谈。',source:'https://thbwiki.cc/东方铃奈庵/第八话'},
+  {term:'被封的绘卷片段',en:'A missing portion of the scroll',text:'第九话里白蛇说自己的力量原被封在绘卷中。事情结束后，小铃发现卷里已有一部分缺失。',source:'https://thbwiki.cc/东方铃奈庵/第九话'},
+  {term:'别有隐情的情书',en:'Letters with a past',text:'第十六、十七话以旧情书串起少女的旧闻和人里的夜间事件。沿信纸的去向读，可以分清传闻和亲历。',source:'https://thbwiki.cc/东方铃奈庵/第十七话'},
+  {term:'蟒蛇与酒豪',en:'Uwabami and the drinker',text:'第二十三话里，猯藏说的“うわばみ”指蟒蛇，食客却接过话把它解释成酒豪，用来搪塞自己的身份。',source:'https://thbwiki.cc/东方铃奈庵/第二十三话'}
+);
+window.GENSOKYO.trails.push(
+  {
+    id:'hood-and-scroll',number:'19',name:'从小祠失物读到绘卷展翼',tag:'铃奈庵 / 头巾与绘卷',
+    image:'scene-dragon-scroll',intro:'一块布巾不见了，一条白蛇开始说话。跟着两处线索走到铃奈庵案头。',
+    steps:[['inari-messenger','先认小祠里的狐像'],['akyuu','分清原头巾与替代布巾'],['marisa','听白蛇说起绘卷'],['kosuzu','跟小铃翻开画卷'],['jyaryu','对照细蛇和展翼后的轮廓']],
+    scenes:['inari-hood','dragon-scroll'],lore:'hood-and-scroll',work:'scrollery',listening:[],
+    note:'并读第八、九话。小祠与案头都按原作线索重新取景。'
+  },
+  {
+    id:'letters-and-supper',number:'20',name:'从灯下一封信读到桌边一只碗',tag:'铃奈庵 / 旧信与夜食',
+    image:'scene-letter-lantern',intro:'沿旧信读少女的身世，再转到人里酒肆，读另一场关于辨认身份的故事。',
+    steps:[['letter-spirit','先从藏起的旧情书读起'],['yuten','看阿求查到的名僧逸闻'],['kosuzu','跟着旧信回到借书屋'],['village-serpent','转到另一话的陌生食客'],['mamizou','从猯藏的视角读伪装如何被看穿']],
+    scenes:['letter-lantern','serpent-supper'],lore:'letters-and-supper',work:'scrollery',listening:[],
+    note:'按夜间线索并读第十六、十七话与第二十二、二十三话。两段故事各自发生。'
+  }
+);

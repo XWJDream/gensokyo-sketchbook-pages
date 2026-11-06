@@ -292,3 +292,46 @@ window.GENSOKYO_SCENES.push(
     sources:[['铃奈庵第十三话 · 万宝槌的残余后篇','https://thbwiki.cc/东方铃奈庵/第十三话']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+  {
+    id:'inari-hood',batch:'38',image:'scene-inari-hood',
+    title:'小祠前的头巾 · 林边微光',en:'A hood beside the little shrine',
+    place:null,tag:'稻荷小祠 / 头巾意象',people:['inari-messenger','marisa'],
+    alt:'尖耳石狐端坐在木祠中，折叠头巾落在石台边，魔理沙蹲在林间小路上',
+    lead:'石台边一块旧布，让路过的人停下来看。',
+    text:'狐像正对着窄窄的林道。画页把祠、布巾和魔理沙放在一起，用来引出听耳头巾的故事。',
+    basis:'第八话由小铃与阿求谈及狐像上的失物。林边位置、台上头巾和魔理沙蹲看是同人安排，作为独立图页。',
+    sources:[['铃奈庵第八话 · 稻荷大人的头巾','https://thbwiki.cc/东方铃奈庵/第八话']]
+  },
+  {
+    id:'dragon-scroll',batch:'38',image:'scene-dragon-scroll',
+    title:'开卷振翼 · 铃奈庵的案头',en:'Wings above an open scroll',
+    place:'suzunaan',tag:'铃奈庵 / 绘卷异动',people:['jyaryu','kosuzu','marisa'],
+    alt:'暖灯照着铃奈庵展开的绘卷，墨蓝翼蛇盘曲在案头上方，小铃扶着桌沿看',
+    lead:'卷还没有合上，案头就多了一对翼。',
+    text:'小铃扶着桌沿，看细长的身影在灯下盘曲。画面用展开的卷轴承接第九话里白蛇展翼的一刻。',
+    basis:'原作中魔理沙带白蛇来铃奈庵，白蛇从她帽中钻出后展翼。柜台陈设、光线和翼蛇悬于案头是画册重构。',
+    sources:[['铃奈庵第九话 · 白蛇与百鬼夜行绘卷','https://thbwiki.cc/东方铃奈庵/第九话']]
+  },
+  {
+    id:'letter-lantern',batch:'38',image:'scene-letter-lantern',
+    title:'灯下旧情书 · 月照长廊',en:'An old letter in the lantern light',
+    place:null,tag:'旧情书 / 月廊意象',people:['letter-spirit','yuten'],
+    alt:'月下木廊上，长发怨灵的浅衣向下拖成轻烟，地灯旁放着旧信，远处有持杖的僧影',
+    lead:'纸灯只照亮一角，信纸还摊在廊上。',
+    text:'把信里的少女和关于僧人的旧闻放进一条长廊。远处的人影留在故事里，近处只是一封没有写出字的信。',
+    basis:'第十六、十七话交代情书与怨灵，阿求另查祐天上人的旧闻。月廊、纸灯和两者同框都是同人意象。',
+    sources:[['铃奈庵第十六话 · 别有隐情的情书前篇','https://thbwiki.cc/东方铃奈庵/第十六话'],['铃奈庵第十七话 · 别有隐情的情书后篇','https://thbwiki.cc/东方铃奈庵/第十七话']]
+  },
+  {
+    id:'serpent-supper',batch:'38',image:'scene-serpent-supper',
+    title:'碗盏未收 · 人里酒肆的暮色',en:'Bowls at the village inn',
+    place:'village',tag:'人类村落 / 食客伪装',people:['village-serpent','mamizou'],
+    alt:'补丁条纹衣的食客在暖灯下端碗，矮桌边排着未收的碗盏，门外是人里的暮色',
+    lead:'饭碗挡住半张脸，桌边还摆着几只空碗。',
+    text:'店外天已蓝下来，食客仍顾着碗里的饭。画页停在猯藏识破伪装之前，用碗盏和宽条纹衣服留下辨认线索。',
+    basis:'第二十二、二十三话的逃账事件及蟒蛇的食客造型为依据。具体店面、暮色和桌上菜色由画册设计。',
+    sources:[['铃奈庵第二十二话 · 人里的逃账传闻','https://thbwiki.cc/东方铃奈庵/第二十二话'],['铃奈庵第二十三话 · 烟草与狸与霸王餐','https://thbwiki.cc/东方铃奈庵/第二十三话']]
+  }
+);

@@ -1,5 +1,11 @@
 (() => {
   'use strict';
+  document.addEventListener('error',event=>{
+    const image=event.target;
+    if(image instanceof HTMLImageElement&&/^assets\/[a-z0-9-]+\.png$/.test(image.getAttribute('src')||'')){
+      image.src=image.getAttribute('src').replace(/\.png$/,'.webp');
+    }
+  },true);
   const regionDetails=document.querySelector('#catalog-regions');
   const regionLabel=document.querySelector('#catalog-region-label');
   const updateRegion=()=>{
