@@ -302,3 +302,40 @@ window.GENSOKYO_LORE.push(
   }
 );
 window.GENSOKYO_LORE.find(page=>page.id==='suzunaan-clues').related.push('hood-and-scroll');
+window.GENSOKYO_LORE.push(
+  {
+    id:'fortune-and-rumors',mark:'闻',name:'福神像与村口传闻',en:'A good-luck portrait and village rumors',
+    title:'听见来客的故事，先看看是谁认出了他。',color:'#806d6c',image:'scene-rumor-lane',
+    alt:'方框眼镜的人面犬停在村道一头，远处的卖脚婆背着包袱走开',
+    lead:'从早苗想到的店铺福神，读到猯藏谈起的都市传说。',
+    paragraphs:[
+      '第七话里，早苗从荞麦面店的故事想到仙台四郎。现实中的仙台四郎与仙台商家的兴旺传说相连。漫画用这个联想回应来客的传闻，来客的身份仍留给读者判断。',
+      '第二十六话先让人面犬出现在堆肥场一带，再另写卖脚婆。接着，猯藏谈到都市传说。沿分镜顺序读，能分清亲眼看见的模样和人物随后给出的说法。'
+    ],
+    facts:[['店里的福神像','现实中与仙台四郎有关的画像也见于商铺。'],['人面犬','漫画里有方框眼镜和项圈铃铛。'],['卖脚婆','漫画里从兜帽和肩上的包袱辨认。']],
+    correction:'团子铺的福神画像与村道上两位怪异同框，分别是两幅同人画页的安排。',
+    perspective:'先读早苗的猜测，再读第二十六话里目击与议论的先后，保留各个说法的来处。',
+    caption:'画页把两次目击放在一条夜路上，前景和远处分别留下辨认线索。',
+    people:['sendai-shirou','sanae','kasen','man-faced-dog','leg-seller','mamizou'],places:['village'],
+    related:['hood-and-scroll','letters-and-supper','ennichi-and-snow'],
+    sources:[['茨歌仙第七话 · 店铺传闻','https://thbwiki.cc/东方茨歌仙/第七话'],['茨歌仙第二十六话 · 村口的都市传说','https://thbwiki.cc/东方茨歌仙/第二十六话'],['宫城县观光联盟 · 现实中的仙台四郎','https://www.miyagi-kankou.or.jp/theme/detail.php?id=12066']]
+  },
+  {
+    id:'ennichi-and-snow',mark:'祠',name:'从秋日缘日到冬日小祠',en:'From the autumn fair to a snowy shrine',
+    title:'神社的小盒与村边的小祠，各装着一段故事。',color:'#827e6c',image:'scene-dormouse-snow',
+    alt:'覆雪的树皮裂成两片，老木搭的小祠旁露出一只睡鼠',
+    lead:'顺着白毛球、传单和雷击后的树木读三话里的祭礼见闻。',
+    paragraphs:[
+      '第三十话从库房里的小盒讲起，盒上写着“狐玉”，角色对盒中白毛球提出不同解释。第三十六话，灵梦把袈裟罗婆娑罗当作缘日展品，同一话又写到一名因饥饿而倒下的来客。',
+      '第三十七话转入冬日。树被雷击时，睡鼠还在冬眠。村人后来想用那棵树的木头建小祠，灵梦也谈到了供奉与真实动物之间的关系。'
+    ],
+    facts:[['袈裟罗婆娑罗','小盒中的白毛球引出几种说法，后来也成了缘日展品。'],['缘日来客','来客倒下后，灵梦把它与饿神联系起来。'],['睡鼠祠','村人想取受雷击的木头建祠。']],
+    correction:'画页把三个话数的见闻连成阅读顺序。雪里小祠旁的活睡鼠是画册安排，原作另有关于供奉的说明。',
+    perspective:'对照库房里关于毛球的猜测与雪日里灵梦关于小祠的解释，区分物件本身和人们赋予它的说法。',
+    caption:'用积雪、木纹和祠外的一只睡鼠并置建祠的缘由与受雷击的旧树。',
+    people:['kesaran','hungry-villager','dormouse','reimu','kasen','sanae','nitori','marisa'],places:['shrine','village'],
+    related:['fortune-and-rumors','mountain-paths'],
+    sources:[['茨歌仙第三十话 · 库房里的白毛球','https://thbwiki.cc/东方茨歌仙/第三十话'],['茨歌仙第三十六话 · 缘日与饿神','https://thbwiki.cc/东方茨歌仙/第三十六话'],['茨歌仙第三十七话 · 雷击与小祠','https://thbwiki.cc/东方茨歌仙/第三十七话']]
+  }
+);
+window.GENSOKYO_LORE.find(page=>page.id==='letters-and-supper').related.push('fortune-and-rumors');

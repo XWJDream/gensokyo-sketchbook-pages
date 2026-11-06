@@ -966,3 +966,41 @@ window.GENSOKYO.trails.push(
     note:'按夜间线索并读第十六、十七话与第二十二、二十三话。两段故事各自发生。'
   }
 );
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  'sendai-shirou':{place:null,related:['sanae','kasen'],work:'hermit-book',line:'从第七话里早苗的猜测读起，再对照现实仙台的商家福神传说。'},
+  'man-faced-dog':{place:'village',related:['leg-seller','marisa','mamizou'],work:'hermit-book',line:'先到第二十六话开头的堆肥场，认出方框眼镜和项圈铃铛。'},
+  'leg-seller':{place:'village',related:['man-faced-dog','mamizou'],work:'hermit-book',line:'从第二十六话中段的包袱与兜帽，接着读猯藏谈到的都市传说。'},
+  kesaran:{place:'shrine',related:['reimu','kasen','hungry-villager'],work:'hermit-book',line:'从第三十话的库房小盒读到第三十六话的缘日展品。'},
+  'hungry-villager':{place:'shrine',related:['reimu','kesaran'],work:'hermit-book',line:'在第三十六话中从来客的举动读到灵梦对饿神的解释。'},
+  dormouse:{place:'village',related:['reimu','sanae'],work:'hermit-book',line:'从第三十七话里被雷击的树读到村人用旧木建祠的想法。'}
+});
+window.GENSOKYO.books.find(book=>book.id==='hermit-book').ids.push('sendai-shirou','man-faced-dog','leg-seller','kesaran','hungry-villager','dormouse');
+window.GENSOKYO.bonds.push(
+  {title:'早苗想起的福神',label:'原作猜测 / 仙台四郎与早苗',ids:['sendai-shirou','sanae','kasen'],relation:'早苗听到店铺的传闻，联想到仙台四郎。华扇去团子铺发生在另一段。',description:'第七话可以沿两处店铺分别读，再对照仙台的现实传说。',color:'green',symbol:'福'},
+  {title:'夜路上有两段传闻',label:'同话并读 / 人面犬、卖脚婆与猯藏',ids:['man-faced-dog','leg-seller','mamizou'],relation:'第二十六话分别出现两位怪异，猯藏随后谈到都市传说。',description:'对照漫画可以看出两次目击的顺序。村道画页把它们并置。',color:'violet',symbol:'闻'},
+  {title:'缘日的展品与来客',label:'同话并读 / 白毛球、来客与灵梦',ids:['kesaran','hungry-villager','reimu'],relation:'第三十六话写到灵梦招徕参拜者，也写到一名因饥饿倒下的来客。',description:'同一话的展品和来客各有来处，可以从小盒和传单两个入口开始读。',color:'red',symbol:'缘'},
+  {title:'被雷劈开的树成了建祠的材料',label:'原作见闻 / 睡鼠与冬日小祠',ids:['dormouse','reimu','sanae'],relation:'睡鼠在树里冬眠时遇上雷击，村人随后打算用这棵树的木头建祠。',description:'第三十七话后半，灵梦借这件事谈到真实的睡鼠与它受到的供奉。',color:'green',symbol:'祠'}
+);
+window.GENSOKYO.glossary.push(
+  {term:'店铺里的仙台四郎',en:'Sendai Shirō in shop lore',text:'仙台当地一些店铺陈列仙台四郎的画像，视其为带来生意兴隆的福神。《茨歌仙》第七话借早苗的联想提到这个传说。',source:'https://www.miyagi-kankou.or.jp/theme/detail.php?id=12066'},
+  {term:'村口的都市传说',en:'Urban legends beyond the village',text:'《茨歌仙》第二十六话先后写到人面犬和卖脚婆，再由猯藏谈到这些传闻。沿出现的顺序阅读，可以分清目击和解释。',source:'https://thbwiki.cc/东方茨歌仙/第二十六话'},
+  {term:'缘日里的饿神',en:'The hunger spirit at the fair',text:'《茨歌仙》第三十六话里，灵梦看见一名来客因饥饿倒下，把这件事和饿神联系起来。图鉴画的是来客。',source:'https://thbwiki.cc/东方茨歌仙/第三十六话'},
+  {term:'雪中的睡鼠祠',en:'The dormouse shrine in the snow',text:'《茨歌仙》第三十七话里，村人想用被雷击的树木建祠。灵梦提到，被供奉的对象和真实动物当下待在哪里可以分开看。',source:'https://thbwiki.cc/东方茨歌仙/第三十七话'}
+);
+window.GENSOKYO.trails.push(
+  {
+    id:'fortune-and-rumors',number:'21',name:'从福神画像走到村口夜路',tag:'茨歌仙 / 店铺与都市传说',
+    image:'scene-fortune-shop',intro:'从早苗想起的一幅画像进村，沿村道辨认两位先后出现的怪异。',
+    steps:[['sanae','从早苗猜起的店铺传闻读起'],['sendai-shirou','对照仙台的现实福神传说'],['kasen','顺着另一段分镜走进团子铺'],['man-faced-dog','看清村外的眼镜和铃铛'],['leg-seller','沿村道辨认兜帽与包袱'],['mamizou','读猯藏关于都市传说的说法']],
+    scenes:['fortune-shop','rumor-lane'],lore:'fortune-and-rumors',work:'hermit-book',listening:[],
+    note:'并读第七、二十六话。店中画像及两位怪异同框是画册构图。'
+  },
+  {
+    id:'ennichi-and-snow',number:'22',name:'从秋日缘日读到雪中小祠',tag:'茨歌仙 / 缘日与冬雪',
+    image:'scene-dormouse-snow',intro:'从缘日展桌上的小盒读到村边积雪的小祠，看三个话数里人们怎样对待偶然遇见的东西。',
+    steps:[['kesaran','先找库房小盒和缘日展品'],['hungry-villager','读到缘日上倒下的来客'],['reimu','听灵梦说起饿神和供奉'],['dormouse','从雷击的旧树读到建祠的打算']],
+    scenes:['ennichi-flyer','dormouse-snow'],lore:'ennichi-and-snow',work:'hermit-book',listening:[],
+    note:'按第三十、三十六、三十七话阅读，秋日与雪日分别成图。'
+  }
+);

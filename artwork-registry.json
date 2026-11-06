@@ -91,6 +91,10 @@
     "sha256": "203c6b02a932a492d74eef252f309a261509857d4f0dac7595088f53c1959080",
     "size": 2810557
   },
+  "dormouse.png": {
+    "sha256": "0e82fe5a36a9bd96311816ede2a5f24ece26d425b187bcc6f8188b355a52bc1c",
+    "size": 2857827
+  },
   "eika.png": {
     "sha256": "dcb7e8d984789790e69632008bc317a8c8f3b708dc53e8752cbb5d7b91f059af",
     "size": 2739304
@@ -179,6 +183,10 @@
     "sha256": "8edcfe454f768bd7a5eec29bd0d92c69ea78a3bb00efe5a3cc8ec990c9ad4d9f",
     "size": 2622823
   },
+  "hungry-villager.png": {
+    "sha256": "9dd8a6dd2ca85031d62189a09769691033c5807aedad138977db4fd6a4b87e74",
+    "size": 2528440
+  },
   "ichirin.png": {
     "sha256": "4625d954a72e9f803bf1f87050f89d2751b00d64f5a200c2477440b24dd8dd56",
     "size": 2911720
@@ -234,6 +242,10 @@
   "keine.png": {
     "sha256": "92eb6f59cf879ad92f15d7f67e31dd3fc2dbaf3b1e0ba5f91193b7db5f665b23",
     "size": 2734350
+  },
+  "kesaran.png": {
+    "sha256": "4be92a80774e66105ee869ec0a097ff9bfd1ca36ac16c411e5fd93b161ee010b",
+    "size": 2660026
   },
   "kikuri.png": {
     "sha256": "e12230fc719017aabee9d35a104362c6748859b7c64e21ed1a384b3a070482b3",
@@ -307,6 +319,10 @@
     "sha256": "76320f656ef58739f4e347d3c3f711bcd9e41ab9c9c1e5f976e19dc319abca85",
     "size": 2884637
   },
+  "leg-seller.png": {
+    "sha256": "9da383da9e5f64d9a6bc0258fc946e3dca6463070b2d8054b9f7bf32ba4a1daa",
+    "size": 2858088
+  },
   "letter-spirit.png": {
     "sha256": "3886e48ebdc4684f7c9e3d6fd08eb2e3958f7301ad5d7b607dd68ee7eba27524",
     "size": 2640004
@@ -346,6 +362,10 @@
   "mamizou.png": {
     "sha256": "a3b93608d21df40ad5a0a97b7ffe714517ea2b5dac1f1c795985153087d2a5f1",
     "size": 2952838
+  },
+  "man-faced-dog.png": {
+    "sha256": "5cb4b233ef038ba3dc481011ac3bbb04b203d96dbe9b025145d7d5056e7de02f",
+    "size": 2505888
   },
   "manzairaku.png": {
     "sha256": "816bd72d19d833849120a96ec029064ef3e6ff43d15ba775bfaf49a7931167e5",
@@ -619,6 +639,10 @@
     "sha256": "806a9877506e862a1648a4d7977c49231efcacaf238ee0f10a2695dfad683b0f",
     "size": 3714421
   },
+  "scene-dormouse-snow.png": {
+    "sha256": "fa86a1c9404f831bd8826c6ca471a0c395c983918bf6800fdb654bc1564f8ea2",
+    "size": 3900880
+  },
   "scene-dragon-mine.png": {
     "sha256": "cb978dfc8d3b878a7bc1b3f7ddfd4bbc1cec03df6a29a9dea502bfe421d0cb83",
     "size": 3768936
@@ -647,6 +671,10 @@
     "sha256": "89ebb455003920b2ab9fb1b0c428bdeac21a0b82d078d5f1c8ced483c9d172a2",
     "size": 3723939
   },
+  "scene-ennichi-flyer.png": {
+    "sha256": "1490b179c1abb041b5f7c106796d7950240295c21625e95df33fac6f0ace7e11",
+    "size": 3926109
+  },
   "scene-fairy-lakeside.png": {
     "sha256": "a70a4f900cf7d3ed420a585ec40435ee8dcf16c4c6e78547788f4de963ab122f",
     "size": 3708370
@@ -666,6 +694,10 @@
   "scene-forest-watch.png": {
     "sha256": "81f80415028cd2be3475fe128bb58e331de092a75be37059128328d1c5dbf9d7",
     "size": 4297190
+  },
+  "scene-fortune-shop.png": {
+    "sha256": "b18f01ca10d8d95431647868e673c9b8f9ac357a8353e5a70b277d53b1fff814",
+    "size": 3955251
   },
   "scene-fortune-teller-study.png": {
     "sha256": "0fde9a94d98ce280ca1799137d411cab353b2e330a13dcea684af16fa8dc9ab3",
@@ -883,6 +915,10 @@
     "sha256": "7b3d964d14e09d2d216ba016260d45dbfee60831e002ed1f15a6624d2f580d4c",
     "size": 3455824
   },
+  "scene-rumor-lane.png": {
+    "sha256": "51ee54d55f35998b44ca9aa59a824a4e864d33894b56f47263e286e6abaa7d64",
+    "size": 4015818
+  },
   "scene-ruukoto-sweeping.png": {
     "sha256": "edcc7791e16e59d346493712e29d157ead75f76a4aeea740c9432d6bd109eaa0",
     "size": 3795734
@@ -1006,6 +1042,10 @@
   "sekibanki.png": {
     "sha256": "6d8b1c5555c9fb84533697820206ab03bd1d3d80290bbd31c734451d0c351841",
     "size": 3009455
+  },
+  "sendai-shirou.png": {
+    "sha256": "8516ab056e8f3ae5c34a7d9f094c6464fad97183b3103f2c44729e69d7c928eb",
+    "size": 2560121
   },
   "shanghai.png": {
     "sha256": "c52c37fdda7d4ffd72fd33fde4f0187758f2a96f3948c8dfdedfd5bec4f664cb",

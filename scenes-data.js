@@ -335,3 +335,45 @@ window.GENSOKYO_SCENES.push(
     sources:[['铃奈庵第二十二话 · 人里的逃账传闻','https://thbwiki.cc/东方铃奈庵/第二十二话'],['铃奈庵第二十三话 · 烟草与狸与霸王餐','https://thbwiki.cc/东方铃奈庵/第二十三话']]
   }
 );
+window.GENSOKYO_SCENES.push(
+  {
+    id:'fortune-shop',batch:'39',image:'scene-fortune-shop',
+    title:'店里的一幅福神像',en:'A good-luck portrait in the shop',
+    place:'village',tag:'人类村落 / 店铺传闻',people:['sendai-shirou','kasen','sanae'],
+    alt:'华扇坐在团子铺外的长凳上，店门旁立着一幅短发、条纹衣、笑眯眯的仙台四郎画像',
+    lead:'铺子门口，靠着长凳立了一幅笑眯眯的画像。',
+    text:'从华扇走进的团子铺借一个取景，把早苗想到的福神传闻画成店门旁的小画像。',
+    basis:'第七话写华扇去团子铺，早苗则在另一段谈话中猜测荞麦面店的来客是否与仙台四郎有关。店门旁的画像与两条线索的并置是同人安排。',
+    sources:[['茨歌仙第七话 · 生意兴隆与福神传闻','https://thbwiki.cc/东方茨歌仙/第七话'],['宫城县观光联盟 · 仙台四郎','https://www.miyagi-kankou.or.jp/theme/detail.php?id=12066']]
+  },
+  {
+    id:'rumor-lane',batch:'39',image:'scene-rumor-lane',
+    title:'村口夜路',en:'Two rumors on a village lane',
+    place:'village',tag:'人类村落 / 都市传说',people:['man-faced-dog','leg-seller','mamizou'],
+    alt:'蓝紫色的村道边，人面犬戴着方框眼镜和铃铛，远处戴兜帽的卖脚婆背着包袱',
+    lead:'近处响了一下铃铛，远处的来人把包袱提了提。',
+    text:'一条刚亮起窗灯的村道，两道在漫画不同段落出现的剪影。先从眼镜认出人面犬，再看路尽头的兜帽。',
+    basis:'第二十六话分别画出堆肥场的人面犬与路上的卖脚婆。两者同框、夜色和村道是画册并置的意象。',
+    sources:[['茨歌仙第二十六话 · 村口的都市传说','https://thbwiki.cc/东方茨歌仙/第二十六话']]
+  },
+  {
+    id:'ennichi-flyer',batch:'39',image:'scene-ennichi-flyer',
+    title:'缘日的传单',en:'A flyer for the shrine fair',
+    place:'shrine',tag:'博丽神社 / 缘日见闻',people:['hungry-villager','reimu','kesaran'],
+    alt:'博丽神社的秋日台阶上，来客拿着折好的传单，灵梦身旁摆着装有白色毛球的小盒',
+    lead:'秋叶落到台阶边，来客把折好的传单搁在膝上。',
+    text:'把缘日的来客和展品画在台阶边。纸上的字藏在折痕里，白色毛球从盒里露出一角。',
+    basis:'第三十六话分别画到缘日展品和因饥饿倒下的来客。来客坐在台阶上歇息及展品与他同框是画册构图。',
+    sources:[['茨歌仙第三十六话 · 缘日与饿神','https://thbwiki.cc/东方茨歌仙/第三十六话']]
+  },
+  {
+    id:'dormouse-snow',batch:'39',image:'scene-dormouse-snow',
+    title:'雪里的睡鼠祠',en:'The little shrine in the snow',
+    place:'village',tag:'人类村落 / 雪日小祠',people:['dormouse','reimu','sanae'],
+    alt:'雪积在裂开的老树和小木祠上，一只大眼、蓬尾的睡鼠贴着祠外的树皮',
+    lead:'雪盖住了屋顶，老树裂开的木纹还在。',
+    text:'村边只露出一截旧路和一道窄窄的木门。把劈裂的木头和安放小祠的想法画在同一页，睡鼠留在祠外的树皮上。',
+    basis:'第三十七话写村人打算用被雷劈开的树木做祠，并由灵梦谈到供奉。雪中小祠与活睡鼠同框是画册意象。',
+    sources:[['茨歌仙第三十七话 · 雷击与睡鼠祠','https://thbwiki.cc/东方茨歌仙/第三十七话']]
+  }
+);
