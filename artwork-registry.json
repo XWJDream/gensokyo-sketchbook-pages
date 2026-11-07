@@ -55,6 +55,10 @@
     "sha256": "079bcaa231143f7dbbf7b080bed9bf2b9c5ec8cf9f417438d95c1748a6b4dfc9",
     "size": 2931444
   },
+  "change.png": {
+    "sha256": "b9cdefef6cbbb19861b29da75d3b4bb228df2eb3d05639885e2efe55c97d8920",
+    "size": 2747312
+  },
   "chen.png": {
     "sha256": "e49d4c0c25d178c80ed434c3b51ec8c85d787cffecaa3dc445ac2f250379c05e",
     "size": 2561147
@@ -275,6 +279,10 @@
     "sha256": "2efcba08e6dc33879124b3b42cfff44f8be5b16c029139109b644b3f2e506ef2",
     "size": 2618531
   },
+  "iwanagahime.png": {
+    "sha256": "23a69227c355ef83cd7500dac4f2c1f515ebeca396c03042b81f479420261933",
+    "size": 3379303
+  },
   "joon.png": {
     "sha256": "39560e9f5b6e60899749b64bb2ea000df153173ff1ef0eea0192069a995329a4",
     "size": 2872314
@@ -311,6 +319,10 @@
     "sha256": "e016198a78defb9ec0437b695e7e3ca36d66b8254812c3e7c8688c59818eea4d",
     "size": 2879910
   },
+  "kawakatsu.png": {
+    "sha256": "d3aa9dfb0d03d522ecbe5c7c3a72794600d79b633a6e5f4786f909ece764847f",
+    "size": 3143820
+  },
   "keiki.png": {
     "sha256": "c987ac13791bd75e87823437d8e47c53dc79d5e4fcfeab3a3ef097d0d30f4fba",
     "size": 2977725
@@ -330,6 +342,10 @@
   "kimono-zashiki.png": {
     "sha256": "235854f39e4e6cf2f41ba5e22e2d3de3b1109643d388dba9e5ef3113ab5801e6",
     "size": 2170209
+  },
+  "kirisame-father.png": {
+    "sha256": "84256252e4f63d7116f61cf8150f091c4d53191a7bfd0c86b2646c340389b0f7",
+    "size": 3037072
   },
   "kisume.png": {
     "sha256": "e8118ce35067b2d8d6e915985e3cbd0070484652e23327d0e8c5329f93200d5c",
@@ -995,6 +1011,10 @@
     "sha256": "403960aafa081bdee9c39e9b92b99f9b51f6f8cd14556a4062282a5cc0850a26",
     "size": 3162335
   },
+  "scene-lunar-visitor.png": {
+    "sha256": "8a7a555d16d5ca907e47be19301fca3932204d7dd151a141938717900447d938",
+    "size": 3763281
+  },
   "scene-makai-gate.png": {
     "sha256": "e7fda89151fdfb7ba437c61d89eaeb88de7e1d9a122324e75f6c0b45b647a1fb",
     "size": 3890884
@@ -1006,6 +1026,10 @@
   "scene-manzairaku-ravine.png": {
     "sha256": "ef7d6c138259e04cfc7adb9ffcc1cf0e2013d319810ad146bdd35f9ccba56756",
     "size": 3868716
+  },
+  "scene-mask-workshop.png": {
+    "sha256": "cbdaa4d13b3b51709e09841721833ac6ebce76a8b9c813b98175955b8a6583fa",
+    "size": 3959292
   },
   "scene-meira-rainpath.png": {
     "sha256": "bdc8405c104cfa7ee9e16f23d93ac25c91ffe648418f5b3177acd9c0fd24e0db",
@@ -1054,6 +1078,10 @@
   "scene-mountain-stalls.png": {
     "sha256": "258dd4fd6ef3a78494f4efdb2c44b00772683214bfb7d9ee93012cc5491a0ebb",
     "size": 3777856
+  },
+  "scene-mountain-stones.png": {
+    "sha256": "02be0722c9f534e2de4a3ba2d3c046cbef1007b2b93c8c28ff6e070cef9afd5c",
+    "size": 3661446
   },
   "scene-mukou-rain-eaves.png": {
     "sha256": "8cd3b7a76505e6b727ddd1c56737ff5c30fef6468ea996ca70542224f63dcb6c",
@@ -1451,6 +1479,10 @@
     "sha256": "29db12f877fee8ebe5b96fa229bfe1b429ffea85397932bb5dc89caeb1adad6d",
     "size": 2779394
   },
+  "tsukuyomi.png": {
+    "sha256": "3029a0d5ba7596b6801de141d70d256db0722f649cc2eeb216043857dfa478d8",
+    "size": 2980051
+  },
   "ubame.png": {
     "sha256": "ca452d70f96dd67da4546752169c533d1b0ec948f87cb21aed5bed22537bea6c",
     "size": 2377185
@@ -1462,6 +1494,10 @@
   "unzan.png": {
     "sha256": "7391b1cc857744d4d2d47aef28eece4cdfc6e60c9de944192ae37f56e8bee642",
     "size": 2725540
+  },
+  "urashimako.png": {
+    "sha256": "34d2d577e4ccef701198249e6872b4ea6a5fc258ad74af346dd59f047766d99a",
+    "size": 3158457
   },
   "urumi.png": {
     "sha256": "7ed751a4c6e2e2d4f06fd66a9e5f5850a3a03761863d3af911aa071f20c4491b",

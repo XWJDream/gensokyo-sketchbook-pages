@@ -1337,3 +1337,180 @@ window.CHARACTERS.push(
     design:{"work":"《东方文花帖》琪露诺报道与《东方求闻史纪》池塘条目","source":"https://thwiki.cc/大蛤蟆之池","checks":["核对大体型蛤蟆和池沼线索","保留蛤蟆的动物形态"],"note":"体态、花纹和具体色彩为画册演绎。"}
   }
 );
+
+window.CHARACTERS.push(
+{
+  "id": "change",
+  "batch": "48",
+  "name": "嫦娥",
+  "jp": "嫦娥",
+  "en": "Chang'e",
+  "title": "月兔之主与禁药旧事",
+  "species": "女神 · 蟾蜍形态",
+  "place": "月之都",
+  "group": "moon",
+  "color": "#7d86a2",
+  "ability": "服用蓬莱之药，受长期幽禁",
+  "keywords": "月兔 蓬莱 纯狐 绀珠传 儚月抄",
+  "imageAlt": "浅银绿色蟾蜍蹲在月影般的涟漪上。",
+  "intro": "在月兔捣药的传闻里，读到一个被幽禁的名字。",
+  "story": "《儚月抄》提到统领月兔的嫦娥；《绀珠传》的背景又把她与纯狐的怨恨联系起来。她因服下蓬莱药而被幽禁，资料以蟾蜍形态描述她。",
+  "motif": "蟾蜍形态 · 月影 · 浅银绿",
+  "relation": "与纯狐、铃仙和月兔的叙事相关。",
+  "reference": "https://thwiki.cc/嫦娥",
+  "design": {
+    "work": "《儚月抄》《绀珠传》文字线索",
+    "source": "https://thwiki.cc/嫦娥",
+    "checks": [
+      "对照原作提及的身份与关系",
+      "区分文字依据与补绘外观"
+    ],
+    "note": "蟾蜍形态来自设定线索；肤色、花纹与月影为画册演绎。"
+  }
+},
+{
+  "id": "tsukuyomi",
+  "batch": "48",
+  "name": "月夜见",
+  "jp": "月夜見",
+  "en": "Tsukuyomi",
+  "title": "月之都的奠基者",
+  "species": "神明 · 文字提及",
+  "place": "月之都的往事",
+  "group": "moon",
+  "color": "#7d86a2",
+  "ability": "月之都建立的背景人物",
+  "keywords": "月夜見 月都 永琳 丰姬 儚月抄",
+  "imageAlt": "束着深蓝发髻的宫廷人物穿象牙白与靛蓝衣袍，手捧卷轴。",
+  "intro": "读到月都以前，先回看它的建立。",
+  "story": "小说《儚月抄》第三话由丰姬回望月都往事，月夜见是其中被提及的建立者。可以结合永琳的经历，认识月都叙事里更早的时间层次。",
+  "motif": "深蓝发髻 · 白蓝衣袍 · 卷轴",
+  "relation": "与八意永琳、绵月丰姬的月都叙事相连。",
+  "reference": "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第三话/中日对照",
+  "design": {
+    "work": "《儚月抄》小说文字线索",
+    "source": "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第三话/中日对照",
+    "checks": [
+      "对照原作提及的身份与关系",
+      "区分文字依据与补绘外观"
+    ],
+    "note": "原作未提供可核对的完整定型立绘。本图发型、衣装、配饰与姿态为同人演绎。"
+  }
+},
+{
+  "id": "urashimako",
+  "batch": "48",
+  "name": "水江浦岛子",
+  "jp": "水江 浦嶋子",
+  "en": "Mizunoe no Urashimanoko",
+  "title": "误入月都的渔夫",
+  "species": "人类 · 传说人物",
+  "place": "《儚月抄》第三话",
+  "group": "moon",
+  "color": "#7d86a2",
+  "ability": "经历神隐，进入月之都",
+  "keywords": "浦嶋子 浦岛太郎 瑞龟 五色龟 丰姬 龙宫",
+  "imageAlt": "戴草帽的短发渔夫捧着木匣，穿青绿色短衣与棕色裤子。",
+  "intro": "海面上的倒影，把一位渔夫带到了月都。",
+  "story": "丰姬讲述一位名叫水江浦岛子的访客。他把月都当作海底龙宫，在那里度过约三年，归来时地上已过去约三百年。五色龟是这段叙事中的另一条线索。",
+  "motif": "草帽 · 木匣 · 青绿短衣",
+  "relation": "丰姬所讲述的来访者，也可沿妹红符卡继续读。",
+  "reference": "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第三话/中日对照",
+  "design": {
+    "work": "《儚月抄》小说文字线索",
+    "source": "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第三话/中日对照",
+    "checks": [
+      "对照原作提及的身份与关系",
+      "区分文字依据与补绘外观"
+    ],
+    "note": "原作未提供可核对的完整定型立绘。本图发型、衣装、配饰与姿态为同人演绎。"
+  }
+},
+{
+  "id": "iwanagahime",
+  "batch": "48",
+  "name": "石长姬",
+  "jp": "石長姫",
+  "en": "Iwanagahime",
+  "title": "与山和不变生命有关的神明",
+  "species": "神明 · 文字提及",
+  "place": "八岳与妖怪之山的叙述",
+  "group": "mountain",
+  "color": "#8c8974",
+  "ability": "与永远生命有关的神格",
+  "keywords": "岩长姬 木花咲耶姬 妹红 慧音 儚月抄",
+  "imageAlt": "灰黑双髻的神明穿紫灰与苔绿衣装，手里拿着一块圆石。",
+  "intro": "慧音讲山的历史时，提到了这位神明。",
+  "story": "小说《儚月抄》第四话借慧音与妹红的谈话写到石长姬，并将她与不死的观念及妹妹木花咲耶姬联系起来。阅读时要留意这段故事由人物讲述。",
+  "motif": "灰黑双髻 · 圆石 · 紫灰衣装",
+  "relation": "木花咲耶姬的姐姐；与磐永阿梨夜分别收录。",
+  "reference": "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照",
+  "design": {
+    "work": "《儚月抄》小说文字线索",
+    "source": "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照",
+    "checks": [
+      "对照原作提及的身份与关系",
+      "区分文字依据与补绘外观"
+    ],
+    "note": "原作未提供可核对的完整定型立绘。本图发型、衣装、配饰与姿态为同人演绎。"
+  }
+},
+{
+  "id": "kawakatsu",
+  "batch": "48",
+  "name": "秦河胜",
+  "jp": "秦 河勝",
+  "en": "Hata no Kawakatsu",
+  "title": "面具旧事中的名字",
+  "species": "人类 · 背景人物",
+  "place": "《东方心绮楼》的面具来历",
+  "group": "instruments",
+  "color": "#8c8974",
+  "ability": "与申乐及旧面具有关",
+  "keywords": "河勝 面具 秦心 神子 猿乐 能乐 心绮楼",
+  "imageAlt": "戴低黑帽的表演者穿赭红与浅绿衣袍，拿着面具和折扇。",
+  "intro": "秦心身边的面具，还带着更早的名字。",
+  "story": "《心绮楼》的面具线索提到秦河胜。秦心由他使用过的古面具化生；神子的叙述又补充了制作面具的来历。把这段往事与如今的面灵气放在一起阅读，会多出一层时间感。",
+  "motif": "低黑帽 · 面具 · 折扇",
+  "relation": "连接秦心与丰聪耳神子的面具往事。",
+  "reference": "https://thwiki.cc/秦心",
+  "design": {
+    "work": "《心绮楼》面具往事",
+    "source": "https://thwiki.cc/秦心",
+    "checks": [
+      "对照原作提及的身份与关系",
+      "区分文字依据与补绘外观"
+    ],
+    "note": "原作未提供可核对的完整定型立绘。本图发型、衣装、配饰与姿态为同人演绎。"
+  }
+},
+{
+  "id": "kirisame-father",
+  "batch": "48",
+  "name": "魔理沙的父亲",
+  "jp": "魔理沙の親父",
+  "en": "Marisa's father",
+  "title": "雾雨店的店主",
+  "species": "人类 · 文字提及",
+  "place": "人类村落 · 雾雨店",
+  "group": "village",
+  "color": "#8c8974",
+  "ability": "经营大道具屋",
+  "keywords": "雾雨 魔理沙 父亲 霖之助 大道具屋 香霖堂",
+  "imageAlt": "短棕发、留小胡子的店主穿靛蓝工作外衣，夹着账簿。",
+  "intro": "魔理沙搬进森林以前，还有人里旧店的故事。",
+  "story": "《香霖堂》提到魔理沙的父亲经营雾雨店，霖之助过去曾在他手下工作。父女关系与魔理沙现在的森林生活，为人物介绍提供了另一条阅读线索。",
+  "motif": "短棕发 · 靛蓝外衣 · 账簿",
+  "relation": "与魔理沙、森近霖之助的旧日经历相关。",
+  "reference": "https://thwiki.cc/雾雨魔理沙",
+  "design": {
+    "work": "《香霖堂》雾雨店往事",
+    "source": "https://thwiki.cc/雾雨魔理沙",
+    "checks": [
+      "对照原作提及的身份与关系",
+      "区分文字依据与补绘外观"
+    ],
+    "note": "原作未提供可核对的完整定型立绘。本图发型、衣装、配饰与姿态为同人演绎。"
+  }
+}
+);

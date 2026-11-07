@@ -702,3 +702,79 @@ window.GENSOKYO_SCENES.push(
     sources:[['TH05 道中与 Extra 原像素图','https://thbwiki.cc/东方怪绮谈/其他角色'],['万魔殿 · 原作背景','https://thbwiki.cc/文件:万魔殿（怪绮谈）1.png'],['外来韦编数字特辑 · 卡牌兵','https://thbwiki.cc/东方外来韦编/2021_Spring!/数字特辑']]
   }
 );
+
+window.GENSOKYO_SCENES.push(
+{
+  "id": "lunar-visitor",
+  "batch": "48",
+  "image": "scene-lunar-visitor",
+  "title": "月海旧闻 · 渔夫与五色龟",
+  "en": "A visitor by the lunar sea",
+  "place": null,
+  "tag": "儚月抄 / 往事意象",
+  "people": [
+    "urashimako",
+    "tsukuyomi",
+    "toyohime"
+  ],
+  "alt": "月海畔的渔夫捧着木匣，五色龟停在近处，远方是宫殿。",
+  "lead": "误作海底的地方，在故事里却是月都。",
+  "text": "把丰姬讲述的旧闻绘成一幅海岸画页，再沿访客、讲述者与月都建立者继续阅读。",
+  "basis": "访客与五色龟据小说第三话。宫殿、海岸布局和人物衣装为同人意象，三位关联人物并未在此共同出场。",
+  "sources": [
+    [
+      "小说第三话 · 中日对照",
+      "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第三话/中日对照"
+    ]
+  ]
+},
+{
+  "id": "mountain-stones",
+  "batch": "48",
+  "image": "scene-mountain-stones",
+  "title": "山石与花枝 · 久远的姐妹旧闻",
+  "en": "A stone and a branch of blossom",
+  "place": null,
+  "tag": "儚月抄 / 山中记忆",
+  "people": [
+    "iwanagahime",
+    "sakuya-hime",
+    "mokou",
+    "keine"
+  ],
+  "alt": "灰岩山道上，双髻的神明手持圆石，远方是暮色山岭。",
+  "lead": "山的历史，从慧音的一段话慢慢展开。",
+  "text": "沿着石长姬与妹妹的线索，回看妹红听过的山中旧事。画页选择灰岩与落叶，将长久的生命化作安静的山色。",
+  "basis": "姐妹关系和山的谈话见小说第四话。具体发式、衣装、地形、天气与花枝为想象，不用于标定现实或幻想乡方位。",
+  "sources": [
+    [
+      "小说第四话 · 中日对照",
+      "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第四话/中日对照"
+    ]
+  ]
+},
+{
+  "id": "mask-workshop",
+  "batch": "48",
+  "image": "scene-mask-workshop",
+  "title": "木面与午光 · 面具来历的一页",
+  "en": "Afternoon among the wooden masks",
+  "place": null,
+  "tag": "心绮楼 / 面具往事意象",
+  "people": [
+    "kawakatsu",
+    "kokoro",
+    "miko"
+  ],
+  "alt": "身穿赭红衣袍的表演者在木作室里端详面具，窗外有红叶。",
+  "lead": "一张面具，可以把现在与往事连起来。",
+  "text": "借一个想象中的工房，沿秦河胜与旧面具的线索，读到秦心和神子的叙述。",
+  "basis": "背景人物与面具关系来自心绮楼。工房、工具、衣装和制面时刻为画册演绎。",
+  "sources": [
+    [
+      "秦心 · 设定与面具来历",
+      "https://thwiki.cc/秦心"
+    ]
+  ]
+}
+);

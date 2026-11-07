@@ -1389,3 +1389,74 @@ window.GENSOKYO.bonds.push(
   {title:'沼泽边的一则新闻',label:'见闻 / 琪露诺与大蛤蟆',ids:['giant-toad','cirno','aya'],relation:'射命丸文将琪露诺在沼泽的遭遇写入报纸。',description:'并读池塘条目和当事人的说法。',color:'blue',symbol:'池'}
 );
 window.GENSOKYO.trails.find(trail=>trail.id==='poltergeist').steps.splice(1,0,['layla','从蕾拉留在旧宅的往事读起']);
+
+Object.assign(window.GENSOKYO.characterLinks,{
+  "change": {
+    "place": null,
+    "related": [
+      "junko",
+      "reisen",
+      "toyohime"
+    ],
+    "work": "th15",
+    "line": "先翻原作文字，再对照本页标明的同人外观演绎。"
+  },
+  "tsukuyomi": {
+    "place": null,
+    "related": [
+      "eirin",
+      "toyohime"
+    ],
+    "work": "bougetsusho",
+    "line": "先翻原作文字，再对照本页标明的同人外观演绎。"
+  },
+  "urashimako": {
+    "place": null,
+    "related": [
+      "toyohime",
+      "mokou"
+    ],
+    "work": "bougetsusho",
+    "line": "先翻原作文字，再对照本页标明的同人外观演绎。"
+  },
+  "iwanagahime": {
+    "place": null,
+    "related": [
+      "sakuya-hime",
+      "mokou",
+      "keine",
+      "ariya"
+    ],
+    "work": "bougetsusho",
+    "line": "先翻原作文字，再对照本页标明的同人外观演绎。"
+  },
+  "kawakatsu": {
+    "place": null,
+    "related": [
+      "kokoro",
+      "miko"
+    ],
+    "work": "th135",
+    "line": "先翻原作文字，再对照本页标明的同人外观演绎。"
+  },
+  "kirisame-father": {
+    "place": null,
+    "related": [
+      "marisa",
+      "rinnosuke"
+    ],
+    "work": "kourindou-book",
+    "line": "先翻原作文字，再对照本页标明的同人外观演绎。"
+  }
+});
+window.GENSOKYO.books.find(book=>book.id==='bougetsusho').ids.push('tsukuyomi','urashimako','iwanagahime');
+window.GENSOKYO.books.find(book=>book.id==='th15').ids.push('change');
+window.GENSOKYO.books.find(book=>book.id==='th135').ids.push('kawakatsu');
+window.GENSOKYO.books.find(book=>book.id==='kourindou-book').ids.push('kirisame-father');
+window.GENSOKYO.characterLinks.junko.related.push('change');
+window.GENSOKYO.characterLinks.kokoro.related.push('kawakatsu');
+window.GENSOKYO.characterLinks.marisa.related.push('kirisame-father');
+window.GENSOKYO.trails.push(
+{id:'lunar-old-tales',number:'49',name:'沿月海读一段旧闻',tag:'儚月抄 / 来访与归途',image:'scene-lunar-visitor',intro:'从渔夫的木匣，读到丰姬回望的月海。',steps:[['urashimako','从误入月都的来访者开始'],['toyohime','读丰姬讲述的往事'],['tsukuyomi','回看月都建立的背景'],['change','再认识幽禁与蓬莱药的另一条线索'],['junko','转到绀珠传，读另一场怨恨']],scenes:['lunar-visitor'],lore:'lunar-visitors',work:'bougetsusho',listening:[],note:'跨作品的编辑阅读路线。人物的外观演绎见各自图卡说明。'},
+{id:'old-masks-and-stones',number:'50',name:'从一张面具到一块山石',tag:'跨作品 / 被提及的人',image:'scene-mask-workshop',intro:'从面具的旧主人，换到山中姐妹的传说。',steps:[['kawakatsu','从面具旧闻中的名字开始'],['kokoro','再看如今的面灵气'],['miko','读神子关于面具的叙述'],['iwanagahime','换到儚月抄的山中谈话'],['sakuya-hime','沿姐妹关系继续读']],scenes:['mask-workshop','mountain-stones'],lore:'lunar-visitors',work:'th135',listening:[],note:'两段独立往事的编辑并读，不表示这些人物共同经历过一件事件。'}
+);

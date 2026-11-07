@@ -740,3 +740,58 @@ window.GENSOKYO_LORE.push(
 
 window.GENSOKYO_LORE.find(page=>page.id==='lotusland').related.push('hill-bloom-day-night');
 window.GENSOKYO_LORE.find(page=>page.id==='makai').related.push('makai-gate-to-stars');
+
+window.GENSOKYO_LORE.push({
+  "id": "lunar-visitors",
+  "mark": "海",
+  "name": "月海的访客与地上的年月",
+  "en": "A visitor and two measures of time",
+  "title": "同一段停留，归来时已隔数百年。",
+  "color": "#7d86a2",
+  "image": "scene-lunar-visitor",
+  "alt": "月海畔的渔夫捧着木匣，五色龟停在近处，远方是宫殿。",
+  "lead": "沿着丰姬的故事，认识水江浦岛子与月都往事。",
+  "paragraphs": [
+    "小说《儚月抄》第三话写丰姬回忆误入月都的访客。水江浦岛子把那里当作海底龙宫，归来时地上的年月已经改变。叙述中的月海与地上倒影，为这段旅程添了一层边界意味。",
+    "月夜见是月都建立的背景人物，嫦娥的幽禁与蓬莱之药则属于另一条线索。把这些人物放回各自的段落，再读永琳、丰姬和纯狐，会更容易分辨他们与月都的关系。"
+  ],
+  "facts": [
+    [
+      "访客",
+      "水江浦岛子，第三话旧闻中的渔夫。"
+    ],
+    [
+      "讲述者",
+      "绵月丰姬，回望旧事的月之公主。"
+    ],
+    [
+      "月都背景",
+      "月夜见与嫦娥，各自关联不同的往事。"
+    ]
+  ],
+  "correction": "这些人物的完整服装、发式与画页建筑为同人演绎。嫦娥按文字中的蟾蜍形态绘制。",
+  "perspective": "以小说中人物的讲述为阅读入口，时间与来访细节应结合原文语境。",
+  "caption": "月海、宫殿、渔夫与五色龟的场景构图为想象绘制。",
+  "people": [
+    "urashimako",
+    "tsukuyomi",
+    "change",
+    "toyohime",
+    "eirin"
+  ],
+  "places": [],
+  "related": [
+    "moon",
+    "boundary"
+  ],
+  "sources": [
+    [
+      "第三话 · 丰姬的旧闻",
+      "https://thwiki.cc/东方儚月抄_～_Cage_in_Lunatic_Runagate./第三话/中日对照"
+    ],
+    [
+      "嫦娥 · 原作线索",
+      "https://thwiki.cc/嫦娥"
+    ]
+  ]
+});
